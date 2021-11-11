@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Self Assessment - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+  <!-- //////////////////////////////////////// -->
+
+  {% include 'includes/nav-0-messages.html' %}
+
+  <!-- ///////////////////////////////////////// -->
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full">
+      <!-- {% include "includes/back.html" %} -->
+
+      <h1 class="govuk-heading-xl">
+        Messages
+
+      </h1>
+
+      <h2 class="govuk-heading-s">
+        Inboxes
+      </h2>
+      <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible">
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+        {# <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__value govuk-!-width-two-thirds govuk-!-padding-top-4">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">
+              VAT messages<span class="govuk-visually-hidden">; You may have unread messages</span>
+              (opens in a new window or tab)</a>
+          </dt>
+          <dd class="govuk-summary-list__value govuk-!-width-one-third govuk-!-padding-bottom-4" aria-hidden="true">You may have unread messages
+          </dd>
+        </div> #}
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__value govuk-!-width-two-thirds govuk-!-padding-top-4">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">
+              PAYE for employers messages<span class="govuk-visually-hidden">; You may have unread messages</span></a>
+          </dt>
+          <dd class="govuk-summary-list__value govuk-!-width-one-third govuk-!-padding-bottom-4" aria-hidden="true">
+            <span class="govuk-!-font-weight-bold">0</span>
+            unread messages
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+
+          <dt class="govuk-summary-list__value govuk-!-width-two-thirds govuk-!-padding-top-4">
+            <a href="noSA-MTD-messages" class="govuk-link govuk-link--no-visited-state">
+              Making Tax Digital for Income Tax messages<span class="govuk-visually-hidden">; You may have unread messages</span>
+            </a>
+            <br>
+            <a href="noSA-messages" class="govuk-link govuk-link--no-visited-state" style="padding-top:30px;display:block;padding-bottom:20px">
+              Self Assessment messages<span class="govuk-visually-hidden">; You may have unread messages</span>
+            </a>
+          </dt>
+
+          <dd class="govuk-summary-list__value govuk-!-width-one-third govuk-!-padding-bottom-4" aria-hidden="true">
+            <span class="govuk-!-font-weight-bold">1</span>
+            unread message<br>
+
+            <p style="padding-top:30px;display:block;padding-bottom:10px"><span class="govuk-!-font-weight-bold">1</span> unread message</p>
+          </dd>
+
+
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__value govuk-!-width-two-thirds govuk-!-padding-top-4">
+            <a href="epaye-messages" class="govuk-link govuk-link--no-visited-state">
+              VAT MOSS and NOVA messages (opens in new tab)<span class="govuk-visually-hidden">; 6 unread messages</span></a>
+          </dt>
+          <dd class="govuk-summary-list__value govuk-!-width-one-third govuk-!-padding-bottom-4" aria-hidden="true">
+            <span class="govuk-!-font-weight-bold">0</span>
+            unread messages
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__value govuk-!-width-two-thirds govuk-!-padding-top-4">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">
+              VAT messages<span class="govuk-visually-hidden">; 4 unread messages</span></a>
+          </dt>
+          <dd class="govuk-summary-list__value govuk-!-width-one-third govuk-!-padding-bottom-4" aria-hidden="true">
+            <span class="govuk-!-font-weight-bold">0</span>
+            unread messages</dd>
+        </div>
+
+
+
+        <!-- <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__value govuk-!-width-two-thirds govuk-!-padding-top-4">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">
+              Fulfilment House Due Diligence Scheme messages<span class="govuk-visually-hidden">; 4 unread messages</span></a>
+          </dt>
+          <dd class="govuk-summary-list__value govuk-!-width-one-third govuk-!-padding-bottom-4" aria-hidden="true">
+            <span class="govuk-!-font-weight-bold">4</span>
+            unread messages</dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__value govuk-!-width-two-thirds govuk-!-padding-top-4">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">
+              Soft Drinks Industry Levy and FHDDS messages<span class="govuk-visually-hidden">; 4 unread messages</span></a>
+          </dt>
+          <dd class="govuk-summary-list__value govuk-!-width-one-third govuk-!-padding-bottom-4" aria-hidden="true">
+            <span class="govuk-!-font-weight-bold">4</span>
+            unread messages</dd>
+        </div> -->
+
+      </dl>
+
+    </div>
+  </div>
+{% endblock %}

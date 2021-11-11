@@ -1,0 +1,147 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a3.html' %}
+
+<!-- /////////////////////////////// -->
+
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+  <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+  <!-- //////////////  ADD A TAX  /////////////////// -->
+
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p class="govuk-body">
+      Add a tax to your account to <a href="../../manage-account/add-tax-a1"
+        class="govuk-body govuk-link govuk-link--no-visited-state">get online access to a tax, duty or scheme</a>.
+    </p>
+  </div>
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <!-- ////////////////////// PROCESSING TIMES ////////////////////////// -->
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-inset-text govuk-!-margin-top-0">
+        <p>Your balance will update 2 days after you complete your return. <br>Payments take up to 7 working days to be
+          processed.</p>
+      </div>
+    </div>
+
+    <!-- /////////////////////// CARDS  //////////////////////// -->
+
+
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+            Corporation Tax
+          </h2>
+          <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            Corporation Tax Unique Taxpayer Reference 5711615848
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6 govuk-!-margin-top-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            You may have returns to complete.
+          </p>
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete Corporation Tax return</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4 govuk-!-margin-top-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You owe <span
+              class="govuk-body govuk-!-font-weight-bold ">£1,131.40</span>.
+          </p>
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Your card payments in the last 7 days</h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            You paid £9,856 on 29 July 2021.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Your payment reference number is 6471604667A00108A.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            It will take up to 7 days to update your balance after each payment.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">View your Corporation Tax statement</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a Corporation Tax payment</a>
+          </p>
+        </div>
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1 govuk-!-margin-bottom-2">
+          <p class="govuk-body">
+            <a href="ct-details.html" class="govuk-link govuk-link--no-visited-state">More details about your Corporation Tax</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+{% set title = "Managing Pension Schemes for administrators" %}
+{% set message = "Apply to register a new pension scheme and manage the schemes you are an administrator of." %}
+{% set link = "<a href='#'>Managing Pension Schemes</a>" %}
+{% include 'includes/card_plain.html' %}
+
+{% set title = "Managing Pension Schemes for practitioners" %}
+{% set message = "Manage pension schemes you are authorised to." %}
+{% set link = "<a href='#'>Managing Pension Schemes</a>" %}
+{% include 'includes/card_plain.html' %}
+
+{% set title = "Pension Schemes Online for administrators" %}
+{% set message = "View data, submit returns and file reports for pension schemes you manage." %}
+{% set link = "<a href='#'>Pension Schemes Online</a>" %}
+{% include 'includes/card_plain.html' %}
+
+{% set title = "Pension Schemes Online for practitioners" %}
+{% set message = "Manage pension schemes you are authorised to." %}
+{% set link = "<a href='#'>Pension Schemes Online</a>" %}
+{% include 'includes/card_plain.html' %}
+
+
+<hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6">
+
+<div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-4 govuk-!-padding-left-0">
+  <div class="govuk-!-padding-bottom-6">
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+      Other services
+    </h2>
+  </div>
+  <p class="govuk-body">
+    <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Anti-money
+      laundering supervision
+    </a>
+  </p>
+</div>
+
+
+
+
+
+  {% endblock %}

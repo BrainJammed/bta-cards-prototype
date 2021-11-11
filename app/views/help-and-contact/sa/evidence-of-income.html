@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_sa_how_to_pay__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-width-container">
+
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl">Getting evidence of your income - SA302</h1>
+
+          <p class="govuk-body">If you complete your return online you can:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>get evidence of your earnings (SA302) for the last 4 years that you filed online</li>
+            <li>get a tax year overview for any year</li>
+            <li>print your calculation and tax year overview</li>
+          </ul>
+
+
+
+
+
+
+        	<p>You might be asked for these documents as evidence of your income, for example if you are applying for a mortgage and you are self-employed.</p>
+        	<p>Check that your mortgage provider accepts documents you have printed yourself.</p>
+        	<p>You cannot print your documents until up to 72 hours after you have sent your tax return.</p>
+
+          <a href="https://www.gov.uk/sa302-tax-calculation" class="govuk-link" target="_blank" style="font-size:19px;">Find out more about getting evidence of your income (opens in new tab)</a>
+
+      </div>
+    </div>
+
+    <details class="govuk-details" data-module="govuk-details" style="padding-top:60px;">
+      <summary class="govuk-details__summary_noarrow" style="display:block;">
+        <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+          Is this page not working properly?
+        </span>
+      </summary>
+      <div class="">
+
+      </div>
+    </details>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}

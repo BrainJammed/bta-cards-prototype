@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/registered_vat_in_uk" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Is your business registered for VAT in the UK?
+              </h1>
+            </legend>
+            <div id="changed-name-hint" class="govuk-hint">
+              You will have a VAT registration number if you are VAT registered in the UK.
+            </div>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="registered_yes" name="registeredInUK" type="radio" value="registered_inUK">
+                <label class="govuk-label govuk-radios__label" for="registered_yes">
+                    Yes
+                </label>
+              </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="registered_no" name="registeredInUK" type="radio" value="not_registered_inUK">
+              <label class="govuk-label govuk-radios__label" for="registered_no">
+                No
+              </label>
+            </div>
+          </div>
+          </fieldset>
+          </div>
+        </div>
+      </div>
+
+
+<button class="govuk-button">Continue</button>
+
+  <details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+    <summary class="govuk-details__summary_noarrow" style="display:block;">
+      <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+        Is this page not working properly?
+      </span>
+    </summary>
+    <div class="">
+
+    </div>
+  </details>
+</form>
+{% endblock %}

@@ -1,0 +1,161 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_ct_how_tp_pay_ct_help_page_heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+{% block content %}
+{% include 'includes/a6.html' %}
+
+
+<main id="content" class="govuk-grid-row" role="main">
+
+    <div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl">Your Self Assessment</h1>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          <a href="https://www.gov.uk/coronavirus/business-support" class="govuk-link" target="_blank">
+            Find support for businesses about coronavirus (COVID-19) (opens in new tab).
+          </a>
+        </strong>
+      </div>
+
+      <h2 class="govuk-heading-m">Your returns</h2>
+      <div class="govuk-inset-text">
+        After you complete your return your tax calculation will take up to 2 days.
+      </div>
+
+      <div  style="background-color:#f3f2f1" class="govuk-!-margin-bottom-8">
+        <h3 class="govuk-heading-s govuk-!-margin-left-3 govuk-!-padding-top-3 govuk-!-margin-bottom-2">Deadline details</h3>
+        <p class="govuk-body govuk-!-margin-left-3" >2020 to 2021 tax return due by 8 September 2021, midnight.</p>
+        <a href="" class="govuk-link govuk-!-font-size-19" style="margin:0px 15px 20px 15px;display:inline-block;" >Complete Self Assessment return 2020 to 2021</a>
+      </div>
+
+      <h2 class="govuk-heading-m">Your balance</h2>
+        <p class="govuk-body">You can no longer use a personal credit card. If you pay with a credit card, it must be linked to a business bank account.</p>
+      <div class="govuk-inset-text">
+        Payments will take up to 7 working days to show, depending on how you pay.
+      </div>
+      <div class="govuk-inset-text">
+        We cannot display your card payment history at the moment. Check again later.
+      </div>
+
+      <div  style="background-color:#f3f2f1;margin-bottom:40px;">
+        <h3 class="govuk-heading-s govuk-!-margin-left-3 govuk-!-padding-top-3">Tax bill for 2021 to 2022</h3>
+
+          <p class="govuk-body govuk-!-margin-left-3" >You need to pay <strong>£5.00</strong> by 9 September 2021.</p>
+
+        <details class="govuk-details govuk-!-margin-left-3" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Bill details
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <p class="govuk-body">You owe £53.00.</p>
+          <p class="govuk-body">You are £48.00 in credit.</p>
+          <p class="govuk-body">You need to pay <strong>£5.00</strong>  by 9 September 2021.</p>
+        </div>
+      </details>
+
+        <button class="govuk-button" data-module="govuk-button" style="display:block;margin-left:15px">
+          Make a Self Assessment payment
+        </button>
+        <a href="https://www.staging.tax.service.gov.uk/pay-what-you-owe-in-instalments/arrangement/determine-eligibility" class="govuk-link" style="margin:0px 15px 20px 15px;display:inline-block;font-size:19px">Set up a payment plan if you cannot pay in full</a>
+      </div>
+
+      <h2 class="govuk-heading-m">Previously filed returns</h2>
+      <p class="govuk-body">You haven't filed any returns for previous years.</p>
+
+
+      <h2 class="govuk-heading-m">More Self Assessment options</h2>
+
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" href="https://www.staging.tax.service.gov.uk/business-account/help/self-assessment/help-with-return">Do I need to file a return?</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" target="_blank" href="https://www.gov.uk/stop-being-self-employed">When you are no longer self employed (opens in new tab)</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" target="_blank" href="https://www.gov.uk/check-if-you-need-tax-return">When to stop sending Self Assessment returns (opens in new tab)</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" href="https://www.staging.tax.service.gov.uk/digital-forms/form/register-a-partner-or-a-partnership-for-self-assessment/draft/50cfcaca-2c64-4a7f-af87-f76cf7ba04aa/continue#1" target="_blank">Set up a partnership or add a partner (opens in new tab)</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" target="_blank" href="https://www.staging.tax.service.gov.uk/business-account/add-tax/self-assessment/trust">Set up a trust</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" target="_blank" href="https://www.staging.tax.service.gov.uk/vat/trader/999920245/certificate?lang=eng" target="_blank">Appeal a £100 Self Assessment late filing penalty online (opens in new tab)</a>
+      </p>
+
+
+
+
+
+
+
+
+
+        <details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+          <summary class="govuk-details__summary_noarrow" style="display:block;">
+            <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+              Is this page not working properly?
+            </span>
+          </summary>
+          <div class="">
+
+          </div>
+        </details>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <hr class="govuk-section-break govuk-section-break--visible blue-top govuk-!-margin-bottom-3" style="border-bottom: 10px solid #1D70B8;">
+      <h2 class="govuk-heading-s" style="margin-bottom:5px">Self Assessment Unique Taxpayer Reference (UTR):</h2>
+        <p class="govuk-body" style="font-size:16px">999920245</p>
+
+
+      <h2 class="govuk-heading-s" style="margin-bottom:5px">Help</h2>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" href="https://bta-cards-prototype.herokuapp.com/help-and-contact/designC_HAC">Help and contact</a>
+      </p>
+      <p class="govuk-body">
+        <a class="govuk-link" href="https://www.youtube.com/watch?v=Y_lpys4Kksk" target="_blank">Expenses if you're self employed (Video)</a>
+      </p>
+      <p class="govuk-body">
+        <a class="govuk-link" href="https://www.staging.tax.service.gov.uk/self-assessment/ind/1102696864/account?lang=eng" target="_blank">More (opens in new tab)</a>
+      </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+{% endblock %}

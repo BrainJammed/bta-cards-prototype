@@ -1,0 +1,1641 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Business tax summary  - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/banner-user-panel-dac6.html" %}
+{% endblock %}
+
+{% block content %}
+
+  {% include 'includes/nav-homepage-a2.html' %}
+
+  <!-- /////////////////////////////// -->
+
+  <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+    <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+    <!-- ////////////// ADD A TAX ///////////// -->
+
+    <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <p class="govuk-body">
+        Add a tax to your account to
+        <a href="../../manage-account/add-tax-a2" class="govuk-body govuk-link govuk-link--no-visited-state">get online access to a tax, duty or scheme</a>.
+      </p>
+    </div>
+
+    <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <!-- ////////////////////// PROCESSING TIMES ////////////////////////// -->
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-inset-text govuk-!-margin-top-0">
+        <p>Your payments will update 2 days after you complete your return .
+          <br>Payments take up to 7 working days to be processed.</p>
+        </div>
+      </div>
+      
+    <!-- ////////////////////// NPS DEFERRALS ////////////////////////// -->
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="NPS_signedup"></a>
+      <p>NPS Eligible and accepted onto the scheme</p>
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            
+            <h3>
+                Pay your deferred VAT: the new payment scheme
+            </h3>
+
+            <p>You have joined the VAT deferral new payment scheme.</p>
+
+            <p>You will not be able to monitor your deferred VAT Direct Debit payments through your business tax account. You must check these payments with your bank. If a Direct Debit payment is missed, HMRC will try to collect the payment again after 10 days.</p>
+          </div>
+        </div>
+
+
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="NPS_not_signed_april"></a>
+      <p>Eligible and not accepted onto the scheme <strong>from 1 April 2021 variant 1</strong></p>
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Pay your deferred VAT: the new payment scheme
+              </strong>
+            </div>
+
+            <p>You are eligible to join the  <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">VAT deferral new payment scheme (opens in new tab)</a>.
+            </p>
+            <p>You can join the scheme until 21 June 2021.</p>
+            <p>Instead of paying the full amount of your deferred VAT immediately, you can pay in smaller, interest free instalments. The number of instalments depends on when you join the scheme.</p>
+            <p>You may have to pay interest or a penalty if you do not join the scheme or pay in full.
+            </p>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- 
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="NPS_not_signed_april"></a>
+      <p>Eligible and not accepted onto the scheme <strong>from 1 April 2021 variant 2</strong></p>
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Pay your deferred VAT: the new payment scheme
+              </strong>
+            </div>
+
+            <p>You are eligible to join the  <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">VAT deferral new payment scheme (opens in new tab)</a>. You can join the scheme until 21 June 2021.</p>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your paymemts
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+ -->
+<!--  
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="NPS_not_signed"></a>
+      <p>Eligible and not accepted onto the scheme <strong>up to 31 March V1</strong></p>
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Pay your deferred VAT: the new payment scheme
+              </strong>
+            </div>
+
+            <p>You are eligible to join the  <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">VAT deferral new payment scheme (opens in new tab)</a>.
+            </p>
+            <p>You can join the scheme until 21 June 2021.</p>
+            <p>Instead of paying the full amount of your deferred VAT immediately, you can pay in smaller, interest free instalments. The number of instalments depends on when you join the scheme.</p>
+            <p>You may have to pay interest or a penalty if you do not pay the full amount by 31 March 2021 or join the scheme by 21 June 2021.</p>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+ -->
+<!-- 
+ <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="NPS_not_signed"></a>
+      <p>Eligible and not accepted onto the scheme <strong>up to 31 March V2</strong></p>
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Pay your deferred VAT: the new payment scheme
+              </strong>
+            </div>
+
+            <p>You are eligible to join the  <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">VAT deferral new payment scheme (opens in new tab)</a>. You can join the scheme until 21 June 2021.</p>
+
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+ -->
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="NPS_all_others"></a>
+      <p>NPS All other customers (we don’t know if deferred/eligible)</p>
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Pay your deferred VAT: the new payment scheme
+              </strong>
+            </div>
+
+            <p>If you deferred paying VAT that was due between 20 March 2020 and 30 June 2020, you may be able to join the <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">VAT deferral new payment scheme (opens in new tab)</a>.
+            </p>
+            <p>
+              Instead of paying the full amount of your deferred VAT immediately, you can pay in smaller, interest free instalments. The number of instalments depends on when you join the scheme.
+            </p>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="NPS_API"></a>
+      <p>NPS API unavailable</p>
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Pay your deferred VAT: the new payment scheme
+              </strong>
+            </div>
+            
+            <p>
+              Sorry, there is a problem with the service. Try again later.
+            </p>
+            <p>Find out more about the <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">VAT deferral new payment scheme (opens in new tab)</a>.
+            </p>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="NPS_insolvency"></a>
+      <p>NPS Insolvent - no content to display</p>
+    </div>
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="NPS_insolvency"></a>
+      <p>NPS Eligible - Hybrid MTD</p>
+    </div>
+
+
+
+{% set VAT_reg = "999984222" %}
+{% set NPS_msg = true %}
+{% set return = "Your next submission is due: 7 February 2021" %}
+{% set submitVAT = "Submit VAT Return" %}
+{% set payment = "" %}
+{% set paymentLink = "https://vatvc-prototype.herokuapp.com/public/images/Checkwhatyouowe.png" %}
+{% set viewPaymentLink = "https://vatvc-prototype.herokuapp.com/public/images/VATAccountInterest.pdf" %}
+{% set showSubmitReturn = false %}
+{% set showDeadlines = true %}
+{% include 'includes/vat_card_mtd.html' %}
+
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="NPS_insolvency"></a>
+      <p>NPS Eligible - Classic (In credit, 5 days after payment)</p>
+    </div>
+  
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            
+            <h3>
+                Pay your deferred VAT: the new payment scheme
+            </h3>
+
+            <p>You have joined the VAT deferral new payment scheme.</p>
+
+            <p>You will not be able to monitor your deferred VAT Direct Debit payments through your business tax account. You must check these payments with your bank. If a Direct Debit payment is missed, HMRC will try to collect the payment again after 10 days.</p>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+  
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View submitted returns</a>
+          </p>
+          <ul class="govuk-list">
+          </ul>
+        </div>
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <div >
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You are <span
+                class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£1,000</span>
+              in credit.
+            </p>
+            <p class="govuk-body">
+              <a href="#">View and manage your repayment details</a>
+            </p>
+          </div>
+  
+          <div class="govuk-!-padding-bottom-2">
+            <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2">
+              Your card payments in the last 7 days
+            </p>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              You paid £73 on 16&nbsp;October&nbsp;2018.
+            </p>
+  
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              Your payment reference number is 123456789.
+              It will take up to 7 days to update your balance after each payment.
+            </p>
+            <p class="govuk-body">
+              <a href="#7" class="govuk-body govuk-link govuk-link--no-visited-state">View your VAT statements</a>
+              </li>
+            </p>
+          </div>
+        </div>
+  
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+          <p class="govuk-body"><a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+    <!-- ////////////// ARCHIVE ///////////// -->
+    <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+    <div class="govuk-!-padding-bottom-9"></div>
+    <h3 class="govuk-heading-l govuk-!-margin-bottom-2">Archived versions 11 Feb 2021</h3>
+
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="4"></a>  <p>5. VAT deferral new payment scheme <br/>
+        <strong>NPS iteration - no checks, no deadline - from 9.2.21</strong>
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Paying deferred VAT: the new payment scheme
+              </strong>
+            </div>
+
+            <p>If you deferred paying VAT that was due between 20 March 2020 and 30 June 2020, you may be able to join the <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">VAT deferral new payment scheme (opens in new tab)</a>.
+            </p>
+            <p>Instead of paying the full amount by 31 March 2021, you can make up to 11 smaller, interest free payments.
+            </p>
+        
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="1"></a>  <p>1. VAT deferral new payment scheme <br/>
+        <strong>NPS iteration - no eligibility checks - from 9.2.21</strong>
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Paying deferred VAT: the new payment scheme
+              </strong>
+            </div>
+            <p>If you deferred paying VAT that was due between 20 March 2020 and 30 June 2020, you may be able to join the <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">VAT deferral new payment scheme (opens in new tab)</a>.
+            </p>
+            <p>Instead of paying the full amount by 31 March 2021, you can make up to 11 smaller, interest free payments until 31 January 2022.
+            </p>
+        
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="1"></a>  <p>NPS VAT deferral new payment scheme <strong>NPS Eligible</strong>
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                VAT deferral new payment scheme
+              </strong>
+            </div>
+            <p>You are eligible to opt into the <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">VAT deferral new payment scheme (opens in new tab)</a>.
+            </p>
+            <p>Instead of paying the full amount by 31 March 2021, you can make smaller, interest free payments until 31 March 2022.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="2"></a>  <p>NPS VAT deferral new payment scheme <strong>NPS NOT Eligible</strong>
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Paying deferred VAT: a new scheme
+              </strong>
+            </div>
+            <p>If you deferred paying VAT that was due between 20 March 2020 and 30 June 2020, you may be able to opt into the <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">VAT deferral new payment scheme (opens in new tab)</a>.</p>
+            <p>Instead of paying the full amount by 31 March 2021, you can make smaller, interest free payments until 31 March 2022.
+            </p>
+          </div>
+        </div>
+
+        {# <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus (COVID-19) VAT deferral</h3>
+            <p>If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>defer them without paying interest or penalties</li>
+              <li>pay the VAT due as normal</li>
+            </ul>
+            <p>You must continue to submit your returns as normal.</p>
+            <p>If you choose to defer your VAT payment, you must pay the VAT due on or before 31 March 2021.</p>
+            <p>You do not need to tell HMRC that you are deferring your VAT payment.</p>
+          </div>
+        </div> #}
+        {# /////////////////// #}
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- /////////////////////// CARD 1 //////////////////////// -->
+    <!-- /////////////////////// CARD 1 //////////////////////// -->
+    <!-- /////////////////////// CARD 1 //////////////////////// -->
+
+    <!-- /////////////////////// VAT DEFERRAL BEFORE JUNE 30th//////////////////////// -->
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="3.1"></a><p>NPS Up to 11.59 30 June 2020
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+        {# /////////////////// #}
+        <!-- <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+               Coronavirus (COVID-19) VAT deferral
+                <p class="govuk-body govuk-!-margin-top-4">If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>defer them without paying interest or penalties</li>
+                  <li>pay the VAT due as normal</li>
+                </ul>
+                <p>You must continue to submit your returns as normal.</p>
+                <p class="govuk-!-font-weight-bold">If you choose to defer your VAT payment:</p>
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li>you must pay the VAT due on or before 31 March 2021.</li>
+                <li>You do not need to tell HMRC that you are deferring your VAT payment</li>
+                </ul>
+              </strong>
+            </div>
+        </div>
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus (COVID-19) VAT deferral</h3>
+            <p>If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>defer them without paying interest or penalties</li>
+              <li>pay the VAT due as normal</li>
+            </ul>
+            <p>You must continue to submit your returns as normal.</p>
+            <p>If you choose to defer your VAT payment, you must pay the VAT due on or before 31 March 2021.</p>
+            <p>You do not need to tell HMRC that you are deferring your VAT payment.</p>
+          </div>
+        </div> -->
+
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                The VAT deferral period is ending in August.
+              </strong>
+            </div>
+            <p>VAT bills with a payment due date on or after 1 July 2020 must be paid on time and in full. If you cancelled your Direct Debit, set it up again so you do not miss a payment. You still need to submit VAT Returns, even if your business has temporarily closed.</p>
+          </div>
+        </div>
+
+        {# <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus (COVID-19) VAT deferral</h3>
+            <p>If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>defer them without paying interest or penalties</li>
+              <li>pay the VAT due as normal</li>
+            </ul>
+            <p>You must continue to submit your returns as normal.</p>
+            <p>If you choose to defer your VAT payment, you must pay the VAT due on or before 31 March 2021.</p>
+            <p>You do not need to tell HMRC that you are deferring your VAT payment.</p>
+          </div>
+        </div> #}
+        {# /////////////////// #}
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- /////////////////////// VAT DEFERRAL AFTER JUNE 30th//////////////////////// -->
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="3.2"></a>  <p>NPS From 11.59 30 June 2020
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+          </p>
+        </div>
+        {# /////////////////// #}
+        <!-- <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+               Coronavirus (COVID-19) VAT deferral
+                <p class="govuk-body govuk-!-margin-top-4">If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>defer them without paying interest or penalties</li>
+                  <li>pay the VAT due as normal</li>
+                </ul>
+                <p>You must continue to submit your returns as normal.</p>
+                <p class="govuk-!-font-weight-bold">If you choose to defer your VAT payment:</p>
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li>you must pay the VAT due on or before 31 March 2021.</li>
+                <li>You do not need to tell HMRC that you are deferring your VAT payment</li>
+                </ul>
+              </strong>
+            </div>
+        </div>
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus (COVID-19) VAT deferral</h3>
+            <p>If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>defer them without paying interest or penalties</li>
+              <li>pay the VAT due as normal</li>
+            </ul>
+            <p>You must continue to submit your returns as normal.</p>
+            <p>If you choose to defer your VAT payment, you must pay the VAT due on or before 31 March 2021.</p>
+            <p>You do not need to tell HMRC that you are deferring your VAT payment.</p>
+          </div>
+        </div> -->
+
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                The VAT deferral period has ended.
+              </strong>
+            </div>
+            <p>VAT bills with a payment due date on or after 1 July 2020 must be paid on time and in full. If you cancelled your Direct Debit, set it up again so you do not miss a payment. You still need to submit VAT Returns, even if your business has temporarily closed.</p>
+          </div>
+        </div>
+
+        {# <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus (COVID-19) VAT deferral</h3>
+            <p>If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>defer them without paying interest or penalties</li>
+              <li>pay the VAT due as normal</li>
+            </ul>
+            <p>You must continue to submit your returns as normal.</p>
+            <p>If you choose to defer your VAT payment, you must pay the VAT due on or before 31 March 2021.</p>
+            <p>You do not need to tell HMRC that you are deferring your VAT payment.</p>
+          </div>
+        </div> #}
+        {# /////////////////// #}
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- /////////////////////// VAT DEFERRAL OLD//////////////////////// -->
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <a id="4x"></a>  <p>Earlier version
+    </div>
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+            <<< NO Direct Debit >>>
+          </p>
+        </div>
+        {# /////////////////// #}
+        <!-- <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+               Coronavirus (COVID-19) VAT deferral
+                <p class="govuk-body govuk-!-margin-top-4">If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>defer them without paying interest or penalties</li>
+                  <li>pay the VAT due as normal</li>
+                </ul>
+                <p>You must continue to submit your returns as normal.</p>
+                <p class="govuk-!-font-weight-bold">If you choose to defer your VAT payment:</p>
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li>you must pay the VAT due on or before 31 March 2021.</li>
+                <li>You do not need to tell HMRC that you are deferring your VAT payment</li>
+                </ul>
+              </strong>
+            </div>
+        </div>
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus (COVID-19) VAT deferral</h3>
+            <p>If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>defer them without paying interest or penalties</li>
+              <li>pay the VAT due as normal</li>
+            </ul>
+            <p>You must continue to submit your returns as normal.</p>
+            <p>If you choose to defer your VAT payment, you must pay the VAT due on or before 31 March 2021.</p>
+            <p>You do not need to tell HMRC that you are deferring your VAT payment.</p>
+          </div>
+        </div> -->
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay VAT payments</h3>
+            <p>You can delay (defer) VAT payments that are due between 20 March 2020 and 30 June 2020 if you cannot pay them because of coronavirus. You must pay them on or before 31 March 2021. <class="govuk-body"><a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19#vat-payments-you-can-defer" target="_blank" class="govuk-link govuk-link--no-visited-state">Find out more about delaying VAT payments (opens in a new window or tab)</a>.</p>
+            <!-- <p>You must continue to submit your VAT returns as normal.</p> -->
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                You must continue to submit your VAT Returns as normal.
+              </strong>
+            </div>
+          </div>
+        </div>
+
+        {# <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus (COVID-19) VAT deferral</h3>
+            <p>If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>defer them without paying interest or penalties</li>
+              <li>pay the VAT due as normal</li>
+            </ul>
+            <p>You must continue to submit your returns as normal.</p>
+            <p>If you choose to defer your VAT payment, you must pay the VAT due on or before 31 March 2021.</p>
+            <p>You do not need to tell HMRC that you are deferring your VAT payment.</p>
+          </div>
+        </div> #}
+        {# /////////////////// #}
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-0">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- /////////////////////// CARD 2 //////////////////////// -->
+    <!-- /////////////////////// CARD 2 //////////////////////// -->
+    <!-- /////////////////////// CARD 2 //////////////////////// -->
+
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+            <<< YES Direct Debit >>>
+          </p>
+        </div>
+        {# //////////////// #}
+        <!-- <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+               Coronavirus (COVID-19) VAT deferral
+                <p class="govuk-body govuk-!-margin-top-4">If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>defer them without paying interest or penalties</li>
+                  <li>pay the VAT due as normal</li>
+                </ul>
+                <p>You must continue to submit your returns as normal.</p>
+                <p class="govuk-!-font-weight-bold">If you choose to defer your VAT payment:</p>
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li>you must pay the VAT due on or before 31 March 2021.</li>
+                <li>You do not need to tell HMRC that you are deferring your VAT payment, but you must contact your bank to cancel your Direct Debit as soon as possible.</li>
+                </ul>
+              </strong>
+            </div>
+        </div> -->
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+                  <div class="govuk-inset-text govuk-!-margin-top-0 ">
+                    <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus (COVID-19) VAT deferral</h3>
+                    <p>If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li>defer them without paying interest or penalties</li>
+                      <li>pay the VAT due as normal</li>
+                    </ul>
+                    <p>You must continue to submit your returns as normal.</p>
+                    <p>If you choose to defer your VAT payment, you must pay the VAT due on or before 31 March 2021.</p>
+                    <p>You do not need to tell HMRC that you are deferring your VAT payment, but you must contact your bank to cancel your Direct Debit as soon as possible.</p>
+ -->
+                    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay VAT payments</h3>
+                    <p>You can delay (defer) VAT payments that are due between 20 March 2020 and 30 June 2020 if you cannot pay them because of coronavirus. You must pay them on or before 31 March 2021. <class="govuk-body"><a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19#vat-payments-you-can-defer" target="_blank" class="govuk-link govuk-link--no-visited-state">Find out more about delaying VAT payments (opens in a new window or tab)</a>.</p>
+                    <p>If you normally pay by Direct Debit, you must contact your bank to cancel it as soon as possible.</p>
+                    <div class="govuk-warning-text">
+                    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                    <strong class="govuk-warning-text__text">
+                      <span class="govuk-warning-text__assistive">Important</span>
+                      You must continue to submit your VAT Returns as normal.
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+
+        {# <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus (COVID-19) VAT deferral</h3>
+            <p>If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>defer them without paying interest or penalties</li>
+              <li>pay the VAT due as normal</li>
+            </ul>
+            <p>You must continue to submit your returns as normal.</p>
+            <p>If you choose to defer your VAT payment, you must pay the VAT due on or before 31 March 2021.</p>
+            <p>You do not need to tell HMRC that you are deferring your VAT payment, but you must contact your bank to cancel your Direct Debit as soon as possible.</p>
+          </div>
+        </div> #}
+        {# /////////////////// #}
+
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+          {# //////////////// #}
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <p class="govuk-body govuk-!-margin-bottom-2">
+                You have a VAT Direct Debit. If you complete your return on time, we will take payment for the period
+                ending... You can <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">change
+                  or cancel your Direct Debit</a>.
+              </p>
+              <!-- <li class="govuk-!-margin-bottom-0">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+              </li> -->
+            </ul>
+          </div>
+          {# //////////////// #}
+        </div>
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+          </p>
+        </div>
+        {# //////////////// #}
+
+      </div>
+    </div>
+
+    <!-- /////////////////////// CARD 3 //////////////////////// -->
+    <!-- /////////////////////// CARD 3 //////////////////////// -->
+    <!-- /////////////////////// CARD 3 //////////////////////// -->
+
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        {# //////////////// #}
+
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            VAT
+          </h2>
+          <p class="govuk-body">
+            VAT registration number 123456789
+            <<< MAYBE Direct Debit >>>
+          </p>
+        </div>
+        {# //////////////// #}
+        <!-- <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+               Coronavirus (COVID-19) VAT deferral
+                <p class="govuk-body govuk-!-margin-top-4">If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>defer them without paying interest or penalties</li>
+                  <li>pay the VAT due as normal</li>
+                </ul>
+                <p>You must continue to submit your returns as normal.</p>
+                <p class="govuk-!-font-weight-bold">If you choose to defer your VAT payment:</p>
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li>you must pay the VAT due on or before 31 March 2021.</li>
+                <li>You do not need to tell HMRC that you are deferring your VAT payment</li>
+                <li>If you normally pay by Direct Debit, you must contact your bank to cancel it as soon as possible.</li>
+                </ul>
+              </strong>
+            </div>
+        </div> -->
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+                  <div class="govuk-inset-text govuk-!-margin-top-0 ">
+                    <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus (COVID-19) VAT deferral</h3>
+                    <p>If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li>defer them without paying interest or penalties</li>
+                      <li>pay the VAT due as normal</li>
+                    </ul>
+                    <p>You must continue to submit your returns as normal.</p>
+                    <p>If you choose to defer your VAT payment, you must pay the VAT due on or before 31 March 2021.</p>
+                    <p>You do not need to tell HMRC that you are deferring your VAT payment.</p>
+                    <p>If you normally pay by Direct Debit, you must contact your bank to cancel it as soon as possible.</p> -->
+                    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay VAT payments</h3>
+                    <p>You can delay (defer) VAT payments that are due between 20 March 2020 and 30 June 2020 if you cannot pay them because of coronavirus. You must pay them on or before 31 March 2021. <class="govuk-body"><a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19#vat-payments-you-can-defer" target="_blank" class="govuk-link govuk-link--no-visited-state">Find out more about delaying VAT payments (opens in a new window or tab)</a>.</p>
+                    <p>If you normally pay by Direct Debit, you must contact your bank to cancel it as soon as possible.</p>
+                    <div class="govuk-warning-text">
+                    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                    <strong class="govuk-warning-text__text">
+                      <span class="govuk-warning-text__assistive">Important</span>
+                      You must continue to submit your VAT Returns as normal.
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+
+        {# <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus (COVID-19) VAT deferral</h3>
+            <p>If you have VAT payments that are due between 20 March and 30 June 2020, you can choose to:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                defer them without paying interest or penalties</li>
+              <li>pay the VAT due as normal</li>
+            </ul>
+            <p>You must continue to submit your returns as normal.</p>
+            <p>If you choose to defer your VAT payment, you must pay the VAT due on or before 31 March 2021</p>
+            <p>You do not need to tell HMRC that you are deferring your VAT payment.</p>
+            <p>If you normally pay by Direct Debit, you must contact your bank to cancel it as soon as possible.</p>
+          </div>
+        </div> #}
+        {# //////////////// #}
+        <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+
+          {# /////////////////// #}
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your returns
+            </h3>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              A VAT Return is ready to complete.
+            </p>
+
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+            </p>
+          </div>
+          {# /////////////////// #}
+
+          <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You owe
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+            </p>
+            <ul class="govuk-list">
+              <li class="govuk-!-margin-bottom-2">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </li>
+              <li class="govuk-!-margin-bottom-2">
+                <p>
+                  <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a Direct Debit for VAT</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+          {# //////////////// #}
+
+          <div class="govuk-grid-column-two-thirds govuk-!-margin-top-0">
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ///////////////////////////////// -->
+
+    </div>
+
+  {% endblock %}

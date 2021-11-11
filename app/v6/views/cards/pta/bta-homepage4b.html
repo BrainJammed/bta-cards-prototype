@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Business tax account - GOV.UK
+{% endblock %}
+
+{% import "../../includes/card-template.html" as card %}
+
+{% block content %}
+
+  <main id="content" role="main">
+    {% include 'cards/pta/includes/nav-homepage.html' %}
+    <div class="grid-row">
+      {# <div class="column-two-thirds">
+			<h1 class="heading-xlarge2">Alex Fisher</h1>
+    </div> #}
+    </div>
+
+    <h2 class="heading-large2">Your taxes</h2>
+
+    <div class="flex-container grid-row">
+
+      <div class="card" id="cardAmount">
+        <div class="card-body active">
+          <h2 class="heading-small card-heading">
+            <a href="vat-subpage">Anti-money laundering supervision</a>
+          </h2>
+          <div class="">View your messages from Anti-Money Laundering Supervision. Register, renew, withdraw, deregister or update your information.</div>
+
+        </div>
+      </div>
+
+      <div class="card" id="cardAmount">
+        <div class="card-body active">
+          <h2 class="heading-small card-heading">
+            <a href="vat-subpage">Construction Industry Scheme</a>
+          </h2>
+          <div class="">File monthly contractor returns and verify subcontractors.</div>
+
+        </div>
+      </div>
+      <div class="card" id="cardAmount">
+        <div class="card-body active">
+          <h2 class="heading-small card-heading">
+            <a href="ct-subpage">Corporation Tax</a>
+          </h2>
+          <div class="">You can check what you owe, make a payment, complete a return and view your payment history.</div>
+
+        </div>
+      </div>
+
+      <div class="card" id="cardAmount">
+        <div class="card-body active">
+          <h2 class="heading-small card-heading">
+            <a href="epaye-subpage">Employers Pay as You Earn</a>
+          </h2>
+          <p>Check the payments due this month and any overdue payments. View tax codes and other notices.</p>
+
+        </div>
+      </div>
+
+      <div class="card" id="cardAmount">
+        <div class="card-body active">
+          <h2 class="heading-small card-heading">
+            <a href="sa-subpage">Self Assessment</a>
+          </h2>
+          <div class="">You can check what you owe, make a payment, complete a return and view your previous returns.</ </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="cardAmount">
+      <div class="card-body active">
+        <h2 class="heading-small card-heading">
+          <a href="vat-subpage">VAT returns</a>
+        </h2>
+        <div class="">You can check what you owe, make a payment, complete a return and view your payment history.</div>
+
+      </div>
+    </div>
+
+    {# ////////////  PLUS CARD  ///////////////// #}
+
+    <div class="card" id="cardAmount">
+      <div class="card-body active">
+
+        <div style="text-align: center; padding: 2.5em 0 1em;">
+          <img src="/public/v6/images/icon-plus.svg" alt="plus icon"/>
+
+          <h2 class="heading-small card-heading" style="text-align: center; color: #6f777b; padding-bottom: 1em;">
+            Add a tax
+          </h2>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}

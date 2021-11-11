@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Business tax summary - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-mtd-itsa.html' %}
+
+<!-- /////////////////////////////// -->
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax account</h1>
+  <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+  <!-- //////////////  ADD A TAX  /////////////////// -->
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          You have not added a tax to this account
+        </h2>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Set up your business tax account
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            When you <a href="../../manage-account/add-tax-a1" class="govuk-link govuk-link--no-visited-state">add a tax, duty or scheme</a> to your account it will appear here.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            To add Self Assessment, you need a Unique Taxpayer Reference (UTR). Your UTR is on your Self Assessment tax return and other
+            documents from HMRC. If you do not have a UTR, you can get one when adding Self Assessment.
+          </p>
+          <ul class="govuk-list">
+            <!-- <li class="govuk-!-margin-bottom-2">
+              <a href="#5" class="govuk-link govuk-link--no-visited-state">View previous VAT Returns</a>
+            </li> -->
+            <!-- <li>
+              <a href="#6" class="govuk-link govuk-link--no-visited-state">Amend a mistake in a VAT Return</a>
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            You may have another account
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            If you have used the online service to access your taxes before and they are not here, they may be in a different account.
+          </p>
+          <p class="govuk-body">
+            <a href="#7" class="govuk-body govuk-link govuk-link--no-visited-state">Check if your Self Assessment is in another account</a>
+          </p>
+          <p class="govuk-body">
+            <a href="#7" class="govuk-body govuk-link govuk-link--no-visited-state">Retrieve sign in details for your other account</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  {% include 'includes/ancillary-content.html' %}
+
+
+
+
+
+{% endblock %}

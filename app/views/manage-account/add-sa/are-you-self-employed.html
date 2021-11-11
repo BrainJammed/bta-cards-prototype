@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+<div class="govuk-grid-row">
+
+    <form action="/manage-account/add-sa/are-you-self-employed" method="post" class="form">
+  
+      <div class="govuk-grid-column-three-quarters">
+        {% include "includes/back.html" %}
+  
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Are you self employed?
+              </h1>
+            </legend>
+            <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="sa-yes" name="are-you-self-employed" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="are-you-self-employed">
+                  Yes
+                </label> </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="sa-no" name="are-you-self-employed" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="are-you-self-employed">
+                  No
+                </label> </div>
+            </div>
+          </fieldset>
+        </div>
+  
+        <button type="submit" class="govuk-button">
+          Continue
+        </button>
+  
+      </div>
+  
+    </form>
+  
+  </div>
+  
+
+
+{% endblock %}

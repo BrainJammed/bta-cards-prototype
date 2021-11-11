@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+ITSA messages- GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<!-- //////////////////////////////////////// -->
+
+{% include 'includes/nav-homepage-mtd-itsa.html' %}
+
+<!-- ///////////////////////////////////////// -->
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-full">
+
+    <a href="messages-inbox-mtd-itsa" class="govuk-back-link">Back</a>
+
+    <h1 class="govuk-heading-xl">
+      Your Making Tax Digital for Income Tax Messages
+    </h1>
+
+    <p class="govuk-body-l">This inbox contains messages about Making Tax Digital for Income Tax.</p>
+
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Subject</th>
+          <th scope="col" class="govuk-table__header">Tax</th>
+          <th scope="col" class="govuk-table__header">Date</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a href="scenario/final-declaration" class="govuk-link--no-visited-state">Submit
+              your final declaration</a></td>
+          <td class="govuk-table__cell">Making Tax Digital for Income Tax</td>
+          <td class="govuk-table__cell">3 January 2022</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a href="scenario/payment-on-account" class="govuk-link--no-visited-state">Your
+              payment on account is due</a></td>
+          <td class="govuk-table__cell">Making Tax Digital for Income Tax</td>
+          <td class="govuk-table__cell">16 July 2021</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a href="scenario/annual-update" class="govuk-link--no-visited-state">Send your
+              annual update</a></td>
+          <td class="govuk-table__cell">Making Tax Digital for Income Tax</td>
+          <td class="govuk-table__cell">15 April 2021</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a href="scenario/quarterly-update" class="govuk-link--no-visited-state">Send
+              your quarterly update</a></td>
+          <td class="govuk-table__cell">Making Tax Digital for Income Tax</td>
+          <td class="govuk-table__cell">10 April 2021</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+
+</div>
+{% endblock %}

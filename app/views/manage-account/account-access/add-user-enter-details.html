@@ -1,0 +1,76 @@
+{% set serviceName = "" %}
+{% extends "layout.html" %}}
+{% block page_title %}
+  Government gateway
+{% endblock %}
+{% block content %}
+  <main class="govuk-main-wrapper" id="content" role="main">
+
+    <div class="govuk-column-two-thirds">
+
+      <fieldset class="govuk-fieldset">
+
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl govuk-!-padding-bottom-8">
+          <h1 class="govuk-fieldset__heading">
+            Enter their details
+          </h1>
+        </legend>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="event-name">
+            Full name
+          </label>
+          <input class="govuk-input" id="event-name" name="event-name" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="event-name">
+            Email address
+          </label>
+          <input class="govuk-input" id="event-name" name="event-name" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="event-name">
+            Create a password for them <br>
+            The password must:
+            <ul>be between 8 and 12 characters (letters and numbers only, no special characters)
+            </ul>
+            <ul>contain at least one letter (a-z)
+            </ul>
+
+          <ul>contain at least one number (0-9)
+          </ul>
+
+          <ul>not contain the word ‘password’
+          </ul>
+
+
+
+
+
+          </label>
+          <input class="govuk-input" id="event-name" name="event-name" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="event-name">
+            Confirm their password
+          </label>
+          <input class="govuk-input" id="event-name" name="event-name" type="text">
+        </div>
+
+
+        
+
+      
+
+     
+        <div class="form-field">
+          <a class="govuk-button" href="add-user-what-they-can-do-reveal" role="button">Continue</a>
+        </div>
+      </fieldset>
+    </form>
+    
+   
+{% endblock %}

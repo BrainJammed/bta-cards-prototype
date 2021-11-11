@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact__heading %}
+
+{% block page_title %}
+{{ pageHeading }}
+-
+{{ serviceName }}
+- GOV.UK
+{% endblock %}
+
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+<!-- //////////////////////// -->
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+    <h1 class="govuk-heading-l">
+      Record of your PAYE payments
+    </h1>
+
+<!-- 
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Important</span>
+        Coronavirus (COVID-19): you must continue to submit your FPSs and EPSs as normal. Your PAYE bills are not being
+        deferred.
+      </strong>
+    </div>
+    <div class="govuk-inset-text govuk-!-margin-top-0 ">
+      <p>
+        Wages of all employees, including employees on temporary leave (furloughed) due to coronavirus, must be subject
+        to Income Tax and National Insurance as normal.
+      </p>
+
+      <p>See <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank"
+          class="govuk-link govuk-link--no-visited-state">coronavirus (COVID-19): business support</a> for more about
+        financial support for businesses and claiming wage costs for furloughed employees.
+      </p>
+
+    </div> -->
+
+    <h2 class="govuk-heading-m ">
+      Current tax year 
+    </h2>
+    <p class="govuk-body">
+      Payments you make to HMRC are credited to your account as soon as HMRC receives them, but it can take up to 7 days to update this page.
+    </p>
+
+
+
+    <table class="govuk-table">
+     <!--  <caption class="govuk-table__caption govuk-table__caption--m">Dates and amounts</caption> -->
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header govuk-body-s">Date received</th>
+          <th scope="col" class="govuk-table__header govuk-body-s">Allocation</th>
+          <th scope="col" class="govuk-table__header govuk-body-s ">Amount</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+
+        {% for item in results %}
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-body-s">{{item.credit}}</td>
+          <td class="govuk-table__cell govuk-body-s">{{item.payment}}</td>
+          <td class="govuk-table__cell govuk-body-s">{{item.owed}}</td>
+        </tr>
+        {% endfor %}
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Total paid to date </th>
+          <th scope="row" class="govuk-table__header"></th>
+          <th scope="row" class="govuk-table__header">£0.00</th>
+        </tr>
+        
+      </tbody>
+    </table>
+
+
+    <p class="govuk-body govuk-!-margin-bottom-9">    </p>
+
+
+    {% include 'includes/details-get-help.html' %}
+
+  </div>
+
+
+  <div class="govuk-grid-column-one-third govuk-!-margin-bottom-0">
+    {% include 'epaye/_sidebar.html' %}
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}

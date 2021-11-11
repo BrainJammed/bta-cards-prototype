@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block beforeContent %}
+{% include "includes/banner-covid19.html" %}
+{% endblock %}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a2.html' %}
+
+<!-- /////////////////////////////// -->
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+  <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+  <!-- ////////////// ADD A TAX ///////////// -->
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p class="govuk-body">
+      Add a tax to your account to
+      <a href="../../manage-account/add-tax-a2" class="govuk-body govuk-link govuk-link--no-visited-state">get online
+        access to a tax, duty or scheme</a>.
+    </p>
+  </div>
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+  <!-- ////////////////////// PROCESSING TIMES ////////////////////////// -->
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <div class="govuk-inset-text govuk-!-margin-top-0">
+      <p>Your balance will update 2 days after you complete your return.
+        <br>Payments take up to 7 working days to be processed.</p>
+    </div>
+  </div>
+
+  <!-- /////////////////////// CARD 1 //////////////////////// -->
+  <!-- /////////////////////// CARD 1 //////////////////////// -->
+  <!-- /////////////////////// CARD 1 //////////////////////// -->
+
+
+
+  <!-- <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p>SA - SEISS - Grant 4 Pre-release content until Thu 22 Apr</p>
+  </div> -->
+  {% include 'bta-homepage/seiss-early-july-2021.html' %}
+
+  {% include 'bta-homepage/seiss-late-july-2021.html' %}
+
+  {% include 'bta-homepage/seiss-early-october-2021.html' %}
+
+
+
+
+
+
+
+  <!-- ///////////////////////////////// -->
+
+</div>
+
+{% endblock %}

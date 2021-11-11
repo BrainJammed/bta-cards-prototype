@@ -1,0 +1,14 @@
+<div class="section--blue-top">
+    <p class="heading-small">Welcome, {{ data['user--name'] | default('Alex Fisher') }}</p>
+    <p class="heading-small">Corporation Tax Unique Taxpayer Reference (CTUTR):</p><p> {{ data['user--ct--utr'] | default('1025645896')}}</p>
+    
+    
+    <h3 class="heading-small">Help with tax</h3>
+    <ul class="list">
+     
+        <li><a href="/homepage/help-and-contact/home">Help and contact</a></li>
+         <li><a href="javascript:;">Online seminars to learn about tax</a></li>
+    </ul>
+   
+</div>
+

@@ -1,0 +1,128 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a3.html' %}
+
+<!-- /////////////////////////////// -->
+
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+  <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+  <!-- //////////////  ADD A TAX  /////////////////// -->
+
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p class="govuk-body">
+      Add a tax to your account to <a href="../../manage-account/add-tax-a1"
+        class="govuk-body govuk-link govuk-link--no-visited-state">get online access to a tax, duty or scheme</a>.
+    </p>
+  </div>
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <!-- ////////////////////// PROCESSING TIMES ////////////////////////// -->
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-inset-text govuk-!-margin-top-0">
+        <p>Payments will take up to 7 working days to show, depending on how you pay. After you complete your return your tax calculation will take up to 2 days.</p>
+      </div>
+    </div>
+
+    <!-- /////////////////////// CARDS  //////////////////////// -->
+
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Managing Pension Schemes for administrators
+        </h2>
+        <p class="govuk-body">
+          Administrator: Blue Room Ltd
+        </p>
+        <div class="govuk-inset-text">
+          Your AFT reports for April to June 2021 2021 must be filed by <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">15 August 2021.</span> <br>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          Your payments
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          You must pay <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£500</span> by<span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">15 September 2021</span> .
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="https://pods-prototype.herokuapp.com/pages/overview/dashboard/penalty-type" class="govuk-link govuk-link--no-visited-state" target="_blank">View all penalties and charges</a>
+        </p>
+        <!-- <p class="govuk-body">
+          <a href="../../manage-account/ct-subpage-image" class="govuk-link govuk-link--no-visited-state" target="_blank">Make a payment</a>
+        </p> -->
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <div class="govuk-!-padding-bottom-2">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your schemes
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            Open <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">246</span>
+          </p>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            Pending <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">2</span>
+          </p>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            Rejected <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">1</span>
+          </p>
+        </div>
+        <p class="govuk-body">
+          <a href="https://pods-prototype.herokuapp.com/pages/overview/list" class="govuk-link govuk-link--no-visited-state" target="_blank">View all your pension schemes</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="https://pods-prototype.herokuapp.com/pages/overview/dashboard/overview" class="govuk-link govuk-link--no-visited-state" target="_blank">Manage your pension schemes</a>
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="https://pods-prototype.herokuapp.com/pages/scheme-details/before-you-start/what-you-will-need" class="govuk-link govuk-link--no-visited-state" target="_blank">Register a new pension scheme</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6">
+
+<div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-4 govuk-!-padding-left-0">
+  <div class="govuk-!-padding-bottom-6">
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+      Other services
+    </h2>
+  </div>
+  <p class="govuk-body">
+    <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Anti-money
+      laundering supervision
+    </a>
+  </p>
+</div>
+
+
+
+
+
+  {% endblock %}

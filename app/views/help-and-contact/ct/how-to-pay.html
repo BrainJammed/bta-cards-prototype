@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_vat_register_deregister__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+        	<h1 class="govuk-heading-xl">How to pay your Corporation Tax</h1>
+
+          <h2 class="govuk-heading-m">Deadlines</h2>
+
+        	<p>The deadline for your payment will depend on your taxable profits.</p>
+
+          <h2 class="govuk-heading-m">If your taxable profits are up to £1.5 million</h2>
+
+          <p>You must pay your Corporation Tax 9 months and 1 day after the end of your accounting period.
+            Your accounting period is usually your financial year, but you may have 2 accounting periods in
+            <a href="https://www.gov.uk/first-company-accounts-and-return" target="_blank">the year you set up your company (opens in new tab)</a>.
+          </p>
+
+          <h2 class="govuk-heading-m">If your taxable profits are more than £1.5 million</h2>
+
+          <p>You must pay your Corporation Tax
+            <a href="https://www.gov.uk/guidance/corporation-tax-paying-in-instalments" target="_blank">in instalments (opens in new tab)</a>.
+          </p>
+
+          <p>Make sure you pay HM Revenue and Customs (HMRC) by the deadline. They may
+            <a href="https://www.gov.uk/guidance/corporation-tax-interest-charges" target="_blank">charge you interest (opens in new tab)</a>
+            if you do not pay on time.  They will <a href="https://www.gov.uk/get-refund-interest-corporation-tax" target="_blank">pay you interest (opens in new tab)</a> if you
+            pay your tax early.
+          </p>
+
+          <h2 class="govuk-heading-m">Ways to pay</h2>
+
+          <p>You can no longer pay at the Post Office. You cannot pay Corporation Tax by post.</p>
+          <p>The time you need to allow depends on how you pay.</p>
+
+          <p class="govuk-body">If you are paying your bill the same or the next day you can use:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>
+              <p class="govuk-!-margin-bottom-0">
+                <a href="https://www.gov.uk/pay-corporation-tax/bank-details" target="_blank">online or telephone banking (opens in new tab)</a> (Faster Payments)
+              </p>
+            </li>
+            <li>oranges</li>
+
+          </ul>
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+      <details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+        <summary class="govuk-details__summary_noarrow" style="display:block;">
+          <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+            Is this page not working properly?
+          </span>
+        </summary>
+        <div class="">
+
+        </div>
+      </details>
+  </main>
+</div>
+
+
+{% endblock %}

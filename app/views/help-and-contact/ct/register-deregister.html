@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_ct_register_deregister__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<main id="content" class="govuk-grid-row" role="main">
+
+    <div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl">Register for Corporation Tax, add Corporation Tax to your account or tell us you are no longer trading</h1>
+
+      <h2 class="govuk-heading-m">Register for Corporation Tax with HMRC</h2>
+
+    	<p>When you have
+        <a href="https://www.gov.uk/limited-company-formation/register-your-company" target="_blank">registered
+        your company (opens in new tab)
+        </a>
+        with Companies House, you must
+        <a href="">
+        register for Corporation Tax
+        </a>
+        with HM Revenue and Customs (HMRC) within 3 months of being active.
+      </p>
+
+      <p class="govuk-body">Being active for Corporation Tax purposes includes:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>buying</li>
+        <li>selling</li>
+        <li>advertising</li>
+        <li>renting a property</li>
+        <li>employing someone</li>
+        <li>similar trading activity</li>
+      </ul>
+
+      <p class="govuk-body govuk-!-margin-bottom-6">
+        <a href="https://www.gov.uk/guidance/corporation-tax-trading-and-non-trading" target="_blank">
+          Check if you’re unsure what counts as being active (opens in new tab).
+        </a>
+      </p>
+
+      <p class="govuk-body govuk-!-margin-bottom-6">
+        You must also register your company for Corporation Tax with HMRC if your company
+        is registered as dormant, but is now active.
+      </p>
+
+      <div class="govuk-inset-text">
+        You may get a penalty if you register late.
+      </div>
+
+    	<h2 class="govuk-heading-m">What you need to tell HMRC when registering for Corporation Tax</h2>
+
+      <p class="govuk-body govuk-!-margin-bottom-6">
+        You’ll need your company’s 10-digit Unique Taxpayer Reference (UTR).
+      </p>
+
+	    <p>You usually get your UTR from HMRC within a few days of registering your company with Companies House.</p>
+
+    	<p>
+        <a href="https://www.tax.service.gov.uk/ask-for-copy-of-your-corporation-tax-utr">Request your company’s UTR online</a>
+        if you did not get one after registering your company.
+      </p>
+
+      <p class="govuk-body">You’ll also need:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>your company’s registration number (CRN)</li>
+        <li>the date you started to be active - your company’s first <a href="https://www.gov.uk/corporation-tax-accounting-period" target="_blank">accounting period (opens in new tab) </a> will start from this date</li>
+        <li>the date your annual accounts are made up to (the accounts preparation date)</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">What happens next</h3>
+
+      <p>HMRC will tell you the deadline for paying Corporation Tax.</p>
+
+      <p>You must file a
+        <a href="https://www.gov.uk/company-tax-returns" target="_blank">Company Tax Return (opens in new tab)</a>,
+        even if you make a loss or have no Corporation Tax to pay.
+      </p>
+
+      <h2 class="govuk-heading-m">Add Corporation Tax to your business tax account</h2>
+
+      <p class="govuk-body"><a href="">Add Corporation Tax to your business tax account</a> to:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>file your Company Tax return online</li>
+        <li>make a payment online</li>
+      </ul>
+
+		  <h2 class="govuk-heading-m">Tell HMRC you are no longer trading</h2>
+		  <p>To stop paying Corporation Tax, you must <a href="https://www.gov.uk/closing-a-limited-company" target="_blank">close the limited company (opens in new tab)</a>.</p>
+
+
+    </div>
+</main>
+
+
+{% endblock %}

@@ -1,0 +1,368 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+BTA - Account details - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-mtd-itsa.html' %}
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-6">
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+      Account details
+    </h1>
+  </div>
+
+  <div class="govuk-inset-text govuk-grid-column-two-thirds govuk-!-margin-top-0 govuk-!-margin-bottom-8">
+    You need to change your details for each tax separately.<br>
+    Any changes will take up to 2 days to update.
+  </div>
+
+  <!-- <div class="govuk-inset-text govuk-grid-column-two-thirds govuk-!-margin-top-0 govuk-!-margin-bottom-8">
+    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Go paperless for Self Assessment</h3>
+    <p>You can now <class="govuk-body"><a href="" target="_blank" class="govuk-link govuk-link--no-visited-state">get Self Assessment tax letters online</a>.</p>
+    <p>Your tax account gives you secure storage online for your tax letters, or you can download and store selected letters on disk or external drive. You can print your tax letters if you ever need a paper copy.</p>
+  </div> -->
+
+
+  <!-- <div class="govuk-inset-text govuk-grid-column-two-thirds govuk-!-margin-top-0 govuk-!-margin-bottom-8">
+
+    <p>Get Self Assessment tax letters online. <class="govuk-body"><a href="" target="_blank" class="govuk-link govuk-link--no-visited-state">Find out more</a></p>
+  </div> -->
+
+
+
+  <!-- ///////////////////////////// -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-6">
+
+    <!-- <h2 class="govuk-heading-l govuk-!-margin-bottom-4">
+    Account settings
+  </h2> -->
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Government Gateway details</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="Change Government Gateway details">Manage your Government Gateway details</a></dd>
+      </div>
+
+      <!-- ================================= -->
+
+<!--
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Manage email subscriptions<br></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="View or change email for business help and tips">Manage help and support emails from HMRC<span
+              class="govuk-visually-hidden"></span></a></dd>
+      </div>
+ -->
+      <!-- ================================= -->
+
+       <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Go paperless for Self Assessment and MTD Income Tax and...<br></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="go-paperless-signup-mtd-itsa"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="View or change email for business help and tips">View or change email address<span
+              class="govuk-visually-hidden"></span></a></dd>
+      </div>
+
+
+    </dl>
+
+
+  <!-- //////////////Self Assessment//////////////////// -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l govuk-!-margin-bottom-4">Self Assessment</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <br>
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key"><h3 class="govuk-heading-m">Contact details</h3></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">	Add, view or change contact details<span class="govuk-visually-hidden">Add, view or change contact details</span></a></dd>
+        </div>
+
+      <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-width-three-quarters"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-heading-s govuk-!-padding-top-6">Contact
+          details</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div> -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Full name	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Mary Jones</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Address	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Unable to display</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Daytime phone	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0123 1231234</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Evening phone	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">	0123 1231234</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Mobile phone	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">07911 54321</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Fax	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Not held</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Email	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">sarah.philips@example.com</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Go paperless	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">You have not yet chosen to get your Self Assessment tax letters online</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="go-paperless-signup-mtd-itsa"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Get tax letters online<span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+    </dl>
+  </div>
+
+
+
+  <!-- ////////////// MTD ITSA: Self Assessment//////////////////// -->
+
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l govuk-!-margin-bottom-4">MTD Income Tax Self Assessment</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <br>
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key"><h3 class="govuk-heading-m">Contact details</h3></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">	Add, view or change contact details<span class="govuk-visually-hidden">Add, view or change contact details</span></a></dd>
+        </div>
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Full name	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Mary Jones</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Address	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Wenlock Road, London, England, N1 7GU</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Daytime phone	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0121 445 5555</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Evening phone	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0121 445 5555</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Mobile phone	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">07985 555 555</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Fax	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Not held</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Email	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">m.jones@example.com</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Go paperless	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">You have not yet chosen to get your Self Assessment tax letters online</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="go-paperless-signup-mtd-itsa"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Get tax letters online<span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+    </dl>
+  </div>
+
+
+
+
+
+  <!-- ////////////////////////   VAT DEC/VAR  /////////////////////////  -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l">VAT</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+
+      <!-- ================================ -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-width-three-quarters"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half  govuk-heading-s govuk-!-padding-top-6">VAT
+          registration details</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div> -->
+
+      <!-- ================================= -->
+<br>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"><h3 class="govuk-heading-m">VAT business details</h3></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="Change Government Gateway email"><span class="govuk-visually-hidden">Add, view or change
+              VAT registration details</span></a>
+            </dd>
+      </div>
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Business name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">ABC Digital Solutions</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change business name">Change<span class="govuk-visually-hidden">business name</span></a></dd>
+        <!-- <dd class="govuk-!-width-one-quarter"></dd> -->
+      </div>
+
+      <!-- ================================= -->
+
+
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Principal place of business address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">72 Guild Street<br>London<br>SE23 6FH</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change principal place of business address">Change<span class="govuk-visually-hidden">principal place of business address</span></a></dd>
+        <!-- <dd class="govuk-!-width-one-quarter"></dd> -->
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Landline number</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0121 445 5555</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Change<span class="govuk-visually-hidden">Government Gateway email</span></a></dd>
+        <!-- <dd class="govuk-!-width-one-quarter"></dd> -->
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Mobile number</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">07985 555 555</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Change<span class="govuk-visually-hidden"></span></a></dd>
+        <!-- <dd class="govuk-!-width-one-quarter"> -->
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Contact preference</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Letter</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="https://maintain-comms.herokuapp.com/0-8-0/choose-preference"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Contact preference">Change<span class="govuk-visually-hidden">contact preference</span></a></dd>
+        <!-- <dd class="govuk-!-width-one-quarter"> -->
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Website address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">www.abcdigital.com</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change website address">Change<span class="govuk-visually-hidden">website address</span></a></dd>
+        <!-- <dd class="govuk-!-width-one-quarter"> -->
+      </div>
+
+      <!-- ================================= -->
+
+      <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-padding-bottom-8"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-!-padding-bottom-7"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Add, view or change VAT registration details<span class="govuk-visually-hidden">Add, view or change
+              VAT registration details</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div> -->
+
+      <!-- ================================= -->
+
+
+      <!-- ================================= -->
+
+    </dl>
+  </div>
+
+
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__homepage__heading %}
+
+{# {% block page_title %}
+    {{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %} #}
+
+{% block content %}
+
+  <main id="content" class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0" role="main">
+
+    {% include 'includes/nav-homepage-a1.html' %}
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <a class="govuk-back-link" href="../../cards/pta/manage-accountv2">Back</a>
+
+      <form action="#" method="post">
+
+        <legend>
+          <h1 class="govuk-heading-xl">Which accountants do you want to manage?</h1>
+        </legend>
+
+        <fieldset class="govuk-fieldset">
+
+          <div class="govuk-form-group">
+            <div class="govuk-radios">
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="mtd" name="taxServiceType" type="radio" value="mtd">
+                <label class="govuk-label govuk-radios__label" for="mtd">My accountant for sending Income Tax updates or VAT Returns through software</label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="non-mtd-ct" name="taxServiceType" type="radio" value="non-mtd-ct">
+                <label class="govuk-label govuk-radios__label" class="govuk-label govuk-radios__label" for="non-mtd-ct">My accountant for Corporation Tax</label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="non-mtd-sa" name="taxServiceType" type="radio" value="non-mtd-sa">
+                <label class="govuk-label govuk-radios__label" class="govuk-label govuk-radios__label" for="non-mtd-sa">My accountant for Self Assessment</label>
+              </div>
+
+            </div>
+          </div>
+
+          <input class="govuk-button" type="submit" value="Continue">
+
+        </fieldset>
+
+      </form>
+
+    </div>
+  </main>
+
+{% endblock %}

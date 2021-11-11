@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+
+{% block content %}
+
+{% include 'includes/nav-homepage-mtd-itsa.html' %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+
+    <!-- {% include "includes/back.html" %} -->
+
+    <!-- <h1 class="govuk-heading-xl">
+      You can save time by going paperless
+    </h1> -->
+
+    <h1 class="govuk-heading-xl">
+      Get tax letters online
+    </h1>
+
+  </div>
+
+
+  <!-- /////////// ACCOUNT DETAILS /////////////////// -->
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+
+    <div class="govuk-tabs" data-module="govuk-tabs">
+
+
+
+
+      <h2 class="govuk-heading-m">
+       What you get
+      </h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Self Assessment or Making Tax Digital for Income Tax legal notices, penalty notices and tax letters sent to your business tax account
+        </li>
+        <li>P2 notices of coding sent to your personal tax account</li>
+      </ul>
+      <p class="govuk-body">When you get Self Assessment or Making Tax Digital for Income Tax notices or letters from HMRC, you must read them carefully and act on them. You may get a penalty if you do not.</p>
+      <p class="govuk-body">We will email you when a new notice or letter has been sent to your personal or business tax account.</p>
+
+      <h2 class="govuk-heading-m">
+       What you do not get
+      </h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>All your tax letters online. You will continue to get other tax letters from HMRC by post</li>
+      </ul>
+          <br>
+          <p> <a href="#" class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change contact preferences"><button class="govuk-button">Continue</button></p>
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}

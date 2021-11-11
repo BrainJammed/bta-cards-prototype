@@ -1,0 +1,224 @@
+{% extends "layout.html" %}
+{# {% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__homepage__heading %} #}
+
+{% block page_title %}
+Business tax account - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<!-- /////////////////////////////// -->
+<div class="topnav">
+    <a href="../messages/messages-inbox" class="govuk-link govuk-link--no-visited-state">Messages</a>
+    <a href="../pta/manage-accountv2" class="govuk-link govuk-link--no-visited-state">Manage account</a>
+    <a href="../../help-and-contact/help-and-contact" class="govuk-link govuk-link--no-visited-state">Help and contact</a>
+</div>
+<!-- /////////////////////////////// -->
+
+<a class="govuk-back-link" href="bta-homepage-a2">Back</a>
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+    <h1 id="page-title" class="govuk-heading-xl">Manage account</h1>
+
+    <section class="govuk-grid-column-two-thirds" id="your-account">
+
+        <!-- {# //////////////////////////////////////////////////////// #} -->
+
+        <h2 class="govuk-heading-m">Your account</h2>
+
+        <details class="govuk-details" role="group">
+
+            <summary class="govuk-details__summary" role="button">
+                <span class="govuk-details__summary-text" id="taxes-and-duties">Your taxes, duties and schemes</span>
+            </summary>
+
+            <div class="govuk-details__text" id="enrolment-table">
+
+                <table class="govuk-table">
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="row">
+                                Self Assessment
+                            </th>
+                            <td class="govuk-table__cell">
+                                <a id="detail-ir-sa" href="#10" data-journey-click="link - click:Manage Account:More details IR-SA">
+                                    More details
+                                </a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a id="detail-ir-sa" class="" href="#11" data-journey-click="link - click:Manage Account:More details IR-SA">
+                                    How to stop
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">
+                                <a id="add-a-tax" href="/business-account/add-tax" data-journey-click="link - click:Your account:Add a tax, duty or scheme">Add
+                                    a tax, duty or scheme</a>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </details>
+
+
+        <!-- {# //////////////////////////////////////////////////////// #} -->
+
+        <details class="govuk-details" role="group">
+
+            <summary class="govuk-details__summary" role="button">
+                <span class="govuk-details__summary-text">Account users</span>
+            </summary>
+
+            <div class="govuk-details__text" id="enrolment-table">
+                <table class="govuk-table">
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+
+                            <td class="govuk-table__cell" style="border-bottom: 0">
+
+                                You&#x27;re signed in with a Government Gateway account.
+                            </td>
+                        </tr>
+
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="row">Password</th>
+                            <td class="govuk-table__cell">
+                                <a id="update-government-gateway-password-address-link" data-sso="false" class="" href="#12"
+                                    data-journey-click="link - click:Your account:Reset your password">Reset your
+                                    password</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </details>
+
+        <!-- {# /////////////// Manage your accountants ///////////////////// #} -->
+
+        <details class="govuk-details" role="group">
+            <summary class="govuk-details__summary" role="button">
+                <span class="govuk-details__summary-text">Manage your accountants</span>
+            </summary>
+
+            <div class="govuk-details__text" id="enrolment-table">
+                <table class="govuk-table">
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="row">VAT</th>
+                            <td class="govuk-table__cell govuk-table__cell">Registered</td>
+                            <td class="govuk-table__cell govuk-table__cell">
+                                <a href="#14" class="govuk-link govuk-link--no-visited-state">Add or change</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </details>
+    </section>
+
+    <!-- {# //////////////////////////////////////////////////////// #} -->
+
+    <section class="govuk-grid-column-two-thirds" id="contact-details">
+
+        <h2 class="govuk-heading-m">Contact details</h2>
+        <div class="govuk-inset-text">
+            Any updates to your contact details take up to 2 days to appear on this site.
+        </div>
+
+        <div class="govuk-tabs" data-module="tabs">
+            <h2 class="govuk-tabs__title">
+                Contents
+            </h2>
+
+            <ul class="govuk-tabs__list">
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#Address">
+                        Address
+                    </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#Name">
+                        Name
+                    </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#Phone">
+                        Phone
+                    </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#Email">
+                        Email
+                    </a>
+                </li>
+            </ul>
+
+            <section class="govuk-tabs__panel" id="Address">
+                <h2 class="govuk-heading-s">VAT</h2>
+                <table class="govuk-table">
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell" style="border-bottom: 0;">Address</td>
+                            <td class="govuk-table__cell" style="border-bottom: 0;">17 Peldon close<br>Newcastle upon
+                                Tyne<br>NE7 7PB</td>
+                            <td class="govuk-table__cell" style="border-bottom: 0;">
+                                <a href="#16" class="govuk-link govuk-link--no-visited-state">Change</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+            <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Name">
+                <h2 class="govuk-heading-s">VAT</h2>
+                <table class="govuk-table">
+                    <tbody class="govuk-table__body"></tbody>
+                </table>
+
+            </section>
+            <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Phone">
+                <h2 class="govuk-heading-s">VAT</h2>
+                <table class="govuk-table">
+                    <tbody class="govuk-table__body"></tbody>
+                </table>
+
+            </section>
+            <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Email">
+                <h2 class="govuk-heading-s">VAT</h2>
+                <table class="govuk-table">
+                    <tbody class="govuk-table__body"></tbody>
+                </table>
+
+            </section>
+        </div>
+
+    </section>
+
+    <!-- {# //////////////////////////////////////////////////////// #} -->
+
+    <section id="personal-taxes" class="govuk-grid-column-two-thirds govuk-!-padding-bottom-7">
+        <h2 class="govuk-heading-m">Personal taxes</h2>
+        <div id="personal-taxes-div" class="section__subsection">
+            <p>
+                Use your
+                <a id="personal-account" href="/personal-account" data-journey-click="link - click:Manage account:Personal account">personal
+                    account</a>
+                for non-business taxes like your pension, national insurance contributions, benefits or tax credits.
+            </p>
+        </div>
+    </section>
+
+    <!-- {# //////////////////////////////////////////////////////// #} -->
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-7 report-error">
+        <a class="report-error__toggle js-visible" id="get-help-action" href="#17">Is there anything wrong with this
+            page?</a>
+    </div>
+
+    {% endblock %}

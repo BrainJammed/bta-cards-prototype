@@ -1,0 +1,147 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+    Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+    {% include 'includes/nav-combo-ur3.html' %}
+
+    <!-- /////////////////////////////// -->
+
+    <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+        <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">Your Self Assessment</h1>
+
+            <!-- ////////////////////// PROCESSING TIMES ////////////////////////// -->
+            <div class="govuk-!-padding-0 govuk-!-margin-bottom-8">
+                <div class="govuk-inset-text govuk-!-margin-top-0">
+                    <p>Payments will take up to 7 working days to show, depending on how you pay. After you complete your return your tax calculation will take up to 2 days.</p>
+                </div>
+            </div>
+
+            <!-- /////////////////////// RETURNS //////////////////////// -->
+
+            <div class="govuk-!-padding-bottom-4">
+
+                {# <h2 class="govuk-heading-m govuk-!-margin-bottom-6">
+                    Your returns</h2> #}
+
+                <!-- /////////////////////// -->
+
+                <div class="govuk-!-padding-bottom-6">
+
+                    <h2 class="govuk-heading-m govuk-!-margin-bottom-2">
+                        Late returns which can still be completed online
+                    </h2>
+
+                    <div class="govuk-!-margin-bottom-2">
+                        <p>
+                            <a class="govuk-link govuk-body govuk-link--no-visited-state" href="javascript:;">Penalties</a>
+                            may be charged for late returns.
+                        </p>
+                        <button href="/business-account/payment/sa/true" class="govuk-button" data-module="govuk-button" style="background-color: #00703c;">
+                            Complete your 2018 to 2019 tax return
+                        </button>
+
+                    </div>
+                </div>
+                <!-- /////////////////////// -->
+
+                <div class="govuk-!-margin-bottom-8">
+                    <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+                        Late returns which cannot be completed online
+                    </h2>
+                    <div class="govuk-!-margin-bottom-6">
+                        <p>If you cannot complete a return online, you must
+                            <a class="govuk-link govuk-body govuk-link--no-visited-state" href="javascript:;">contact the Self Assessment helpline</a>.
+                        </p>
+                    </div>
+
+                    <div class="govuk-!-margin-bottom-6">
+                        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                            2017 to 2018 tax return
+                        </h3>
+                        <p>This return cannot be completed online because the deadline has passed.</p>
+                        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                            2016 to 2017 tax return
+                        </h3>
+                        <p>This return cannot be completed online because the deadline has passed.</p>
+
+                        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                            2015 to 2016 tax return
+                        </h3>
+                        <p>This return cannot be completed online because the deadline has passed.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- /////////////////////// -->
+
+                <div class="govuk-!-padding-bottom-6">
+
+                    <h2 class="govuk-heading-m govuk-!-margin-bottom-4">Your balance</h2>
+
+                    <p>You can no longer use a personal credit card. If you pay with a credit card, it must be linked to a business bank account.</p>
+                </div>
+
+                <!-- ///////////////////////////////// -->
+                <div class="govuk-!-padding-bottom-4">
+                    <h2 class="govuk-heading-m govuk-!-margin-bottom-0 govuk-!-margin-bottom-4">
+                        More Self Assessment options
+                    </h2>
+
+                    <ul class="govuk-list govuk-!-margin-bottom-6">
+                        <li>
+                            <a class="govuk-link govuk-link--no-visited-state" href="javascript:;">Do I need to submit a return?</a>
+                        </li>
+                        <li>
+                            <a class="govuk-link govuk-link--no-visited-state" href="javascript:;">When to stop filing Self Assessment returns</a>
+                        </li>
+                        <li>
+                            <a class="govuk-link govuk-link--no-visited-state" href="javascript:;">When you are no longer self-employed</a>
+                        </li>
+                        <li>
+                            <a class="govuk-link govuk-link--no-visited-state" href="javascript:;">Set up a partnership or add a partner (opens in a new window or tab)</a>
+                        </li>
+                        <li>
+                            <a class="govuk-link govuk-link--no-visited-state" href="javascript:;">Set up a trust</a>
+                        </li>
+                    </ul>
+
+                    <p>
+                        <a class="govuk-link govuk-body-s" href="javascript:;">Is there anything wrong with this page?</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- ///////////////////////////////// -->
+
+        <div class="govuk-grid-column-one-third  govuk-!-margin-top-6  govuk-!-padding-left-6 govuk-!-padding-right-0">
+            <hr class="govuk-section-break govuk-section-break--visible" style="border-bottom: 10px solid #1d70b8;">
+            <div class="govuk-!-padding-top-4">
+                <h2 class="govuk-heading-s govuk-!-margin-bottom-4">
+                    Welcome, Alex Fisher
+                </h2>
+                <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+                    Help with tax
+                </h3>
+
+                <ul class="govuk-list govuk-!-margin-bottom-6">
+                    <li>
+                        <a class="govuk-link govuk-link--no-visited-state" href="javascript:;">Help and contact</a>
+                    </li>
+                    <li>
+                        <a class="govuk-link govuk-link--no-visited-state" href="javascript:;">Online seminars to learn about tax</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

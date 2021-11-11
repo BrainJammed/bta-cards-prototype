@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+{% include 'includes/a6.html' %}
+<!-- {% include 'includes/nav-homepage-a2.html' %} -->
+
+<div class="govuk-grid-row">
+
+	<form action="/manage-account/add-tax-a1" method="post" class="form">
+		<div class="govuk-width-container">
+			<main class="govuk-main-wrapper " id="main-content" role="main">
+				<div class="govuk-grid-row">
+					<div class="govuk-grid-column-two-thirds">
+
+						<h2 class="govuk-heading-l">How do I add a tax to my business tax account? – video transcript</h2>
+
+						<p class="govuk-body">You can add more than 40 services to your business tax account. Here’s how you add the 4 main ones:</p>
+						<ul class="govuk-list govuk-list--bullet">
+						  <li>Corporation Tax</li>
+						  <li>Self Assessment</li>
+						  <li>PAYE for employers, and</li>
+							<li>VAT</li>
+						</ul>
+
+						<p class="govuk-body">This is the business tax account homepage. Any services you add will appear here.</p>
+						<p class="govuk-body">Each time you add a service, we’ll send you an activation pin within 10 days.  Once you put the pin in, you can start using the service.</p>
+						<p class="govuk-body">Let's start. Select ‘add a tax, duty or scheme’.</p>
+						<p class="govuk-body">Select ‘Corporation Tax’. On the following screen, enter your 10-digit Corporation Tax Unique Taxpayer Reference.</p>
+
+						<p class="govuk-body">Then enter either:</p>
+						<ul class="govuk-list govuk-list--bullet">
+						  <li>your Company Registration Number – sent to you by Companies House, or</li>
+						  <li>the postcode of your registered office.</li>
+						</ul>
+
+						<p class="govuk-body">If your company is not based in the UK – then select this option. That’s it.</p>
+						<p class="govuk-body">To add Self Assessment, you’ll need your Unique Taxpayer Reference number.</p>
+						<p class="govuk-body">If you don’t have it, you can’t add this service at this time.  Instead you’ll be directed to register for Self Assessment.</p>
+						<p class="govuk-body">Once you receive your Unique Taxpayer Reference letter, log back into your business tax account and enter your 10-digit Taxpayer Reference number here.</p>
+
+						<p class="govuk-body">Then select if you’re:</p>
+						<ul class="govuk-list govuk-list--bullet">
+						  <li>an individual or sole trader</li>
+						  <li>partnership, or</li>
+							<li>trust</li>
+						</ul>
+
+						<p class="govuk-body">Re-enter your Taxpayer Reference number followed by either:</p>
+						<ul class="govuk-list govuk-list--bullet">
+						  <li>your National Insurance number, or</li>
+						  <li>the postcode you used when registering for Self Assessment</li>
+						</ul>
+
+						<p class="govuk-body">If you live abroad, select this option.  That’s it.</p>
+						<p class="govuk-body">To add PAYE for employers, select this option.</p>
+
+						<p class="govuk-body">If you’ve a PAYE reference number, enter it here, as well as:</p>
+						<ul class="govuk-list govuk-list--bullet">
+						  <li>the HMRC office number, and</li>
+						  <li>your Accounts Office reference number</li>
+						</ul>
+
+					 	<p class="govuk-body">If you don’t have a PAYE reference number, you’ll be directed to register
+							as an employer. Once you’ve received your reference numbers, log back into your Business Tax Account
+							 and add the details.  That’s it.
+						 </p>
+						 <p class="govuk-body">To add VAT, select the ‘type’ of VAT service you want.</p>
+
+						<p class="govuk-body">Enter your 9-digit VAT number, followed by the:</p>
+ 						<ul class="govuk-list govuk-list--bullet">
+ 						  <li>VAT Registration Number</li>
+ 						  <li>postcode on your Certificate of Registration</li>
+							<li>date of registration</li>
+							<li>month your last VAT Return ended on, and</li>
+							<li>amount from Box 5 on your last VAT Return </li>
+ 						</ul>
+
+						<p class="govuk-body">That’s it.</p>
+
+						<p class="govuk-body">You can find more information about the business tax account on
+							<a href="https://www.gov.uk/">GOV.UK</a>.</p>
+
+					</div>
+
+				</div>
+			</main>
+		</div>
+	</form>
+</div>
+
+{% endblock %}

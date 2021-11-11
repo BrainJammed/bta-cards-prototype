@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" action="personal-account" method="post">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">You now get tax letters by post</h1>
+      </div>
+
+      <p>You can go back to online messages now or at any time in <a href="../../manage-account/ma-homepage-a1">your settings</a>.</p>
+
+
+    </form>
+
+
+  </div>
+
+</div>
+
+{% endblock %}

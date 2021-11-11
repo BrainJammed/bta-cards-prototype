@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block beforeContent %}
+{% include "includes/banner-user-panel.html" %}
+{% endblock %}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+  <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+  <hr class="govuk-section-break govuk-section-break--s govuk-section-break--visible">
+  <br />
+  <div class="govuk-warning-text">
+    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+    <strong class="govuk-warning-text__text">
+      <span class="govuk-warning-text__assistive">Warning</span>
+      You started adding a tax to this account but did not finish.
+    </strong>
+  </div>
+
+  <p class="govuk-body"><a href="#">Continue adding a tax</a> to get online access to this tax.</p>
+  <p class="govuk-body">When you <a href="#"><a href="#">add a tax, duty or scheme</a> to your account it will
+      appear here.</p>
+  </p>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Self Assessment
+        </h2>
+        <p class="govuk-body">
+          Self Assessment Unique Taxpayer Reference 1234567890
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Self-Employment Income Support Scheme (SEISS)</h3>
+          <p>This scheme has been extended. You will be able to make a new claim in December 2020. <class="govuk-body"><a
+                href="https://www.gov.uk/government/publications/self-employment-income-support-scheme-grant-extension/self-employment-income-support-scheme-grant-extension"
+                target="_blank" class="govuk-link govuk-link--no-visited-state">Find out more about the SEISS Grant
+                Extension (opens in new tab)</a>.</p>
+          <p>You need to be an eligible self-employed individual or a member of a partnership that has lost income
+            because of coronavirus.</p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Tax year 2018 to 2019 is ready to complete.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            To avoid penalties, you must complete the return by 11:59pm on 31&nbsp;January&nbsp;2020. You have
+            <span class="govuk-!-font-weight-bold">5 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage" class="govuk-link govuk-link--no-visited-state">Complete tax year
+              2018 to 2019 Self Assessment return</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your balance
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You are
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£48</span>
+            in credit but you owe
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£53</span>. To avoid penalties,
+            you must pay
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£5</span>
+            by 11:59pm on 30&nbsp;April&nbsp;2019. You have
+            <span class="govuk-!-font-weight-bold">12 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage-old" class="govuk-body govuk-link govuk-link--no-visited-state">Make a
+              Self Assessment payment</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body">
+          <a href="../../sa-subpage/sa-subpage-covid" class="govuk-link govuk-link--no-visited-state">More details
+            about your Self Assessment returns and payments</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

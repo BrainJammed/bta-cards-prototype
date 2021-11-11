@@ -1,0 +1,63 @@
+
+.card-container {
+    margin-bottom: 2em;
+    padding: 1em 0.5em 1.5em;
+    background-color: govuk-colour("white");
+    border: 1px solid $govuk-border-colour;
+
+    .card-body {
+        // border-bottom: 0px solid $panel-colour;
+        // padding: 12px;
+
+        *:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.accordion-container {
+    margin-bottom: 2em;
+    padding: 1em 0 1.5em;
+    background-color: govuk-colour("white");
+    // border-bottom: 1px solid $govuk-border-colour;
+
+    .card-body {
+        // border-bottom: 0px solid $panel-colour;
+        // padding: 12px;
+
+        *:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.card-grey {
+    background-color: govuk-colour("light-grey", $legacy: "grey-3");
+}
+
+.card-header-colour {
+    background-color: govuk-colour("blue");
+
+    .govuk-caption-m,
+    .govuk-heading-s,
+    .govuk-heading-m {
+        color: govuk-colour("white");
+    }
+}
+
+.card-header-3 {
+    background-color: govuk-colour("light-grey", $legacy: "grey-4");
+    border-bottom: 1px solid govuk-colour("mid-grey", $legacy: "grey-2");
+}
+
+.card-border-top {
+    border-top: 1px solid govuk-colour("blue");
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.inline-padding-right {
+    display: inline;
+    padding-right: 0.4em;
+}

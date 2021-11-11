@@ -1,0 +1,203 @@
+{% extends '../../../layouts/base.html' %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_sa_how_to_pay__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include '../../../includes/header_full_width.html' %}
+
+<main id="content" class="grid-row" role="main">
+
+    {{ govPageHeader(pageHeading) }}
+    <div class="column-two-thirds">
+    	<h2 class="heading-large-macro">Viewing your calculation</h2>
+    	<p>HMRC’s online tax return automatically works out how much you need to pay. You fill in your figures and once you have checked that everything is correct, you can view your calculation.</p>
+         <div id="player"></div>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'Pu0XogdzFH4',
+          events: {
+
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+    	<p> <a href ="#">Viewing your calculation - video transcript</a></p>
+    	<p>This shows how your tax bill has been worked out. It shows your income, your personal allowance, the tax due, any class 4 and class 2 National Insurance contributions, and the payments that are due on 31 January 2018. You can print a copy of this for your own records.</p>
+
+    	<h3 class="heading-medium">Paying your Self Assessment tax bill</h3>
+    	<p>The deadlines for paying are 31 January for a tax bill for the previous year and your first payment on account, and 31 July for your second payment on account. Make sure you pay HMRC on time. You will be charged interest and may have to pay a penalty if your payment is late. You do not have to wait until 31 January or 31 July to pay. If you do, you might miss the deadline, depending on how you pay.</p>
+
+         <div id="player"></div>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'sI03I5ZdDrw',
+          events: {
+
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+    	<p><a href ="#">Paying your Self Assessment tax bill - video transcript</a></p>
+
+    	<p>If you are paying your bill the same or the next day you can use:</p>
+
+    	<ul class="list list-bullet">
+    	<li><a href="javascript:;">online or telephone banking</a> (Faster Payments)</li>
+    	<li><a href="javascript:;">CHAPS</a></li>
+    	<li>a <a href="javascript:;">debit or credit card online</a></li>
+    	<li>a <a href="javascript:;">bank or building society</a></li>
+    </ul>
+    <p>You need a paying-in slip from HMRC to pay at a bank or building society.</p>
+	<p>If you have longer to pay your bill you can use:</p>
+	<ul class="list list-bullet">
+    	<li><a href="javascript:;">Bacs</a> (3 working days)</li>
+    	<li><a href="javascript:;">Direct Debit </a>(3 working days if you already have one set up, 5 working days if you need to set one up)</li>
+    	<li><a href="javascript:;">Cheque by post</a> (3 working days)</li>
+    </ul>
+             <div id="player"></div>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 's24M389lWJg',
+          events: {
+
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+    	<p><a href="javascript:;">Budgeting for your Self Assessment tax bill - video transcript</a></p>
+
+<h2 class="heading-large">Penalties and appeals</h2>
+
+<p>You'll have a penalty showing on your account if you:</p>
+<ul class="list list-bullet">
+	<li>sent in your tax return late</li>
+	<li>paid tax late</li>
+	<li>didn't pay enough tax</li>
+</ul>
+<p>You can appeal if you have a 'reasonable excuse', for example you had an unexpected stay in hospital. You must appeal within 30 days of the date the penalty was sent to you.</p>
+<p>You can't appeal a penalty online or by phone. Find out more about <a href="javascript:;">reasonable excuses</a> and <a href="javascript:;">how to appeal</a> by post.</p>
+
+<h2 class="heading-medium">Appeal against a penalty</h2>
+<p>If you get your penalty notice by email from HMRC, you can either fill in <a href="javascript:;">form SA370</a> or write to HMRC, giving your reasons for appealing.</p>
+
+<p>Send your form or letter to HMRC's<a href="javascript:;"> address for Self Assessment enquiries</a>.</p>
+<p>You'll need a breakdown of your <a href="javascript:;">penalties</a> and <a href="javascript:;">interest</a>.</p>
+
+<h2 class="heading-medium">Check the status of an appeal</h2>
+<p>HMRC will send you contact details for the office dealing with your case within 15 days of receiving your appeal.</p>
+
+<h2 class="heading-medium">Further help with penalties</h2>
+<p><a href="javascript:;">Self Assessment penalties - video transcript</a></p>
+
+
+    </div>
+</main>
+
+
+{% endblock %}

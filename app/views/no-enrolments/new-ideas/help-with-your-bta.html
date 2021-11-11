@@ -1,0 +1,236 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-grid-row">
+
+	<form action="/manage-account/add-tax-a1" method="post" class="form">
+		<div class="govuk-width-container">
+			<main class="govuk-main-wrapper " id="main-content" role="main">
+				<div class="govuk-grid-row">
+					<div class="govuk-grid-column-two-thirds">
+						<h1 class="govuk-heading-xl">Help with your business tax account</h1>
+
+						<h2 class="govuk-heading-m">
+							Your business tax account
+						</h2>
+
+						<p class="govuk-body">This is your business tax account. It lets you manage your HMRC business taxes, duties and
+							schemes online.</p>
+
+						<p class="govuk-body">You don’t have to own or run a business to have a business tax account.</p>
+						<p class="govuk-body">To manage a tax, duty or scheme, you must <a href="https://www.tax.service.gov.uk/business-account/add-tax">add
+								a tax to your business tax
+								account</a>.</p>
+
+						<!-- <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible"> -->
+
+						<div class="govuk-inset-text">
+							<h2 class="govuk-heading-m">
+								Adding a tax to your business tax account
+							</h2>
+							<p class="govuk-body">
+								<a class="govuk-link" href="https://www.youtube.com/watch?v=b2wLXZZddGc" target="_blank">
+									Video - How do I add a tax to my business tax account? (opens in new tab)
+								</a>
+							</p>
+							<p class="govuk-body">
+								<a class="govuk-link" href="transcript.html">
+									How do I add a tax to my business tax account? - video transcript
+								</a>
+							</p>
+						</div>
+
+						<p class="govuk-body">When you have added the tax, it appears on your
+							<a href="https://www.tax.service.gov.uk/business-account">business
+								tax account
+								homepage
+							</a>.
+						</p>
+
+						<h2 class="govuk-heading-m">
+							Example: Self Assessment added to your business tax account homepage
+						</h2>
+
+					</div>
+
+					<div class="govuk-grid-column-full card-container" id="cardAmount">
+						<div class="card-body">
+
+							<div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+								<h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+									Self Assessment
+								</h2>
+								<p class="govuk-body">
+									Self Assessment Unique Taxpayer Reference 1234567890
+								</p>
+							</div>
+
+							<div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+								<div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+									<h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+										Your returns
+									</h3>
+									<p class="govuk-body govuk-!-margin-bottom-2">
+										You have no returns to complete.
+									</p>
+								</div>
+
+								<div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+									<h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+										Your balance
+									</h3>
+									<p role="text" class="govuk-body govuk-!-margin-bottom-2">
+										You have no tax to pay.
+									</p>
+									<p class="govuk-body">
+										<!-- <a href="../../sa-subpage/sa-subpage-old" class="govuk-body govuk-link govuk-link--no-visited-state">Make a
+											Self Assessment payment
+										</a> -->
+										<u>Make a Self Assessment payment</u>
+									</p>
+									<p class="govuk-body">
+										<!-- <a href="#" class="govuk-body govuk-link govuk-link--no-visited-state">Set up a payment plan if you cannot
+											pay in full
+										</a> -->
+										<u>Set up a payment plan if you cannot pay in full</u>
+									</p>
+								</div>
+							</div>
+
+							<div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+								<p class="govuk-body">
+									<!-- <a href="../../sa-subpage/sa-subpage-covid" class="govuk-link govuk-link--no-visited-state">More details
+										about your Self Assessment returns and payments</a> -->
+										<u>More details about your Self Assessment returns and payments</u>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="govuk-grid-row">
+					<div class="govuk-grid-column-two-thirds">
+						<!-- <p class="govuk-body">
+							<a href="https://www.gov.uk/guidance/sign-in-to-your-hmrc-business-tax-account#tax_services" class="govuk-body govuk-link govuk-link--no-visited-state">
+								Read the full list of taxes duties and schemes you can manage in your business tax account (opens in new tab)</a>
+						</p> -->
+
+						<!-- <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible"> -->
+
+						<h2 class="govuk-heading-m">
+							If you do not know why you have a business tax account
+						</h2>
+
+						<p class="govuk-body">You may not think of yourself as a business. However, even if you are not incorporated as a
+							limited company, you may need a business tax account.</p>
+
+
+						<p class="govuk-body">For example, <a href="https://www.tax.service.gov.uk/business-account/help/self-assessment/register-or-stopping">Self
+								Assessment</a> is a business tax if you’re self-employed or a sole trader and you earn taxable income by:</p>
+						<ul class="govuk-list govuk-list--bullet">
+							<li>renting property</li>
+							<li>selling goods and services</li>
+							<li>similar activity</li>
+						</ul>
+
+						<p class="govuk-body">You also need a business tax account when you:</p>
+						<ul class="govuk-list govuk-list--bullet">
+							<li>set up a limited company or other organisation that pays Corporation Tax</li>
+							<li>operate PAYE because you employ people</li>
+							<li>charge VAT</li>
+						</ul>
+
+						<!-- <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible"> -->
+
+						<h2 class="govuk-heading-m">
+							How to manage your business tax account details
+						</h2>
+
+						<p class="govuk-body">Keep a record of the Government Gateway user ID and password that you used to create your business tax account.</p>
+
+						<p class="govuk-body">Your business tax account uses 2-stage verification. This means that every 7 days you'll
+							need to verify your
+							identity to sign in. We will ask you to enter an access code sent to another device or app.</p>
+
+						<p class="govuk-body">Do not create another Government Gateway user ID and password. To view all your business
+							taxes in one place you must
+							<a href="https://www.gov.uk/government/publications/use-hmrcs-business-tax-account/use-hmrcs-business-tax-account#best_out_of">use only one ID for all your online business tax services (opens in new tab)</a> and sign into the
+							business tax
+							account with it.</p>
+
+						<p class="govuk-body"><a href="https://www.tax.service.gov.uk/user-profile-redirect-frontend/profile-management">Manage
+								your Government Gateway details</a>
+						</p>
+
+						<!-- <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible"> -->
+
+						<h2 class="govuk-heading-m">
+							The difference between your business tax account and personal tax account
+						</h2>
+
+						<p class="govuk-body">Your personal tax account is for online management of your:</p>
+						<ul class="govuk-list govuk-list--bullet">
+							<li>Income Tax and Self Assessment</li>
+							<li>PAYE</li>
+							<li>benefits</li>
+							<li>National Insurance</li>
+							<li>State Pension</li>
+							<li>other personal records and details</li>
+						</ul>
+
+						<p class="govuk-body"><a href="https://www.gov.uk/personal-tax-account" target="_blank">Read more about your personal tax account (opens in new tab)</a>
+						</p>
+
+						<p class="govuk-body">Your business tax account is for online management of your:</p>
+						<ul class="govuk-list govuk-list--bullet">
+							<li>Self Assessment</li>
+							<li>Making Tax Digital for Income Tax</li>
+							<li>VAT</li>
+							<li>Making Tax Digital for VAT</li>
+							<li>Corporation Tax</li>
+							<li>PAYE for employers</li>
+							<li>other business taxes, duties and schemes</li>
+						</ul>
+
+						<p class="govuk-body"><a href="https://www.gov.uk/guidance/sign-in-to-your-hmrc-business-tax-account#tax_services" target="_blank">Read
+								the full list of taxes, duties and schemes you can manage (opens in new tab)</a>
+						</p>
+
+						<!-- <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible"> -->
+
+						<h2 class="govuk-heading-m">
+							Using your business tax account
+						</h2>
+
+						<p class="govuk-body">Use your account to:</p>
+						<ul class="govuk-list govuk-list--bullet">
+							<li>check your tax position for taxes that you’ve registered for</li>
+							<li>make returns and payments</li>
+							<li>add or remove a tax, duty or scheme</li>
+							<li>give someone else access to a tax, duty or scheme</li>
+							<li>check secure messages from HMRC</li>
+							<li>add, view or change a tax agent</li>
+							<li>get help with your taxes</li>
+							<li>update your contact details</li>
+							<li>sign up for paperless notifications</li>
+							<li>change your Government Gateway password</li>
+						</ul>
+						<hr class="govuk-section-break govuk-section-break--l govuk-section-break">
+
+
+					</div>
+
+				</div>
+			</main>
+		</div>
+	</form>
+</div>
+
+{% endblock %}

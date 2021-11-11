@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Business Tax Account - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+{% include 'includes/nav-homepage-a4.html' %}
+
+<!-- /////////////////////////////// -->
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-top-6">
+
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-2">Remove PAYE for employers</h1>
+
+
+
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p class="govuk-body">
+      If you stop employing people, you need to close your payroll scheme and tell HMRC.
+    </p>
+    <button class="govuk-button" data-module="govuk-button">
+      Find out how to close your payroll
+    </button>
+
+    <div class="report-error">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Get help using this service
+              </span>
+            </summary>
+              <div class="report-error__content">
+                <p style="margin-top:5px">Use this form to get help with using the digital service or understanding how your account is displayed. You will get an immediate acknowledgement email. Please reply to this email attaching screenshots (including URL) to show where you had the problem.</p>
+                <p>If you have a problem with billed amounts, credits or payments, first <a href="https://www.gov.uk/payroll-errors">check if you can fix this</a>, but if not you need to contact the <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/employer-enquiries">employers helpline</a> who can see your account.</p>
+
+                <h2 class="govuk-heading-m">Get help with a technical problem</h2>
+                <p>Only use this form to report technical problems.</p>
+                <p>Do not include any personal or financial information. For example, your National Insurance or credit card numbers.</p>
+
+                <form action="/contact/problem_reports" method="POST" id="error-feedback-form" class="form--feedback" novalidate="novalidate">
+
+                    <input type="hidden" name="csrfToken" value="7efea8e6de197ea4bb3866ad1b8d2d18d7b9bb00-1625736177655-cbecb655c51026061ff51d45">
+                    <input type="hidden" name="service" id="service" value="EPAYE_for_employers">
+
+                      <div class=" form-group-compound">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="report-name">
+                              Full name
+                            </label>
+                            <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+                          </div>
+
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="report-name">
+                              Email address
+                            </label>
+                            <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+                          </div>
+
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="report-name">
+                              What were you doing?
+                            </label>
+                            <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+                          </div>
+
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="report-name">
+                              What do you need help with?
+                            </label>
+                            <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+                          </div>
+
+                          <button class="govuk-button" data-module="govuk-button">
+                            Send
+                          </button>
+              </form>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}

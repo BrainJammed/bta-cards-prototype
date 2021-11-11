@@ -1,0 +1,999 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block beforeContent %}
+{% include "includes/banner-covid19.html" %}
+{% endblock %}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a2.html' %}
+
+<!-- /////////////////////////////// -->
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+  <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+  <!-- ////////////// ADD A TAX ///////////// -->
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p class="govuk-body">
+      Add a tax to your account to
+      <a href="../../manage-account/add-tax-a2" class="govuk-body govuk-link govuk-link--no-visited-state">get online
+        access to a tax, duty or scheme</a>.
+    </p>
+  </div>
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+  <!-- ////////////////////// PROCESSING TIMES ////////////////////////// -->
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <div class="govuk-inset-text govuk-!-margin-top-0">
+      <p>Your balance will update 2 days after you complete your return.
+        <br>Payments take up to 7 working days to be processed.</p>
+    </div>
+  </div>
+
+  <!-- /////////////////////// CARD 1 //////////////////////// -->
+  <!-- /////////////////////// CARD 1 //////////////////////// -->
+  <!-- /////////////////////// CARD 1 //////////////////////// -->
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p>SA - SEISS - Grant 4 Content to release on Tue 1 Jun</p>
+  </div>
+  {% include 'bta-homepage/seiss-post-jun-1-2021.html' %}
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p>SA - SEISS - Grant 4 Content to release on Thu 22 Apr</p>
+  </div>
+  {% include 'bta-homepage/seiss-post-apr-23-2021.html' %}
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p>SA - SEISS - Grant 4 Pre-release content until Thu 22 Apr</p>
+  </div>
+  {% include 'bta-homepage/seiss-pre-apr-23-2021.html' %}
+
+
+
+
+  <!-- ////////////// ARCHIVE ///////////// -->
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <div class="govuk-!-padding-bottom-9"></div>
+    <h3 class="govuk-heading-l govuk-!-margin-bottom-2">Archived versions 19 Mar 2021</h3>
+  </div>
+
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p>SA - SEISS - FUTURE (from 30th Jan 2021)
+  </div>
+
+  {% include 'bta-homepage/seiss-jan-29-2021.html' %}
+
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p>SA - SEISS - LIVE (from 30th Nov 2020)
+  </div>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Self Assessment
+        </h2>
+        <p class="govuk-body">
+          Self Assessment Unique Taxpayer Reference 1234567890
+        </p>
+      </div>
+
+      {# /////////////////// #}
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <!--   <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Coronavirus (COVID-19) Self Assessment payment on account deferral
+                <p class="govuk-body govuk-!-margin-top-4">Your second Self Assessment payment on account for tax year 2019 to 2020 is due by 31 July 2020. If you think you may not be able to pay on time, you can choose to:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>defer payment without penalty</li>
+                  <li>pay the amount due as normal</li>
+                </ul>
+                <p class="govuk-!-font-weight-bold">If you choose to defer payment:</p>
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li>You must pay the full amount due by 31 January 2021.</li>
+                <li>Late payment interest will be charged on any unpaid amounts after 31 January 2021.</li>
+                <li>You do not need to tell HMRC that you are deferring your second Self Assessment payment on account for tax year 2019 to 2020.</li>
+                <li>If you normally pay by Direct Debit, you must contact your bank to cancel it as soon as possible.</li>
+                </ul>
+              </strong>
+            </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+             <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Go paperless</h3>
+             <p>You can now <class="govuk-body"><a href="" target="_blank" class="govuk-link govuk-link--no-visited-state">get tax letters online</a>.</p>
+             <p>Your tax account gives you secure storage online for your tax letters, or you can download and store selected letters on disk or external drive. You can print your tax letters if you ever need a paper copy.</p>
+           </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 "> -->
+        <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Get tax letters online</h3> -->
+        <!-- <p><class="govuk-body"><a href="" class="govuk-link govuk-link--no-visited-state">Get evidence of your income (SA302)</a></p> -->
+        <!-- <p><b>Help with your upcoming tax return</b></p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li><a href="" class="govuk-link govuk-link--no-visited-state">YouTube (opens in new tab)</a></li>
+                <li><a href="" class="govuk-link govuk-link--no-visited-state">Webchat</a></li>
+                <li><a href="" class="govuk-link govuk-link--no-visited-state">Help articles</a></li>
+                <li><a href="" class="govuk-link govuk-link--no-visited-state">Webinars (opens in new tab)</a></li>
+                <li><a href="" class="govuk-link govuk-link--no-visited-state">Guidance (opens in new tab)</a></li>
+            </ul> -->
+        <!-- <p><class="govuk-body"></p> -->
+
+        <!-- </div> -->
+
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Get tax letters online</h3> -->
+          <!-- <p>Get Self Assessment tax letters online. <class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup" class="govuk-link govuk-link--no-visited-state">Find out more</a></p> -->
+          <p><b>Get tax letters online </b></p>
+          <p>
+            <class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup" class="govuk-link govuk-link--no-visited-state">Get
+                Self Assessment tax letters online</a>. You can view, download or print them when you want. Save time
+              and clear clutter.
+          </p>
+        </div>
+
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Self-Employment Income Support Scheme (SEISS)</h3>
+          <p>You can now <class="govuk-body"><a href="https://www.gov.uk/guidance/claim-a-grant-through-the-self-employment-income-support-scheme"
+                target="_blank" class="govuk-link govuk-link--no-visited-state">claim a grant from the Self-Employment
+                Income Support Scheme (SEISS) (opens in new tab)</a>.</p>
+          <p>You need to be an eligible self-employed individual or a member of a partnership that has lost income
+            because of coronavirus.</p>
+        </div>
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+           <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay July's Self Assessment payment</h3>
+           <p>Your second Self Assessment payment on account for tax year 2019 to 2020 is due by 31 July 2020. If you cannot pay because of coronavirus, you can delay (defer) this payment to any date up to 31 January 2021.</p>
+           <p>You do not need to tell HMRC, but if you do not pay it by 31 January you may get a penalty and interest charges on any unpaid amounts.</p>
+         </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay July's Self Assessment payment</h3>
+          <p>Your second Self Assessment payment on account for the tax year 2019 to 2020 is due by 31 July 2020. If you cannot pay because of coronavirus (COVID-19), you have until 31 January 2021 to pay your bill.</p>
+          <p><class="govuk-body"><a href="https://www.gov.uk/guidance/defer-your-self-assessment-payment-on-account-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">Check how you can delay your second payment on account due to coronavirus</a>.</p>
+          <p>If you do not pay by 31 January 2021, you may get a penalty and interest charges on any unpaid amounts.</p>
+          <p>If you pay by Direct Debit, you must cancel it as soon as possible.</p>
+        </div> -->
+        <!--
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+
+         <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Deferred July Self Assessment payment</h3>
+         <p>If you deferred paying your July 2020 Self Assessment payment on account due to coronavirus pandemic, you can pay by 31 January 2021 without incurring late payment interest.</p>
+         <p><a href="https://www.gov.uk/guidance/defer-your-self-assessment-payment-on-account-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">Find out more about your payment options (opens in new tab)</a>. You may get a penalty and interest charges on any unpaid amounts after 31 January 2021.</p>
+
+       </div> -->
+
+
+      </div>
+      {# /////////////////// #}
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Tax year 2018 to 2019 is ready to complete.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            To avoid penalties, you must complete the return by 11:59pm on 31&nbsp;January&nbsp;2020. You have
+            <span class="govuk-!-font-weight-bold">5 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage" class="govuk-link govuk-link--no-visited-state">Complete tax year
+              2018 to 2019 Self Assessment return</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your balance
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You are
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£48</span>
+            in credit but you owe
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£53</span>. To avoid penalties,
+            you must pay
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£5</span>
+            by 11:59pm on 30&nbsp;April&nbsp;2019. You have
+            <span class="govuk-!-font-weight-bold">12 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage-old" class="govuk-body govuk-link govuk-link--no-visited-state">Make a
+              Self Assessment payment</a>
+          </p>
+        </div>
+      </div>
+      {# /////////////////// #}
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body">
+          <a href="../../sa-subpage/sa-subpage-covid" class="govuk-link govuk-link--no-visited-state">More details
+            about your Self Assessment returns and payments</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ///////////////////////////////// -->
+
+
+  <!-- /////////////////////// CARDS //////////////////////// -->
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p>SA - SEISS - Till 29th Nov 2020
+  </div>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Self Assessment
+        </h2>
+        <p class="govuk-body">
+          Self Assessment Unique Taxpayer Reference 1234567890
+        </p>
+      </div>
+
+      {# /////////////////// #}
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <!--   <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Coronavirus (COVID-19) Self Assessment payment on account deferral
+                <p class="govuk-body govuk-!-margin-top-4">Your second Self Assessment payment on account for tax year 2019 to 2020 is due by 31 July 2020. If you think you may not be able to pay on time, you can choose to:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>defer payment without penalty</li>
+                  <li>pay the amount due as normal</li>
+                </ul>
+                <p class="govuk-!-font-weight-bold">If you choose to defer payment:</p>
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li>You must pay the full amount due by 31 January 2021.</li>
+                <li>Late payment interest will be charged on any unpaid amounts after 31 January 2021.</li>
+                <li>You do not need to tell HMRC that you are deferring your second Self Assessment payment on account for tax year 2019 to 2020.</li>
+                <li>If you normally pay by Direct Debit, you must contact your bank to cancel it as soon as possible.</li>
+                </ul>
+              </strong>
+            </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+             <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Go paperless</h3>
+             <p>You can now <class="govuk-body"><a href="" target="_blank" class="govuk-link govuk-link--no-visited-state">get tax letters online</a>.</p>
+             <p>Your tax account gives you secure storage online for your tax letters, or you can download and store selected letters on disk or external drive. You can print your tax letters if you ever need a paper copy.</p>
+           </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 "> -->
+        <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Get tax letters online</h3> -->
+        <!-- <p><class="govuk-body"><a href="" class="govuk-link govuk-link--no-visited-state">Get evidence of your income (SA302)</a></p> -->
+        <!-- <p><b>Help with your upcoming tax return</b></p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li><a href="" class="govuk-link govuk-link--no-visited-state">YouTube (opens in new tab)</a></li>
+                <li><a href="" class="govuk-link govuk-link--no-visited-state">Webchat</a></li>
+                <li><a href="" class="govuk-link govuk-link--no-visited-state">Help articles</a></li>
+                <li><a href="" class="govuk-link govuk-link--no-visited-state">Webinars (opens in new tab)</a></li>
+                <li><a href="" class="govuk-link govuk-link--no-visited-state">Guidance (opens in new tab)</a></li>
+            </ul> -->
+        <!-- <p><class="govuk-body"></p> -->
+
+        <!-- </div> -->
+
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Get tax letters online</h3> -->
+          <!-- <p>Get Self Assessment tax letters online. <class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup" class="govuk-link govuk-link--no-visited-state">Find out more</a></p> -->
+          <p><b>Get tax letters online </b></p>
+          <p>
+            <class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup" class="govuk-link govuk-link--no-visited-state">Get
+                Self Assessment tax letters online</a>. You can view, download or print them when you want. Save time
+              and clear clutter.
+          </p>
+        </div>
+
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Self-Employment Income Support Scheme (SEISS)</h3>
+          <p>This scheme has been extended. You will be able to make a new claim in December 2020. <class="govuk-body"><a
+                href="https://www.gov.uk/government/publications/self-employment-income-support-scheme-grant-extension/self-employment-income-support-scheme-grant-extension"
+                target="_blank" class="govuk-link govuk-link--no-visited-state">Find out more about the SEISS Grant
+                Extension (opens in new tab)</a>.</p>
+          <p>You need to be an eligible self-employed individual or a member of a partnership that has lost income
+            because of coronavirus.</p>
+        </div>
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+           <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay July's Self Assessment payment</h3>
+           <p>Your second Self Assessment payment on account for tax year 2019 to 2020 is due by 31 July 2020. If you cannot pay because of coronavirus, you can delay (defer) this payment to any date up to 31 January 2021.</p>
+           <p>You do not need to tell HMRC, but if you do not pay it by 31 January you may get a penalty and interest charges on any unpaid amounts.</p>
+         </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay July's Self Assessment payment</h3>
+          <p>Your second Self Assessment payment on account for the tax year 2019 to 2020 is due by 31 July 2020. If you cannot pay because of coronavirus (COVID-19), you have until 31 January 2021 to pay your bill.</p>
+          <p><class="govuk-body"><a href="https://www.gov.uk/guidance/defer-your-self-assessment-payment-on-account-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">Check how you can delay your second payment on account due to coronavirus</a>.</p>
+          <p>If you do not pay by 31 January 2021, you may get a penalty and interest charges on any unpaid amounts.</p>
+          <p>If you pay by Direct Debit, you must cancel it as soon as possible.</p>
+        </div> -->
+        <!--
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+
+         <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Deferred July Self Assessment payment</h3>
+         <p>If you deferred paying your July 2020 Self Assessment payment on account due to coronavirus pandemic, you can pay by 31 January 2021 without incurring late payment interest.</p>
+         <p><a href="https://www.gov.uk/guidance/defer-your-self-assessment-payment-on-account-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">Find out more about your payment options (opens in new tab)</a>. You may get a penalty and interest charges on any unpaid amounts after 31 January 2021.</p>
+
+       </div> -->
+
+
+      </div>
+      {# /////////////////// #}
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Tax year 2018 to 2019 is ready to complete.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            To avoid penalties, you must complete the return by 11:59pm on 31&nbsp;January&nbsp;2020. You have
+            <span class="govuk-!-font-weight-bold">5 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage" class="govuk-link govuk-link--no-visited-state">Complete tax year
+              2018 to 2019 Self Assessment return</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your balance
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You are
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£48</span>
+            in credit but you owe
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£53</span>. To avoid penalties,
+            you must pay
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£5</span>
+            by 11:59pm on 30&nbsp;April&nbsp;2019. You have
+            <span class="govuk-!-font-weight-bold">12 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage-old" class="govuk-body govuk-link govuk-link--no-visited-state">Make a
+              Self Assessment payment</a>
+          </p>
+        </div>
+      </div>
+      {# /////////////////// #}
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body">
+          <a href="../../sa-subpage/sa-subpage-covid" class="govuk-link govuk-link--no-visited-state">More details
+            about your Self Assessment returns and payments</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ///////////////////////////////// -->
+
+
+  <!-- /////////////////////// CARDS //////////////////////// -->
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p>SA old
+  </div>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Self Assessment
+        </h2>
+        <p class="govuk-body">
+          Self Assessment Unique Taxpayer Reference 1234567890
+        </p>
+      </div>
+
+      {# /////////////////// #}
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <!--   <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Coronavirus (COVID-19) Self Assessment payment on account deferral
+                <p class="govuk-body govuk-!-margin-top-4">Your second Self Assessment payment on account for tax year 2019 to 2020 is due by 31 July 2020. If you think you may not be able to pay on time, you can choose to:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>defer payment without penalty</li>
+                  <li>pay the amount due as normal</li>
+                </ul>
+                <p class="govuk-!-font-weight-bold">If you choose to defer payment:</p>
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li>You must pay the full amount due by 31 January 2021.</li>
+                <li>Late payment interest will be charged on any unpaid amounts after 31 January 2021.</li>
+                <li>You do not need to tell HMRC that you are deferring your second Self Assessment payment on account for tax year 2019 to 2020.</li>
+                <li>If you normally pay by Direct Debit, you must contact your bank to cancel it as soon as possible.</li>
+                </ul>
+              </strong>
+            </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+             <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Go paperless</h3>
+             <p>You can now <class="govuk-body"><a href="" target="_blank" class="govuk-link govuk-link--no-visited-state">get tax letters online</a>.</p>
+             <p>Your tax account gives you secure storage online for your tax letters, or you can download and store selected letters on disk or external drive. You can print your tax letters if you ever need a paper copy.</p>
+           </div> -->
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Get tax letters online</h3> -->
+          <p>
+            <class="govuk-body"><a href="" class="govuk-link govuk-link--no-visited-state">Get evidence of your income
+                (SA302)</a>
+          </p>
+          <!-- <p><b>Help with your upcoming tax return</b></p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li><a href="" class="govuk-link govuk-link--no-visited-state">YouTube (opens in new tab)</a></li>
+          	    <li><a href="" class="govuk-link govuk-link--no-visited-state">Webchat</a></li>
+          	    <li><a href="" class="govuk-link govuk-link--no-visited-state">Help articles</a></li>
+          	    <li><a href="" class="govuk-link govuk-link--no-visited-state">Webinars (opens in new tab)</a></li>
+                <li><a href="" class="govuk-link govuk-link--no-visited-state">Guidance (opens in new tab)</a></li>
+            </ul> -->
+          <!-- <p><class="govuk-body"></p> -->
+
+        </div>
+
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Get tax letters online</h3> -->
+          <!-- <p>Get Self Assessment tax letters online. <class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup" class="govuk-link govuk-link--no-visited-state">Find out more</a></p> -->
+          <p><b>Get tax letters online </b></p>
+          <p>
+            <class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup" class="govuk-link govuk-link--no-visited-state">Get
+                Self Assessment tax letters online</a>. You can view, download or print them when you want. Save time
+              and clear clutter.
+          </p>
+        </div>
+
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Self-Employment Income Support Scheme (SEISS)</h3>
+          <p>You can now <class="govuk-body"><a href="https://www.gov.uk/guidance/claim-a-grant-through-the-self-employment-income-support-scheme"
+                target="_blank" class="govuk-link govuk-link--no-visited-state">claim a grant from the Self-Employment
+                Income Support Scheme (SEISS) (opens in a new window or tab)</a>.</p>
+          <p>You need to be an eligible self-employed individual or a member of a partnership that has lost income
+            because of coronavirus.</p>
+        </div>
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+           <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay July's Self Assessment payment</h3>
+           <p>Your second Self Assessment payment on account for tax year 2019 to 2020 is due by 31 July 2020. If you cannot pay because of coronavirus, you can delay (defer) this payment to any date up to 31 January 2021.</p>
+           <p>You do not need to tell HMRC, but if you do not pay it by 31 January you may get a penalty and interest charges on any unpaid amounts.</p>
+         </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay July's Self Assessment payment</h3>
+          <p>Your second Self Assessment payment on account for the tax year 2019 to 2020 is due by 31 July 2020. If you cannot pay because of coronavirus (COVID-19), you have until 31 January 2021 to pay your bill.</p>
+          <p><class="govuk-body"><a href="https://www.gov.uk/guidance/defer-your-self-assessment-payment-on-account-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">Check how you can delay your second payment on account due to coronavirus</a>.</p>
+          <p>If you do not pay by 31 January 2021, you may get a penalty and interest charges on any unpaid amounts.</p>
+          <p>If you pay by Direct Debit, you must cancel it as soon as possible.</p>
+        </div> -->
+        <!--
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+
+         <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Deferred July Self Assessment payment</h3>
+         <p>If you deferred paying your July 2020 Self Assessment payment on account due to coronavirus pandemic, you can pay by 31 January 2021 without incurring late payment interest.</p>
+         <p><a href="https://www.gov.uk/guidance/defer-your-self-assessment-payment-on-account-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">Find out more about your payment options (opens in new tab)</a>. You may get a penalty and interest charges on any unpaid amounts after 31 January 2021.</p>
+
+       </div> -->
+
+
+      </div>
+      {# /////////////////// #}
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Tax year 2018 to 2019 is ready to complete.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            To avoid penalties, you must complete the return by 11:59pm on 31&nbsp;January&nbsp;2020. You have
+            <span class="govuk-!-font-weight-bold">5 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage" class="govuk-link govuk-link--no-visited-state">Complete tax year
+              2018 to 2019 Self Assessment return</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your balance
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You are
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£48</span>
+            in credit but you owe
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£53</span>. To avoid penalties,
+            you must pay
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£5</span>
+            by 11:59pm on 30&nbsp;April&nbsp;2019. You have
+            <span class="govuk-!-font-weight-bold">12 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage-old" class="govuk-body govuk-link govuk-link--no-visited-state">Make a
+              Self Assessment payment</a>
+          </p>
+        </div>
+      </div>
+      {# /////////////////// #}
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body">
+          <a href="../../sa-subpage/sa-subpage-covid" class="govuk-link govuk-link--no-visited-state">More details
+            about your Self Assessment returns and payments</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ///////////////////////////////// -->
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Self Assessment
+        </h2>
+        <p class="govuk-body">
+          Self Assessment Unique Taxpayer Reference 1234567890
+        </p>
+      </div>
+
+      {# /////////////////// #}
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <!--   <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Coronavirus (COVID-19) Self Assessment payment on account deferral
+                <p class="govuk-body govuk-!-margin-top-4">Your second Self Assessment payment on account for tax year 2019 to 2020 is due by 31 July 2020. If you think you may not be able to pay on time, you can choose to:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>defer payment without penalty</li>
+                  <li>pay the amount due as normal</li>
+                </ul>
+                <p class="govuk-!-font-weight-bold">If you choose to defer payment:</p>
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li>You must pay the full amount due by 31 January 2021.</li>
+                <li>Late payment interest will be charged on any unpaid amounts after 31 January 2021.</li>
+                <li>You do not need to tell HMRC that you are deferring your second Self Assessment payment on account for tax year 2019 to 2020.</li>
+                <li>If you normally pay by Direct Debit, you must contact your bank to cancel it as soon as possible.</li>
+                </ul>
+              </strong>
+            </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+             <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Go paperless</h3>
+             <p>You can now <class="govuk-body"><a href="" target="_blank" class="govuk-link govuk-link--no-visited-state">get tax letters online</a>.</p>
+             <p>Your tax account gives you secure storage online for your tax letters, or you can download and store selected letters on disk or external drive. You can print your tax letters if you ever need a paper copy.</p>
+           </div> -->
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Get tax letters online</h3> -->
+          <!-- <p>Get Self Assessment tax letters online. <class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup" class="govuk-link govuk-link--no-visited-state">Find out more</a></p> -->
+          <p><b>Get tax letters online </b></p>
+          <p>
+            <class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup" class="govuk-link govuk-link--no-visited-state">Get
+                Self Assessment tax letters online</a>. You can view, download or print them when you want. Save time
+              and clear clutter.
+          </p>
+        </div>
+
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Self-Employment Income Support Scheme (SEISS)</h3>
+          <p>You can now <class="govuk-body"><a href="https://www.gov.uk/guidance/claim-a-grant-through-the-self-employment-income-support-scheme"
+                target="_blank" class="govuk-link govuk-link--no-visited-state">claim a grant from the Self-Employment
+                Income Support Scheme (SEISS) (opens in a new window or tab)</a>.</p>
+          <p>You need to be an eligible self-employed individual or a member of a partnership that has lost income
+            because of coronavirus.</p>
+        </div>
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+           <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay July's Self Assessment payment</h3>
+           <p>Your second Self Assessment payment on account for tax year 2019 to 2020 is due by 31 July 2020. If you cannot pay because of coronavirus, you can delay (defer) this payment to any date up to 31 January 2021.</p>
+           <p>You do not need to tell HMRC, but if you do not pay it by 31 January you may get a penalty and interest charges on any unpaid amounts.</p>
+         </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay July's Self Assessment payment</h3>
+          <p>Your second Self Assessment payment on account for the tax year 2019 to 2020 is due by 31 July 2020. If you cannot pay because of coronavirus (COVID-19), you have until 31 January 2021 to pay your bill.</p>
+          <p><class="govuk-body"><a href="https://www.gov.uk/guidance/defer-your-self-assessment-payment-on-account-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">Check how you can delay your second payment on account due to coronavirus</a>.</p>
+          <p>If you do not pay by 31 January 2021, you may get a penalty and interest charges on any unpaid amounts.</p>
+          <p>If you pay by Direct Debit, you must cancel it as soon as possible.</p>
+        </div> -->
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Deferred July Self Assessment payment</h3>
+          <p>If you deferred paying your July 2020 Self Assessment payment on account due to coronavirus pandemic, you
+            can pay by 31 January 2021 without incurring late payment interest.</p>
+          <p><a href="https://www.gov.uk/guidance/defer-your-self-assessment-payment-on-account-due-to-coronavirus-covid-19"
+              target="_blank" class="govuk-link govuk-link--no-visited-state">Find out more about your payment options
+              (opens in new tab)</a>. You may get a penalty and interest charges on any unpaid amounts after 31 January
+            2021.</p>
+
+        </div>
+
+
+      </div>
+      {# /////////////////// #}
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Tax year 2018 to 2019 is ready to complete.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            To avoid penalties, you must complete the return by 11:59pm on 31&nbsp;January&nbsp;2020. You have
+            <span class="govuk-!-font-weight-bold">5 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage" class="govuk-link govuk-link--no-visited-state">Complete tax year
+              2018 to 2019 Self Assessment return</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your balance
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You are
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£48</span>
+            in credit but you owe
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£53</span>. To avoid penalties,
+            you must pay
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£5</span>
+            by 11:59pm on 30&nbsp;April&nbsp;2019. You have
+            <span class="govuk-!-font-weight-bold">12 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage-old" class="govuk-body govuk-link govuk-link--no-visited-state">Make a
+              Self Assessment payment</a>
+          </p>
+        </div>
+      </div>
+      {# /////////////////// #}
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body">
+          <a href="../../sa-subpage/sa-subpage-covid" class="govuk-link govuk-link--no-visited-state">More details
+            about your Self Assessment returns and payments</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ///////////////////////////////// -->
+
+  <!-- /////////////////////// CARDS //////////////////////// -->
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p>old card
+  </div>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Self Assessment
+        </h2>
+        <p class="govuk-body">
+          Self Assessment Unique Taxpayer Reference 1234567890
+        </p>
+      </div>
+
+      {# /////////////////// #}
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <!--   <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Coronavirus (COVID-19) Self Assessment payment on account deferral
+                <p class="govuk-body govuk-!-margin-top-4">Your second Self Assessment payment on account for tax year 2019 to 2020 is due by 31 July 2020. If you think you may not be able to pay on time, you can choose to:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>defer payment without penalty</li>
+                  <li>pay the amount due as normal</li>
+                </ul>
+                <p class="govuk-!-font-weight-bold">If you choose to defer payment:</p>
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li>You must pay the full amount due by 31 January 2021.</li>
+                <li>Late payment interest will be charged on any unpaid amounts after 31 January 2021.</li>
+                <li>You do not need to tell HMRC that you are deferring your second Self Assessment payment on account for tax year 2019 to 2020.</li>
+                <li>If you normally pay by Direct Debit, you must contact your bank to cancel it as soon as possible.</li>
+                </ul>
+              </strong>
+            </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+             <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Go paperless</h3>
+             <p>You can now <class="govuk-body"><a href="" target="_blank" class="govuk-link govuk-link--no-visited-state">get tax letters online</a>.</p>
+             <p>Your tax account gives you secure storage online for your tax letters, or you can download and store selected letters on disk or external drive. You can print your tax letters if you ever need a paper copy.</p>
+           </div> -->
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Get tax letters online</h3> -->
+          <!-- <p>Get Self Assessment tax letters online. <class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup" class="govuk-link govuk-link--no-visited-state">Find out more</a></p> -->
+          <p><b>Get tax letters online </b></p>
+          <p>
+            <class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup" class="govuk-link govuk-link--no-visited-state">Get
+                Self Assessment tax letters online</a>. You can view, download or print them when you want. Save time
+              and clear clutter.
+          </p>
+        </div>
+
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Self-Employment Income Support Scheme (SEISS)</h3>
+          <p>You can now <class="govuk-body"><a href="https://www.gov.uk/guidance/claim-a-grant-through-the-self-employment-income-support-scheme"
+                target="_blank" class="govuk-link govuk-link--no-visited-state">claim a grant from the Self-Employment
+                Income Support Scheme (SEISS) (opens in a new window or tab)</a>.</p>
+          <p>You need to be an eligible self-employed individual or a member of a partnership that has lost income
+            because of coronavirus.</p>
+        </div>
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+           <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay July's Self Assessment payment</h3>
+           <p>Your second Self Assessment payment on account for tax year 2019 to 2020 is due by 31 July 2020. If you cannot pay because of coronavirus, you can delay (defer) this payment to any date up to 31 January 2021.</p>
+           <p>You do not need to tell HMRC, but if you do not pay it by 31 January you may get a penalty and interest charges on any unpaid amounts.</p>
+         </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay July's Self Assessment payment</h3>
+          <p>Your second Self Assessment payment on account for the tax year 2019 to 2020 is due by 31 July 2020. If you cannot pay because of coronavirus (COVID-19), you have until 31 January 2021 to pay your bill.</p>
+          <p><class="govuk-body"><a href="https://www.gov.uk/guidance/defer-your-self-assessment-payment-on-account-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">Check how you can delay your second payment on account due to coronavirus</a>.</p>
+          <p>If you do not pay by 31 January 2021, you may get a penalty and interest charges on any unpaid amounts.</p>
+          <p>If you pay by Direct Debit, you must cancel it as soon as possible.</p>
+        </div> -->
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Deferred July Self Assessment payment</h3>
+          <p>Your second Self Assessment payment on account for the tax year 2019 to 2020 was due on 31 July 2020.</p>
+          <p>If you did not make this payment because of coronavirus, you have until 31 January 2021 to pay it all.</p>
+          <p>You may get a penalty and interest charges on any amounts left unpaid after 31 January 2021.</p>
+          <p>
+            <class="govuk-body"><a href="https://www.gov.uk/guidance/defer-your-self-assessment-payment-on-account-due-to-coronavirus-covid-19"
+                target="_blank" class="govuk-link govuk-link--no-visited-state">Find out more about deferred Self
+                Assessment payments (opens in new tab)</a>.
+          </p>
+        </div>
+
+
+      </div>
+      {# /////////////////// #}
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Tax year 2018 to 2019 is ready to complete.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            To avoid penalties, you must complete the return by 11:59pm on 31&nbsp;January&nbsp;2020. You have
+            <span class="govuk-!-font-weight-bold">5 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage" class="govuk-link govuk-link--no-visited-state">Complete tax year
+              2018 to 2019 Self Assessment return</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your balance
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You are
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£48</span>
+            in credit but you owe
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£53</span>. To avoid penalties,
+            you must pay
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£5</span>
+            by 11:59pm on 30&nbsp;April&nbsp;2019. You have
+            <span class="govuk-!-font-weight-bold">12 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage-old" class="govuk-body govuk-link govuk-link--no-visited-state">Make a
+              Self Assessment payment</a>
+          </p>
+        </div>
+      </div>
+      {# /////////////////// #}
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body">
+          <a href="../../sa-subpage/sa-subpage-covid" class="govuk-link govuk-link--no-visited-state">More details
+            about your Self Assessment returns and payments</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ///////////////////////////////// -->
+
+  <!-- /////////////////////// CARDS //////////////////////// -->
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p>old card
+  </div>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Self Assessment
+        </h2>
+        <p class="govuk-body">
+          Self Assessment Unique Taxpayer Reference 1234567890
+        </p>
+      </div>
+
+      {# /////////////////// #}
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <!--   <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Coronavirus (COVID-19) Self Assessment payment on account deferral
+                <p class="govuk-body govuk-!-margin-top-4">Your second Self Assessment payment on account for tax year 2019 to 2020 is due by 31 July 2020. If you think you may not be able to pay on time, you can choose to:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>defer payment without penalty</li>
+                  <li>pay the amount due as normal</li>
+                </ul>
+                <p class="govuk-!-font-weight-bold">If you choose to defer payment:</p>
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li>You must pay the full amount due by 31 January 2021.</li>
+                <li>Late payment interest will be charged on any unpaid amounts after 31 January 2021.</li>
+                <li>You do not need to tell HMRC that you are deferring your second Self Assessment payment on account for tax year 2019 to 2020.</li>
+                <li>If you normally pay by Direct Debit, you must contact your bank to cancel it as soon as possible.</li>
+                </ul>
+              </strong>
+            </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+             <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Go paperless</h3>
+             <p>You can now <class="govuk-body"><a href="" target="_blank" class="govuk-link govuk-link--no-visited-state">get tax letters online</a>.</p>
+             <p>Your tax account gives you secure storage online for your tax letters, or you can download and store selected letters on disk or external drive. You can print your tax letters if you ever need a paper copy.</p>
+           </div> -->
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Get tax letters online</h3> -->
+          <!-- <p>Get Self Assessment tax letters online. <class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup" class="govuk-link govuk-link--no-visited-state">Find out more</a></p> -->
+          <p><b>Get Self Assessment tax letters online. </b>
+            <class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup" class="govuk-link govuk-link--no-visited-state">Find
+                out more</a>
+          </p>
+        </div>
+
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Self-Employment Income Support Scheme (SEISS)</h3>
+          <p>You can now <class="govuk-body"><a href="https://www.gov.uk/guidance/claim-a-grant-through-the-self-employment-income-support-scheme"
+                target="_blank" class="govuk-link govuk-link--no-visited-state">claim a grant from the Self-Employment
+                Income Support Scheme (SEISS) (opens in a new window or tab)</a>.</p>
+          <p>You need to be an eligible self-employed individual or a member of a partnership that has lost income
+            because of coronavirus.</p>
+        </div>
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+           <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay July's Self Assessment payment</h3>
+           <p>Your second Self Assessment payment on account for tax year 2019 to 2020 is due by 31 July 2020. If you cannot pay because of coronavirus, you can delay (defer) this payment to any date up to 31 January 2021.</p>
+           <p>You do not need to tell HMRC, but if you do not pay it by 31 January you may get a penalty and interest charges on any unpaid amounts.</p>
+         </div> -->
+
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay July's Self Assessment payment</h3>
+          <p>Your second Self Assessment payment on account for the tax year 2019 to 2020 is due by 31 July 2020. If you cannot pay because of coronavirus (COVID-19), you have until 31 January 2021 to pay your bill.</p>
+          <p><class="govuk-body"><a href="https://www.gov.uk/guidance/defer-your-self-assessment-payment-on-account-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">Check how you can delay your second payment on account due to coronavirus</a>.</p>
+          <p>If you do not pay by 31 January 2021, you may get a penalty and interest charges on any unpaid amounts.</p>
+          <p>If you pay by Direct Debit, you must cancel it as soon as possible.</p>
+        </div> -->
+
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Delay July's Self Assessment payment</h3>
+          <p>Your second Self Assessment payment on account for the tax year 2019 to 2020 is due by 31 July 2020. If
+            you cannot pay because of coronavirus you can <class="govuk-body"><a href="https://www.gov.uk/guidance/defer-your-self-assessment-payment-on-account-due-to-coronavirus-covid-19"
+                target="_blank" class="govuk-link govuk-link--no-visited-state">delay (defer) your Self Assessment
+                payment until 31 January 2021 (opens in new tab)</a>. You do not need to apply or tell HMRC: it will
+              automatically count as a deferral if you do not pay. You’ll need to cancel your Direct Debit if you set
+              one up for July.</p>
+          <p>If you do not pay it all by 31 January 2021, you may get a penalty and interest charges on any unpaid
+            amounts.</p>
+        </div>
+
+      </div>
+      {# /////////////////// #}
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Tax year 2018 to 2019 is ready to complete.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            To avoid penalties, you must complete the return by 11:59pm on 31&nbsp;January&nbsp;2020. You have
+            <span class="govuk-!-font-weight-bold">5 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage" class="govuk-link govuk-link--no-visited-state">Complete tax year
+              2018 to 2019 Self Assessment return</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your balance
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You are
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£48</span>
+            in credit but you owe
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£53</span>. To avoid penalties,
+            you must pay
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£5</span>
+            by 11:59pm on 30&nbsp;April&nbsp;2019. You have
+            <span class="govuk-!-font-weight-bold">12 days left</span>.
+          </p>
+          <p class="govuk-body">
+            <a href="../../sa-subpage/sa-subpage-old" class="govuk-body govuk-link govuk-link--no-visited-state">Make a
+              Self Assessment payment</a>
+          </p>
+        </div>
+      </div>
+      {# /////////////////// #}
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body">
+          <a href="../../sa-subpage/sa-subpage-covid" class="govuk-link govuk-link--no-visited-state">More details
+            about your Self Assessment returns and payments</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ///////////////////////////////// -->
+
+</div>
+
+{% endblock %}

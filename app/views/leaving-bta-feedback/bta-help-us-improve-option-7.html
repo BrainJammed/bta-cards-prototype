@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row">
+
+	<form action="/manage-account/add-tax-a1" method="post" class="form">
+
+		<div class="govuk-width-container">
+			<main class="govuk-main-wrapper " id="main-content" role="main">
+				<div class="govuk-grid-row">
+					<div class="govuk-grid-column-two-thirds">
+						<h1 class="govuk-heading-xl">You cannot see this page</h1>
+
+						<p class="govuk-body">You have not added PAYE for employers to this business tax account.</p>
+						<p class="govuk-body">Make sure you’re signed in with the correct user ID.</p>
+            <p class="govuk-body govuk-!-margin-bottom-6"><a href="https://tax.service.gov.uk/business-account/add-tax/employer" target="_blank">Add PAYE for employers to this account</a></p>
+						<div class="govuk-!-padding-bottom-1"></div>
+						<div class="govuk-form-group">
+              <h1 class="govuk-heading-l">Help us improve our service</h1>
+
+              <p class="govuk-body">This survey is anonymous.</p>
+              <p class="govuk-body">Please answer these 2 questions. They are both optional.</p>
+  						<div class="govuk-!-padding-bottom-1"></div>
+  						<div class="govuk-form-group">
+  							<label class="govuk-label govuk-label--m" for="task-description">
+  								What were you trying to do today?
+  							</label>
+  							<textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+  						</div>
+  						<div class="govuk-!-padding-bottom-1"></div>
+  						<div class="govuk-form-group">
+  							<label class="govuk-label govuk-label--m" for="task-description">
+  								Can you describe how you got to this page?
+  							</label>
+  							<div id="doing-hint" class="govuk-hint">
+  								Give us as much detail as possible, including website addresses.
+  							</div>
+  							<textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8" aria-describedby="more-detail-hint"></textarea>
+  						</div>
+
+						</div>
+
+						<div> <a href="thank-you-addPAYE" role="button" draggable="false" class="govuk-button"
+							 data-module="govuk-button">Continue</a>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+	</form>
+</div>
+
+
+{% endblock %}

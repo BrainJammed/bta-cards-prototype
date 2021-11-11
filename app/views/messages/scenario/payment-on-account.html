@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+ITSA messages- GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<!-- //////////////////////////////////////// -->
+
+{% include 'includes/nav-homepage-mtd-itsa.html' %}
+
+<!-- ///////////////////////////////////////// -->
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+    <a href="javascript: history.back()" class="govuk-back-link">Back</a>
+    <br /><br /><br />
+
+<!--     <h1 class="govuk-heading-xl">
+      Message detail
+    </h1> -->
+
+    <h1 class="govuk-heading-xl">
+      Your payment on account is due
+    </h1>
+
+    <p class="govuk-hint">This message was sent to you on 16 July 2021</p>
+
+    <br />
+    <p class="govuk-body">Your second payment on account for 21/22 is due on or before 31 July 2020.</p>
+
+    <p class="govuk-body">You must pay any amounts due to us by this date to avoid interest charges.</p>
+
+    <p class="govuk-body">For details of how to pay, go to <a href="www.gov.uk/topic/dealing-with-hmrc/paying-hmrc"
+        target="_blank">www.gov.uk/topic/dealing-with-hmrc/paying-hmrc (opens in a new tab)</a></p>
+
+    <p class="govuk-body">If you cannot pay your tax bill on time, go to <a
+        href="https://www.gov.uk/difficulties-paying-hmrc" target="_blank">https://www.gov.uk/difficulties-paying-hmrc
+        (opens in a new tab)</a></p>
+
+    <p class="govuk-body">If you know your tax bill is going to be lower than last year, you can ask HM Revenue and
+      Customs (HMRC) to reduce your payments on account. For more information, go to <a
+        href="www.gov.uk/understand-self-assessment-bill/payments-on-account"
+        target="_blank">www.gov.uk/understand-self-assessment-bill/payments-on-account (opens in a new tab)</a></p>
+
+  </div>
+
+</div>
+{% endblock %}

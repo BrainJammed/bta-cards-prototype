@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+      {% include "includes/back.html" %}
+
+        <h1 class="govuk-heading-xl">
+            Register for VAT
+        </h1>
+
+        <p class="govuk-body">Your business will be automatically enrolled for VAT online services unless you are acting as an agent.</p>
+
+
+
+    </div>
+
+</div>
+<button class="govuk-button">Register for VAT</button>
+
+{% endblock %}

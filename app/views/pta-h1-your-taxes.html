@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-l">Your taxes</h1>
+
+  <!-- ///////////////////////////////// -->
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Self Assessment
+        </h2>
+        <p class="govuk-body">
+          Self Assessment Unique Taxpayer Reference 1234567890.
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          Your returns
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          Tax year 2017 to 2018 is ready to complete.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          To avoid penalties, you must complete the return by 11.59pm on 31&nbsp;January&nbsp;2019.
+        </p>
+        <p class="govuk-body">
+          <a href="#3" class="govuk-link govuk-link--no-visited-state">Complete tax year 2017 to 2018 Self Assessment return</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          Your balance
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          You owe
+          <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£1,073</span>
+          and it is late.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          Pay now to avoid further penalties.
+        </p>
+        <p class="govuk-body">
+          <a href="payment-made" class="govuk-body govuk-link govuk-link--no-visited-state">Make a Self Assessment payment</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body">
+          <a href="#4" class="govuk-link govuk-link--no-visited-state">More details about your Self Assessment</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ///////////////////////////////// -->
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Personal tax account
+        </h2>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          Use your personal tax account for non-business taxes and benefits. You&nbsp;can:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>manage your personal details</li>
+          <li>view your Income Tax estimate and find out more about your tax code</li>
+          <li>check how much Income Tax you paid last year</li>
+          <li>claim a tax refund</li>
+          <li>view your National Insurance record and State Pension forecast</li>
+          <li>manage your tax credits</li>
+        </ul>
+        <p class="govuk-body">
+          <a href="#9" class="govuk-link govuk-link--no-visited-state">View your personal tax account</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  {% endblock %}

@@ -1,0 +1,56 @@
+  <div class="flex-container grid-row">
+
+  <div class="card" id="cardAmount">
+  <div class="card-body active">
+    <h2 class="heading-small card-heading"><a href="https://www.prototypes.tax.service.gov.uk/agent-facilities-prototype/sprint-future/manage-agents/index?invitationPresent=true&accountType=business">Manage your tax agents</a></h2>
+   
+  
+    <p>View your authorised tax agents, respond to agents' requests and remove authorisations you no longer need.</p>
+
+  </div>
+  
+</div>
+
+
+  {{ card.card(
+    cardUrl="messages",
+    headingLevel="h3",
+    heading="Messages",
+    linkContent = "HMRC will send you messages regarding the taxes you pay.",
+    links = [
+      
+            { link: "#", title: "Change your contact email address" }
+
+    ])
+  }}
+  {{ card.card(
+    cardUrl="your-details",
+    headingLevel="h3",
+    heading="Your details",
+    linkContent = "View and change the details HMRC holds of your company, including contact information and bank details.",
+    links = [
+      { link: "#", title: "Update company address" },
+            { link: "#", title: "Update bank details" },
+            { link: "#", title: "View your VAT Direct Debit details" }
+    ])
+  }}
+
+
+ {{ card.card(
+    cardUrl="taxes-duties-schemes",
+    headingLevel="h3",
+    heading="Your taxes and users",
+    linkContent = "You can view and change all of the taxes you pay and the users that have access to your account.",
+    links = [
+      { link: "add-tax", title: "Add a tax to your account" },
+            { link: "taxes-duties-schemes", title: "Remove a tax from your account" }
+
+          ])
+  }}
+
+
+
+
+
+
+  </div>

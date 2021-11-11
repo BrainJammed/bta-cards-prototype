@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_sa_how_to_pay__heading%}
+
+{% block page_title %}
+Business tax account - prototype
+{% endblock %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+{% block content %}
+
+{% include 'includes/nav-combo-ur2.html' %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">Viewing your Self Assessment tax return calculations - video transcript</h1>
+
+        <p>When you use our Self Assessment online tax return, it automatically works out how much you’ll need to pay us.</p>
+
+        <p class="govuk-body">After adding your figures and checking everything is correct, you can view your calculation.
+          This shows the amount you’re due to pay for this tax return. It will include:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Income Tax</li>
+          <li>Class 4 National Insurance</li>
+          <li>and Class 2 National Insurance contributions</li>
+        </ul>
+
+        <p>if they’re due.</p>
+        <p>If the amount of Income Tax and Class 4 National Insurance is £1,000 or more, you have to make a payment on account.</p>
+        <p>A payment on account is made twice a year on 31 January and 31 July to help you spread the cost of each year’s tax.</p>
+        <p>Each payment is half of your last Income Tax and Class 4 National Insurance bill.  These payments are taken off the amount you’re due to pay the following year.</p>
+        <p>If you’d like to see how the figures have been worked out in more detail, select ‘View and print your full calculation’.
+        </p>
+
+
+        <p class="govuk-body">This shows your:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>income</li>
+          <li>personal allowance</li>
+          <li>tax due</li>
+          <li>Class 4 National Insurance</li>
+          <li>Class 2 National Insurance</li>
+          <li>and the total of any payments due</li>
+        </ul>
+
+       <p>Remember, these estimated payments don’t include any payments you’ve already made. You can print a copy of this for your own records.</p>
+
+       <p>You can find more information about Self Assessment on
+         <a href="https://www.gov.uk/">GOV.UK</a>.
+       </p>
+
+       <details class="govuk-details" data-module="govuk-details" style="padding-top:60px;">
+         <summary class="govuk-details__summary_noarrow" style="display:block;">
+           <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+             Is this page not working properly?
+           </span>
+         </summary>
+         <div class="">
+
+         </div>
+       </details>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}

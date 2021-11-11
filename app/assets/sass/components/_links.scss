@@ -1,0 +1,8 @@
+.inactive-link {
+  cursor: default;
+  pointer-events: none;
+
+  &:hover {
+    color: #0b0c0c;
+  }
+}

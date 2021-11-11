@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_vat_register_deregister__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl">How to pay VAT and deadlines</h1>
+      		<p>The deadline for submitting the return online and paying HMRC are usually the same - 1 calendar month and 7 days after the end of an accounting period.</p>
+
+      		<p>You need to allow time for the payment to reach HMRC’s account.</p>
+
+          <p>
+            <a href="https://www.gov.uk/pay-vat/bank-details" target="_blank">
+              Read detailed information about how to pay your VAT bill (opens in new tab)
+            </a>
+          </p>
+
+
+
+
+      		<h2 class="govuk-heading-m"> VAT refunds on goods imported from the EU</h2>
+      		<p>You can <a href="https://www.gov.uk/guidance/vat-refunds-for-uk-businesses-buying-from-other-eu-countries" target="_blank">
+            get a refund of VAT paid in another EU country (opens in new tab)</a> if you are registered for VAT in the UK, but:
+          </p>
+      		<ul class="govuk-list govuk-list--bullet">
+        		<li>what you can reclaim depends on the other EU country’s rules for claiming VAT</li>
+        		<li>the rules for claiming <a href="https://www.gov.uk/guidance/vat-guide-notice-700#input-tax-introduction-and-general-rules" target="_blank">input tax (opens in new tab)</a> are slightly different in each EU country</li>
+        		<li>each EU country has set a minimum amount that can be refunded</li>
+        		<li>if your business makes both taxable and exempt supplies, you may not be able to reclaim all of the VAT you have been charged</li>
+      		</ul>
+
+      </div>
+    </div>
+
+    <details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+      <summary class="govuk-details__summary_noarrow" style="display:block;">
+        <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+          Is this page not working properly?
+        </span>
+      </summary>
+      <div class="">
+
+      </div>
+    </details>
+
+  </main>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,57 @@
+<div class="flex-container grid-row">
+
+  {{ card.card(
+    cardUrl="ct-subpage",
+    headingLevel="h3",
+    heading="Corporation tax",
+    linkContent = "View your Corporation Tax details. You have a return to complete by 31 January 2018. You need to make a payment of £145.90 by 31 January 2018.",
+    links = [
+      { link: "https://www.gov.uk/dormant-company/dormant-for-corporation-tax", title: "Make your company dormant" },
+      { link: "#", title: "Close your company" }
+    ])
+  }}
+
+    {{ card.card(
+    cardUrl="epaye-subpage",
+    headingLevel="h3",
+    heading="Employers PAYE",
+    linkContent = "View your PAYE for employers details. You have 7 overdue payments. You also need to pay your P11D by 22 July 2018.",
+    links = [
+      { link: "https://hmrc-businesstax-showcase.herokuapp.com/business-account/epaye/payments/2017", title: "View payments history" },
+      { link: "https://hmrc-businesstax-showcase.herokuapp.com/business-account/epaye/", title: "See annual statements" },
+      { link: "#", title: "" }
+    ])
+  }}
+
+  {{ card.card(
+    cardUrl="sa-subpage",
+    headingLevel="h3",
+    heading="Self Assessment",
+    linkContent = "View the status of your Self Assessment. Your return is due 31 January. You have payments to be made.",
+    links = [
+      { link: "https://hmrc-businesstax-showcase.herokuapp.com/business-account/self-assessment/get-sa302-tax-calculation", title: "View your SA302" },
+      { link: "https://hmrc-businesstax-showcase.herokuapp.com/business-account/sa-portal/portal-return-2012-2013-tax-year-overview", title: "View your tax year overview" }
+    ])
+  }}
+
+
+
+  {{ card.card(
+    cardUrl="vat-subpage",
+    headingLevel="h3",
+    heading="VAT",
+    linkContent = "You have a return to complete by 7 June 2018. You need to make a payment of £3,211.11 by 31 July 2018.",
+    links = [
+      { link: "https://hmrc-businesstax-showcase.herokuapp.com/business-account/sa-portal/vat-returns", title: "View submitted returns" },
+      { link: "https://hmrc-businesstax-showcase.herokuapp.com/business-account/sa-portal/vat-payments", title: "View payment and repayments" }
+      
+    ])
+  }}
+
+
+
+
+
+
+
+  </div>

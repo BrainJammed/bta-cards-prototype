@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    {% include "includes/back.html" %}
+
+    <div class="govuk-form-group">
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
+        What is your VAT number?
+      </h1>
+      <label for="have-a-vat-number" for="vat-number">
+        <span class="govuk-visually-hidden">What is your VAT number?</span>
+      </label>
+      <p class="govuk-hint">This is the 9-digit number on your VAT registration certificate.
+        For example, '123456789'.</p>
+      <input class="govuk-input govuk-input--width-10 " id="vat-number" name="vat-number" type="text">
+    </div>
+    <!-- <button class="govuk-button">Continue</button> -->
+    <a href="request-access-to-vat" class="govuk-button">Continue</a>
+  </div>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Business Tax Account - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">You cannot access this service</h1>
+
+      <p class="govuk-body">You cannot add a tax, duty or scheme to this account.</p>
+      <p class="govuk-body">The person who created your account must give you access to the taxes, duties or schemes they want you to manage.</p>
+
+      <p class="govuk-body"><a class="govuk-link govuk-link--no-visited-state" href="/bta-homepage/bta-homepage-a31">
+        Go to homepage</a></p>
+
+    </div>
+</div>
+
+{% endblock %}

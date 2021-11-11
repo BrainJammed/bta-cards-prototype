@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-grid-row">
+
+  <form action="" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+      {% include "includes/back.html" %}
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              We need to ask some questions to prove your identity
+            </h1>
+          </legend>
+
+          <p>
+
+
+            <details class="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">Details we ask for</span>
+              </summary>
+              <br>
+              <!-- <p>You will be asked to give details about two items you may have, like your:</p> -->
+              <ul class="govuk-list govuk-list--bullet govuk-!-padding-bottom-0">
+                  <li>UK passport</li>
+                  <li>payslips or P60</li>
+                  <li>Self Assessment</li>
+                  <li>tax credits and Voice ID</li>
+              </ul>
+
+                <p>You may also be able to answer questions about your credit record.</p>
+                <p>If you cannot answer these questions, we will not be able to prove your identity online. You will need to request a secure pin to be sent to you by post.</p>
+                <p>We ask these questions to protect you against malicious or fraudulent attempts to access the service.</p>
+
+
+
+            </details>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="describe-you-1" name="describe-you" type="radio" value="Individual-sole-trader">
+              <label class="govuk-label govuk-radios__label" for="which-of-these-best-describes-you">
+                Yes
+              </label> </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="describe-you-2" name="describe-you" type="radio" value="partnership">
+              <label class="govuk-label govuk-radios__label" for="which-of-these-best-describes-you-2">
+                No - send me a secure pin by post
+
+              </label> </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button">
+        Continue
+      </button>
+</div>
+    </div>
+
+  </form>
+
+</div>
+
+
+
+
+{% endblock %}

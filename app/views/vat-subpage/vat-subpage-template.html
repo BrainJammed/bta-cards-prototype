@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+    Your VAT - GOV.UK
+{% endblock %}
+
+
+
+{% block content %}
+
+    <!-- //////////// COVID-19 BANNER /////////////////// -->
+
+    <div class="govuk-grid-row  govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-padding-top-4 govuk-!-padding-bottom-4 govuk-!-padding-left-6 govuk-!-margin-bottom-6" style="background-color: #000;">
+        <div class="govuk-grid-column-one-half">
+            <p class="govuk-!-margin-bottom-0">
+                <a class="notice-banner__content" href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19" id="recruitment-page-link" data-journey-click="link - click:Your business taxes:Public Announcement" target="_blank" rel="noopener" style="font-weight: 700; color:#fff;">Coronavirus (COVID-19): what you need to do</a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-half" style="font-weight: 700; color:#fff; text-align:right;">
+            <a id="dismiss-user-panel" class="govuk-link" style="font-weight: 700; color:#fff; text-align:right;" href="#">Hide message</a>
+        </div>
+    </div>
+
+    <!-- //////////// NAVIGATION BAR /////////////////// -->
+
+    {% include 'includes/nav-homepage-a2.html' %}
+
+        <!-- /////////////////////////////// -->
+
+            <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-padding-left-0">
+
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">Your VAT</h1>
+
+
+            <!-- //////////////// PROCESSING TIMES ////////////// -->
+            <div class="govuk-!-padding-0">
+                <div class="govuk-inset-text govuk-!-margin-top-0">
+                    <p>Payments will take up to 7 working days to show, depending on how you pay. After you complete your return your tax calculation will take up to 2 days.</p>
+                </div>
+            </div>
+
+            <!-- ////////////////////////////////////// -->
+
+            <div class="govuk-warning-text govuk-!-padding-bottom-4">
+
+                {# ////////////// YOUR RETURNS /////////////////// #}
+
+                <div class="govuk-!-margin-bottom-8">
+                    <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+                        Your returns</h2>
+
+                    <div>
+                        <button href="sa-subpage-penalties" class="govuk-button" data-module="govuk-button">
+                            Complete your VAT return
+                        </button>
+                    </div>
+                </div>
+
+                {# ////////////// YOUR BALANCE /////////////////// #}
+                <div>
+
+                    <h2 class="govuk-heading-m govuk-!-margin-bottom-4">Your payments</h2>
+
+                    <p>
+                        You can no longer use a personal credit card. If you pay with a credit card, it must be linked to a business bank account.
+                    </p>
+
+
+                    {% include message %}
+
+
+                    <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+                        You owe
+                        <span class="govuk-body govuk-!-padding-left-1">£1,073</span>
+                    </p>
+                    <p>Pay now to avoid further penalties.</p>
+                    <button href="/business-account/payment/sa/true" class="govuk-button" data-module="govuk-button" style="background-color: #1d70b8;">
+                        Make a VAT payment
+                    </button>
+
+                    <p class="govuk-body govuk-!-margin-bottom-6">
+                        <a href="../manage-account/account-details/go-paperless-with-hmrc" class="govuk-link govuk-link--no-visited-state">How we worked out your payments (opens in a new tab)</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- ////////////////////////////////////// -->
+
+            <p>
+                <a class="govuk-link govuk-body-s" href="javascript:;">Is there anything wrong with this page?</a>
+            </p>
+
+        </div>
+
+            <!-- ////////////////////////////////////// -->
+            <!-- ////////////////////////////////////// -->
+            <!-- ////////////////////////////////////// -->
+
+
+        <div class="govuk-grid-column-one-third  govuk-!-margin-top-6  govuk-!-padding-left-6 govuk-!-padding-right-0">
+            <hr class="govuk-section-break govuk-section-break--visible" style="border-bottom: 10px solid #1d70b8;">
+            <div class="govuk-!-padding-top-4">
+
+                <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+                    Help with tax
+                </h3>
+
+                <ul class="govuk-list govuk-!-margin-bottom-6">
+                    <li>
+                        <a class="govuk-link govuk-link--no-visited-state" href="javascript:;">Help and contact</a>
+                    </li>
+                    <li>
+                        <a class="govuk-link govuk-link--no-visited-state" href="javascript:;">Online seminars to learn about tax</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

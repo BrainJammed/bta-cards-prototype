@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-combo-1.html' %}
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/add-sa/enter-utr" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+      <fieldset class="govuk-fieldset">
+
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-6">
+            What is your Self Assessment Unique Taxpayer Reference (UTR)?
+          </h1>
+        </legend>
+        <p class="govuk-hint govuk-!-padding-bottom-0">You can find this on your tax return, statement of account or
+          any
+          other Self Assessment calculations. It is 10 numbers. For example, 1234567890.</p>
+
+        <div class="govuk-form-group">
+          <input class="govuk-input govuk-input--width-10 " id="utr-number" name="utr-number" type="text">
+        </div>
+      </fieldset>
+
+      <button class="govuk-button" onclick="location.href = 'whichDescribesYouBest.html';" type="button">Continue</button>
+
+      <!-- <a class="govuk-button" href="wrong-credentials" role="button">Continue</a> -->
+    </div>
+  </form>
+</div>
+
+
+{% endblock %}

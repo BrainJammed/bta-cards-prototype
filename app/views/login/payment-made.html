@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+  {% include 'includes/nav-homepage-a1.html' %}
+
+  <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+    <h1 class="govuk-heading-l">You have made a payment</h1>
+
+   <a href="bta-homepage-a2" role="button" draggable="false" class="govuk-button">
+  Continue
+</a>
+
+  </div>
+
+{% endblock %}

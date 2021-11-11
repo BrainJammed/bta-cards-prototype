@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row">
+
+	<form action="/manage-account/add-tax-a1" method="post" class="form">
+		<div class="govuk-width-container">
+			<main class="govuk-main-wrapper " id="main-content" role="main">
+				<div class="govuk-grid-row">
+					<div class="govuk-grid-column-two-thirds">
+						<h1 class="govuk-heading-xl">Thank you for your feedback</h1>
+
+						<p class="govuk-body">We'll use your feedback to improve our services.</p>
+						<p class="govuk-body govuk-!-margin-bottom-6"><a href="#" target="_blank">Sign in to HMRC online services as an agent</a></p>
+
+						<h2 class="govuk-heading-m">
+							Help us make GOV.UK better
+						</h2>
+
+						<p class="govuk-body"><a href="https://www.gov.uk">GOV.UK</a> needs your help to improve and to make sure the
+							website works well for the people who need it.</p>
+						<p class="govuk-body"><a href="https://signup.take-part-in-research.service.gov.uk/home?utm_campaign=BTAhome&utm_source=BTAhome&utm_medium=other&t=HMRC&id=4">
+							Help make GOV.UK better</a>
+						</p>
+
+					</div>
+				</div>
+			</main>
+		</div>
+
+	</form>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-combo-1.html' %}
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+  <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+  <!-- ///// CARD ////// -->
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          You have not added a tax to this account
+        </h2>
+
+
+        <div class="govuk-inset-text">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">You have an incomplete registration</h3>
+          You have an incomplete registration for Self Assessment, PAYE for employers, Corporation Tax, VAT or Machine Games Duty.
+          <a href="#">Complete your registration now</a>.
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+        Set up your business tax account
+      </h3>
+      <p class="govuk-body">Add a tax to your account to <a href="https://bta-cards-prototype.herokuapp.com/manage-account/add-tax-a1">get online access to a tax, duty or scheme</a>.
+        <br /><br />
+        You will not be able to add a tax if your registration for that tax is incomplete.
+      </p>
+    </div>
+
+    <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+        You may have another account
+      </h3>
+      <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+        If you have used the online service to access your taxes before and they are not here, they may be in a
+        different account.
+      </p>
+      <p class="govuk-body govuk-!-margin-bottom-2">
+        <a href="../manage-account/add-sa/do-you-have-utr" class="govuk-body govuk-link govuk-link--no-visited-state">Check
+          if your Self Assessment is in
+          another account</a>
+      </p>
+      <p class="govuk-body">
+        <a href="../manage-account/add-sa/wrong-credentials" class="govuk-body govuk-link govuk-link--no-visited-state">Retrieve
+          sign in details for your other
+          account</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Break -->
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-4 govuk-!-padding-left-0">
+    <div class="govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+        Other services
+      </h2>
+    </div>
+    <p class="govuk-body">
+      <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Anti-money
+        laundering supervision
+      </a>
+    </p>
+    <p class="govuk-body">
+      <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Employment
+        Intermediaries
+      </a>
+    </p>
+    <p class="govuk-body">
+      <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Intrastat
+        Supplementary Declarations
+      </a>
+    </p>
+    <p class="govuk-body">
+      <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Notification
+        of Vehicle Arrivals (NOVA)
+      </a>
+    </p>
+    <p class="govuk-body">
+      <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">VAT on
+        e-Services (VOES)</a>
+    </p>
+  </div>
+</div>
+
+{% endblock %}

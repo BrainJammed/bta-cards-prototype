@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/is-claiming-refund" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+      {% include "includes/back.html" %}
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="disposing-assets-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-4">
+              Have you or are you planning to claim refunds under the 8th or 13th directive?
+            </h1>
+          </legend>
+          <span id="disposing-assets-hint">
+            <p class="govuk-hint">8th directive refunds allow EU businesses to claim VAT refunds incurred in another EU
+              member state.</p>
+            <p class="govuk-hint govuk-!-padding-bottom-4">13th directive refunds let businesses registered outside the
+              EU reclaim VAT paid in the EU.</p>
+          </span>
+
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="disposing-assets-yes" name="disposing-assets" type="radio"
+                value="yes">
+              <label class="govuk-label govuk-radios__label" for="disposing-assets-yes">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="disposing-assets-no" name="disposing-assets" type="radio"
+                value="no">
+              <label class="govuk-label govuk-radios__label" for="disposing-assets-no">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <button type="submit" class="govuk-button">
+        Continue
+      </button>
+
+    </div>
+
+  </form>
+
+</div>
+
+{% endblock %}

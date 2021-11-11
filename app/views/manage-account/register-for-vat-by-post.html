@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/have-a-vat-number" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+      {% include "includes/back.html" %}
+
+        <h1 class="govuk-heading-xl">
+          You must register for VAT by&nbsp;post
+
+        </h1>
+
+        <p class="govuk-body">When you get your VAT number, you can sign in and add the VAT online service.</p>
+
+    </div>
+
+</div>
+
+<a href="javascript:;" role="button" draggable="false" class="govuk-button">
+  Register for VAT by post
+</a>
+
+<p><a class="govuk-link govuk-body govuk-link--no-visited-state" href="javascript:;">
+  I do not want to do this now
+</a></p>
+
+{% endblock %}

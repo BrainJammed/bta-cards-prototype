@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block page_title %} Taxcalc examples - GOV.UK {% endblock %}
+
+{% import "../../includes/card-template.html" as card %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="/">< Back</a>
+      <h1 class="heading-xlarge">Choose which year to view</h1>
+    </div>
+  </div>
+
+  <div class="flex-container grid-row">
+    <div class="column-one-third">
+      <h2 class="heading-medium">Card with an amount</h2>
+      <p><a href="#cardAmount">Link to card with amount</a></p>
+      {% include "../taxcalc/includes/card-taxcalc-amount.html" %}
+    </div>
+    <div class="column-one-third">
+      <h2 class="heading-medium">Card without an amount</h2>
+      <p><a href="#cardNoAmount">Link to card without amount</a></p>
+      {% include "../taxcalc/includes/card-taxcalc-no-amount.html" %}
+    </div>
+    <div class="column-one-third">
+      <h2 class="heading-medium">Disabled card</h2>
+      <p><a href="#cardDisabled">Link to disabled card</a></p>
+      {% include "../taxcalc/includes/card-taxcalc-disabled.html" %}
+    </div>
+  </div>
+</main>
+{% endblock %}

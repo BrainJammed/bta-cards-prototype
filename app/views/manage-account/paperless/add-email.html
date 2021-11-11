@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% include "includes/back.html" %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <h1 class="govuk-heading-xl">Enter your email address for online tax letters</h1>
+
+    <form class="form" action="confirmation-email-sent.html" >
+
+      <div class="govuk-form-group">
+        <div id="event-name-hint" class="govuk-hint">
+          We will use this to let you know when you have a new online message.
+        </div>
+        <input class="govuk-input govuk-!-width-two-thirds" id="emailAddress" name="emailAddress" type="text" aria-describedby="emailAddress">
+      </div>        
+
+      <input type="hidden" id="verified" name="verified" value="No">
+      <input type="hidden" id="bouncing" name="bouncing" value="No">
+      <input type="hidden" id="sent-by" name="sent-by" value="Online">
+      <input type="hidden" id="how-contacted" name="how-contacted" value="Online">
+      
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
+
+
+  </div>
+
+</div>
+
+{% endblock %}

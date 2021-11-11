@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/check-can-register-vat-original" method="post" class="form">
+
+
+    <div class="govuk-grid-column-two-thirds">
+
+      {% include "includes/back.html" %}
+
+      <h1 class="govuk-heading-xl">
+        Check if you can register for VAT online
+      </h1>
+
+      <div class="govuk-!-margin-bottom-6">
+        <p class="govuk-body govuk-!">You cannot register online if you: </p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>need to apply for a ‘registration exception’</li>
+          <li>are joining the Agricultural Flat Rate Scheme</li>
+          <li>are registering the divisions or business units of a body corporate under separate VAT numbers</li>
+          <li>have an EU business ‘distance selling’ to the UK</li>
+          <li>have imported (‘acquired’) goods worth more than £85,000 from another EU company</li>
+          <li>are disposing of assets on which 8th or 13th Directive refunds have been claimed</li>
+        </ul>
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl govuk-!-margin-bottom-0">
+            <h2 class="govuk-heading-s">
+              Do you want to register for VAT online?
+            </h2>
+          </legend>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="yes" name="check-vat" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="yes">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="no" name="check-vat" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="no">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <button class="govuk-button">Continue</button>
+
+    </div>
+  </form>
+</div>
+
+
+{% endblock %}

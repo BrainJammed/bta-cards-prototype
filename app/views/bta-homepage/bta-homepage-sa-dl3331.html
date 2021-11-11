@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block beforeContent %}
+{% include "includes/banner-user-panel.html" %}
+{% endblock %}
+
+{% block content %}
+
+  {% include 'includes/nav-homepage-a2.html' %}
+
+  <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+    <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+    <!-- ////////////// ADD A TAX ///////////// -->
+
+    <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <p class="govuk-body">
+        Add a tax to your account to
+        <a href="../../manage-account/add-tax-a2" class="govuk-body govuk-link govuk-link--no-visited-state">get online access to a tax, duty or scheme</a>.
+      </p>
+    </div>
+
+    <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <!-- ////////////////////// PROCESSING TIMES ////////////////////////// -->
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-inset-text govuk-!-margin-top-0">
+        <p>Your balance will update 2 days after you complete your return.
+          <br>Payments take up to 7 working days to be processed.</p>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+    </div>
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <h2 class="govuk-heading-m">DL-3331 Experiment: SA multiple due dates on card</h2>
+    </div>
+    
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <p>DL-3331 Experiment SMALL</p>
+    </div>
+    {% include 'includes/expt3331-small.html' %}
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <p>DL-3331 Experiment MEDIUM</p>
+    </div>
+    {% include 'includes/expt3331-medium.html' %}
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <p>DL-3331 Experiment LARGE
+    </div> 
+    {% include 'includes/expt3331-large.html' %}
+    
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <p>DL-3331 Experiment alternative SMALL columns
+      </div> 
+      {% include 'includes/expt3331-small-alt.html' %}
+      
+    
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <p>DL-3331 Experiment alternative MEDIUM columns
+      </div> 
+      {% include 'includes/expt3331-medium-alt.html' %}
+      
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <p>DL-3331 Experiment alternative LARGE columns
+      </div> 
+      {% include 'includes/expt3331-large-alt.html' %}
+  
+
+
+
+  </div>
+
+{% endblock %}

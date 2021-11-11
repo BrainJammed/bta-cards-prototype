@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/add-vat-moss" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <div class="govuk-form-group">
+
+        <fieldset class="govuk-fieldset">
+
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-4">
+              Where is your business based?
+            </h1>
+          </legend>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="uk-moss" name="moss" type="radio" value="uk">
+            <label class="govuk-label govuk-radios__label" for="uk">
+              UK
+            </label>
+          </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="anotherEU-moss" type="radio" name="moss" value="anotherEU">
+
+              <label class="govuk-label govuk-radios__label" for="anotherEU">
+                Another EU state
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="outsideEU-moss" type="radio" name="moss" value="outsideEU">
+
+                <label class="govuk-label govuk-radios__label" for="outsideEU">
+                  Outside the EU
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="isleOfMan-moss" type="radio" name="moss" value="isleOfMan">
+
+                <label class="govuk-label govuk-radios__label" for="isleOfMan">
+                  Isle of Man
+                </label>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+<button class="govuk-button">Continue</button>
+
+  <details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+    <summary class="govuk-details__summary_noarrow" style="display:block;">
+      <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+        Is this page not working properly?
+      </span>
+    </summary>
+    <div class="">
+
+    </div>
+  </details>
+</form>
+{% endblock %}

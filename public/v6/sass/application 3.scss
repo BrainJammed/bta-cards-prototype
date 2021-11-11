@@ -1,0 +1,247 @@
+// Path to assets for use with the file-url function
+// in the govuk frontend toolkit's url-helpers partial
+$path: "/public/v6/images/";
+
+// Import GOV.UK elements from /govuk-modules/, this will import the frontend toolkit and some base styles.
+// Take a look in /govuk-modules/_govuk-elements.scss to see which files are imported.
+@import 'govuk-elements';
+
+// Take a look at in app/assets/sass/patterns/ to see which files are imported.
+@import 'patterns/flexbox';
+
+@import 'patterns/card';
+
+// Related items
+// (These styles will be moved to GOV.UK elements, duplicating here for now.)
+.govuk-related-items {
+  margin-top: $gutter;
+  border-top: 10px solid $govuk-blue;
+  padding-top: 5px;
+
+  .heading-medium {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+  }
+
+  li {
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+}
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+
+
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+$grey-0: #0b0c0c;
+$grey-2: #2e3133;
+$grey-3: #454a4c;
+$grey-4: #5c6366;
+$grey-5: #8a9499;
+$grey-6: #a1acb2;
+$grey-7: #b8c6cc;
+$grey-8: #dee0e2;
+$grey-9: #eaedef;
+
+.button--secondary {
+  @include button($govuk-blue);
+  @include core-19();
+}
+
+h2.section-header {
+  font-size: 30px;
+  margin: 40px 0 24px;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc; 
+}
+
+.button--tertiary {
+  @include button($grey-8);
+  @include core-19();
+}
+
+.section--blue-top {
+  border-top: 10px solid $govuk-blue;
+}
+
+.homepage-section {
+
+  .heading-medium {
+    margin-top: 0;
+  }
+
+  + .homepage-section {
+    border-top: 1px solid $grey-8;
+    margin-top: 1.875em;
+
+    .heading-medium {
+      margin-top: inherit;
+    }
+  }
+}
+
+.heading-large-macro {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 24px;
+  line-height: 1.04167;
+  margin-top: 0em;
+  margin-bottom: 0.41667em;
+}
+
+// breadcrumbs are outside of `main` so they need constraining
+.header__full-width {
+  @extend %site-width-container;
+  @extend %contain-floats;
+  padding: 1em 0;
+
+  .list {
+    list-style-type: none;
+    padding: inherit;
+
+    li {
+      display: inline;
+
+      + li {
+        padding-left: 1em;
+      }
+    }
+  }
+}
+.form-hint2 {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 40px;
+  line-height: 1.25;
+  display: block;
+  color: #6f777b;
+  font-weight: normal;
+  margin-top: -2px;
+  padding-bottom: 2px;
+}
+
+.form-hint3 {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 26px;
+  line-height: 1.25;
+  display: block;
+  color: #6f777b;
+  font-weight: normal;
+  margin-top: -2px;
+  padding-bottom: 2px;
+}
+
+.card .card-body .detail-medium {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.heading-large2 {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 24px;
+  line-height: 1.04167;
+  margin-top: 0.5em;
+  margin-bottom: 0.41667em;
+}
+
+@media (min-width: 641px) {
+  .heading-large2 {
+    font-size: 36px;
+    line-height: 1.11111;
+  }
+}
+
+@media (min-width: 641px) {
+  .heading-large2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.55556em;
+  }
+}
+
+.heading-large2 .heading-secondary {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 1.2;
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  display: block;
+  color: #6f777b;
+}
+
+@media (min-width: 641px) {
+  .heading-large2 .heading-secondary {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 641px) {
+  .heading-large2 .heading-secondary {
+    padding-top: 6px;
+    padding-bottom: 4px;
+  }
+}
+
+.heading-xlarge2 {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 32px;
+  line-height: 1.09375;
+  margin-top: 0.46875em;
+  margin-bottom: 0.9375em;
+}
+
+@media (min-width: 641px) {
+  .heading-xlarge2 {
+    font-size: 48px;
+    line-height: 1.04167;
+  }
+}
+
+@media (min-width: 641px) {
+  .heading-xlarge2 {
+    margin-top: 0.625em;
+    margin-bottom: 0.5em;
+  }
+}
+
+.heading-xlarge2 .heading-secondary {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 20px;
+  line-height: 1.11111;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 3px;
+  display: block;
+  color: #6f777b;
+}
+
+@media (min-width: 641px) {
+  .heading-xlarge2 .heading-secondary {
+    font-size: 27px;
+    line-height: 1.11111;
+  }
+}
+
+@media (min-width: 641px) {
+  .heading-xlarge2 .heading-secondary {
+    padding-top: 4px;
+    padding-bottom: 3px;
+  }
+}
+

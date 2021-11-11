@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Business tax summary - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-form-group knowTaxAccount">
+            <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Do you know what your business tax account is for?
+                </h1>
+              </legend>
+
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="doYouKnowTaxAccountYes" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                  <label class="govuk-label govuk-radios__label" for="contact">
+                    Yes
+                  </label>
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="doYouKnowTaxAccountNo" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                  <label class="govuk-label govuk-radios__label" for="contact-2">
+                    No
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+                  <div class="govuk-form-group">
+                    <p class="govuk-body govuk-!-margin-bottom-6">Your business tax account lets you manage your HMRC taxes, duties and schemes online. To manage a tax, duty or scheme,
+                    you must add it to your business tax account. <a href="https://bta-cards-prototype.herokuapp.com/no-enrolments/new-ideas/help-with-your-bta">Find out more about your business tax account</a>.
+                    </p>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button govuk-!-margin-bottom-9" id="knowTaxAccountButton" data-module="govuk-button" onclick="location.href = 'oneQuestionPerPage_3.html';">
+            Continue
+          </button>
+
+          <!-- <h2 class="govuk-heading-m">Your answers</h2>
+
+          <p class="govuk-body">
+            <a class="govuk-link" href="oneQuestionPerPage_1">Start again</a>
+          </p>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                1. Have you seen this business tax account before?
+              </dt>
+              <dd class="govuk-summary-list__value">
+                No
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> name</span>
+                </a>
+              </dd>
+            </div>
+          </dl> -->
+
+
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}

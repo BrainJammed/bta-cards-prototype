@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Business tax summary - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-form-group addTaxAccount">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                You have not added a tax, duty or scheme to your business tax account. Do you want to add one now?
+              </h1>
+            </legend>
+            <div id="changed-name-hint" class="govuk-hint">
+              Adding a tax to your business tax account lets you manage that tax online. You can add taxes like Self Assessment, VAT and Corporation Tax.
+            </div>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="addTaxAccountYes" name="where-do-you-live" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="addTaxAccountNo" name="where-do-you-live" type="radio" value= "scotland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                  No
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="addTaxAccountNotSure" name="where-do-you-live" type="radio" value="wales">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                  Not sure
+                </label>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" id="buttonAddTaxAccount" data-module="govuk-button" onclick="location.href = 'oneQuestionPerPage_4.html';">
+          Continue
+        </button>
+
+        <!-- <h2 class="govuk-heading-m">Your answers</h2>
+
+        <p class="govuk-body">
+          <a class="govuk-link" href="oneQuestionPerPage_1">Start again</a>
+        </p>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              1. Have you seen this business tax account before?
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Yes
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>
+        </dl> -->
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}

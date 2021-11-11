@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-padding-bottom-2">
+      Team members
+    </h1>
+
+    <div class="govuk-inset-text govuk-!-margin-top-0">
+      Any updates to your account details take up to 2 days to appear on this page.
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-2">
+
+    <table class="govuk-table">
+
+      <tbody class="govuk-table__body">
+
+
+
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" style="border-bottom: 0;" scope="row">Self Assessment</th>
+          <td class="govuk-table__cell" style="border-bottom: 0;"></td>
+          <td class="govuk-table__cell" style="border-bottom: 0;">
+            <!-- <a class="govuk-link govuk-body govuk-link--no-visited-state" href="javascript:;">Add new user</a> -->
+          </td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell" style="border-bottom: 0;">Accountant</td>
+          <td class="govuk-table__cell" style="border-bottom: 0;">Amos Welsh</td>
+          <td class="govuk-table__cell" style="border-bottom: 0;"><a
+              class="govuk-link govuk-body govuk-link--no-visited-state" href="javascript:;">Edit team member</a></td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" style="border-bottom: 0;" scope="row"></th>
+          <td class="govuk-table__cell" style="border-bottom: 0;"></td>
+          <td class="govuk-table__cell" style="border-bottom: 0;">
+            <a class="govuk-link govuk-body govuk-link--no-visited-state" href="add-user-confirm-details">Add team member</a>
+          </td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row"></th>
+          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" style="border-bottom: 0;" scope="row">VAT</th>
+          <td class="govuk-table__cell" style="border-bottom: 0;"></td>
+          <td class="govuk-table__cell" style="border-bottom: 0;"></td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row"></th>
+          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell">
+            <a class="govuk-link govuk-body govuk-link--no-visited-state" href="add-user-confirm-details">Add team member</a>
+          </td>
+        </tr>
+
+        <!-- <tr class="govuk-table__row">
+          <th class="govuk-table__header" style="border-bottom: 0;" scope="row"></th>
+          <td class="govuk-table__cell govuk-!-padding-top-6" style="border-bottom: 0;">
+          </td>
+        </tr> -->
+      </tbody>
+
+
+    </table>
+
+  </div>
+
+  <!-- ///////////////////////////////////////////////////////////////////  -->
+
+</div>
+
+{% endblock %}

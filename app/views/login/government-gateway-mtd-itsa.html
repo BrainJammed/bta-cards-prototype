@@ -1,0 +1,58 @@
+{% extends "layout.html" %}}
+{% block pageTitle %}
+  Sign in using Government Gateway - GOV.UK
+{% endblock %}
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Sign in using Government Gateway</h1>
+
+
+
+
+        <form action="/bta-homepage/bta-homepage-mtd-itsa" method="POST" id="loginForm">
+          <div class="govuk-form-group">
+              <label for="user_id" class="govuk-label" aria-describedby="user_id-hint">Government Gateway user ID</label>
+              <span class="govuk-hint" id="user_id-hint">This could be up to 12 characters.</span>
+              <input type="text" name="user_id" id="user_id" class="govuk-input govuk-!-width-one-half" value="" maxlength="22" aria-describedby="user_id-hint" autocomplete="username">
+          </div>
+          <div class="govuk-form-group">
+              <label for="password" class="govuk-label">Password</label>
+              <input type="password" name="password" id="password" class="govuk-input  govuk-!-width-one-half" maxlength="13" autocomplete="current-password">
+          </div>
+          <input type="hidden" name="profile">
+          <input type="hidden" id="no_enrolment" name="no_enrolment" value="false">
+          <div class="govuk-form-group">
+            <button type="submit" class="govuk-button">Sign in</button>
+          </div>
+      </form>
+
+
+      
+      <p class="govuk-body"><a class="govuk-link" href="#">Create sign in details</a></p>
+      
+      
+      <h2 class="govuk-heading-m">Problems signing in</h2>
+        <ul  class="govuk-list">
+            <li><a href="#" class="govuk-link" id="forgotten-password" data-ga-action="Forgot-Password" data-ga-category="Sign-In" data-ga-label="HMRC">I have forgotten my password</a></li>
+            <li><a href="#" class="govuk-link" id="forgotten-user-id" data-ga-action="Forgot-User-Id" data-ga-category="Sign-In" data-ga-label="HMRC">I have forgotten my Government Gateway user ID</a></li>
+            <li><a href="#" class="govuk-link" id="forgotten-user-id-password" data-ga-action="Forgot-User-Id-And-Password" data-ga-category="Sign-In" data-ga-label="HMRC">I have forgotten my Government Gateway user ID and
+                    password</a></li>
+        </ul>
+        
+      <div class="govuk-body govuk-!-margin-top-8">
+        <a class="govuk-link" href="#" id="getHelp">Get help with this page</a> 
+      </div>
+
+      
+
+      </div>
+
+    </div>
+  </main>
+</div>
+{% endblock %}

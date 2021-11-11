@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+    {% include "includes/back.html" %}
+    <div class="govuk-form-group">
+
+      <h1 class="govuk-heading-xl">
+        Complete VAT deregistration
+      </h1>
+
+      <div class="govuk-!-margin-bottom-6">
+
+        <p class="govuk-body"> Continue to the government portal to complete your VAT deregistration. <br>It will open
+          in a
+          new window or tab in your browser.
+        </p>
+      </div>
+
+
+      <form action="portal-deregister-for-vat" target="_blank" >
+        <input class="govuk-button" type="submit" value="Continue"/>
+      </form>
+      <!-- <button class="govuk-button">Continue</button> -->
+
+    </div>
+
+  </div>
+
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

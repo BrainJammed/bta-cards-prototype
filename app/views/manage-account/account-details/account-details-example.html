@@ -1,0 +1,821 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-6">
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+      Account details<br><a href="account-details-options" class="govuk-body govuk-link govuk-link--no-visited-state"
+        aria-hidden="true">Change to Dev version</a>
+      </p>
+    </h1>
+  </div>
+
+  <div class="govuk-inset-text govuk-grid-column-two-thirds govuk-!-margin-top-0 govuk-!-margin-bottom-8">
+    You need to change your details for each tax separately.<br>
+    Any changes will take up to 2 days to update.
+  </div>
+
+  <!-- ///////////////////////////// -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-6">
+
+    <!-- <h2 class="govuk-heading-l govuk-!-margin-bottom-4">
+    Account settings
+  </h2> -->
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Government Gateway details</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="account-details-options"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="Change Government Gateway details">Manage your Government Gateway details</a></dd>
+      </div>
+
+      <!-- ================================= -->
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Business help and tips<br></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="View or change email for business help and tips">View or change email address<span
+              class="govuk-visually-hidden"></span></a></dd>
+      </div>
+
+      <!-- ================================= -->
+
+    </dl>
+  </div>
+
+
+  <!-- ///////////////////////   CORPORATION TAX   ///////////////////////  -->
+  <!-- ///////////////////////   CORPORATION TAX   ///////////////////////  -->
+  <!-- ///////////////////////   CORPORATION TAX   ///////////////////////  -->
+  <!-- ///////////////////////   CORPORATION TAX   ///////////////////////  -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l govuk-!-margin-bottom-4">
+      Corporation Tax
+    </h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+
+      <!-- ================================ -->
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row govuk-!-padding-top-6">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row govuk-!-padding-top-6">
+        <dt class="govuk-summary-list__key">Company name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Unable to display</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="account-details-options"
+            class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">View or change company
+            name<span class="govuk-visually-hidden">View or change company name for Corporation tax</span></a></dd>
+      </div>
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row govuk-!-padding-top-6">
+        <dt class="govuk-summary-list__key" scope="row">Company address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">72 Guild Street<br>London<br>Do not deliver<br>SE23
+          6FH</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Change registered address<span
+              class="govuk-visually-hidden">for Corporation tax</span></a></dd>
+      </div>
+
+      <!-- ================================= -->
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-width-three-quarters"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-heading-s govuk-!-padding-top-6">Company
+          contact details</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Company daytime phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0123 1231234</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Company evening phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Not held</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Company mobile phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0123 1231234</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Company fax</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0123 1231234</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Company email address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">sarah.phillips@example.com</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-!-padding-bottom-7"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Add,
+            view or change
+            company contact details<span class="govuk-visually-hidden">Add, view or change company contact details for
+              Corporation
+              tax</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+      <!-- ================================= -->
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-width-three-quarters"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-heading-s govuk-!-padding-top-6">Communication
+          contact details</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Communication name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Sarah Phillips</dd>
+        <dd class="govuk-!-width-one-quarter">
+
+        </dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Communication address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">72 Guild
+          Street<br>London<br>SE23 6FH</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Communication daytime phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0123 1231234</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Communication evening phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Not held</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Communication mobile phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0123 1231234</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Communication fax</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0123 1231234</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Communication email address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">sarah.phillips@example.com</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-padding-bottom-8"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-!-padding-bottom-7"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Add,
+            view or change
+            communication contact details<span class="govuk-visually-hidden">Add, view or change communication contact
+              details for Corporation
+              tax</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Tax return confirmations email address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Uses your Goverment Gateway email address</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">View or change
+            Government Gateway
+            email address<span class="govuk-visually-hidden">View or change Government Gateway email address</span></a>
+        </dd>
+      </div>
+
+      <!-- ================================= -->
+      <!-- ================================= -->
+
+    </dl>
+  </div>
+
+  <!-- ////////////////////////  EPAYE  /////////////////////////////////  -->
+  <!-- ////////////////////////  EPAYE  /////////////////////////////////  -->
+  <!-- ////////////////////////  EPAYE  /////////////////////////////////  -->
+  <!-- ////////////////////////  EPAYE  /////////////////////////////////  -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l govuk-!-margin-bottom-4">
+      PAYE for employers
+    </h2>
+
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-width-three-quarters"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-heading-s govuk-!-padding-top-6">Business names
+          and address</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Trading name<br><span style="color:#b1b4b6;"></span></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Unable to display</dd>
+      </div>
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Business name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">ABC Food Products</dd>
+      </div>
+
+            <!-- ================================= -->
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Business address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">66 Celebration Street</br>
+          Newcastle</br>
+          SE23 6FH</dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-padding-bottom-8"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-!-padding-bottom-7"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Add,
+            view or change business names and address
+            <span class="govuk-visually-hidden">Add, view or change trading name, business name and address for PAYE for employers</span></a></dd>
+              <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>      </div>
+
+      <!-- ================================= -->
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-width-three-quarters"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-heading-s govuk-!-padding-top-6">Communication
+          name
+          and address</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Communication name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Add if different from business name</dd>
+
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Communication address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">72 Guild
+            Street<br>London<br>SE23 6FH</dd>
+      </div>
+
+      <!-- ================================ -->
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-padding-bottom-8"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-!-padding-bottom-7"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Add,
+            view or change communication
+            name and address
+            <span class="govuk-visually-hidden">Add, view or change communication name and address for PAYE for
+              employers</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+      <!-- ================================ -->
+
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-width-three-quarters"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-heading-s govuk-!-padding-top-6">Business and communication contact details</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Business phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0123 1231234</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Business fax</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0123 1231234</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Business email address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Not held</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Communication phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0123 1231234</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Communication fax</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Unable to display</dd>
+        <dd class="govuk-!-width-one-quarter">
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Communication email address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">sarah.phillips@example.com</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-padding-bottom-8"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-!-padding-bottom-7"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Add,
+            view or change business and communication contact
+            details<span class="govuk-visually-hidden">Add, view or change business and communication contact
+              details for PAYE for employers</span></a></dd>
+        <dd class="govuk-summary-list__actions  govuk-!-width-one-quarter"></dd>
+      </div>
+      <!-- ================================= -->
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">RTI submission confirmations</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Uses your Goverment Gateway email address</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="Change Government Gateway email">Change Government Gateway
+            email address<span class="govuk-visually-hidden">Change email address for PAYE for employers
+              messages</span></a></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">PAYE message notifications email address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Uses your business email address</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="Change Government Gateway email">Add business
+            email address<span class="govuk-visually-hidden">Add business email address for PAYE for employers
+                message notifications</span></a></dd>
+      </div>
+
+      <!-- ================================= -->
+
+    </dl>
+  </div>
+
+  <!-- //////////////Self Assessment//////////////////// -->
+  <!-- //////////////Self Assessment//////////////////// -->
+  <!-- //////////////Self Assessment//////////////////// -->
+  <!-- //////////////Self Assessment//////////////////// -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l govuk-!-margin-bottom-4">
+      Self Assessment
+    </h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-width-three-quarters"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-heading-s govuk-!-padding-top-6">Contact
+          details</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Full name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Mary Jones</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Unable to display</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Daytime phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0123 1231234</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Evening phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0123 1231234</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Mobile phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">07911 54321</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Fax</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Not held</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Email</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Not held</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-!-padding-bottom-7"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Add,
+            view or change contact details<span class="govuk-visually-hidden">for Self Assessment</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Go paperless</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="go-paperless-table" class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Manage paperless notifications<span class="govuk-visually-hidden">Manage paperless notifications</span></a></dd>
+      </div>
+    </div>
+
+    </dl>
+
+
+  <!-- ////////////////////////   VAT DEC/VAR  /////////////////////////  -->
+  <!-- ////////////////////////   VAT DEC/VAR  /////////////////////////  -->
+  <!-- ////////////////////////   VAT DEC/VAR  /////////////////////////  -->
+  <!-- ////////////////////////   VAT DEC/VAR  /////////////////////////  -->
+  <!-- ////////////////////////   VAT DEC/VAR  /////////////////////////  -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l">
+      VAT
+      <span style="color:#f3f2f1;">[Dec/Var]</span>
+    </h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+
+      <!-- ================================ -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-width-three-quarters"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half  govuk-heading-s govuk-!-padding-top-6">VAT
+          registration details</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Business name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Window Closure Solutions</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Trading name</dt>
+
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Shown in VAT certificate</dd>
+
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Principal place of business address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">72 Guild Street<br>London<br>SE23 6FH</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Business contact phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0121 445 5555</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Business mobile</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">07985 555 555</dd>
+        <dd class="govuk-!-width-one-quarter">
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Business email</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">admin@smartblinds.co.uk</dd>
+        <dd class="govuk-!-width-one-quarter">
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Bank account for repayments</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Shown in VAT certificate</dd>
+        <dd class="govuk-!-width-one-quarter">
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-padding-bottom-8"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-!-padding-bottom-7"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Add, view or change VAT registration details<span class="govuk-visually-hidden">Add, view or change
+              VAT registration details</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">VAT certificate</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="account-details-options"
+            class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">View VAT certificate<span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">VAT messages</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Including VAT Return reminders</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="account-details-options"
+            class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Add, view or change email address for VAT messages</a></dd>
+      </div>
+
+    </dl>
+
+  </div>
+
+
+  <!-- ////////////////////////   MTD  /////////////////////////  -->
+  <!-- ////////////////////////   MTD  /////////////////////////  -->
+  <!-- ////////////////////////   MTD  /////////////////////////  -->
+  <!-- ////////////////////////   MTD  /////////////////////////  -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l">
+      VAT
+      <span style="color:#f3f2f1;">[MTD]</span>
+    </h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+
+
+      <!-- ================================ -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-width-three-quarters"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half  govuk-heading-s govuk-!-padding-top-6">VAT business details</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Business name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">ABC Digital Solutions Ltd</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+
+        <dt class="govuk-summary-list__key">Trading name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Shown in VAT certificate</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Principal place of business address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">30 Romford Road<br>TF1 4ER</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+      <!-- ================================= -->
+
+      {# <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Website address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Unable to display</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>     #}
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Landline number</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0121 445 5555</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Mobile number</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Not held</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Email address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">info@abcdigital.com</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-padding-bottom-8"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-!-padding-bottom-7"><a href="https://vatvc-prototype.herokuapp.com/3-9-0/chocs/overview"
+            class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Add, view or change VAT business details<span class="govuk-visually-hidden">Add, view or change
+              VAT business details</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+
+
+
+      <!-- ================================= -->
+      <!-- ================================= -->
+      <!-- ================================= -->
+
+      <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Landline number</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">0121 445 5555</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="https://vatvc-prototype.herokuapp.com/build/chocs/business-numbers"
+          class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Change landline number<span
+            class="govuk-visually-hidden">for VAT</span></a></dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Mobile number</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Not held</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="https://vatvc-prototype.herokuapp.com/build/chocs/business-numbers-mobile"
+          class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Add mobile number<span
+            class="govuk-visually-hidden">for VAT</span></a></dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Email address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">info@abcdigital.com</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="https://vatvc-prototype.herokuapp.com/build/chocs/business-email"
+          class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Change email address<span
+            class="govuk-visually-hidden">for VAT</span></a></dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Contact preference</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Email</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+          class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Change contact preference<span
+            class="govuk-visually-hidden">for VAT</span></a></dd>
+      </div>
+
+    </dl>
+  </div>
+
+</div>
+
+
+{% endblock %}

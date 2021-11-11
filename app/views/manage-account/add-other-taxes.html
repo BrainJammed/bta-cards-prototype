@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row">
+
+    <form action="/manage-account/add-other-taxes" method="post" class="form">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-form-group">
+
+      <fieldset class="govuk-fieldset">
+
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-4">
+            Select a category
+          </h1>
+        </legend>
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <p>You may need reference numbers relevant to the tax you are adding. To add Self Assessment or Corporation Tax, you need a UTR. To add VAT, you need a VAT registration number. To add PAYE for employers, you need employers PAYE and accounts office references.</p>
+        </div> -->
+        <!-- <span id="changed-name-hint" class="govuk-hint govuk-!-padding-bottom-4">
+          You may need reference numbers relevant to the tax you are adding. To add Self Assessment or Corporation Tax, you need a UTR. To add VAT, you need a VAT registration number. To add PAYE for employers, you need employers PAYE and accounts office references.
+        </span> -->
+        <div class="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Alcohol-tax" name="tax" type="radio" value="Alcohol-tax">
+            <label class="govuk-label govuk-radios__label" for="Alcohol-tax">
+              Alcohol and tobacco wholesaling and warehousing
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Automatic" name="tax" type="radio" value="Automatic">
+            <label class="govuk-label govuk-radios__label" for="Automatic">
+              Automatic Exchange of Information (AEOI)
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Betting" name="tax" type="radio" value="Betting">
+            <label class="govuk-label govuk-radios__label" for="Betting">
+              Betting and gaming
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Charities" name="tax" type="radio" value="Charities">
+            <label class="govuk-label govuk-radios__label" for="Charities">
+              Charities - for Gift Aid repayment claims
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Child" name="tax" type="radio" value="Child">
+            <label class="govuk-label govuk-radios__label" for="Child">
+              Child Trust Fund for providers
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Fulfilment" name="tax" type="radio" value="Fulfilment">
+            <label class="govuk-label govuk-radios__label" for="other-taxes">
+              Fulfilment House Due Diligence Scheme
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Housing" name="tax" type="radio" value="Housing">
+            <label class="govuk-label govuk-radios__label" for="Housing">
+              Housing and land
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Imports" name="tax" type="radio" value="Imports">
+            <label class="govuk-label govuk-radios__label" for="Imports">
+              Imports and exports
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="pension" name="tax" type="radio" value="pension">
+            <label class="govuk-label govuk-radios__label" for="pension">
+              Manage pension schemes
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Oil" name="tax" type="radio" value="Oil">
+            <label class="govuk-label govuk-radios__label" for="Oil">
+              Oil and fuel
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="ppt" name="tax" type="radio" value="ppt">
+            <label class="govuk-label govuk-radios__label" for="ppt">
+              Plastic Packaging Tax (PPT)
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+    </div>
+
+  </div>
+
+</div>
+<br>
+<button class="govuk-button">Continue</button>
+
+<details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+  <summary class="govuk-details__summary_noarrow" style="display:block;">
+    <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+      Is this page not working properly?
+    </span>
+  </summary>
+  <div class="">
+
+  </div>
+</details>
+
+{% endblock %}

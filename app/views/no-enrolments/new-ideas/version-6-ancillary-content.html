@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Business tax summary - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax account</h1>
+        <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+        <div class="govuk-form-group firstTime">
+          <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                <!-- Is this the first time you’ve seen your business tax account? -->
+                 Is this the first time you’ve seen your business tax account?
+              </h1>
+            </legend>
+            <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="firstTimeButtonYes" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="firstTimeButtonNo" name="changed-name" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  No
+                </label>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <button class="govuk-button firstTimeButton" data-module="govuk-button">
+          Continue
+        </button>
+        {% include 'includes/ancillary-content.html' %}
+        <!-- <p class="govuk-body"><a href="#">Help with your business tax account</a></p> -->
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}

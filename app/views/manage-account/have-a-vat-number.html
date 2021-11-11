@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/have-a-vat-number" method="post" class="form">
+
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group">
+
+        <fieldset class="govuk-fieldset">
+
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-4">
+              Do you have a VAT number?
+            </h1>
+          </legend>
+          <span id="changed-name-hint" class="govuk-hint govuk-!-padding-bottom-4">
+            This is the 9-digit number on your VAT registration certificate.
+          </span>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="yes" type="radio" name="have-a-vat-number" value="vat-number-yes">
+              <label class="govuk-label govuk-radios__label" for="yes">
+                Yes
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="no" type="radio" name="have-a-vat-number" value="vat-number-no">
+              <label class="govuk-label govuk-radios__label" for="no">
+                No
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+
+      </div>
+
+    </div>
+
+</div>
+<button class="govuk-button">Continue</button>
+
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact__heading %}
+
+{% block page_title %}
+{{ pageHeading }}
+-
+{{ serviceName }}
+- GOV.UK
+{% endblock %}
+
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+<!-- //////////////////////// -->
+
+<div class="govuk-grid-row ">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+    <h1 class="govuk-heading-l">
+      PAYE for employers: annual statements
+    </h1>
+
+
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Important</span>
+        Coronavirus (COVID-19): you must continue to submit your FPSs and EPSs as normal. Your PAYE bills are not being
+        deferred.
+      </strong>
+    </div>
+    <div class="govuk-inset-text govuk-!-margin-top-0 ">
+      <p>
+        Wages of all employees, including employees on temporary leave (furloughed) due to coronavirus, must be subject
+        to Income Tax and National Insurance as normal.
+      </p>
+
+      <p>See <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank"
+          class="govuk-link govuk-link--no-visited-state">coronavirus (COVID-19): business support</a> for more about
+        financial support for businesses and claiming wage costs for furloughed employees.
+      </p>
+
+    </div>
+
+    <h2 class="govuk-heading-m ">
+      Current tax year 
+    </h2>
+    <p class="govuk-body-s">
+      How long does it take for a <a href="#">submission or payment to appear?</a>
+    </p>
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text govuk-body-s">
+          What this table shows
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        This table shows payments and credits that have been allocated to pay off monthly charges based on your Full Payment Submissions (FPS) and Employer Payment Summary (EPS).
+      </div>
+    </details>
+
+    <table class="govuk-table">
+      <!-- <caption class="govuk-table__caption govuk-table__caption--m">Dates and amounts</caption> -->
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Tax period </th>
+          <th scope="col" class="govuk-table__header">Charges</th>
+          <th scope="col" class="govuk-table__header">Credits</th>
+          <th scope="col" class="govuk-table__header">Payments</th>
+          <th scope="col" class="govuk-table__header">Owed</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+
+        {% for item in results %}
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-body-s">{{item.period}} (Month {{item.month}})</td>
+          <td class="govuk-table__cell govuk-body-s">{{item.charges}}</td>
+          <td class="govuk-table__cell govuk-body-s">{{item.credit}}</td>
+          <td class="govuk-table__cell govuk-body-s">{{item.payment}}</td>
+          <td class="govuk-table__cell govuk-body-s">{{item.owed}}</td>
+        </tr>
+        {% endfor %}
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Total PAYE charges </th>
+          <th scope="row" class="govuk-table__header">{{total.charges}}</th>
+          <th scope="row" class="govuk-table__header">{{total.credit}}</th>
+          <th scope="row" class="govuk-table__header">{{total.payment}}</th>
+          <th scope="row" class="govuk-table__header">{{total.owed}}</th>
+        </tr>
+        
+      </tbody>
+    </table>
+
+
+
+    <h2 class="govuk-heading-m">
+      Your payments
+    </h2>
+    <p class="govuk-body">
+      <a class="govuk-body" href="payments-history" id="payments-history">View payments history</a>
+    </p>
+
+  </div>
+
+
+  <div class="govuk-grid-column-one-third govuk-!-margin-bottom-0">
+    {% include 'epaye/_sidebar.html' %}
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}

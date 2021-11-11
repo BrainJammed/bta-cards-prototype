@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row">
+
+
+  <div class="govuk-grid-column-two-thirds">
+
+      {% include "includes/back.html" %}
+
+    <div class="govuk-form-group">
+
+      <fieldset class="govuk-fieldset">
+
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-4">
+           Have you registered for this tax?
+          </h1>
+        </legend>
+
+        <span class="govuk-hint govuk-!-margin-bottom-6">
+            You need to register a tax before you can add it to your business tax account.
+          </span>
+          <div class="govuk-radios govuk-radios--inline  govuk-!-margin-bottom-2">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name-1">
+                  Yes
+                </label> </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  No
+                </label> </div>
+            </div>
+      </fieldset>
+
+    </div>
+
+  </div>
+
+</div>
+<button class="govuk-button">Continue</button>
+
+{% endblock %}

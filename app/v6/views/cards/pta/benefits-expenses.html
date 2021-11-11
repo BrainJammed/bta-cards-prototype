@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Business tax account - GOV.UK
+{% endblock %}
+
+
+
+{% block content %}
+
+<main id="content" class="grid-row" role="main">
+
+    <div class="column-two-thirds">
+
+      <div class="form-group">
+      <h1 class="heading-large">Employee benefits and expenses</h1>      
+</div>
+<div class="form-group">
+  <p>Some expenses and benefits are eligible for an exemption, meaning you won't have to pay tax on them.</p>
+  <a href="javascript:;">Find out about exemptions</a>
+  </div>
+    <div class="form-group">
+       
+   
+         <p>You must pay tax on any expenses and benefits not covered by a dispensation, and report them to HMRC.</p>
+         
+          <p>Find out the <a href ="#">tax rules for each type of expense or benefit</a>.</p>
+      </div>
+   <div class="form-group">
+    <h3 class="heading-small">How to report and pay tax</h3>
+  </div>
+<div class="form-group">
+   <details>
+
+  <summary><span class="summary">Once a year (P11D)</span></summary>
+
+  <div class="panel panel-border-narrow">
+
+    <p>
+     If you only pay small or irregular benefits and expenses, you can make a Payment Settlement Agreement (PSA) with HMRC.
+    </p>
+
+    <p>
+      Otherwise at the end of the tax year you need to submit:</p>
+      <ul class="list list-bullet">
+  <li>an electronic P11D or paper P11D for each employee that received expenses or benefits</li>
+  <li>a P11D(b) for your company</li>
+</ul>
+<p>You must also complete form P46(Car) if you start or stop providing an employee or director with a car for their private use.</p>
+
+  </div>
+
+</details>
+</div>
+
+
+   <details>
+
+  <summary><span class="summary">Regularly through your payroll</span></summary>
+
+  <div class="panel panel-border-narrow">
+
+    <p>
+    You can report benefits and expenses and pay tax on them regularly throughout the year through your payroll. You'll need to use HMRC's new Payroll Benefits in Kind service.
+    </p>
+
+    <p>
+      You'll still need to submit a P11D(b) for your company. But you won't need to submit P11Ds for individual employees.</p>
+    
+  </div>
+
+</details>
+
+
+
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="form-group">
+<div class="column-one-third">
+        {% include 'cards/pta/includes/sidebar-blank.html' %}
+    </div>
+  </div>
+</main>
+{% endblock %}

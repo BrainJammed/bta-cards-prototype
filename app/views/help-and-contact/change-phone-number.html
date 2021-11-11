@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact__heading %}
+
+{% block page_title %}
+{{ pageHeading }}
+-
+{{ serviceName }}
+- GOV.UK
+{% endblock %}
+
+
+{% block content %}
+{% include 'includes/a6.html' %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">Changing your phone number and other account details</h1>
+
+    <h1 class="govuk-heading-m">Changing your phone number and other sign in details</h1>
+
+    <p class="govuk-body govuk-!-margin-bottom-2">
+      You can view or change your phone number, name, password and email address by
+      <a href="https://bta-cards-prototype.herokuapp.com/manage-account/account-details/account-details-options" class="govuk-link govuk-link--no-visited-state">managing your Government Gateway details</a>.
+    </p>
+
+    <p class="govuk-body govuk-!-margin-bottom-2">
+      You can use your phone number or an authenticator app to get access codes for your business tax account.
+    </p>
+
+    <p class="govuk-body govuk-!-margin-bottom-2">
+      We recommend that you set up at least 1 backup device for your access codes.
+    </p>
+
+    <p class="govuk-body govuk-!-margin-bottom-2">
+      You can view or change your security preferences in your Government Gateway details.
+    </p>
+
+
+
+    <p class="govuk-body govuk-!-margin-bottom-6">
+      Changes take up to 2 days to update.
+    </p>
+
+    <h1 class="govuk-heading-m">Changing your business details</h1>
+
+    <p class="govuk-body">You can view or change: </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          your phone number, company name, address and similar details in your
+          <a href="https://www.tax.service.gov.uk/business-account/manage-account/account-details" class="govuk-link govuk-link--no-visited-state">business tax account details</a>
+        </p>
+      </li>
+      <li>your contact preferences between paper letters and online emails </li>
+    </ul>
+    <p class="govuk-body govuk-!-margin-bottom-2">
+      You must change your details for each tax separately.  These details do not automatically match your Government Gateway details.
+    </p>
+    <p class="govuk-body govuk-!-margin-bottom-6">
+      Changes take up to 2 days to update.
+    </p>
+
+    <h1 class="govuk-heading-m">Changing team member details as an administrator</h1>
+
+    <p class="govuk-body govuk-!-margin-bottom-4">
+      As an administrator on a business tax account you can
+      <a href="https://www.access.service.gov.uk/group/members" class="govuk-link govuk-link--no-visited-state">manage Government Gateway details for a standard user</a>.
+    </p>
+
+    <p class="govuk-body">You can: </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        reset their password
+      </li>
+      <li>
+        remove their security preferences
+      </li>
+      <li>
+        resend their Government Gateway user ID
+      </li>
+      <li>
+        delete their Government Gateway user ID
+      </li>
+    </ul>
+
+    <p class="govuk-body govuk-!-margin-bottom-2">
+      If an administrator removes a standard user’s security preferences, the standard user must add a new phone number or
+      authenticator app to get access codes. If they do not, they will not be able to sign in again.
+    </p>
+
+    <p class="govuk-body govuk-!-margin-bottom-2">
+      To change or remove an administrator’s phone number or authenticator app, you must call HMRC.
+    </p>
+
+    <h1 class="govuk-heading-m">More help</h1>
+    <p class="govuk-body govuk-!-margin-bottom-6">
+      <a href="https://www.gov.uk/log-in-register-hmrc-online-services/problems-signing-in" class="govuk-link govuk-link--no-visited-state" target="_blank">Get help with HMRC services if you have problems signing in (opens in new tab)</a>
+    </p>
+
+
+    <details class="govuk-details" data-module="govuk-details" style="padding-top:60px;">
+      <summary class="govuk-details__summary_noarrow" style="display:block;">
+        <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+          Is this page not working properly?
+        </span>
+      </summary>
+      <div class="">
+
+      </div>
+    </details>
+
+
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}

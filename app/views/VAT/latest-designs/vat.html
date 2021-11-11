@@ -1,0 +1,1986 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+VAT - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+  <p class="govuk-body">
+    <b>MTD General notes / some useful info:</b>
+  </p>
+  <p class="govuk-body">
+    BTA VAT card uses the 3 following APIs to understand the user's current scenario and / or to display any information on their VAT card:<br>
+    - 1166 - Get Financial Info<br>
+    - 1330 - Get Obligation Info<br>
+    - 1363 - Get Customer Info
+  </p>
+  <p class="govuk-body">
+    Insolvency doesnt come until March 2021
+  </p>
+  <p class="govuk-body">
+    Hybrid user are those whose financial data has not been migrated to ETMP from VMF<br>
+    Returns and change of circumstances (CHOC) are on ETMP but the Payments is still on VMF - We don’t have a card
+  </p>
+
+  <p class="govuk-body">
+    We are not differentiating the users who files annually at the moment but users can set up DD either monthly or quarterly
+  </p>
+
+  <a id="NPS"></a>
+
+  <p class="govuk-body">
+    VAT Deferral payment closed
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 123456789
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+
+          <h2 class="govuk-heading-s govuk-!-margin-bottom-2">
+            The VAT deferral new payment scheme has now closed
+          </h2>
+          <p class="govuk-body">
+            If you deferred VAT payments due between 20 March 2020 and 30 June 2020 and have not arranged to pay the deferred VAT, you may be charged a penalty.
+          </p>
+          <p class="govuk-body">
+            <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" class="govuk-link govuk-link--no-visited-state" target="_blank">Find out more about VAT deferred due to coronavirus (opens in new tab)</a>
+          </p>
+
+
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <p class="govuk-body">
+          You can view what you owe, your return deadlines, your payment history, previously submitted returns and make
+          VAT payments.
+        </p>
+        <p class="govuk-body">
+          You can also update some of your VAT details.
+        </p>
+
+      </div>
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body"><a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <p class="govuk-body">
+    DL-5045 MTDfB VAT (older version) <strong>VAT Deferral payment plan</strong>
+    <strong class="govuk-tag govuk-tag--red">NOT IN USE</strong>
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 123456789
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Important</span>
+              Paying deferred VAT: the new payment scheme
+            </strong>
+          </div>
+
+          <p>If you deferred paying VAT that was due between 20 March 2020 and 30 June 2020, you may be able to join the <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank" class="govuk-link govuk-link--no-visited-state">VAT deferral new payment scheme (opens in new tab)</a>.
+          </p>
+          <p>Instead of paying the full amount by 31 March 2021, you can pay in 2 to 11 smaller, interest free instalments. The number of instalments depends on when you join the scheme.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <p class="govuk-body">
+          You can view what you owe, your return deadlines, your payment history, previously submitted returns and make
+          VAT payments.
+        </p>
+        <p class="govuk-body">
+          You can also update some of your VAT details.
+        </p>
+
+      </div>
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body"><a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <p class="govuk-body">
+    1. Not set up for VAT VAR -- showing below Returns and Payments examples
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 2345678901
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+          <ul class="govuk-list">
+            <!-- <li class="govuk-!-margin-bottom-2">
+              <a href="#5" class="govuk-link govuk-link--no-visited-state">View previous VAT Returns</a>
+            </li> -->
+            <!-- <li>
+              <a href="#6" class="govuk-link govuk-link--no-visited-state">Amend a mistake in a VAT Return</a>
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You owe <span class="govuk-body govuk-!-font-weight-bold">£4</span>.
+          </p>
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2" style="padding-top:0">
+            We cannot display your card payment history at the moment. Check again later.
+          </h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-2">
+            <a href="https://www.staging.tax.service.gov.uk/pay-online/service-unavailable" class="govuk-body govuk-link govuk-link--no-visited-state" >Make a VAT payment</a>
+          </p>
+          <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/vat/trader/2345678901/account/overview?lang=eng" class="govuk-body govuk-link govuk-link--no-visited-state">View your VAT statement</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    1a. Not yet activated VAT VAR
+  </p>
+
+  <p class="govuk-body">
+      <a href="https://www.staging.tax.service.gov.uk/business-account" class="govuk-link govuk-link--no-visited-state">SEE STAGING</a>
+  </p>
+
+  <p class="govuk-body" style="padding-top:50px">
+    2a. Not yet activated VAT VAR - less than 7 days <strong class="govuk-tag govuk-tag--yellow">ERROR IN STAGING</strong>
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 123456789
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            You have no returns to complete.
+          </p>
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View submitted returns</a>
+          </p>
+          <ul class="govuk-list">
+            <!-- <li class="govuk-!-margin-bottom-2">
+              <a href="#5" class="govuk-link govuk-link--no-visited-state">View previous VAT Returns</a>
+            </li> -->
+            <!-- <li>
+              <a href="#6" class="govuk-link govuk-link--no-visited-state">Amend a mistake in a VAT Return</a>
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your balance
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You have no tax to pay.
+          </p>
+          <p class="govuk-body">
+            <a href="#7" class="govuk-body govuk-link govuk-link--no-visited-state">View your VAT statements</a>
+            </li>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          We posted an activation code to you. Delivery takes up to 7 days.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Use the activation code so you can change VAT
+            details online</a>. It can
+          take up to 72 hours to display your details.
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body"><a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    2b. Not yet activated VAT VAR - more than 7 days <strong class="govuk-tag govuk-tag--yellow">ERROR IN STAGING</strong>
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 123456789
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            You have no returns to complete.
+          </p>
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View submitted returns</a>
+          </p>
+          <ul class="govuk-list">
+            <!-- <li class="govuk-!-margin-bottom-2">
+              <a href="#5" class="govuk-link govuk-link--no-visited-state">View previous VAT Returns</a>
+            </li> -->
+            <!-- <li>
+              <a href="#6" class="govuk-link govuk-link--no-visited-state">Amend a mistake in a VAT Return</a>
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your balance
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You have no tax to pay.
+          </p>
+          <p class="govuk-body">
+            <a href="#7" class="govuk-body govuk-link govuk-link--no-visited-state">View your VAT statements</a>
+            </li>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          Use the activation code we posted to you so you can <a href="javascript:;"
+            class="govuk-link govuk-link--no-visited-state">change VAT details
+            online</a>. It can take up to 72 hours to display your details.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You can <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">request a new activation code</a>.
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body"><a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    2c. Not yet activated VAT VAR - more than 30 days
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 2345678901
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+          <ul class="govuk-list">
+            <!-- <li class="govuk-!-margin-bottom-2">
+              <a href="#5" class="govuk-link govuk-link--no-visited-state">View previous VAT Returns</a>
+            </li> -->
+            <!-- <li>
+              <a href="#6" class="govuk-link govuk-link--no-visited-state">Amend a mistake in a VAT Return</a>
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You owe <span class="govuk-body govuk-!-font-weight-bold">£4</span>.
+          </p>
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2" style="padding-top:0">
+            We cannot display your card payment history at the moment. Check again later.
+          </h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-2">
+            <a href="https://www.staging.tax.service.gov.uk/pay-online/service-unavailable" class="govuk-body govuk-link govuk-link--no-visited-state" >Make a VAT payment</a>
+          </p>
+          <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/vat/trader/2345678901/account/overview?lang=eng" class="govuk-body govuk-link govuk-link--no-visited-state">View your VAT statement</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <p class="govuk-body">
+    3a. In credit
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 999920245
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            A VAT Return is ready to complete.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-1">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/periods?lang=eng" class="govuk-link govuk-link--no-visited-state">View submitted returns (opens in new tab)</a>
+          </p>
+
+
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You are <span class="govuk-body govuk-!-font-weight-bold">£5,439.82</span> in credit.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-1">
+              <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/periods?lang=eng class="govuk-link govuk-link--no-visited-state">View and manage your repayment details</a>
+          </p>
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-margin-top-0" style="padding-top:0">
+            We cannot display your card payment history at the moment. Check again later.
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat/trader/999920245/account/overview?lang=eng" class="govuk-body govuk-link govuk-link--no-visited-state">View your VAT statement</a>
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <p class="govuk-body">
+    3b. In credit, immediately after payment <strong class="govuk-tag govuk-tag--yellow">ERROR IN STAGING</strong>
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number xxxxxxxxxx
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-1">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            There is no balance information to display.
+          </p>
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-margin-top-0" style="padding-top:0">
+            We cannot display your card payment history at the moment. Check again later.
+          </h3>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    3c. In credit, 5 days after payment <strong class="govuk-tag govuk-tag--yellow">ERROR IN STAGING</strong>
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number xxxxxxxxxx
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-1">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            There is no balance information to display.
+          </p>
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-margin-top-0" style="padding-top:0">
+            We cannot display your card payment history at the moment. Check again later.
+          </h3>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    3d. In credit, 5 days after multiple payments<br>
+    Made it like this as it is not simple in VMF<br>
+    For MTD users, V&C's page has a 'Payment history' link which shows all this info
+    <strong class="govuk-tag govuk-tag--green">NOT IN STAGING</strong>
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 123456789
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View submitted returns</a>
+          </p>
+          <ul class="govuk-list">
+            <!-- <li class="govuk-!-margin-bottom-2">
+              <a href="#5" class="govuk-link govuk-link--no-visited-state">View previous VAT Returns</a>
+            </li> -->
+            <!-- <li>
+              <a href="#6" class="govuk-link govuk-link--no-visited-state">Amend a mistake in a VAT Return</a>
+            </li> -->
+          </ul>
+        </div>
+
+
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <div class="govuk-!-padding-bottom-4">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your balance
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You are <span
+                class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£937</span>
+              in credit.
+            </p>
+            <!-- <p class="govuk-body">
+              If you have set up a <a href="manage-account#bank">repayments bank account</a>, we will transfer you this
+              money. If not, we will send you a cheque in the post. Repayments are usually made within 30 days of HMRC getting your VAT return.
+            </p> -->
+            <p class="govuk-body">
+              <a href="#">View and manage your repayment details</a>
+            </p>
+          </div>
+
+          <div class="govuk-!-padding-bottom-2">
+            <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2">
+              Your card payments in the last 7 days
+            </p>
+
+            <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-2">
+              <li>You paid £73 on 16&nbsp;October&nbsp;2018.</li>
+              <li>You paid £63 on 17&nbsp;October&nbsp;2018.</li>
+              <li>You paid £100 on 18&nbsp;October&nbsp;2018.</li>
+            </ul>
+
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              Your payment reference number is 123456789.
+              It will take up to 7 days to update your balance after each payment.
+            </p>
+            <p class="govuk-body">
+              <a href="#7" class="govuk-body govuk-link govuk-link--no-visited-state">View your VAT statements</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body"><a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    3e. In credit, no payment history -- OPS call failure <strong class="govuk-tag govuk-tag--green">NOT IN STAGING</strong>
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 123456789
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View submitted returns</a>
+          </p>
+          <ul class="govuk-list">
+            <!-- <li class="govuk-!-margin-bottom-2">
+              <a href="#5" class="govuk-link govuk-link--no-visited-state">View previous VAT Returns</a>
+            </li> -->
+            <!-- <li>
+              <a href="#6" class="govuk-link govuk-link--no-visited-state">Amend a mistake in a VAT Return</a>
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <div class="govuk-!-padding-bottom-4">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your balance
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You are <span
+                class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£937</span>
+              in credit.
+            </p>
+            <!-- <p class="govuk-body">
+              If you have set up a <a href="manage-account#bank">repayments bank account</a>, we will transfer you this
+              money. If not, we will send you a cheque in the post. Repayments are usually made within 30 days of HMRC getting your VAT return.
+            </p> -->
+            <p class="govuk-body">
+              <a href="#">View and manage your repayment details</a>
+            </p>
+          </div>
+
+          <div class="govuk-!-padding-bottom-2">
+            <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2">
+              We cannot display your card payment history at the moment. Check again later.
+            </p>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+            </p>
+            <p class="govuk-body">
+              <a href="#7" class="govuk-body govuk-link govuk-link--no-visited-state">View your VAT statements</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body"><a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    4a. In debit and does not have a Direct Debit set up
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 999951624
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            You have no returns to complete.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999951624/periods?lang=eng" class="govuk-link govuk-link--no-visited-state" target="_blank">View submitted returns (opens in new tab)</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You owe <span class="govuk-body govuk-!-font-weight-bold">£4</span>.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-1">
+              <a href="https://www.staging.tax.service.gov.uk/pay-online/service-unavailable" class="govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat/trader/999951624/directdebit?lang=eng" class="govuk-link govuk-link--no-visited-state">Set up a VAT Direct Debit</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat/trader/999951624/account/overview?lang=eng" class="govuk-link govuk-link--no-visited-state">View your VAT statement</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    4b. In debit, immediately after payment
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 999951626
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            A VAT Return is ready to complete.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-1">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999951624/periods?lang=eng" class="govuk-link govuk-link--no-visited-state" target="_blank">View submitted returns (opens in new tab)</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You owe <span class="govuk-body govuk-!-font-weight-bold">£9.856</span>.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            You have a VAT Direct Debit. If you complete your return on time, we will take payment for the period ending 30 June 2021 on 12 August 2021.
+          </p>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-1">
+            Your card payments in the last 7 days
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            You paid £9,856 on 4 August 2021.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Your payment reference number is 9999516260918.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            It will take up to 7 days to update your balance after each payment.
+          </p>
+
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/pay-online/service-unavailable" class="govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat/trader/999951624/account/overview?lang=eng" class="govuk-link govuk-link--no-visited-state">View your VAT statement</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    4c. Was in debit, 5 days after payment<br>
+    No outstanding payments or the balance = 0
+    <strong class="govuk-tag govuk-tag--purple">SCENARIO IS DIFFERENT</strong>
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 123456789
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View submitted returns</a>
+          </p>
+          <ul class="govuk-list">
+            <!-- <li class="govuk-!-margin-bottom-2">
+              <a href="#5" class="govuk-link govuk-link--no-visited-state">View previous VAT Returns</a>
+            </li> -->
+            <!-- <li>
+              <a href="#6" class="govuk-link govuk-link--no-visited-state">Amend a mistake in a VAT Return</a>
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+
+          <div class="govuk-!-padding-bottom-4">
+
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your balance
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You have no tax to pay.
+            </p>
+          </div>
+
+          <div class="govuk-!-padding-bottom-0">
+            <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2">
+              Your card payments in the last 7 days
+            </p>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              You paid £1,073 on 16&nbsp;October&nbsp;2018.
+            </p>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              It will take up to 7 days to update your balance after each payment.
+            </p>
+          </div>
+
+          <div class="govuk-!-padding-bottom-0">
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">View your VAT statements</a></li>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body"><a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    5a. In debit and has Direct Debit setup
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 999951626
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            A VAT Return is ready to complete.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-1">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999951624/periods?lang=eng" class="govuk-link govuk-link--no-visited-state" target="_blank">View submitted returns (opens in new tab)</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You owe <span class="govuk-body govuk-!-font-weight-bold">£46</span>.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-0">
+            You have a VAT Direct Debit. If you complete your return on time, we will take payment for the period ending 30 June 2021 on 12 August 2021.
+          </p>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-0">
+            We cannot display your card payment history at the moment. Check again later.
+          </h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/pay-online/service-unavailable" class="govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat/trader/999951624/account/overview?lang=eng" class="govuk-link govuk-link--no-visited-state">View your VAT statement</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <p class="govuk-body">
+    5b. In debit and files annually
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 999943624
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            You have no returns to complete.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999951624/periods?lang=eng" class="govuk-link govuk-link--no-visited-state" target="_blank">View submitted returns (opens in new tab)</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-0 govuk-!-margin-top-1">
+            You owe <span class="govuk-body govuk-!-font-weight-bold">£2,324.25</span>.
+          </p>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-margin-top-0">
+            We cannot display your card payment history at the moment. Check again later.
+          </h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/pay-online/service-unavailable" class="govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat/trader/999951624/account/overview?lang=eng" class="govuk-link govuk-link--no-visited-state">View your VAT statement</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    5c. In debit, files annually and is inelegible for DirectDebit
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 999943624
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            You have no returns to complete.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999951624/periods?lang=eng" class="govuk-link govuk-link--no-visited-state" target="_blank">View submitted returns (opens in new tab)</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-0 govuk-!-margin-top-1">
+            You owe <span class="govuk-body govuk-!-font-weight-bold">£2,324.25</span>.
+          </p>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-margin-top-0">
+            We cannot display your card payment history at the moment. Check again later.
+          </h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/pay-online/service-unavailable" class="govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat/trader/999951624/account/overview?lang=eng" class="govuk-link govuk-link--no-visited-state">View your VAT statement</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <p class="govuk-body">
+    6. No tax to pay
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 999900449
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            A VAT Return is ready to complete.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-1">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999951624/periods?lang=eng" class="govuk-link govuk-link--no-visited-state" target="_blank">View submitted returns (opens in new tab)</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You have no tax to pay.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat/trader/999951624/account/overview?lang=eng" class="govuk-link govuk-link--no-visited-state">View your VAT statement</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    7. No balance to show<br>
+    Back end system problem - when the financial API doesn’t work
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 999921988
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-0 govuk-!-margin-top-1">
+            There is no balance information to display.
+          </p>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-margin-top-0">
+            We cannot display your card payment history at the moment. Check again later.
+          </h3>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    8. No returns
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 1158497800
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You have no returns to complete.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999951624/periods?lang=eng" class="govuk-link govuk-link--no-visited-state" target="_blank">View submitted returns (opens in new tab)</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+
+          <p role="text" class="govuk-body govuk-!-margin-bottom-0 govuk-!-margin-top-1">
+            You owe <span class="govuk-body govuk-!-font-weight-bold">£4</span>.
+          </p>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-margin-top-0">
+            We cannot display your card payment history at the moment. Check again later.
+          </h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/pay-online/service-unavailable" class="govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat/trader/999951624/account/overview?lang=eng" class="govuk-link govuk-link--no-visited-state">View your VAT statement</a>
+          </p>
+
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    9. One return
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 999902747
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            A VAT Return is ready to complete.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-1">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999951624/periods?lang=eng" class="govuk-link govuk-link--no-visited-state" target="_blank">View submitted returns (opens in new tab)</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+
+          <p role="text" class="govuk-body govuk-!-margin-bottom-0 govuk-!-margin-top-1">
+            You owe <span class="govuk-body govuk-!-font-weight-bold">£20</span>.
+          </p>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-margin-top-0">
+            We cannot display your card payment history at the moment. Check again later.
+          </h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/pay-online/service-unavailable" class="govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat/trader/999951624/account/overview?lang=eng" class="govuk-link govuk-link--no-visited-state">View your VAT statement</a>
+          </p>
+
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    10. Two or more returns
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 999913044
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            2 VAT Returns are ready to complete.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-1">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Returns</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999951624/periods?lang=eng" class="govuk-link govuk-link--no-visited-state" target="_blank">View submitted returns (opens in new tab)</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+
+          <p role="text" class="govuk-body govuk-!-margin-bottom-0 govuk-!-margin-top-1">
+            You have no tax to pay.
+          </p>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-margin-top-0">
+            We cannot display your card payment history at the moment. Check again later.
+          </h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat/trader/999951624/account/overview?lang=eng" class="govuk-link govuk-link--no-visited-state">View your VAT statement</a>
+          </p>
+
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    11a. Cannot display VAT information -  if all the 3 APIs are unavailable
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          VAT
+        </h2>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          We cannot display your VAT details. You may still be able to <a href="https://www.staging.tax.service.gov.uk/vat/trader/999902666?lang=eng"
+            class="govuk-link govuk-link--no-visited-state">use
+            VAT online
+            services</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <p class="govuk-body">
+    11a. BTA shuttered services card - non MTD VAT
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 123456789
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          Sorry, this service is unavailable.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You will be able to use the service later.
+        </p>
+        <p class="govuk-body">
+          You can still <a href="" target="_blank" class="govuk-link govuk-link--no-visited-state">make a payment without signing in (opens in new tab)</a>
+        </p>
+        <p class="govuk-body">
+          Read more about <a href="https://www.gov.uk/government/publications/vat-online-service-availability-and-issues/vat-online-service-availability-and-issues" target="_blank" class="govuk-link govuk-link--no-visited-state">service availability and issues (opens in new tab)</a>
+        </p>
+      </div>
+    </div>
+  </div> -->
+
+<!--
+  REMOVED per amend to DL-4587
+  <p class="govuk-body">
+    11b. BTA shuttered services card - MTD VAT -  if all the 3 APIs are unavailable
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Making Tax Digital for VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 123456789
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          Sorry, this service is unavailable.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You will be able to use the service later.
+        </p>
+        <p class="govuk-body">
+          You can still <a href="" target="_blank" class="govuk-link govuk-link--no-visited-state">make a payment</a>.
+        </p>
+        <p class="govuk-body">
+          Read more about <a href="https://www.gov.uk/government/publications/making-tax-digital-for-vat-service-availability-and-issues/making-tax-digital-for-vat-service-availability-and-issues" target="_blank" class="govuk-link govuk-link--no-visited-state">service availability and issues (opens in new tab)</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+ -->
+
+ <!-- <p class="govuk-body">
+    12. MTD information
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Changes to VAT
+        </h2>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          Use software to submit your VAT
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          From April 2019, VAT registered businesses with a turnover of £85,000 or above must use relevant third
+          party software to submit their VAT Returns.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Find out more about changes to VAT</a>
+        </p>
+      </div>
+    </div>
+  </div> -->
+
+  <p class="govuk-body">
+    12. MTD information - this is a marketing message
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Check if you need to sign up to Making Tax Digital for VAT
+        </h2>
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-warning-text govuk-!-margin-bottom-0">
+          <span class="govuk-warning-text__icon" aria-hidden="true" style="position:absolute;left:0;top:50%;margin-top:-17px">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            Making Tax Digital means that most businesses with a taxable turnover above £85,000 must now keep VAT records digitally and use compatible software to submit VAT Returns.
+          </strong>
+        </div>
+
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="https://www.gov.uk/guidance/sign-your-business-up-for-making-tax-digital-for-vat" target="_blank" class="govuk-link govuk-link--no-visited-state">Find out more and how to sign up (opens in a new window or tab)</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 999920245
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            A VAT Return is ready to complete.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-1">
+            <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/return?lang=eng" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/periods?lang=eng" class="govuk-link govuk-link--no-visited-state">View submitted returns (opens in new tab)</a>
+          </p>
+
+
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You are <span class="govuk-body govuk-!-font-weight-bold">£5,439.82</span> in credit.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-1">
+              <a href="https://www.staging.tax.service.gov.uk/vat-file/trader/999920245/periods?lang=eng class="govuk-link govuk-link--no-visited-state">View and manage your repayment details</a>
+          </p>
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2 govuk-!-margin-top-0" style="padding-top:0">
+            We cannot display your card payment history at the moment. Check again later.
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat/trader/999920245/account/overview?lang=eng" class="govuk-body govuk-link govuk-link--no-visited-state">View your VAT statement</a>
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/HMCE-VATVAR-ORG/request-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT details online</a>
+        </p>
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/vat" class="govuk-link govuk-link--no-visited-state">More details about your VAT Returns and payments</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    13. MTDfB information (agents)<br>
+    Users who are signed up by their agents but they never logged in<br>
+    The link is to see whether their VRN is on ETMP<br>
+    When the user clicks the link the screen refreshes and shows the MTD card
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-5">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          You have been signed up to the new VAT service
+        </h2>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body govuk-!-margin-bottom-4">
+          From April 2019, VAT registered businesses with a turnover of £85,000 or above must use relevant third party software to submit their VAT Returns.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="https://www.staging.tax.service.gov.uk/vat-through-software/sign-up/claim-subscription/999999999" class="govuk-link govuk-link--no-visited-state">View your VAT account</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    14. MTDfB VAT (the link takes the user to the 'View and Change - V&C' team's page)
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 999943620
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-4">
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <div class="govuk-warning-text govuk-!-margin-bottom-2">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Important</span>
+              Pay your deferred VAT: the new payment scheme
+            </strong>
+          </div>
+
+          <p>Sorry, there is a problem with the service. Try again later.</p>
+          <p>Find out more about the
+            <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" class="govuk-link govuk-link--no-visited-state" target="_blank">VAT deferral new payment scheme (opens in new tab)</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-2">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-6">
+            Your VAT submission is overdue.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="https://www.staging.tax.service.gov.uk/vat-through-software/vat-returns/return-deadlines" class="govuk-link govuk-link--no-visited-state">View return deadlines</a>
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="https://www.staging.tax.service.gov.uk/vat-through-software/vat-returns/submitted" class="govuk-link govuk-link--no-visited-state">View submitted returns</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-2">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4"">
+            Your payments
+          </h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat-through-software/what-you-owe" class="govuk-link govuk-link--no-visited-state">Check what you owe and make a payment</a>
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="https://www.staging.tax.service.gov.uk/vat-through-software/payment-history" class="govuk-link govuk-link--no-visited-state">View payment history</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+        <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/vat-through-software/vat-overview" class="govuk-link govuk-link--no-visited-state">Manage your VAT account</a>
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    14. MTDfB VAT (older version) <strong class="govuk-tag govuk-tag--green">NOT IN STAGING</strong>
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 123456789
+        </p>
+      </div>
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <p class="govuk-body">
+          You can view what you owe, your return deadlines, your payment history, previously submitted returns and make
+          VAT payments.
+        </p>
+        <p class="govuk-body">
+          You can also update some of your VAT details.
+        </p>
+
+      </div>
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body"><a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <p class="govuk-body">
+    15. MTDfB is being set up or for users who are in migration status<br>
+    From VMF to ETMP migration takes up to 72 hours
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-4">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Your Making Tax Digital for VAT account is being set up
+        </h2>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You were recently signed up to the new Making Tax Digital service. This is so you can submit your VAT Returns
+          to HMRC using compatible software.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          It will take up to 72 hours for your account to be set up.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          Check back again later.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    16. MTDfB VAT - Opted-out users <br>
+    MTD users submit by software while Opted out users are those who don’t need to submit by software<br>
+    They can only be Opted out user category if the turnover is less than the 87k threshold<br>
+    Link goes to the V&C page
+    <strong class="govuk-tag govuk-tag--green">NOT IN STAGING</strong>
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          VAT
+        </h2>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You can:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>find out when your VAT return is due and submit it online</li>
+          <li>see how much you owe and make a payment</li>
+          <li>see your payments and VAT returns history</li>
+          <li>update some of your VAT details</li>
+        </ul>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          If your taxable turnover goes over the VAT threshold, you must sign up to Making Tax Digital for VAT and
+          submit your returns using compatible software.
+        </p>
+
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View your VAT account </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+{% endblock %}

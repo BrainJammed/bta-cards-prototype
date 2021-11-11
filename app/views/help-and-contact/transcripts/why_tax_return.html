@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_sa_how_to_pay__heading%}
+
+{% block page_title %}
+Business tax account - prototype
+{% endblock %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+{% block content %}
+
+{% include 'includes/nav-combo-ur2.html' %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">Why have I been sent a tax return? - video transcript</h1>
+
+        <p>You’ll usually be sent a tax return if you’re registered as self-employed, but there are plenty of other reasons why you may need to fill one in.
+          You can check if you need to fill in a Self Assessment tax return quickly and easily on
+          <a href="https://www.gov.uk/">GOV.UK</a> using the link at the end of this video.
+        </p>
+
+        <p>It’s not connected to HM Revenue and Customs online services so it’s completely anonymous</p>
+
+        <p>If you’re sent a tax return, or if you get an email or letter from HMRC telling you to complete one, you must do it - even
+          if you don’t have any tax to pay. If you don’t send a tax return back by the deadline you may have to pay a penalty.
+        </p>
+
+        <p>If you used to send a tax return but don’t need to send one for the last tax year, contact HMRC to close your Self Assessment account.</p>
+
+        <p>You must also tell HMRC if you’ve stopped being self-employed. You can do all this – and find out much more – on
+           <a href="https://www.gov.uk/">GOV.UK</a>.
+        </p>
+
+
+       <details class="govuk-details" data-module="govuk-details" style="padding-top:60px;">
+         <summary class="govuk-details__summary_noarrow" style="display:block;">
+           <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+             Is this page not working properly?
+           </span>
+         </summary>
+         <div class="">
+
+         </div>
+       </details>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}

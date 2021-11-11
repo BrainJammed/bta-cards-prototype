@@ -1,0 +1,306 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Corporation Tax account - GOV.UK
+{% endblock %}
+
+{# {% import "../../includes/card-template.html" as card %} #}
+
+{% block content %}
+
+  {% include 'includes/nav-homepage-a1.html' %}
+
+  <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+    {# <div class="gov-uk-column-two-thirds">
+      <h1 class="govuk-heading-xl">Alex Fisher</h1>
+    </div> #}
+
+    <h2 class="govuk-heading-l">Your taxes</h2>
+
+    {# ///////////////////////////// #}
+
+    <div class="govuk-grid-column-full card-container card-grey" id="cardAmount">
+      <div class="card-body">
+
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-1 govuk-!-margin-bottom-3 govuk-section-break--visible">
+          <div class="govuk-grid-column-one-half govuk-!-padding-left-0">
+            <h2 class="govuk-heading-s">
+              Corporation Tax
+            </h2>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <span class="govuk-body">Unique Taxpayer Reference (UTR): 987654321</span>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-4">
+          <span class="govuk-body govuk-!-font-weight-bold inline-padding-right">You owe</span>
+          <span class="govuk-body govuk-!-font-size-27 govuk-!-font-weight-bold inline-padding-right">£1,073</span>
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Find out how we worked this out</a>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-font-size-19">
+          <span class="govuk-!-padding-right-4">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Make a payment</a>
+          </span>
+          <span class="govuk-!-padding-right-4">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete a return</a>
+          </span>
+          <span class="govuk-!-padding-right-4">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More Corporation Tax details</a>
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    {# ///////////////////////////// #}
+
+    <div class="govuk-grid-column-full card-container card-grey" id="cardAmount">
+      <div class="card-body">
+
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-1 govuk-!-margin-bottom-3 govuk-section-break--visible">
+          <div class="govuk-grid-column-one-half govuk-!-padding-left-0">
+            <h2 class="govuk-heading-s">
+              Self Assessment
+            </h2>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <span class="govuk-body">Unique Taxpayer Reference (UTR): 123456789</span>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-one-half">
+          <ul class="govuk-list">
+            <li>
+              <p class="govuk-body govuk-!-font-weight-bold">Your returns</a>
+            </li>
+            <li>
+              <p>2017 to 2018 tax return was due by 31 January 2018</p>
+            </li>
+            <li>
+              <span class="govuk-!-padding-right-4">
+                <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Penalties</a>
+              </span>
+              <span class="govuk-!-padding-right-4">
+                <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete a return</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-half">
+          <ul class="govuk-list">
+            <li>
+              <p class="govuk-body govuk-!-font-weight-bold">Your payments</a>
+            </li>
+            <li>
+              <p>You need to pay £547.00 by 31 July 2019</p>
+            </li>
+            <li>
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Make a payment</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    {# ///////////////////////////// #}
+
+    <div class="govuk-grid-column-full card-container card-grey" id="cardAmount">
+      <div class="card-body">
+
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-1 govuk-!-margin-bottom-3 govuk-section-break--visible">
+          <div class="govuk-grid-column-one-half govuk-!-padding-left-0">
+            <h2 class="govuk-heading-s">
+              VAT
+            </h2>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <span class="govuk-body">VAT Registration Number (VRN): 123456789</span>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-4">
+          <span class="govuk-body govuk-!-font-weight-bold inline-padding-right">You are</span>
+          <span class="govuk-body govuk-!-font-size-27 govuk-!-font-weight-bold inline-padding-right">£1,341</span>
+          <span class="govuk-body govuk-!-font-weight-bold inline-padding-right">in credit</span>
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">How we worked this out (opens in a new window or tab)</a>
+        </div>
+
+        <div class="govuk-grid-column-full">
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">When you will be repaid</span>
+            </summary>
+
+            <ul class="govuk-grid-column-two-thirds">
+              <li>We will transfer this amount to your
+                <a href="javascript:;">repayments bank account</a>
+                if you have set one up. We will post you a payable order (like a cheque) otherwise.</li>
+
+              <li>We normally send payment within 10 days unless we need to make checks, for example if you are reclaiming more VAT than usual.</li>
+              <li>Do not get in touch unless you have been in credit for
+                <a href="javascript:;">more than 21 days</a>.</li>
+            </ul>
+          </p>
+
+          <div class="govuk-grid-column-full"></div>
+        </details>
+      </div>
+
+      <div class="govuk-grid-column-one-half"></div>
+
+    </div>
+  </div>
+
+  {# ///////////////////////////// #}
+
+  <div class="govuk-grid-column-full card-container card-grey" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-full govuk-!-padding-bottom-1 govuk-!-margin-bottom-3 govuk-section-break--visible">
+        <div class="govuk-grid-column-one-half govuk-!-padding-left-0">
+          <h2 class="govuk-heading-s">
+            Employers Pay as You Earn
+          </h2>
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <span class="govuk-body">PAYE Reference: 123/45BC89</span>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-one-half">
+        <ul class="govuk-list">
+          <li>
+            <p>
+              <span class="govuk-body govuk-!-font-size-27 govuk-!-font-weight-bold inline-padding-right">£34,477.69</span><br>
+              <span class="govuk-body govuk-!-font-weight-bold inline-padding-right">of unallocated payments</span></p>
+          </li>
+          <li>
+            <details class="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">See breakdown</span>
+              </summary>
+              <ul>
+                <li>
+                  <p>£9.42 interest overdue. RTI bill not paid on time</p>
+                </li>
+                <li>
+                  <p>£1,116.97 bill for month 9 - overdue</p>
+                </li>
+                <li>
+                  <p>£1,116.97 bill for month 3 - overdue. Includes interest of £1,833.69 (increasing daily)</p>
+                </li>
+              </ul>
+              <p>
+                <a href="javascript:;">Pay bills</a>
+              </p>
+            </details>
+          </li>
+        </div>
+
+        <div class="govuk-grid-column-one-half">
+          <ul class="govuk-list">
+            <li>
+              <p>
+                <span class="govuk-body govuk-!-font-size-27 govuk-!-font-weight-bold inline-padding-right">£0.01</span>
+                <span class="govuk-body govuk-!-font-weight-bold inline-padding-right">of unallocated credit National Insurance Contributions Holiday</span></p>
+            </li>
+            <li>
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">See breakdown</span>
+                </summary>
+                <ul>
+                  <li>
+                    <p>£9.42 interest overdue. RTI bill not paid on time</p>
+                  </li>
+                  <li>
+                    <p>£1,116.97 bill for month 9 - overdue</p>
+                  </li>
+                  <li>
+                    <p>£1,116.97 bill for month 3 - overdue. Includes interest of £1,833.69 (increasing daily)</p>
+                  </li>
+
+                </ul>
+                <p>
+                  <a href="javascript:;">Pay bills</a>
+                </p>
+              </details>
+            </li>
+
+          </div>
+
+        </div>
+      </div>
+
+      {# ///////////////////////////// #}
+
+      {# <div class="govuk-grid-column-full card-container card-grey" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-full govuk-!-padding-bottom-1 govuk-!-margin-bottom-3 govuk-section-break--visible">
+        <div class="govuk-grid-column-one-half govuk-!-padding-left-0">
+          <h2 class="govuk-heading-s">
+            Expandable card example
+          </h2>
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <span class="govuk-body">Unique Taxpayer Reference (UTR): 123456789</span>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-bottom-4">
+        <span class="govuk-body govuk-!-font-weight-bold inline-padding-right">You owe</span>
+        <span class="govuk-body govuk-!-font-size-27 govuk-!-font-weight-bold inline-padding-right">£2,341</span>
+        <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Find out how we worked this out</a>
+      </div>
+
+      <div class="govuk-grid-column-full">
+        <details class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">Check what you owe, make a payment, complete a return and view your payment history</span>
+          </summary>
+
+          <p class="govuk-grid-column-two-thirds">
+            As with the font size, you can add a font weight override class to any other typographic class or element to change the font weight to regular or bold weight.
+          </p>
+
+          <div class="govuk-grid-column-full">
+            <span class="govuk-!-padding-right-4">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Make a payment</a>
+            </span>
+            <span class="govuk-!-padding-right-4">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete a return</a>
+            </span>
+            <span class="govuk-!-padding-right-4">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More Corporation Tax details</a>
+            </span>
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </div> #}
+
+      {# ////////////  PLUS CARD  ///////////////// #}
+
+      {# <div class="govuk-grid-column-full card-container card-grey" id="cardAmount">
+      <div class="card-body">
+
+        <div style="text-align: center; padding: 2.5em 0 1em;">
+          <img src="/public/images/icon-plus.svg" alt="plus icon"/>
+
+          <h2 class="govuk-heading-s" style="text-align: center; color: #6f777b; padding-bottom: 1em;">
+            Add a tax
+          </h2>
+        </div>
+      </div>
+    </div> #}
+
+    </div>
+
+  {% endblock %}

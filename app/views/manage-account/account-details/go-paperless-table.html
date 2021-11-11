@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-combo-ur2.html' %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+
+    <!-- {% include "includes/back.html" %} -->
+
+    <h1 class="govuk-heading-xl">
+      Go paperless
+    </h1>
+
+  </div>
+
+  <!-- ///////////////////////////////////////////// -->
+  <!-- //////////////////  OLD  //////////////////// -->
+  <!-- ///////////////////////////////////////////// -->
+
+  <!-- /////////// ACCOUNT USERS /////////////////// -->
+
+  <!-- /////////// ACCOUNTANTS /////////////////// -->
+
+  <!-- /////////// ACCOUNT DETAILS /////////////////// -->
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+
+    <div class="govuk-tabs" data-module="govuk-tabs">
+
+
+      <!-- ----------- GO PAPERLESS ----------- -->
+
+
+      <ul class="govuk-list">
+        <li>
+          <p class="govuk-body">Replace the letters you get about taxes with emails.</p>
+          <a href="go-paperless-with-hmrc" class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="Change Government Gateway email">Sign up for paperless notifications</a>
+        </li>
+      </ul>
+
+
+      <!-- ///////////////////// -->
+      <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-top-8 govuk-!-margin-bottom-8">
+      <h3 class="govuk-body govuk-!-font-weight-bold">Email for paperless notifications</h3>
+
+      <p>You need to verify your email address.</p>
+
+      <div class="govuk-inset-text">
+        It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.
+      </div>
+
+          <p>If you cannot find it we can <a href="javascript:;"
+              class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">send a new verification
+              email</a><span class="govuk-visually-hidden">send a new verification email for go paperless with
+              HMRC</span>.</p>
+          <p><a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Change your email
+              address<span class="govuk-visually-hidden">Change your email address for Go paperless with HMRC</span></a></p>
+          <p><a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Stop emails from HMRC<span
+                class="govuk-visually-hidden">Stop emails from Go paperless with HMRC</span></a></p>
+
+
+      <!-- ///////////////////// -->
+
+      <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-top-8 govuk-!-margin-bottom-8">
+
+      <h3 class="govuk-body govuk-!-font-weight-bold">Emails address for HMRC digital communications</h3>
+
+      <p class="govuk-body">Emails are sent to: a**********k@digital.hmrc.gov.uk</p>
+
+      <p><a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Change your email
+          address<span class="govuk-visually-hidden">Change your email address for Go paperless with HMRC</span></a></p>
+
+      <p class="govuk-!-margin-bottom-2"><a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+          aria-hidden="true">Stop emails from HMRC<span class="govuk-visually-hidden">Stop emails from Go paperless with
+            HMRC</span></a></p>
+
+      <!-- ///////////////////// -->
+
+      <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-top-8 govuk-!-margin-bottom-8">
+      <p class="govuk-body">We cannot display your paperless settings. Try
+        again later.</p>
+      <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-top-8 govuk-!-margin-bottom-8">
+
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}

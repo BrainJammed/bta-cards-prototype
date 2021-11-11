@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/add-sa/which-describes-you-utr-yes" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+      {% include "includes/back.html" %}
+
+      <div class="govuk-form-group scenarioA">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Which of these best describes you?
+            </h1>
+          </legend>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="individual" name="describe-you" type="radio" value="Individual-sole-trader">
+              <label class="govuk-label govuk-radios__label" for="which-of-these-best-describes-you">
+                Individual or sole trader
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="partnership" name="describe-you" type="radio" value="partnership">
+              <label class="govuk-label govuk-radios__label" for="which-of-these-best-describes-you-2">
+                Partnership
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="trust" name="describe-you" type="radio" value="trust">
+              <label class="govuk-label govuk-radios__label" for="which-of-these-best-describes-you-3">
+                Trust
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" id="scenarioA" onclick="location.href = 'https://mtd-income-tax-prototype.herokuapp.com/claim-enrolment/1-0-0/start?serviceFrom=bta';" type="button">Continue</button>
+
+
+    </div>
+
+  </form>
+
+</div>
+
+{% endblock %}

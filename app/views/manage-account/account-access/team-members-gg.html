@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+<!-- {# {% import "includes/card-template.html" as card %} #} -->
+<main class="govuk-main-wrapper">
+{% block content %}
+
+  <!-- /////////////////////////////// -->
+
+  <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+    <a href="../../bta-homepage/bta-homepage-ur2" class="govuk-back-link govuk-!-margin-bottom-6">Back to HMRC</a>
+
+    <span class="govuk-caption-xl govuk-!-margin-bottom-2">Government Gateway</span>
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">Team members</h1>
+
+    <!-- //////////////  ADD A TAX  /////////////////// -->
+
+    <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <p class="govuk-body">
+        <a href="add-a-team-member-gg"
+          class="govuk-body govuk-link govuk-link--no-visited-state govuk-!-font-size-24">Add a team member</a>
+      </p>
+    </div>
+
+    <!-- ///////////////////////////////////////////////////// -->
+
+    <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6">
+
+    <div class="govuk-grid-column-full govuk-!-margin-bottom-6 govuk-!-padding-0">
+
+      <table class="govuk-table">
+        <!-- <caption class="govuk-table__caption">Tax 2017 to 2018 tax bill</caption> -->
+        <tbody class="govuk-table__body">
+
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">Mary Jones</th>
+            <td class="govuk-table__cell">Administrator</td>
+            <td class="govuk-table__cell">mary.jones@revolutions.co.uk</td>
+            <td class="govuk-table__cell"><a href="govuk-manage-team-member" class="govuk-link govuk-link--no-visited-state">Manage</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">Ada Blair</th>
+            <td class="govuk-table__cell">Standard user</td>
+            <td class="govuk-table__cell">ada.blair@revolutions.co.uk</td>
+            <td class="govuk-table__cell"><a href="govuk-manage-team-member" class="govuk-link govuk-link--no-visited-state">Manage</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">Baxter Molina</th>
+            <td class="govuk-table__cell">Standard user</td>
+            <td class="govuk-table__cell">baxter.molina@revolutions.co.uk</td>
+            <td class="govuk-table__cell"><a href="govuk-manage-team-member" class="govuk-link govuk-link--no-visited-state">Manage</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ///////////////////////////////// -->
+
+
+    </div>
+  </div>
+
+  {% endblock %}
+</main>

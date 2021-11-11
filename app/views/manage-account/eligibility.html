@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    {% include "includes/back.html" %}
+
+    <h1 class="govuk-heading-l">
+      Check if you can register for VAT online
+    </h1>
+
+    <p class="govuk-body govuk-!-padding-bottom-4">
+      You will be asked up to 6 questions to check if you are eligible to register for VAT online.
+    </p>
+
+    <a class="govuk-button" href="vat-exception" role="button">Continue</a>
+
+  </div>
+
+</div>
+
+<!-- <div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    {% include "includes/back.html" %}
+
+    <h1 class="govuk-heading-l">
+      Check if you can register for VAT online
+    </h1>
+
+    <p class="govuk-body govuk-!-padding-bottom-4">
+      You will be asked up to 6 questions to check if you are eligible to register for VAT online.
+    </p>
+
+    <a class="govuk-button" href="vat-exception" role="button">Continue to questions</a>
+
+  </div>
+
+</div> -->
+
+{% endblock %}

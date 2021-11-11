@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+  {% include 'includes/nav-homepage-a2.html' %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+      {% include "includes/back.html" %}
+      <div class="govuk-form-group">
+
+        <h1 class="govuk-heading-xl">
+          Deregister for VAT
+        </h1>
+
+        <p class="govuk-body">
+          Only deregister for VAT if you have (any of the following):
+        </p>
+
+        <!-- <ul class="govuk-list govuk-list--bullet">
+          <li>you have stopped making or trading VAT taxable supplies</li>
+          <li>you have joined a VAT group</li>
+          <li>your VAT taxable turnover has fallen below the deregistration threshold&nbsp;of&nbsp;£83,000
+          </li>
+        </ul>
+
+        <div class="govuk-inset-text">
+          This will only cancel your VAT registration. You must deregister from other taxes, duties or schemes separately.
+        </div>
+
+        <a href="deregister-requirements-vat" role="button" draggable="false" class="govuk-button govuk-button">
+          Continue
+        </a> -->
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>stopped making or trading VAT taxable supplies</li>
+          <li>joined a VAT group</li>
+          <li>VAT taxable turnover below the deregistration threshold of £83,000</li>
+        </ul>
+        <p class="govuk-body">We will confirm your deregistration in around 3 weeks.</p>
+        <p>This will only cancel your VAT registration. You must deregister for other taxes, duties or schemes separately.</p>
+        <br>
+        <button class="govuk-button">Continue</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

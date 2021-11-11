@@ -1,0 +1,217 @@
+.navbar .navbar__list-items {
+  padding-left: 0;
+  // background-color: #f8f8f8;
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.6em 1em 0.6em 0.6em;
+
+    a {
+      @include govuk-font(19, $weight: regular);
+      @extend .bold-small !optional;
+      color: #0b0c0c;
+      margin-right: 15px;
+      margin-bottom: 0;
+      font-size: 19px;
+      text-decoration: none;
+
+      &:hover {
+        color: #0b0c0c;
+        font-weight: bold;
+      }
+
+      &:focus {
+        outline: 0;
+        background-color: #f8f8f8;
+        box-shadow: none;
+      }
+    }
+
+    &.active {
+      background-color: #f8f8f8;
+    }
+
+    &.active a {
+      color: #0b0c0c;
+      font-weight: bold;
+    }
+
+    // -------- DESKTOP ------ //
+
+    @include govuk-media-query($from: 980px) {
+      // display: inline-block;
+      // clear: none;
+      // padding: 5px;
+      // margin: 1em;
+      // background-color: #fff;
+
+      // &.active a {
+      //   border-bottom: 5px solid #1d70b8 !important;
+      //   background-color: #fff;
+
+      //   &:hover {
+      //     font-weight: normal;
+      //     border-bottom: 2px solid #1d70b8 !important;
+      //   }
+      // }
+
+      display: inline-block;
+      clear: none;
+      // margin: 0;
+      padding: 0.6em 1em 0.6em 1em;
+
+      a {
+        @include govuk-font(19, $weight: regular);
+        color: #0b0c0c;
+        margin-right: 0;
+        margin-bottom: 0;
+        text-decoration: none;
+
+        &:hover {
+          font-weight: normal;
+        }
+
+        &:focus {
+          outline: 0;
+          background-color: #f8f8f8;
+          box-shadow: none;
+        }
+      }
+
+      &.active {
+        background-color: #fff;
+        border-bottom: 5px solid #1d70b8 !important;
+        a:hover {
+          font-weight: normal;
+        }
+      }
+      &:hover {
+        background-color: #f8f8f8;
+        // font-weight: normal;
+        padding-bottom: .7em;
+        
+        border-bottom: 2px solid #1d70b8 !important;
+      }
+
+
+    }
+  }
+}
+
+.language-toggle {
+  display: block;
+  right: 0px;
+  text-align: right;
+
+  p {
+    margin-bottom: 0;
+
+    span {
+      color: #626a6e;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

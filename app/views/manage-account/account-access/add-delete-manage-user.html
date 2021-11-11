@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+<!-- {% include 'includes/nav-homepage-a2.html' %} -->
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/account-access/add-delete-manage-user" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+      <!-- {% include "includes/back.html" %} -->
+      <div class="govuk-form-group">
+
+        <fieldset class="govuk-fieldset">
+
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl govuk-!-padding-bottom-4">
+            <h1 class="govuk-fieldset__heading">
+              What do you need to do?
+            </h1>
+          </legend>
+<!-- 
+          <div>
+            <span id="how-contacted-conditional-hint govuk-grid-column-two-thirds" class="govuk-hint">
+              You need to add a team member to your account before you can give them access to your taxes and schemes.
+            </span>
+          </div> -->
+
+          <div class="govuk-radios">
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="add-or-delete-team-member" name="add-delete-manage" type="radio" value="add-delete">
+              <label class="govuk-label govuk-radios__label" for="add-or-delete-user">
+                Add or delete a team member
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="manage-team-member" name="add-delete-manage" type="radio" value="manage">
+              <label class="govuk-label govuk-radios__label" for="manage-team-member">
+                Manage who can access your taxes and schemes
+                <!-- Give or change a team member's access to your taxes and schemes -->
+              </label>
+            
+            </div>
+
+          </div>
+
+
+        </fieldset>
+
+      </div>
+
+      <button class="govuk-button">Continue</button>
+
+    </div>
+
+  </form>
+  
+</div>
+
+
+{% endblock %}

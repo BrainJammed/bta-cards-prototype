@@ -1,0 +1,52 @@
+{% extends '../../../layouts/base.html' %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_paye_cis_refunds__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include '../../../includes/header_full_width.html' %}
+
+<main id="content" class="grid-row" role="main">
+
+    {{ govPageHeader(pageHeading) }}
+    <div class="column-two-thirds">
+    	<h2 class="heading-large-macro">PAYE refunds</h2>
+    	<p>If HMRC owes you money for employer's PAYE, you can deduct the amount that you are owed from your next employer's PAYE payment to HMRC.
+</p>
+<p>
+	You do not need to tell HMRC.
+</p>
+<p>If the refund is because you made a mistake in a payroll submission, you must correct the submission before you adjust your payment to HMRC.
+</p>
+<h2 class="heading-medium">Apply for a refund by post</h2>
+<p>You can also request a refund by post.
+</p>
+<p>It takes several months for HMRC to process refund requests. It is faster to deduct the refund from your next employer's PAYE payment.
+</p>
+<p>You will only get a refund if you do not owe money for other taxes.
+</p>
+<p>Write to the following address, including details of the bank account you want the refund to go to:
+</p>
+<p>National Insurance Contributions and Employers Office<br>
+HM Revenue and Customs<br>
+BX9 1BX<br>
+United Kingdom</p>
+<a href="https://www.gov.uk/payroll-errors/correcting-payments-to-hmrc">More about refunds</a>
+
+<h2 class="heading-medium">CIS refunds</h2>
+<p>If you are a limited company that acts as a subcontractor under the Construction Industry Scheme (CIS) and your CIS account is in credit at the end of the year, you can request a repayment.
+</p>
+<p>We aim to process repayments within 25 working days of receiving it, if we agree with your claim.
+</p>
+<p>Do not call unless it has been more than 40 working days, as we may still be considering your claim.
+</p>
+<a href ="https://www.gov.uk/government/publications/construction-industry-scheme-repayment-claims-for-limited-company-subcontractors">How to claim a CIS refund</a><br>
+    
+    </div>
+</main>
+
+
+{% endblock %}

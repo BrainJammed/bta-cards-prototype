@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-combo-ur2.html' %}
+
+
+<div class="govuk-grid-row">
+
+    <form action="/manage-account/stop-online/remove-tax-a2" method="post" class="form">
+
+  <div class="govuk-grid-column-two-thirds">
+      {% include "includes/back.html" %}
+    <div class="govuk-form-group">
+ <!-- Routes to be added for this form -->
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-4">
+              Which online service do you need to stop using?
+            </h1>
+        </legend>
+          <div class="govuk-radios govuk-!-margin-bottom-4">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="which-stop-online-1" name="which-stop-online" type="radio" value="ct">
+              <label class="govuk-label govuk-radios__label" for="ct">
+                Corporation Tax
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="which-stop-online-2" name="which-stop-online" type="radio" value="sa">
+              <label class="govuk-label govuk-radios__label" for="sa">
+                Self Assessment
+              </label>
+            </div>
+          </div>
+      </fieldset>
+
+  </div>
+
+</div>
+
+</div>
+<button class="govuk-button">Continue</button>
+</form>
+{% endblock %}

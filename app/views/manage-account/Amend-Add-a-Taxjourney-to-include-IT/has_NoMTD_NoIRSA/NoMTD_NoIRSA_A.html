@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row">
+
+    <form action="/manage-account/add-tax-a1" method="post" class="form">
+
+  <div class="govuk-grid-column-two-thirds">
+
+      {% include "includes/back.html" %}
+
+    <div class="govuk-form-group">
+
+      <fieldset class="govuk-fieldset">
+
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-4">
+            What do you want to add?
+          </h1>
+        </legend>
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <p>You may need reference numbers relevant to the tax you are adding. To add Self Assessment or Corporation Tax, you need a UTR. To add VAT, you need a VAT registration number. To add PAYE for employers, you need employers PAYE and accounts office references.</p>
+        </div> -->
+        <!-- <span id="changed-name-hint" class="govuk-hint govuk-!-padding-bottom-4">
+          You may need reference numbers relevant to the tax you are adding. To add Self Assessment or Corporation Tax, you need a UTR. To add VAT, you need a VAT registration number. To add PAYE for employers, you need employers PAYE and accounts office references.
+        </span> -->
+        <div class="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="corporation-tax" name="tax" type="radio" value="corporation-tax">
+            <label class="govuk-label govuk-radios__label" for="corporation-tax">
+              Corporation Tax
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="self-assessment" name="tax" type="radio" value="self-assessment">
+            <!-- <label class="govuk-label govuk-radios__label" for="self-assessment">
+              Self Assessment, including partnerships and trusts
+            </label> -->
+            <label class="govuk-label govuk-radios__label" for="self-assessment">
+              Self Assessment for individuals, sole traders, partnerships or trusts, or Making Tax Digital for Income Tax
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="epaye" name="tax" type="radio" value="epaye">
+            <label class="govuk-label govuk-radios__label" for="epaye">
+              Employers or intermediaries, for example PAYE for employers or CIS
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="vat" name="tax" type="radio" value="vat">
+            <label class="govuk-label govuk-radios__label" for="vat">
+              VAT and VAT services, for example EC Sales List
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="other-taxes" name="tax" type="radio" value="other-taxes">
+            <label class="govuk-label govuk-radios__label" for="other-taxes">
+              Other taxes, duties or schemes
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+    </div>
+
+  </div>
+
+</div>
+<br>
+<button class="govuk-button" onclick="location.href = 'utr.html';" type="button">Continue</button>
+
+{% endblock %}

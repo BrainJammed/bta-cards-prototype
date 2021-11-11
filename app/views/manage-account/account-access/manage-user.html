@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/account-access/manage-user" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+      {% include "includes/back.html" %}
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="manage-user-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Do you need to add a new <br>team member?
+      </h1>
+    </legend>
+    <span id="manage-user-hint" class="govuk-hint">
+      You need to add a team member to your account before you can give <br>them access to your taxes and schemes. 
+    </span>
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="manage-user-1" name="manage-user" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="manage-user-1">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="manage-user-2" name="manage-user" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="manage-user-2">
+          No
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<button type="submit" class="govuk-button">
+ Continue
+</button>
+</div>
+
+</form>
+
+{% endblock %}

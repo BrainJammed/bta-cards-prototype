@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a2.html' %}
+{% block content %}
+
+{% include 'includes/nav-combo-ur2.html' %}
+
+<div class="govuk-grid-row">
+
+    <form action="/manage-account/add-tax-a1" method="post" class="form">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              What do you want to add?
+            </h1>
+          </legend>
+          <div class="govuk-radios addTax">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="ca" name="tax" type="radio" value="corporation-tax">
+              <label class="govuk-label govuk-radios__label" for="corporation-tax">
+                Corporation Tax
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="epaye" name="tax" type="radio" value="epaye">
+              <label class="govuk-label govuk-radios__label" for="epaye">
+                Employers or intermediaries, for example PAYE for employers or CIS
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="sa" name="tax" type="radio" value="self-assessment">
+              <label class="govuk-label govuk-radios__label" for="self-assessment">
+                Self Assessment, including partnerships and trusts
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="vat" name="tax" type="radio" value="vat">
+              <label class="govuk-label govuk-radios__label" for="vat">
+                VAT and VAT services, for example EC Sales List
+              </label>
+            </div>
+            <div class="govuk-radios__divider">or</div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="otherTaxes" name="tax" type="radio" value="other-taxes">
+              <label class="govuk-label govuk-radios__label" for="other-taxes">
+                Other taxes, duties or schemes
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+  </div>
+
+</div>
+<br>
+  <button class="govuk-button">Continue</button>
+
+  <details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+    <summary class="govuk-details__summary_noarrow" style="display:block;">
+      <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+        Is this page not working properly?
+      </span>
+    </summary>
+    <div class="">
+
+    </div>
+  </details>
+
+{% endblock %}

@@ -1,0 +1,120 @@
+{% set serviceName = "" %}
+{% extends "layout.html" %}}
+{% block page_title %}
+  Government gateway
+{% endblock %}
+{% block content %}
+  <main class="govuk-main-wrapper" id="content" role="main">
+
+    <div class="govuk-column-two-thirds">
+
+      <fieldset class="govuk-fieldset">
+
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+           Sign in
+          </h1>
+        </legend>
+
+        <p class="govuk-body-l">Enter your Government Gateway credentials to sign in. You received these when you created your account.</p>
+
+        <details class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              What is Government Gateway?
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            Government Gateway is your secure online account. You get a user ID and password which you can use to access a range of online government services. For example, renewing your driving licence, registering for VAT or completing your Self Assessment.</p>
+        </div>
+      </details>
+
+      <!-- <form action="" method="POST" id="loginForm"> -->
+      <br>
+      <form action="/answer-question" class="form" id="form-country_v1" method="post" name="form-country_v1">
+
+        <div class="govuk-form-group" id="user-id-header">
+          <label class="govuk-label" for="full-name-f1">User ID</label>
+          <input class="govuk-input  govuk-!-width-one-half" id="user-id" name="user-id" required="" type="text">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="full-name-f1">Password</label>
+          <input class="govuk-input  govuk-!-width-one-half" id="password" name="password" required="" type="password">
+        </div>
+        <div class="form-field">
+          <a class="govuk-button" href="../bta-homepage/bta-homepage-a2" role="button">Sign in</a>
+        </div>
+      </fieldset>
+    </form>
+    <h2 class="heading-medium">Problems signing in</h2>
+    <p>
+      <a href="javascript:;">Do not have a Government Gateway account</a>
+    </p>
+    <p>
+      <a href="javascript:;">Forgotten user ID</a>
+    </p>
+    <p>
+      <a href="javascript:;">Forgotten password</a>
+    </p>
+    <p>
+      <a href="javascript:;">Forgotten user ID and password</a>
+    </p><br>
+    <br>
+    <div>
+      <br>
+      <br>
+      <p>
+        <a class="report-error" href="#support" id="get-help-action" onclick="$('#support').toggle();return false;">Report a problem</a>
+      </p>
+      <small class="hidden-help" id="support" style="display: none;"></small>
+      <div class="report-error__content" id="report-error-partial-form">
+        <small class="hidden-help" id="support" style="display: none;"></small>
+        <h3 class="heading-medium">
+          <small class="hidden-help" id="support" style="display: none;">Tell us about a problem you have encountered or something that needs to improve.</small>
+        </h3>
+        <p>
+          <small class="hidden-help" id="support" style="display: none;">Do not include any personal or financial information. For example your National Insurance number or credit card details.</small>
+        </p>
+        <form action="" class="form--feedback" method="" novalidate="novalidate">
+          <small class="hidden-help" id="support" style="display: none;"></small>
+          <fieldset>
+            <small class="hidden-help" id="support" style="display: none;"></small>
+            <div class="form-group-compound">
+              <small class="hidden-help" id="support" style="display: none;">
+                <label class="form-label" for="report-name">Name</label>
+                <input aria-required="true" class="form-control-3-4" data-msg-required="Please provide your name." data-rule-letterswithbasicpunc="true" data-rule-required="true" id="report-name" name="report-name" type="text"></small>
+            </div>
+            <small class="hidden-help" id="support" style="display: none;"></small>
+            <div class="form-group-compound">
+              <small class="hidden-help" id="support" style="display: none;">
+                <label class="form-label" for="report-email">Email</label>
+                <input aria-required="true" class="form-control-3-4" data-msg-required="Please provide your email address." data-rule-email="true" data-rule-required="true" id="report-email" name="report-email" type="email"></small>
+            </div>
+            <small class="hidden-help" id="support" style="display: none;"></small>
+            <div class="form-group-compound">
+              <small class="hidden-help" id="support" style="display: none;">
+                <label class="form-label" for="text">What where you doing?</label>
+                <input aria-required="true" class="form-control-3-4" data-msg-required="Please enter details of what you were doing." data-rule-required="true" id="text" name="report-action" type="text"></small>
+            </div>
+            <small class="hidden-help" id="support" style="display: none;"></small>
+            <div class="form-group-compound">
+              <small class="hidden-help" id="support" style="display: none;">
+                <label class="form-label" for="report-error">What do you need help with?</label>
+                <input aria-required="true" class="form-control-3-4" data-msg-required="Please enter details of what went wrong." data-rule-required="true" id="report-error" name="report-error" type="text"></small>
+            </div>
+            <small class="hidden-help" id="support" style="display: none;"><input name="isJavascript" type="hidden" value="true">
+              <input name="referrer" type="hidden" value="https://web-qa.tax.service.gov.uk/mdtp/registration"></small>
+            <div class="form-field">
+              <small class="hidden-help" id="support" style="display: none;">
+                <button class="button" data-journey-click="" id="report-submit" type="submit">
+                  <small class="hidden-help" id="support" style="display: none;">Send</small>
+                </button>
+              </small>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

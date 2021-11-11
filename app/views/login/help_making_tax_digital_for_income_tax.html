@@ -1,0 +1,141 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-grid-row">
+
+	<form action="/manage-account/add-tax-a1" method="post" class="form">
+		<div class="govuk-width-container">
+			<main class="govuk-main-wrapper " id="main-content" role="main">
+				<div class="govuk-grid-row">
+					<div class="govuk-grid-column-two-thirds">
+						<h1 class="govuk-heading-xl">Help with Making Tax Digital for Income Tax</h1>
+
+						<h2 class="govuk-heading-m">
+							Making Tax Digital For Income Tax
+						</h2>
+
+						<p class="govuk-body">Making Tax Digital for Income Tax is a new system HM Revenue and Customs (HMRC) uses to collect Income Tax.</p>
+
+						<p class="govuk-body">Income Tax is usually deducted automatically from wages, pensions and savings.</p>
+
+            <p class="govuk-body">However, people and businesses with other income must report Income Tax by submitting quarterly updates and an annual final declaration</p>
+
+            <p class="govuk-body">Making Tax Digital for Income Tax is used by:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>the self-employed</li>
+              <li>sole traders</li>
+              <li>individuals such as company directors</li>
+              <li>partners in partnerships</li>
+              <li>trustees</li>
+              <li>other similar people</li>
+            </ul>
+
+						<!-- <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible"> -->
+
+						<h2 class="govuk-heading-m">
+							Self Assessment and Making Tax Digital for Income Tax
+						</h2>
+
+            <p class="govuk-body">Self Assessment is the system HMRC currently uses to collect Income Tax.</p>
+
+            <p class="govuk-body">After you sign up for Making Tax Digital for Income Tax, you must still submit a Self Assessment tax return for the tax year before the current one.</p>
+
+            <p class="govuk-body">You must then <a class="govuk-link" href="https://www.gov.uk/guidance/follow-the-rules-for-making-tax-digital-for-income-tax#send-updates-using-software" target="_blank">send
+               quarterly updates (opens in new tab)</a> and a final declaration for<a class="govuk-link" href="https://www.gov.uk/guidance/follow-the-rules-for-making-tax-digital-for-income-tax#submitting-a-final-declaration" target="_blank">
+               Making Tax Digital for Income Tax (opens in new tab)</a> for the current tax year.
+            </p>
+
+            <p class="govuk-body">This replaces your annual Self Assessment tax return.</p>
+
+            <p class="govuk-body">You do not need to pay Income Tax quarterly. Your Income Tax is due every 31 January after the tax year ends. This is the same as Self Assessment.</p>
+
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  Example: Changing from Self Assessment to Making Tax Digital for Income Tax
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                  <p class="govuk-body">Jay Smith earns money from self-employment and reports the earnings to HMRC using Self Assessment.</p>
+                  <p class="govuk-body">In September 2021, Jay Smith decides to stop Self Assessment and sign up for Making Tax Digital for Income Tax.</p>
+                  <p class="govuk-body">By 31 January 2022, Jay must:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>send HMRC a Self Assessment tax return for tax year 2020 to 2021</li>
+                    <li>pay HMRC the Income Tax due for tax year 2020 to 2021</li>
+                  </ul>
+              </div>
+
+              <div class="govuk-details__text">
+                  <p class="govuk-body">Jay must also start sending Making Tax Digital for Income Tax quarterly updates from September 2022. These updates are for the tax year 2021 to 2022.</p>
+                  <p class="govuk-body">By 31 January 2023, Jay must also:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>send HMRC a Making Tax Digital for Income Tax final declaration for tax year 2021 to 2022</li>
+                    <li>pay HMRC the Income Tax due for tax year 2021 to 2022 </li>
+                  </ul>
+              </div>
+            </details>
+
+            <p class="govuk-body">
+              <a class="govuk-link" href="https://www.gov.uk/guidance/follow-the-rules-for-making-tax-digital-for-income-tax" target="_blank">
+                Find out more about Making Tax Digital for Income Tax (opens in new tab)
+              </a>
+            </p>
+
+            <!-- <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible"> -->
+
+            <h2 class="govuk-heading-m">
+							Signing up for Making Tax Digital for Income Tax
+						</h2>
+
+            <p class="govuk-body">After you <a class="govuk-link" href="https://www.gov.uk/guidance/sign-up-your-business-for-making-tax-digital-for-income-tax" target="_blank">sign up for Making Tax Digital
+              for Income Tax (opens in new tab)</a> you can <a class="govuk-link" href="https://bta-cards-prototype.herokuapp.com/manage-account/add-tax-mtd-itsa"
+               target="_blank">add it to your business tax account.
+               </a>
+            </p>
+
+            <p class="govuk-body">This makes it easy for you to manage Making Tax Digital for Income Tax online with your other business taxes.</p>
+
+            <p class="govuk-body">You may need to have items that prove your identity to add Making Tax Digital for Income Tax to your account.</p>
+
+            <!-- <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible"> -->
+
+            <h2 class="govuk-heading-m">
+							Getting Making Tax Digital for Income Tax software
+						</h2>
+
+            <p class="govuk-body">You must use software to send your Making Tax Digital for Income Tax quarterly updates and final declaration.</p>
+
+            <p class="govuk-body">
+              <a class="govuk-link" href="https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax" target="_blank">
+                Find software for Making Tax Digital for Income Tax (opens in new tab)
+              </a>
+            </p>
+
+            <!-- <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible"> -->
+
+            <h2 class="govuk-heading-m">
+							More help
+						</h2>
+
+            <p class="govuk-body">
+              <a class="govuk-link" href="https://www.gov.uk/government/collections/making-tax-digital-for-income-tax" target="_blank">
+                Making Tax Digital for Income Tax (opens in new tab)
+              </a>
+            </p>
+
+				</div>
+			</main>
+		</div>
+	</form>
+</div>
+
+{% endblock %}

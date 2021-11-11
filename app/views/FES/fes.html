@@ -1,0 +1,229 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+  <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+    <h1 class="govuk-heading-m">Your business taxes</h1>
+
+    <!-- ///////////// 1 //////////////// -->
+
+    <!-- <p class="govuk-body">
+      1. Initial card
+    </p>
+
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-4"">
+            PAYE for employers
+          </h2>
+          <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-0">
+            Employer PAYE reference 222/CC222
+          </p>
+          <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-4">
+            Accounts Office reference 222PX00222222
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text" style="text-decoration:none">
+                Coronavirus schemes for employers
+              </span>
+            </summary>
+            <div class="govuk-details__text" style="width:580px;">
+              <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">Help to Hire Scheme</h3>
+              <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+                If you plan to take on new staff, you will be able to claim a subsidy through the Help to Hire Scheme,
+                provided all requirements are met. You can check what information you will need to make a claim
+                <a href="" target="_blank" class="govuk-link">(guidance URL TBC)(opens in a new window or tab)</a>.
+              </p>
+
+              <p class="govuk-body govuk-!-margin-bottom-4 govuk-!-margin-top-0">
+              <a href="https://www.tax.service.gov.uk/help-to-hire-scheme" target="_blank" class="govuk-link">Access the Help to Hire Scheme</a>.
+              </p>
+
+
+              <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">Coronavirus Job Retention Scheme</h3>
+              <p class="govuk-body govuk-!-margin-bottom-4 govuk-!-margin-top-1">
+                <a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank" class="govuk-link">Make a claim through the Coronavirus Job Retention Scheme (opens in new tab).</a>
+              </p>
+              <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-2">
+                If you previously claimed too much money, you should pay it back to HMRC. You can deduct the amount you overclaimed from your next claim or
+                <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/IR-PAYE/get-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state" target="_blank">make a voluntary repayment (opens in new tab)</a>.
+              </p>
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Coronavirus Statutory Sick Pay Rebate Scheme</h3>
+              <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-4">
+                <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" class="govuk-link govuk-link--no-visited-state" target="_blank">Use the Coronavirus Statutory Sick Pay Rebate Scheme (opens in new tab)</a>
+                to claim back employees’ coronavirus-related Statutory Sick Pay.
+              </p>
+            </div>
+          </details>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-1 govuk-!-margin-top-4">
+            Your upcoming payments
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You have an upcoming interest payment of <span class="govuk-body govuk-!-font-weight-bold">£12.13</span>. HMRC must have this amount by 22 November 2019.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/epaye/upcoming-payments" class="govuk-link govuk-link--no-visited-state">See all upcoming PAYE payments</a>
+          </p>
+
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your overdue payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You have no overdue payments.
+          </p>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+            Your card payments in the last 7 days
+          </h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You paid £9,856 on 3 August 2021.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            Your payment reference number is 222PX00222222.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            It will take up to 7 days to update your balance after each payment.
+          </p>
+
+        </div>
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-2">
+          <p class="govuk-body govuk-!-margin-bottom-4">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/epaye/statements/2021-22" class="govuk-link govuk-link--no-visited-state">Annual statements and payment record</a>
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/epaye/messages" class="govuk-link govuk-link--no-visited-state">View tax codes or notices and set up alerts</a>
+          </p>
+
+        </div>
+      </div>
+    </div> -->
+
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-4"">
+            PAYE for employers
+          </h2>
+          <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-0">
+            Employer PAYE reference 222/CC222
+          </p>
+          <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-4">
+            Accounts Office reference 222PX00222222
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2">
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text" style="text-decoration:none">
+                Coronavirus schemes for employers
+              </span>
+            </summary>
+            <div class="govuk-details__text" style="width:580px;">
+              <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">Help to Hire Scheme</h3>
+              <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+                If you plan to take on new staff, you may be able to
+                <a href=""  class="govuk-link">claim a subsidy through the Help to Hire Scheme</a>.
+              </p>
+
+              <p class="govuk-body govuk-!-margin-bottom-4 govuk-!-margin-top-0">
+              <a href="https://www.gov.uk/" target="_blank" class="govuk-link">Find out what information you need to make a claim (opens in new tab)</a>.
+              </p>
+
+
+              <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">Coronavirus Job Retention Scheme</h3>
+              <p class="govuk-body govuk-!-margin-bottom-4 govuk-!-margin-top-1">
+                <a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank" class="govuk-link">Make a claim through the Coronavirus Job Retention Scheme (opens in new tab).</a>
+              </p>
+              <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-2">
+                If you previously claimed too much money, you should pay it back to HMRC. You can deduct the amount you overclaimed from your next claim or
+                <a href="https://www.staging.tax.service.gov.uk/enrolment-management-frontend/IR-PAYE/get-access-tax-scheme?continue=%2Fbusiness-account" class="govuk-link govuk-link--no-visited-state" target="_blank">make a voluntary repayment (opens in new tab)</a>.
+              </p>
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Coronavirus Statutory Sick Pay Rebate Scheme</h3>
+              <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-4">
+                <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" class="govuk-link govuk-link--no-visited-state" target="_blank">Use the Coronavirus Statutory Sick Pay Rebate Scheme (opens in new tab)</a>
+                to claim back employees’ coronavirus-related Statutory Sick Pay.
+              </p>
+            </div>
+          </details>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-1 govuk-!-margin-top-4">
+            Your upcoming payments
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You have an upcoming interest payment of <span class="govuk-body govuk-!-font-weight-bold">£12.13</span>. HMRC must have this amount by 22 November 2019.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/epaye/upcoming-payments" class="govuk-link govuk-link--no-visited-state">See all upcoming PAYE payments</a>
+          </p>
+
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-4">
+            Your overdue payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You have no overdue payments.
+          </p>
+
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+            Your card payments in the last 7 days
+          </h3>
+
+          <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            You paid £9,856 on 3 August 2021.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            Your payment reference number is 222PX00222222.
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+            It will take up to 7 days to update your balance after each payment.
+          </p>
+
+        </div>
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-2">
+          <p class="govuk-body govuk-!-margin-bottom-4">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/epaye/statements/2021-22" class="govuk-link govuk-link--no-visited-state">Annual statements and payment record</a>
+          </p>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="https://www.staging.tax.service.gov.uk/business-account/epaye/messages" class="govuk-link govuk-link--no-visited-state">View tax codes or notices and set up alerts</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
+
+<!-- CONDITION Text ‘You can make a PAYE payment when no bill is listed in your online account’ only shows IF there is no PAYE monthly bill in upcoming AND no PAYE monthly bill listed in overdue. [It WILL show if there are only penalties and interest payments listed.] -->

@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a3.html' %}
+
+<!-- /////////////////////////////// -->
+
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+  <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+  <!-- //////////////  ADD A TAX  /////////////////// -->
+
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p class="govuk-body">
+      Add a tax to your account to <a href="../../manage-account/add-tax-a1"
+        class="govuk-body govuk-link govuk-link--no-visited-state">get online access to a tax, duty or scheme</a>.
+    </p>
+  </div>
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <!-- ////////////////////// PROCESSING TIMES ////////////////////////// -->
+
+
+    <!-- /////////////////////// CARDS  //////////////////////// -->
+
+
+
+  <div class="govuk-grid-column-full govuk-!-padding-bottom-4 govuk-!-padding-left-0 govuk-!-padding-top-4">
+    <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+      <h3 class="govuk-heading-s">You may have another HMRC online account</h3>
+
+      <p span="" class="govuk-body govuk-inset-text">If you cannot find taxes that used to be here, they may be in another account.</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><p class="govuk-body" style="margin-bottom: 5px"><a href="#">Check if your Self Assessment is in another account</a></p></li>
+        <li><p class="govuk-body" style="margin-bottom: 5px"><a href="#">Retrieve sign in details for your other account</a></p></li>
+      </ul>
+
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+      <h3 class="govuk-heading-s">Other services</h3>
+
+      <p class="govuk-body"><a href="#">Anti-money laundering supervision</a></p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  {% endblock %}

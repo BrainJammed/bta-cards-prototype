@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a2.html' %}
+{% block content %}
+
+{% include 'includes/nav-combo-ur2.html' %}
+
+<div class="govuk-grid-row">
+
+    <form action="/manage-account/add-other-taxes" method="post" class="form">
+
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+          <h1 class="govuk-fieldset__heading">
+            Which employer tax or scheme do you need?
+          </h1>
+        </legend>
+        <div class="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="CIS" name="CIS" type="radio" value="CIS">
+            <label class="govuk-label govuk-radios__label" for="CIS">
+              Construction Industry Scheme (CIS)
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="ERS" name="ERS" type="radio" value="ERS">
+            <label class="govuk-label govuk-radios__label" for="ERS">
+              Employment related securities (ERS)
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="forAgencies" name="forAgencies" type="radio" value="forAgencies">
+            <label class="govuk-label govuk-radios__label" for="forAgencies">
+              Employment intermediaries (for agencies)
+            </label>
+          </div>
+        </div>
+
+      </fieldset>
+    </div>
+
+  </div>
+
+</div>
+<br>
+<button class="govuk-button">Continue</button>
+
+<details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+  <summary class="govuk-details__summary_noarrow" style="display:block;">
+    <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+      Is this page not working properly?
+    </span>
+  </summary>
+  <div class="">
+
+  </div>
+</details>
+
+{% endblock %}

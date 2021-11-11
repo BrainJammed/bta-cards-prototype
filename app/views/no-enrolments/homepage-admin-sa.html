@@ -1,0 +1,207 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-combo-1.html' %}
+
+<!-- /////////////////////////////// -->
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+  <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+
+  <!-- /////////////////////// CARDS  //////////////////////// -->
+
+
+  <!-- <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          You have not added a tax to this account
+        </h2>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          Set up your business tax account
+        </h3>
+        <p>
+          When you <a class="govuk-link govuk-link--no-visited-state" href="../manage-account/add-tax-a1">add a tax duty, or scheme </a>to your
+          account it will appear here.
+        </p>
+
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <p>You may need reference numbers relevant to the tax you are adding. To add Self Assessment or Corporation Tax, you need a UTR. To add VAT, you need a VAT registration number. To add PAYE for employers, you need your employers PAYE and accounts office references.</p>
+          </div>
+
+      </div>
+
+
+
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          You may have another account
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          If you have used the online service to access your taxes before and they are not here, they may be in a
+          different account.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="../manage-account/add-sa/do-you-have-utr" class="govuk-body govuk-link govuk-link--no-visited-state">Check if your Self Assessment is in
+            another account</a>
+        </p>
+        <p class="govuk-body">
+          <a href="../manage-account/add-sa/wrong-credentials" class="govuk-body govuk-link govuk-link--no-visited-state">Retrieve sign in details for your other
+            account</a>
+        </p>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          You have not added a tax to this account
+        </h2>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          Set up your business tax account
+        </h3>
+        <p>When you <a href="../manage-account/add-tax-a1" class="govuk-body govuk-link govuk-link--no-visited-state">add a tax duty, or scheme to your account</a> it will appear here.</p>
+        <!-- <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Help with adding Self Assessment to your business tax account
+            </span>
+          </summary>
+          <div class="govuk-inset-text govuk-!-margin-top-0 govuk-!-margin-bottom-0"
+          <p>To add Self Assessment, you need a Unique Taxpayer Reference (UTR).</p>
+          <p>Your UTR is on your Self Assessment tax return and other documents from HMRC.</p>
+          <p>If you do not have a UTR, you can get one when adding Self Assessment.</p>
+          <p>If you have lost your UTR, you can find a lost UTR number (opens in new tab).</p>
+          </div>
+        </details> -->
+        <p>To add Self Assessment, you need a Unique Taxpayer Reference (UTR). Your UTR is on your Self Assessment tax return and other documents from HMRC. If you do not have a UTR, you can get one when adding Self Assessment.</p>
+        <!-- <p>If you have lost your UTR, you can find a lost UTR number (opens in new tab).</p> -->
+
+        <!-- <div class="govuk-grid-column-full govuk-!-padding-0">
+          <div class="govuk-inset-text govuk-!-margin-top-0">
+            <p>To add Self Assessment, you need a Unique Taxpayer Reference (UTR). Your UTR is on your Self Assessment tax return and other documents from HMRC. If you do not have a UTR, you can get one when adding Self Assessment.</p>
+            <!-- <p>If you have lost your UTR, you can find a lost UTR number (opens in new tab).</p> -->
+          <!-- </div> -->
+        <!-- </div> --> 
+
+
+        <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Help with adding Self Assessment to your business tax account</h3> -->
+        <!-- <p>You may need reference numbers relevant to the tax you are adding. To add Self Assessment or Corporation Tax, you need a UTR. To add VAT, you need a VAT registration number. To add PAYE for employers, you need employers PAYE and accounts office references.</p> -->
+        <!-- <p>To add Self Assessment, you need a Unique Taxpayer Reference (UTR).</p>
+        <p>Your UTR is on your Self Assessment tax return and other documents from HMRC.</p>
+        <p>If you do not have a UTR, you can get one when adding Self Assessment.</p>
+        <p>If you have lost your UTR, you can find a lost UTR number (opens in new tab).</p> -->
+        <!-- <p class="govuk-body govuk-!-margin-bottom-2"><a href="../manage-account/add-tax-a1" class="govuk-body govuk-link govuk-link--no-visited-state">Add a tax duty, or scheme to your account</a></p> -->
+
+      </div>
+
+
+
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          You may have another account
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          If you have used the online service to access your taxes before and they are not here, they may be in a
+          different account.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="../manage-account/add-sa/do-you-have-utr" class="govuk-body govuk-link govuk-link--no-visited-state">Check if your Self Assessment is in
+            another account</a>
+        </p>
+        <p class="govuk-body">
+          <a href="../manage-account/add-sa/wrong-credentials" class="govuk-body govuk-link govuk-link--no-visited-state">Retrieve sign in details for your other
+            account</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ///////////////////////////////// -->
+
+  <div class="govuk-grid-column-full card-container govuk-!-margin-bottom-8" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Personal Tax Account
+        </h2>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body">
+          For your non-business taxes, benefits, National Insurance and State&nbsp;Pension.
+        </p>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Personal Taxes</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- //////////////  ADD A TAX  /////////////////// -->
+
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-4 govuk-!-padding-left-0">
+    <div class="govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+        Other services
+      </h2>
+    </div>
+    <p class="govuk-body">
+      <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Anti-money
+        laundering supervision
+      </a>
+    </p>
+    <p class="govuk-body">
+      <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Employment
+        Intermediaries
+      </a>
+    </p>
+    <p class="govuk-body">
+      <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Intrastat
+        Supplementary Declarations
+      </a>
+    </p>
+    <p class="govuk-body">
+      <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Notification
+        of Vehicle Arrivals (NOVA)
+      </a>
+    </p>
+    <p class="govuk-body">
+      <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">VAT on
+        e-Services (VOES)</a>
+    </p>
+  </div>
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+</div>
+{% endblock %}

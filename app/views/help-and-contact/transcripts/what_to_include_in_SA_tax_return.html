@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_sa_how_to_pay__heading%}
+
+{% block page_title %}
+Business tax account - prototype
+{% endblock %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+{% block content %}
+
+{% include 'includes/nav-combo-ur2.html' %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">What expenses can I include in my Self Assessment tax return? - video transcript</h1>
+
+        <p>You’re self-employed which means you have essential costs to keep your business running.
+          You can deduct these costs which are called allowable expenses to work out your taxable profit.
+        </p>
+
+        <p>But remember – if you’re using the £1000 tax-free trading allowance, you can’t claim any expenses.</p>
+
+        <p class="govuk-body">Allowable expenses include:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>office property and equipment</li>
+          <li>travel, including cars and vans</li>
+          <li>staff</li>
+          <li>any legal and financial costs</li>
+          <li>and also marketing and subscriptions</li>
+        </ul>
+
+        <p class="govuk-body">You can’t claim for anything you spend on personal things, such as:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>your home and accommodation</li>
+          <li>food</li>
+          <li>clothing</li>
+          <li>holidays</li>
+          <li>and anything you buy for you and your family</li>
+        </ul>
+
+       <p>You may want to use simplified expenses – this means you claim a flat rate instead of working out the actual costs.
+         For example, for car travel you can claim 45 pence a mile up to 10,000 miles and then 25 pence a mile over this amount.
+       </p>
+
+       <p>If your income is £85,000 or more, you’ll need to list each expense individually under the appropriate heading.
+         This also applies if you didn’t trade a full year but would have earned this amount or more if you had – for example,
+         your income for 6 months was £50,000 – so in 12 months it would have been £100,000.
+       </p>
+
+       <p>If your income is less than £85,000, it’s up to you whether you give us your total amount of expenses or list them individually.</p>
+
+       <p>It’s important you keep records and proof of your business costs – you’ll need them to complete your Self Assessment tax return.
+         Sometimes we ask to see these, but please don’t send them with your return.
+       </p>
+
+       <p>You can find more information about Self Assessment on
+         <a href="https://www.gov.uk/">GOV.UK</a>.
+       </p>
+
+       <details class="govuk-details" data-module="govuk-details" style="padding-top:60px;">
+         <summary class="govuk-details__summary_noarrow" style="display:block;">
+           <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+             Is this page not working properly?
+           </span>
+         </summary>
+         <div class="">
+
+         </div>
+       </details>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}

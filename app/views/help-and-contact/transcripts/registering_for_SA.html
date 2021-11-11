@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_sa_how_to_pay__heading%}
+
+{% block page_title %}
+Business tax account - prototype
+{% endblock %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+{% block content %}
+
+{% include 'includes/nav-combo-ur2.html' %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">Registering for Self Assessment - video transcript</h1>
+
+
+        <p class="govuk-body">You may need to register for Self Assessment if you’re:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>self-employed</li>
+          <li>a partner in a partnership</li>
+          <li>or for another reason such as untaxed income</li>
+        </ul>
+
+       <p>If you didn’t send a tax return last year, you need to register by 5th October following the end of the tax year.</p>
+
+       <p>Here, we’ll explain the different ways to register.</p>
+
+       <p class="govuk-body">If you’re self-employed, you’ll need to register:</p>
+       <ul class="govuk-list govuk-list--bullet">
+         <li>if your turnover is more than a thousand pounds in a tax year</li>
+         <li>to prove you’re self-employed</li>
+         <li>or to pay voluntary Class 2 National Insurance contributions</li>
+       </ul>
+
+       <p>If you’ve sent a tax return before, but didn’t last year, use your existing Self Assessment Unique Taxpayer
+         Reference, or UTR – and re-register online using form CWF1.
+       </p>
+
+       <p>Otherwise, register online.</p>
+
+       <p>We’ll send you a letter with your UTR and set up your account for the Self Assessment online service.
+         You’ll get another letter a few days later with a code to activate your online service. Use this the first
+         time you sign in.
+       </p>
+
+       <p>Partnerships must be registered by a nominated partner, but each partner needs to register individually as
+         well – using form SA401 and the UTR for the partnership.
+       </p>
+
+       <p>If you need to register for another reason, use form SA1.</p>
+
+       <p>Once you’ve registered, if you already have a UTR and online account, you can use them to send your online tax return.</p>
+       <p>If not, we’ll send your UTR in the post within ten working days.</p>
+       <p>Use your UTR to create a new online account and sign up for the Self Assessment online service.
+         We’ll then send you a code to activate your account within seven working days of signing up.
+       </p>
+       <p>You can find out more about Self Assessment on <a href="https://www.gov.uk/">GOV.UK</a> and watch our other helpful videos on YouTube.</p>
+
+
+       <details class="govuk-details" data-module="govuk-details" style="padding-top:60px;">
+         <summary class="govuk-details__summary_noarrow" style="display:block;">
+           <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+             Is this page not working properly?
+           </span>
+         </summary>
+         <div class="">
+
+         </div>
+       </details>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}

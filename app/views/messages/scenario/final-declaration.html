@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+ITSA messages- GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<!-- //////////////////////////////////////// -->
+
+{% include 'includes/nav-homepage-mtd-itsa.html' %}
+
+<!-- ///////////////////////////////////////// -->
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+    <a href="javascript: history.back()" class="govuk-back-link">Back</a>
+    <br /><br /><br />
+
+<!--     <h1 class="govuk-heading-xl">
+      Message detail
+    </h1> -->
+
+    <h1 class="govuk-heading-xl">
+      Submit your final declaration
+    </h1>
+
+    <p class="govuk-hint">This message was sent to you on 3 January 2022</p>
+
+    <br />
+    <p class="govuk-body">We have received your four quarterly updates and your annual updates for Joe Bloggs Plumbing
+      and Joe Bloggs Plastering.</p>
+
+    <p class="govuk-body">You must submit your final declaration by 31 January 2022.</p>
+
+  </div>
+
+</div>
+{% endblock %}

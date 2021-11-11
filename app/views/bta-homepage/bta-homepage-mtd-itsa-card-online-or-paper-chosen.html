@@ -1,0 +1,127 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Business tax summary - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-mtd-itsa.html' %}
+
+<!-- /////////////////////////////// -->
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+  <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+  <!-- //////////////  ADD A TAX  /////////////////// -->
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-2 govuk-!-margin-bottom-2">
+
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Add a tax, duty or scheme to this account</h2>
+
+
+        <p class="govuk-body">Set up your business tax account by adding a tax, duty or scheme.</p>
+        <p><a class="govuk-link govuk-body govuk-link--no-visited-state" href="../manage-account/add-tax-mtd-itsa">
+            Get online access to a tax, duty or scheme </a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BTA card (customer has chosen paperless, has added SA to BTA) -->
+  {% if preference ==='online' %}
+
+  <!-- <p class="govuk-body">BTA card (customer has chosen paperless, has added SA to BTA)</p> -->
+
+  <div class="govuk-grid-column-full card-container">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Making Tax Digital for Income Tax
+        </h2>
+        <p class="govuk-body">
+          Unique Taxpayer Reference: 1234567890
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <p class="govuk-body">You've chosen to make quarterly updates and submit your Income Tax Return using software.
+          This will replace your Self Assessment tax return from the year you signed up to Making Tax Digital for
+          Income Tax.</p>
+        <p class="govuk-body">You can view your update deadlines, tax calculations and pay any tax due for current or
+          previous years.</p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-!-margin-top-3 govuk-!-margin-bottom-0">
+          <a href="https://income-tax-vc-prototype.herokuapp.com/6-0-1/income-tax-account" class="govuk-link govuk-link--no-visited-state">View
+            your Income Tax details</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {% else %}
+
+<!--   <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-2 govuk-!-margin-bottom-2">
+
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Get tax letters online</h2>
+
+
+        <p class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup-mtd-itsa" class="govuk-link govuk-link--no-visited-state">Get
+            Self Assessment and MTD Income Tax letters online</a>. You can view, download or print them when you want.
+          Save time and clear clutter.</p>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- BTA card (customer has chosen post) -->
+
+  <!-- <p class="govuk-body">BTA card (customer has chosen post)</p> -->
+
+  <div class="govuk-grid-column-full card-container">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Making Tax Digital for Income Tax
+        </h2>
+        <p class="govuk-body">
+          Unique Taxpayer Reference: 1234567890
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <p><b>Get tax letters online </b></p>
+          <p class="govuk-body"><a href="/manage-account/account-details/go-paperless-signup-mtd-itsa" class="govuk-link govuk-link--no-visited-state">Get
+              Self Assessment and Making Tax Digital for Income Tax letters online</a>. You can view,
+            download or print them when you want. Save time and
+            clear clutter.</p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <p class="govuk-body">You've chosen to make quarterly updates and submit your Income Tax Return using software.
+          This will replace your Self Assessment tax return from the year you signed up to Making Tax Digital for
+          Income Tax.</p>
+        <p class="govuk-body">You can view your update deadlines, tax calculations and pay any tax due for current or
+          previous years.</p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-!-margin-top-3 govuk-!-margin-bottom-0">
+          <a href="https://income-tax-vc-prototype.herokuapp.com/6-0-1/income-tax-account" class="govuk-link govuk-link--no-visited-state">View
+            your Income Tax details</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+{% endblock %}

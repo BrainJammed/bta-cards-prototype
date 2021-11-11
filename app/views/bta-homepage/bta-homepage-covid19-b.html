@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+  {% include 'includes/nav-homepage-a2.html' %}
+
+  <!-- /////////////////////////////// -->
+
+  <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+    <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+    <!-- ////////////// ADD A TAX ///////////// -->
+
+    <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <p class="govuk-body">
+        Add a tax to your account to
+        <a href="../../manage-account/add-tax-a2" class="govuk-body govuk-link govuk-link--no-visited-state">get online access to a tax, duty or scheme</a>.
+      </p>
+    </div>
+
+    <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <!-- ////////////////////// PROCESSING TIMES ////////////////////////// -->
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-inset-text govuk-!-margin-top-0">
+        <p>Your balance will update 2 days after you complete your return.
+          <br>Payments take up to 7 working days to be processed.</p>
+      </div>
+    </div>
+
+
+      <!-- //////////////// CARD 2 ///////////////// -->
+      <!-- //////////////// CARD 2 ///////////////// -->
+      <!-- //////////////// CARD 2 ///////////////// -->
+
+      <div class="govuk-grid-column-full card-container" id="cardAmount">
+        <div class="card-body">
+
+          <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+            <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+              VAT
+            </h2>
+            <p class="govuk-body">
+              VAT registration number 123456789
+            </p>
+          </div>
+
+          <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+            {# //////////////// #}
+            <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-2 govuk-!-margin-bottom-4">
+              <div class="govuk-inset-text govuk-!-margin-top-0 ">
+
+                <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus (COVID-19) VAT deferral</h3>
+                <p>The Chancellor has announced that the Government is deferring tax payments, through the VAT system, to help businesses with their cash flows during this extraordinary time of uncertainty.</p>
+                <p>This means that any VAT payments due between March 20 and 30 June inclusive can be deferred if you need to retain the money to support your business cash flow.</p>
+                <p>During this time, no businesses will have to make a payment for VAT to HMRC if they cannot afford to.</p>
+                <p>You do not need to tell HMRC that you are not going to make a payment.</p>
+                <p>As you normally pay by direct debit you need to cancel your direct debit with your bank.</p>
+                <p>Please do so in sufficient time so that HMRC do not attempt to automatically collect on receipt of your VAT return.</p>
+                <p>You must continue to make VAT declarations to the usual timescales.</p>
+              </div>
+            </div>
+            {# /////////////////// #}
+
+            <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                Your returns
+              </h3>
+              <p class="govuk-body govuk-!-margin-bottom-2">
+                A VAT Return is ready to complete.
+              </p>
+              <p class="govuk-body">
+                <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+              </p>
+            </div>
+
+            <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                Your balance
+              </h3>
+              <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+                You owe
+                <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+              </p>
+              <p class="govuk-body govuk-!-margin-bottom-2">
+                You have a VAT Direct Debit. If you complete your return on time, we will take payment for the period ending 31 October 2018 on 13 December 2018. You can
+                <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">change or cancel your Direct Debit</a>.
+              </p>
+              <p class="govuk-body">
+                <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a VAT payment</a>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ///////////////////////////////// -->
+
+    {# /////////////////////////////////////////// #}
+
+  </div>
+
+{% endblock %}

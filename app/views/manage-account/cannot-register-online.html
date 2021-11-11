@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+{% include "includes/back.html" %}
+
+    <div class="govuk-grid-row govuk-!-margin-bottom-4">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">You are not eligible to register for VAT online</h1>
+        <p class="govuk-body">You must register for VAT by post.</p>
+        <p class="govuk-body">When you get your VAT number, you can sign in and add the VAT online service.</p>
+      </div>
+    </div>
+    
+
+
+<!-- <button href="https://www.gov.uk/vat-registration/how-to-register" type="submit" class="govuk-button">
+  Register for VAT by post
+</button> -->
+
+<a href="https://www.gov.uk/vat-registration/how-to-register/#when-you-cannot-register-online" type="submit" class="govuk-button">
+  Register for VAT by post
+</a>
+
+{% endblock %}

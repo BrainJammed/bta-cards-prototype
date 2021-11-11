@@ -1,0 +1,71 @@
+{% extends '../../../layouts/base.html' %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_ct_contact__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include '../../../includes/header_full_width.html' %}
+
+<main id="content" class="grid-row" role="main">
+
+    {{ govPageHeader(pageHeading) }}
+    <div class="column-two-thirds">
+    	 <h2 class="heading-large-macro">Phone</h2>
+          <p>Call HMRC for help with general Corporation Tax enquiries.</p>
+
+<p>You’ll need your 10-digit Unique Tax Reference when you call. You can find this on letters from HMRC and in <a rel="external" href="https://online.hmrc.gov.uk/">your online services account</a>.</p>
+            
+                  <p>Telephone:<br><span class="bold">0300 200 3410</span></p>
+                  <p>Outside UK:<br><span class="bold">+44 151 268 0571</span></p>
+                  <p>Fax:<br><span class="bold">03000 543 889</span></p>
+         
+            <h4 class="normal-weight">Opening times:</h4>
+            <p>Monday to Friday: 8am to 6pm <br></p>
+
+<p>Closed weekends.</p>
+
+            <h4 class="normal-weight">Best time to call:</h4>
+            <p>Phone lines may be less busy between 8am to 9am and 5pm to 6pm.</p>
+
+        
+
+
+    
+          <a href="/https://www.gov.uk/call-charges">Find out about call charges</a>
+        </p>
+
+        <h2 class="heading-medium">Post</h2>
+          <p>Write to HMRC for help with general Corporation Tax enquiries.</p>
+
+<p>You don’t need to include a street name, city name or PO box when writing to this address.</p>
+
+<p>Couriers should use a <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/couriers">different address</a>.</p>
+          <div class="contact vcard">
+            <p class="content">
+                <span class="fn">
+                  Corporation Tax Services
+                </span><br>
+                <span class="street-address">
+                  HM Revenue and Customs
+                </span><br>
+                <span class="postal-code">
+                  BX9 1AX
+                </span><br>
+                <span class="country-name">
+                  United Kingdom
+                </span><br>
+            </p>
+          </div>
+        <p>If you’re replying to a letter you’ve received about your Corporation Tax, you should use the address on that letter.</p>
+
+
+
+</div>
+    </div>
+</main>
+
+
+{% endblock %}

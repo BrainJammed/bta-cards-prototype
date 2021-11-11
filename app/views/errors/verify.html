@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% set heading = "You do not have access to this service" %}
+
+{% from "govuk/components/panel/macro.njk" import govukPanel %}
+
+{% block pageTitle %}
+{{heading}} - {{serviceName}} - GOV.UK
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">{{heading}}</h1>
+
+<!--       <p class="govuk-body">
+        This is because you have signed in using your <strong>GOV.UK Verify</strong> user ID.
+      </p> -->
+      <p class="govuk-body">
+        You need to <a href="/login/government-gateway-3">sign in with a different Government Gateway user ID.</a>
+      </p>
+
+      <p class="govuk-body">If you are still unable to access this service, contact HMRC.
+      </p>
+
+      <p class="govuk-body">
+        Telephone:<br />
+        <strong class="govuk-!-font-weight-bold">0300 200 3310</strong>
+      </p>
+      
+      <p class="govuk-body">
+        Textphone:<br />
+        <strong class="govuk-!-font-weight-bold">0300 200 3319</strong>
+      </p>
+      
+      <p class="govuk-body">
+        Outside UK:<br />
+        <strong class="govuk-!-font-weight-bold">+44 161 931 9070</strong>
+      </p>
+      
+      <p class="govuk-body">
+        Opening times:<br />
+        Monday to Friday: 8am to 6pm
+      </p>
+      
+      <p class="govuk-body">
+        Closed weekends and bank holidays.
+      </p>
+
+    </div>
+  </div>
+{% endblock %}
+
+

@@ -1,0 +1,33 @@
+<div class="flex-container grid-row">
+
+
+
+
+  {{ card.card(
+    cardUrl="../pta/vat-subpage",
+    headingLevel="h3",
+    heading="VAT",
+    linkContent = "View your VAT details. You have a return to complete by 7 June 2018. You need to make a payment of £3,211.11 by 31 July 2018.",
+    links = [
+      { link: "https://hmrc-businesstax-showcase.herokuapp.com/business-account/sa-portal/vat-return", title: "Complete your VAT return" },
+      { link: "http://hmrc-payments-prototype.herokuapp.com/logged-in-testing/new_how_to_pay_pages/ct-make-a-payment-methods", title: "Make a VAT payment" }
+    ])
+  }}
+
+  {{ card.card(
+    cardUrl="../pta/epaye-subpage",
+    headingLevel="h3",
+    heading="Employers PAYE",
+    linkContent = "View your PAYE for employers details. You have 7 overdue payments. You also need to pay your P11D by 22 July 2018.",
+    links = [
+      { link: "http://hmrc-payments-prototype.herokuapp.com/logged-in-testing/new_how_to_pay_pages/ct-make-a-payment-methods", title: "Make an Employers PAYE payment" }
+    ])
+  }}
+
+    {{ card.card(
+    cardUrl="add-tax",
+    heading="Add another tax, duty or scheme",
+    linkContent = "Find a tax, duty or scheme.")
+  }}
+
+  </div>

@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/a6.html' %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+
+    <!-- {% include "includes/back.html" %} -->
+
+    <h1 class="govuk-heading-l">
+      Manage account
+    </h1>
+
+  </div>
+
+  <!-- /////////////////////////////////////////// -->
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+
+    <h2 class="govuk-heading-s">Add a tax, duty or scheme to your account</h2>
+
+    <p>
+      <a class="govuk-link govuk-body govuk-link--no-visited-state" href="add-tax-a2">
+        Get online access to a tax, duty or scheme
+      </a>
+    </p>
+  </div>
+  <!-- <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+
+    <h2 class="govuk-heading-s">Remove a tax, duty or scheme from your account</h2>
+
+    <p>
+      <a class="govuk-link govuk-body govuk-link--no-visited-state" href="deregister/deregister-a1.html">
+        Deregister a tax, duty or scheme</a>
+    </p>
+    <p>
+      <a class="govuk-link govuk-body govuk-link--no-visited-state" href="stop-online/remove-tax-a1.html">
+        Stop access to a tax, duty or scheme online</a>
+    </p>
+
+  </div> -->
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+    <h2 class="govuk-heading-s">Account access</h2>
+    <a class="govuk-link govuk-body govuk-link--no-visited-state" href="account-access/team-members-gg">
+      Add or delete a team member
+    </a>
+  </div>
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-7">
+    <!-- <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5"> -->
+    <a class="govuk-link govuk-body govuk-link--no-visited-state" href="account-access/manage-team-member.html">
+      Give a team member access to a tax, duty or scheme
+    </a>
+  </div>
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+    <h2 class="govuk-heading-s">Tax agents</h2>
+    <p><a class="govuk-link govuk-body govuk-link--no-visited-state" href="choose-agent">
+      Add, view or change tax agents
+    </a></p>
+    <p> <a class="govuk-link govuk-body govuk-link--no-visited-state" href="javascript:;">
+      Respond to agent requests
+    </a> </p>
+  </div>
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-7">
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+    <h2 class="govuk-heading-s">Account details</h2>
+    <p class="govuk-body govuk-!-margin-bottom-2">
+      <a href="https://www.google.com/url?q=https://www.tax.service.gov.uk/business-account/manage-account/account-details&sa=D&source=editors&ust=1628239154264000&usg=AOvVaw01yd_kGe4D3ryCeuQZNBth" class="govuk-link govuk-link--no-visited-state">View or change your phone number, name, password and address</a>
+    </p>
+
+  </div>
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+    <h2 class="govuk-heading-s">Direct Debit</h2>
+    <p class="govuk-body govuk-!-font-weight-regular">We cannot set up or change VAT Direct Debits at the moment. Try again later. </p>
+  </div>
+
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+
+  </div>
+</div>
+
+{% endblock %}

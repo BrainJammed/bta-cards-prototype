@@ -1,0 +1,350 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a4.html' %}
+
+<!-- /////////////////////////////// -->
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+  <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+
+  <!-- //////////////  ADD A TAX  /////////////////// -->
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <p class="govuk-body">
+      Add a tax to your account to <a href="../../manage-account/add-tax-a2"
+        class="govuk-body govuk-link govuk-link--no-visited-state">get online access to a tax, duty or scheme</a>.
+    </p>
+  </div>
+
+  <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+
+  <!-- ////////////////////// PROCESSING TIMES ////////////////////////// -->
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+    <div class="govuk-inset-text govuk-!-margin-top-0">
+      <p>Your balance will update 2 days after you complete your return. <br>Payments take up to 7 working days to be
+        processed.</p>
+      <p>These processing times do not apply to PAYE for employers. <br><a href="javascript:;"
+          class="govuk-body govuk-link govuk-link--no-visited-state">View processing times for PAYE for employers</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- /////////////////////// CARDS  //////////////////////// -->
+
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body">
+          Corporation Tax Unique Taxpayer Reference (UTR) 1234567890
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          Your returns
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You may have returns to complete.
+        </p>
+        <p class="govuk-body">
+          <a href="../../manage-account/ct-subpage-image" class="govuk-link govuk-link--no-visited-state">Find out if
+            you have a Corporation Tax return to
+            complete</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <div class="govuk-!-padding-bottom-2">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your balance
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You owe <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,073</span>.
+          </p>
+        </div>
+        <div class="govuk-!-padding-bottom-2">
+          <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2">
+            Your card payments in the last 7 days
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            You paid £27 on 16&nbsp;October&nbsp;2018.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Your payment reference number is 123456789X.
+            It will take up to 7 days to update your balance after each payment.
+          </p>
+        </div>
+        <p class="govuk-body">
+          <a href="../../manage-account/ct-subpage-image" class="govuk-link govuk-link--no-visited-state">Make a
+            Corporation Tax payment</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body">
+          <a href="../../manage-account/ct-subpage-image" class="govuk-link govuk-link--no-visited-state">More details
+            about your Corporation Tax returns
+            and payments</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- /////////////////////////////// -->
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          PAYE for employers
+        </h2>
+        <p class="govuk-body govuk-!-margin-bottom-0">
+          Employer PAYE reference 123/AB456
+        </p>
+        <p class="govuk-body">
+          Accounts Office reference 123PX00123456
+        </p>
+        <div class="govuk-inset-text govuk-!-margin-bottom-0 govuk-!-margin-top-0">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Pay your P11D bill of £200 by 22 July</a>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          Your upcoming payments
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          You have upcoming payments that total
+          <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,000</span>. HMRC must have
+          <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£600</span>
+          of this
+          amount by 22&nbsp;June&nbsp;2019.
+        </p>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">See all upcoming PAYE payments</a>
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          Your overdue payments
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          You have an overdue penalty of <span
+            class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£50</span>.
+          This includes interest of <span
+            class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1 govuk-!-padding-right-1">£23</span>
+          that will increase each day.
+        </p>
+        <p class="govuk-body">
+          <a href="\v6\views\cards\pta\epaye-subpage_OLD.html" class="govuk-link govuk-link--no-visited-state">See all
+            overdue PAYE payments</a>
+        </p>
+      </div>
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Annual statements and payment record</a>
+        </p>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View tax codes or notices and set up alerts</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ///////////////////////////////// -->
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Self Assessment
+        </h2>
+        <p class="govuk-body">
+          Self Assessment Unique Taxpayer Reference 1234567890
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          Your returns
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You have completed your return for tax year 2017 to 2018.
+        </p>
+        <ul class="govuk-list">
+          <li class="govuk-!-margin-bottom-2">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View Self Assessment return for tax year 2017
+              to
+              2018</a>
+          </li>
+          <li>
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Amend Self Assessment return for tax year 2017
+              to 2018</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <div class="govuk-!-padding-bottom-2">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your balance
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You owe <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£842</span> and it is
+            late.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Pay now to avoid further penalties.
+          </p>
+        </div>
+        <div class="govuk-!-padding-bottom-2">
+
+          <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2">
+            Your card payments in the last 7 days
+          </p>
+
+          <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-2">
+            <li>You paid £37 on 16&nbsp;October&nbsp;2018.</li>
+            <li>You paid £63 on 17&nbsp;October&nbsp;2018.</li>
+          </ul>
+
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Your payment reference number is 123456789K.
+            It will take up to 7 days to update your balance after each payment.
+          </p>
+        </div>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a Self Assessment payment</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body">
+          <a href="#4" class="govuk-link govuk-link--no-visited-state">More details about your Self Assessment returns
+            and payments</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- //////888888888888888888888///////// -->
+
+
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          VAT
+        </h2>
+        <p class="govuk-body">
+          VAT registration number 123456789
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            A VAT Return is ready to complete. It takes up to 2 days to process.
+          </p>
+          <!-- <p class="govuk-body">
+          1 VAT Return <span class="govuk-visually-hidden">is ready to complete</span> <strong class="govuk-tag govuk-!-font-size-19" aria-hidden="true" style="text-transform:none">Ready to complete</strong>
+        </p> -->
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete VAT Return</a>
+          </p>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your balance
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You have no tax to pay.
+          </p>
+          <p class="govuk-body">
+            <a href="#7" class="govuk-body govuk-link govuk-link--no-visited-state">View your VAT statements</a>
+            </li>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+          Change VAT details online
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Request access to change your VAT registration details</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body"><a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More details about your VAT</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ///////////////////////////////// -->
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Personal Tax Account
+        </h2>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body">
+          For your non-business taxes, benefits, National Insurance and State&nbsp;Pension.
+        </p>
+        <p class="govuk-body">
+          <a href="#9" class="govuk-link govuk-link--no-visited-state">Personal Taxes</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- //////////////  ADD A TAX  /////////////////// -->
+
+  <!-- <div class="govuk-grid-column-full card-container card-grey govuk-!-padding-top-6 govuk-!-padding-bottom-6" id="cardAmount">
+    <div class="card-body">
+
+      <!-- <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6"> -->
+  <!-- <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            </h2> -->
+  <!-- </div> -->
+
+
+</div>
+</div> -->
+
+{% endblock %}

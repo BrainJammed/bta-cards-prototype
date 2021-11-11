@@ -1,0 +1,210 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<!-- /////////////////////////////// -->
+
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+    <div class="govuk-grid-column-full govuk-!-margin-bottom-6 govuk-!-padding-0">
+        <span class="govuk-caption-xl govuk-!-margin-bottom-2">Self Assessment UTR: 1097172564</span>
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">Amy Smith’s Self Assessment</h1>
+    </div>
+
+    <!-- ///////////////////////////////// -->
+
+    <hr class="govuk-grid-column-two-thirds govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6">
+
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4 govuk-!-padding-0">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+            Your returns
+        </h2>
+        <div class="govuk-!-margin-bottom-6">
+            <p class="govuk-body govuk-!-margin-bottom-2">
+                Tax year 2018 to 2019 is ready to complete.
+            </p>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+                To avoid penalties, you must complete the return by 11:59pm on 31&nbsp;January&nbsp;2019.
+            </p>
+            <p class="govuk-body">
+                <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete tax year 2018 to 2019 Self
+                    Assessment
+                    return</a>
+            </p>
+        </div>
+        <div class="govuk-!-margin-bottom-6">
+            <p class="govuk-body govuk-!-margin-bottom-2">
+                You have <span class="govuk-body govuk-!-font-weight-bold">2 returns that are late</span>. Complete them
+                now
+                to avoid further penalties. After you complete your return, it takes up to 2 days to show what you owe.
+            </p>
+            <ul class="govuk-list">
+                <li class="">
+                    <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete tax year 2016 to 2017 Self
+                        Assessment
+                        return</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete tax year 2015 to 2016 Self
+                        Assessment
+                        return</a>
+                </li>
+            </ul>
+        </div>
+        <div class="govuk-!-margin-bottom-6">
+            <p class="govuk-body govuk-!-margin-bottom-2">
+                The following returns cannot be completed online:
+            </p>
+            <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-2">
+                <li>
+                    Self Assessment return for tax year 2014
+                    to 2015
+                </li>
+
+                <li>
+                    Self Assessment return for tax year 2013
+                    to 2014</li>
+            </ul>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+                You need to <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">contact HMRC</a>.
+            </p>
+        </div>
+
+       
+    </div>
+
+
+    <!-- ///////////////////////////////////////////////////// -->
+
+    <hr class="govuk-grid-column-two-thirds govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6">
+
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-2 govuk-!-padding-0">
+
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-2">
+            Your balance
+        </h2>
+
+        <div class="govuk-inset-text govuk-!-margin-top-4 govuk-!-margin-bottom-4">
+            <p>All payments take up to 7 working days to update your balance.</p>
+        </div>
+
+        <div class="govuk-grid-column-full govuk-!-margin-bottom-0 govuk-!-padding-0">
+            <table class="govuk-table">
+                <!-- <caption class="govuk-table__caption">Tax 2018 to 2019 tax bill</caption> -->
+                <tbody class="govuk-table__body">
+
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">Your 2018 to 2019 tax bill</th>
+                        <td class="govuk-table__cell">£53.00</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">Your balance</th>
+                        <td class="govuk-table__cell">£58.00</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">Leftover amount</th>
+                        <td class="govuk-table__cell">£5.00</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">Payment deadline</th>
+                        <td class="govuk-table__cell">30 April 2019</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>You can leave the £5 in your account and it will be credited to your next Self Assessment bill. Or
+                you can
+                <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">claim a tax refund</a>.
+            </p>
+        </div>
+    </div>
+
+    <!-- ///////////////////////////////////////////////////// -->
+
+    <!-- <hr class="govuk-grid-column-two-thirds govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6"> -->
+
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4 govuk-!-padding-0">
+        <div class="govuk-!-padding-bottom-4">
+            <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2">
+                Your card payments in the last 7 days
+            </p>
+            <p class="govuk-body govuk-!-margin-bottom-2">You paid £27 on 16&nbsp;October&nbsp;2018.</p>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+                Your payment reference number is
+                123456789K.<br>It will take up to 7 days to update your balance after each payment.
+
+            </p>
+
+        </div>
+        <div class="govuk-!-padding-bottom-2">
+            <p class="govuk-body">
+                <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Make a Self Assessment payment</a>
+                <br>
+                If you want to pay with a credit card, it must link to a business bank account.
+            </p>
+        </div>
+    </div>
+
+    <!-- ///////////////////////////////////////////////////// -->
+
+
+
+    <hr class="govuk-grid-column-two-thirds govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6">
+
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-6 govuk-!-padding-0">
+
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-2">
+            Go paperless with HMRC
+        </h2>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+            You can <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">sign up to get email
+                reminders</a>, instead of letters, from HMRC.
+        </p>
+
+    </div>
+
+    <!-- ///////////////////////////////////////////////////// -->
+
+    <hr class="govuk-grid-column-two-thirds govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6">
+
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-6 govuk-!-padding-0">
+
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-2">
+            More Self Assessment options
+        </h2>
+
+        <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Do I need to submit a return?</a>
+        </p>
+        <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state"> When to stop filing Self Assessment
+                returns</a>
+        </p>
+        <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">When you are no longer self-employed</a>
+        </p>
+        <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Set up a partnership or add a partner</a>
+        </p>
+        <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state"> Set up a trust</a>
+        </p>
+
+    </div>
+
+    <hr class="govuk-grid-column-two-thirds govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-8">
+
+
+</div>
+
+
+
+
+
+{% endblock %}

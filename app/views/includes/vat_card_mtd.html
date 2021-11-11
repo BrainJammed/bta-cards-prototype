@@ -1,0 +1,96 @@
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-8">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          VAT
+        </h2>
+        {% if VAT_reg %}
+        <p class="govuk-body">
+          VAT registration number {{VAT_reg}}
+        </p>
+        {% endif %}
+      </div>
+
+      {% if NPS_msg %}
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          
+          <h3>
+              Pay your deferred VAT: the new payment scheme
+          </h3>
+
+          <p>You have joined the VAT deferral new payment scheme.</p>
+
+          <p>You will not be able to monitor your deferred VAT Direct Debit payments through your business tax account. You must check these payments with your bank. If a Direct Debit payment is missed, HMRC will try to collect the payment again after 10 days.</p>
+        </div>
+      </div>
+      {% endif %}
+
+      <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-2">
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your returns
+          </h3>
+          <p class="govuk-body govuk-!-margin-bottom-4">
+            {{return}}
+          </p>
+          {% if showSubmitReturn %}
+          <p class="govuk-body govuk-!-margin-bottom-4">
+            <a href="#" class="govuk-link govuk-link--no-visited-state">
+              {{submitVAT}} 
+            </a>
+          </p> 
+          {% endif %}
+          
+          <ul class="govuk-list govuk-list--spaced">
+          {% if showDeadlines %}
+          <li>
+            <a href="#" class="govuk-link govuk-link--no-visited-state">
+              View return deadlines
+            </a>
+          </li>
+          {% endif %}
+          
+          <li>
+            <a href="#" class="govuk-link govuk-link--no-visited-state">
+              View submitted returns
+            </a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your payments
+          </h3>
+
+
+          <ul class="govuk-list govuk-list--spaced">
+          
+          <li>
+            <a href="{{paymentLink}}" class="govuk-link govuk-link--no-visited-state">
+               Check what you owe and make a payment
+            </a>
+          </li>
+          
+            <li>
+            <a href="{{viewPaymentLink}}" class="govuk-body govuk-link govuk-link--no-visited-state">
+              View payment history
+            </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+        <p class="govuk-body"><a href="#" class="govuk-link govuk-link--no-visited-state">Manage your VAT account</a>
+        </p>
+      </div>
+
+    </div>
+  </div>

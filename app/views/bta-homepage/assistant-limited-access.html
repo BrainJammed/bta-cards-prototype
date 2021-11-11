@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+    {% include "includes/back.html" %}
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">What assistants can do</h1>
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <p class="govuk-body govuk-!-font-weight-bold">
+            As an assistant, you can:
+        </p>
+        <ul class="govuk-list govuk-list--bullet govuk-!-padding-bottom-4">
+            <li>complete and submit tax returns</li>
+            <li>make payments</li>
+            <li>view balance and payment history</li>
+            <li>access messages</li>
+        </ul>
+    </div>
+  
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <p class="govuk-body govuk-!-font-weight-bold">
+            You cannot: 
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+            <li>add or remove taxes, duties or schemes</li>
+            <li>manage who can access this account</li>
+            <li>update account details and contact information</li>
+            
+        </ul>
+    </div>
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <p class="govuk-body">
+            If you need to do any of these things, the person who set up your account can change your role to administrator.
+        </p>
+
+</div>
+
+{% endblock %}

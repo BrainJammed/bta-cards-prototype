@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+      {% include "includes/back.html" %}
+    </div>
+  
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+       Register your trust before you add this service to your account
+      </h1>
+    </div>
+  
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-4">
+     
+  <p>When you get a Unique Taxpayer Reference (UTR) for the trust, sign into your account and add Self Assessment Online for Trusts.</p>
+  
+    </div>
+  
+    <div class="govuk-grid-column-two-thirds">
+      <a class="govuk-button"  href="trustees-tax-responsibilities" class="govuk-button">Register your trust</a>
+    </div>
+  </div>
+
+  <div><p> <a href="javascript:;">I do not want to do this now</a></p></div>
+
+{% endblock %}

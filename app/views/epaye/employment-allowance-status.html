@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact__heading %}
+
+{% block page_title %}
+{{ pageHeading }}
+-
+{{ serviceName }}
+- GOV.UK
+{% endblock %}
+
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+<!-- //////////////////////// -->
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+    <h1 class="govuk-heading-l">
+      You are not currently receiving Employment Allowance for tax year 6 April 2021 to 5 April 2022
+    </h1>
+
+    <div class="govuk-inset-text">
+      You need to claim Employment Allowance every tax year. 
+    </div>
+
+    <p class="govuk-body">
+      There is <a href="https://www.gov.uk/guidance/changes-to-employment-allowance">new guidance on GOV.UK about claiming Employment Allowance annually</a>. The <a href="https://www.gov.uk/claim-employment-allowance">guide to eligibility and how to make a claim</a> has also been updated. 
+    </p>
+
+    <p class="govuk-body">
+      If you made a claim and it was rejected, you should have received an <a href="../epaye/messsages">automated message from HMRC</a>. 
+    </p>
+
+
+
+
+    {% include 'includes/details-get-help.html' %}
+
+  </div>
+
+
+  <div class="govuk-grid-column-one-third govuk-!-margin-bottom-0">
+    {% include 'epaye/_sidebar.html' %}
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}

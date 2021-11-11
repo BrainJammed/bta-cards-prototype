@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+<!-- {# {% import "includes/card-template.html" as card %} #} -->
+<main class="govuk-main-wrapper">
+{% block content %}
+
+  <!-- /////////////////////////////// -->
+
+  <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+    <a href="ma-homepage-a1.html" class="govuk-back-link govuk-!-margin-bottom-6">Back</a>
+
+    
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">Your tax agents</h1>
+
+    <!-- //////////////  ADD A TAX  /////////////////// -->
+
+    <hr class="govuk-grid-column-two-thirds govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-6">Manage your tax agents</h2>
+        <p class="govuk-body">
+            View your authorised tax agents, respond to agents’ requests and remove authorisations you no longer need. 
+          </p>
+      <p class="govuk-body">
+        <a href="add-a-team-member-gg"
+          class="govuk-body govuk-link govuk-link--no-visited-state govuk-!-font-size-18">Authourise, view or manage your tax agents</a>
+      </p>
+    </div>
+
+    <!-- ///////////////////////////////////////////////////// -->
+
+    <hr class="govuk-grid-column-two-thirds govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6">
+
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-6 govuk-!-padding-0">
+
+      <table class="govuk-table">
+        <!-- <caption class="govuk-table__caption">Tax 2017 to 2018 tax bill</caption> -->
+        <tbody class="govuk-table__body">
+
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">Corporation tax</th>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"><a href="govuk-manage-team-member" class="govuk-link govuk-link--no-visited-state">View or change tax agent</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">PAYE for employers</th>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"><a href="govuk-manage-team-member" class="govuk-link govuk-link--no-visited-state">Add or change tax agent</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">Self Assessment</th>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"><a href="govuk-manage-team-member" class="govuk-link govuk-link--no-visited-state">Add a tax agent</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">VAT services</th>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"><a href="govuk-manage-team-member" class="govuk-link govuk-link--no-visited-state">Add or change tax agent</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ///////////////////////////////// -->
+
+
+    </div>
+  </div>
+
+  {% endblock %}
+</main>

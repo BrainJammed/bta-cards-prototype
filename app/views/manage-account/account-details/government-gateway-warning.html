@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-combo-ur2.html' %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+
+    <!-- {% include "includes/back.html" %} -->
+
+    <h1 class="govuk-heading-xl">
+      Do you want to change the email you use for Government Gateway?
+    </h1>
+
+  </div>
+
+  <!-- ///////////////////////////////////////////// -->
+  <!-- //////////////////  OLD  //////////////////// -->
+  <!-- ///////////////////////////////////////////// -->
+
+  <!-- /////////// ACCOUNT USERS /////////////////// -->
+
+  <!-- /////////// ACCOUNTANTS /////////////////// -->
+
+  <!-- /////////// ACCOUNT DETAILS /////////////////// -->
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+    <div class="govuk-tabs" data-module="govuk-tabs">
+          <p class="govuk-body">Your Government Gateway email is sarah.phillips@example.com. This is where you also get:</p>
+          <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-6">
+    				<li>confirmation if you change your Government Gateway password</li>
+    				<li>emails when you enrol for new taxes and schemes online with HMRC</li>
+    				<!-- <li>confirmations when you make payroll submissions</li>
+            <li>messages from other goverment departments that use your account</li> -->
+    			</ul>
+          <button class="govuk-button">Yes - I want to change my Government Gateway email</button>
+          <p><a href="account-details-ur3" class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">No - take me back to 'Account details'</a></p>
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}

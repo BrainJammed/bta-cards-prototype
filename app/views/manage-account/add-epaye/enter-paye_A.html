@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-combo-1.html' %}
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+<fieldset class="govuk-fieldset">
+
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-6">
+        What is your employer PAYE reference?
+      </h1>
+    </legend>
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h2 class="govuk-fieldset__heading">
+          HMRC office number
+      </h2>
+    </legend>
+    <p class="govuk-hint govuk-!-padding-bottom-0">It is on the letter HMRC sent you when you registered as an employer. Enter the first 3 numbers. For example, 123/A246, enter 123</p>
+
+
+    <div class="govuk-form-group">
+        <input class="govuk-input govuk-input--width-10 " id="utr-number" name="utr-number" type="text">
+      </div>
+
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <h2 class="govuk-fieldset__heading">
+            Employer PAYE reference
+        </h2>
+      </legend>
+      <p class="govuk-hint govuk-!-padding-bottom-0">Enter the second part of your reference (any letters and numbers after the slash). For example, A246</p>
+      <div class="govuk-form-group">
+          <input class="govuk-input govuk-input--width-10 " id="utr-number" name="utr-number" type="text">
+        </div>
+
+
+</fieldset>
+<div class="govuk-inset-text govuk-!-margin-top-0">
+  <p>You may need to enter these details again on the next screen, to verify your request.</p>
+</div>
+<br>
+<a class="govuk-button" href="" role="button">Continue</a>
+</div>
+</div>
+
+
+{% endblock %}

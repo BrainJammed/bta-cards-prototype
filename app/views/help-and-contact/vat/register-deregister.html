@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_vat_register_deregister__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+        	<h1 class="govuk-heading-xl">Register or deregister for VAT</h1>
+        	<p>You must register for VAT with HM Revenue and Customs (HMRC) if your business’ VAT taxable turnover is more than £85,000 a year.</p>
+        	<p>When you register, you will be sent a VAT registration certificate. This confirms:</p>
+        	<ul class="govuk-list govuk-list--bullet">
+        		<li>your VAT number</li>
+        		<li>when to submit your first VAT Return and payment</li>
+        		<li>your ‘effective date of registration’ - this is the date you went over the threshold, or the date you asked to register if it was voluntary</li>
+        	</ul>
+        	<p>Most businesses can <a href="https://www.access.service.gov.uk/login/signin/creds">register online</a> and create an online VAT account - including partnerships and a group of companies registering under one VAT number.</p>
+
+        	<h2 class="govuk-heading-m">Deregister for VAT</h2>
+        	<p>You must <a href="https://www.gov.uk/vat-registration/cancel-registration">cancel your registration</a> if you are no longer eligible to be VAT registered. For example:</p>
+        		<ul class="govuk-list govuk-list--bullet">
+        			<li>you stop trading or making VAT taxable supplies</li>
+        			<li>you join a VAT group</li>
+        		</ul>
+        		<p>You must cancel within 30 days if you stop being eligible or you may be charged a penalty.</p>
+
+
+        </div>
+      </div>
+
+      <details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+        <summary class="govuk-details__summary_noarrow" style="display:block;">
+          <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+            Is this page not working properly?
+          </span>
+        </summary>
+        <div class="">
+
+        </div>
+      </details>
+  </main>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_vat_register_deregister__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+        	<h1 class="govuk-heading-xl">Get started with PAYE for employers</h1>
+
+          <h2 class="govuk-heading-m">1. Payroll software</h2>
+
+        	<p>You can't pay your employees until you've installed payroll software.</p>
+
+          <p class="govuk-body">Each time you pay an employee, the software will:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>notify HMRC</li>
+            <li>calculate what you need to pay HMRC in tax and National Insurance</li>
+          </ul>
+
+          <p class="govuk-body">You can use either:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>
+              <p class="govuk-!-margin-bottom-0">HMRC's
+                <a href="https://www.gov.uk/basic-paye-tools">Basic PAYE Tools (BPT)</a> software (it's free)
+              </p>
+            </li>
+            <li>
+              <p class="">
+                <a href="https://www.gov.uk/payroll-software">commercial payroll software</a> (there are some free packages)
+              </p>
+            </li>
+          </ul>
+
+
+        	<h2 class="govuk-heading-m">2. Paying your employees</h2>
+
+        	<p>You must make a submission through your payroll software each time you pay an employee.</p>
+          <p>This is called a Full Payment Submission (FPS).</p>
+          <div class="govuk-inset-text">
+            <p class="govuk-!-margin-bottom-0">You must submit the FPS on or before the day you pay your employee, except
+              <a href="https://www.gov.uk/running-payroll/fps-after-payday">when you can submit a late FPS</a>.
+            </p>
+          </div>
+
+          <h3 class="govuk-heading-s">If you don't pay any employees</h3>
+
+          <p>If you don't pay any of your employees in a tax month, you still need to make a submission through your payroll software.</p>
+
+          <p>But instead of an FPS, you need to submit a
+            <a href="https://www.gov.uk/payroll-errors/correcting-payments-to-hmrc">'nil' Employer Payment Summary (EPS)</a> after the tax month has ended.
+          </p>
+
+          <p>Your software will keep a record of each FPS and EPS you submit.</p>
+
+
+          <h2 class="govuk-heading-m">3. Paying HMRC</h2>
+
+          <p>You need to use your accounts office reference when you pay HMRC.</p>
+
+          <p class="govuk-body">Your accounts office reference is 13 characters, for example 123PA01234567. It's different to your employer's PAYE reference. You can find it on either:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>the letter from HMRC when you first registered for PAYE</li>
+            <li>the 'Paying PAYE electronically' letter HMRC sends you at the start of each tax year (the 'P30B')</li>
+          </ul>
+
+          <p>Make sure to use the correct accounts office reference if you manage more than one payroll scheme.</p>
+
+          <h3 class="govuk-heading-s">Detailed guides about:</h3>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>
+              <p class="govuk-!-margin-bottom-0">
+                <a href="https://www.gov.uk/running-payroll">running your payroll</a>
+              </p>
+            </li>
+            <li>
+              <p class="">
+                <a href="https://www.gov.uk/pay-paye-tax">paying HMRC</a>
+              </p>
+            </li>
+          </ul>
+
+
+
+
+
+
+        </div>
+      </div>
+
+      <details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+        <summary class="govuk-details__summary_noarrow" style="display:block;">
+          <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+            Is this page not working properly?
+          </span>
+        </summary>
+        <div class="">
+
+        </div>
+      </details>
+  </main>
+</div>
+
+
+{% endblock %}

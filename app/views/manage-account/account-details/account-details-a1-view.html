@@ -1,0 +1,458 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-6">
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+      Account details
+    </h1>
+  </div>
+
+  <div class="govuk-inset-text govuk-grid-column-two-thirds govuk-!-margin-top-0 govuk-!-margin-bottom-8">
+    You need to change your details for each tax separately.<br>
+    Any changes will take up to 2 days to update.
+  </div>
+
+  <!-- ///////////////////////////// -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-4">
+
+    <!-- <h2 class="govuk-heading-l">
+    Account settings
+  </h2> -->
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-7">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Government Gateway email</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View <span
+              class="govuk-visually-hidden">Government Gateway </span>email</a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="account-details-options"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change <span
+              class="govuk-visually-hidden">Government Gateway </span>email</a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Government Gateway password</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View <span
+              class="govuk-visually-hidden">Government Gateway </span>password</a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change <span
+              class="govuk-visually-hidden">Government Gateway </span>password</a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Business help and tips</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View business help and tips email</a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change business help and tips email</a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key" scope="row">Go paperless with HMRC<br>[not set up]</dt>
+          <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+          <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+              class="govuk-body govuk-link govuk-link--no-visited-state">Sign up for paperless communications from
+              HMRC</a></dd>
+        </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Go paperless with HMRC<br>[email verified]</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+          class="govuk-body govuk-link govuk-link--no-visited-state">View HMRC communications email</a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter">
+          <p><a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Change HMRC communications email</a>
+          </p>
+          <p><a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Stop emails from HMRC</a></p>
+        </dd>
+      </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key" scope="row">Go paperless with HMRC<br>[email not verified]</dt>
+          <dd class="govuk-summary-list__value govuk-!-width-one-half">
+            <p>An email was sent to sarah.phillips@example.com on 28 June 2019. Click on the link in the email to verify
+              your email address. If you can't find it, we can <a href="javascript:;"
+                class="govuk-body govuk-link govuk-link--no-visited-state">send a new verification email</a>.</p>
+          </dd>
+          <dd class="govuk-summary-list__actions govuk-!-width-one-quarter">
+            <p><a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Change HMRC communications
+                emails</a></p>
+            <p><a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Stop emails from HMRC</a></p>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key" scope="row">Go paperless with HMRC<br>[email verified]</dt>
+          <dd class="govuk-summary-list__value govuk-!-width-one-half">sarah.phillips@example.com</dd>
+          <dd class="govuk-summary-list__actions govuk-!-width-one-quarter">
+            <p><a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Change HMRC communications email</a>
+            </p>
+            <p><a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Stop emails from HMRC</a></p>
+          </dd>
+        </div>
+    </dl>
+  </div>
+
+
+  <!-- ////////////////////////////////// -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-4">
+
+    <h2 class="govuk-heading-l">
+      Self Assessment
+    </h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-7">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Full name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View <span class="govuk-visually-hidden">full
+            </span>name <span class="govuk-visually-hidden">for Self Assessment</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change name <span
+              class="govuk-visually-hidden">for Self Assessment</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View address <span
+              class="govuk-visually-hidden">for Self Assessment</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change address <span
+              class="govuk-visually-hidden">for Self Assessment</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Daytime phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View daytime phone <span
+              class="govuk-visually-hidden">for Self Assessment</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change daytime phone <span
+              class="govuk-visually-hidden">for Self Assessment</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Evening phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View evening <span
+              class="govuk-visually-hidden">for Self Assessment</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change evening <span
+              class="govuk-visually-hidden">for Self Assessment</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Mobile</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View mobile <span
+              class="govuk-visually-hidden">for Self Assessment</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change mobile <span
+              class="govuk-visually-hidden">for Self Assessment</a></dd>
+      </div>
+    </dl>
+  </div>
+
+  <!-- ///////////////////////   CORPORATION TAX   ///////////////////////  -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-4">
+
+    <h2 class="govuk-heading-l">
+      Corporation Tax
+    </h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-7">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Company name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View company name <span
+              class="govuk-visually-hidden">for Corporation Tax</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change company name <span
+              class="govuk-visually-hidden">for Corporation tax</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Registered address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View registered address <span
+              class="govuk-visually-hidden">for Corporation Tax</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change registered address <span
+              class="govuk-visually-hidden">for Corporation tax</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Communications address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View communications address <span
+              class="govuk-visually-hidden">for Corporation Tax</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change communications address <span
+              class="govuk-visually-hidden">for Corporation tax</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Main landline</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View main landline <span
+              class="govuk-visually-hidden">for Corporation Tax</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change main landline <span
+              class="govuk-visually-hidden">for Corporation tax</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Main mobile</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View mobile <span
+              class="govuk-visually-hidden">for Corporation Tax</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change main mobile <span
+              class="govuk-visually-hidden">for Corporation tax</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Communications landline</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View communications landline <span
+              class="govuk-visually-hidden">for Corporation Tax</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change communications landline <span
+              class="govuk-visually-hidden">for Corporation tax</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Communications mobile</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View communications mobile <span
+              class="govuk-visually-hidden">for Corporation Tax</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change communications mobile <span
+              class="govuk-visually-hidden">for Corporation tax</span></a></dd>
+      </div>
+    </dl>
+  </div>
+
+  <!-- ////////////////////////  EPAYE  /////////////////////////////////  -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-4">
+
+    <h2 class="govuk-heading-l">
+      PAYE for employers
+    </h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-7">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Business name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View business name <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change business name <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Trading name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View trading name <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change trading name <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Business address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View business address <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change business address <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Business phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View business phone <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change business phone <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Business fax</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View business fax <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change business fax <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Business email</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View business email <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change email <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Payroll communications phone</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View communications phone <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change communications phone <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Payroll communications fax</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View communications fax <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change communications fax <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Payroll communications email</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View communications email <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change communications email <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">PAYE messages</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View messages email <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change messages email <span
+              class="govuk-visually-hidden">for PAYE for employers</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">RTI submission confirmations
+        </dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Uses your Goverment Gateway login email</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change confirmation email</a></dd>
+      </div>
+
+    </dl>
+  </div>
+
+  <!-- ////////////////////////   VAT  /////////////////////////  -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-4">
+
+    <h2 class="govuk-heading-l">
+      VAT
+    </h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-7">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Business name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View business name <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change business name <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Trading name</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View trading name <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change trading name <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Business address</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View business address <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change business address <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+
+        <dt class="govuk-summary-list__key" scope="row">VAT reminders</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View email for reminder <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change email for reminders <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Secure confirmation messages</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View email for confirmation messages <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change email for confirmation messages <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Landline</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View landline <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change landline <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Mobile</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View mobile <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change mobile <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Bank account for repayments [VAT-DEC]</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View bank details <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Bank account for repayments [VAT-VAR -- Bank not set)</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Set up bank details <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Bank account for repayments [VAT-VAR]</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View bank details <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change bank details <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Bank account for repayments [MTD-VAT]</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">View bank details <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state">Change bank details <span
+              class="govuk-visually-hidden">for VAT</span></a></dd>
+      </div>
+    </dl>
+
+  </div>
+
+</div>
+
+
+{% endblock %}

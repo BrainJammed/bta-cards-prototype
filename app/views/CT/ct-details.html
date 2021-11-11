@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_sa_how_to_pay__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl">Corporation Tax details</h1>
+
+          <div class="govuk-inset-text">
+            Payments will take up to 7 working days to show, depending on how you pay.
+            After you complete your return your tax calculation will take up to 2 days.
+          </div>
+
+          <h2 class="govuk-heading-m">Your returns</h2>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Complete Corporation Tax return
+          </button>
+
+          <h2 class="govuk-heading-m govuk-!-margin-top-4">Your payments</h2>
+
+        	<p>You can no longer use a personal credit card. If you pay with a credit card, it must be linked to a business bank account.</p>
+
+        	<p>You are £12,345.67 in credit</p>
+
+          <p class="govuk-body">
+            <a href="https://www.staging.tax.service.gov.uk/corporation-tax/org/5830350129/account/balanceperiods?lang=eng" class="govuk-link" target="_blank">How we worked this out (opens in new tab)</a>
+          </p>
+
+          <p class="govuk-body govuk-!-font-weight-bold">We cannot display your card payment history at the moment. Check again later.</p>
+
+          <button class="govuk-button" data-module="govuk-button" style="background-color: #005ea5;">
+            Make a Corporation Tax payment
+          </button>
+
+          <h3 class="govuk-heading-s" style="margin-bottom:5px;">More options</h3>
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/dormant-company/dormant-for-corporation-tax" target="_blank">Make your company dormant (opens in new tab)</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/closing-a-limited-company" target="_blank">Benefit overpayments</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/guidance/get-a-certificate-of-residence" target="_blank">Get a certificate of residence (opens in new tab)</a>
+            </li>
+          </ul>
+
+
+
+          <details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+            <summary class="govuk-details__summary_noarrow" style="display:block;">
+              <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+                Is this page not working properly?
+              </span>
+            </summary>
+            <div class="">
+
+            </div>
+          </details>
+
+
+
+
+
+
+
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <h2 class="govuk-heading-s" style="margin-bottom:5px;"">Corporation Tax Unique Taxpayer Reference (UTR):</h2>
+        <p class="govuk-body-s">6471604667</p>
+
+        <h2 class="govuk-heading-s" style="margin-bottom:5px;"">Help</h2>
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="https://bta-cards-prototype.herokuapp.com/help-and-contact/help-and-contact">Help and contact</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="https://www.staging.tax.service.gov.uk/corporation-tax/org/6471604667/account/balanceperiods?lang=eng" target="_blank">More Corporation Tax details (opens in new tab)</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-4">
+      Finding your account
+    </h1>
+    <p class="govuk-body govuk-!-margin-bottom-8">
+      We need some information to help us find your original sign in details.
+    </p>
+  </div>
+
+  <form action="/manage-account/add-sa/finding-your-account" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Which option best describes your problem?
+            </h2>
+
+          </legend>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="describe-you-1" name="describe-you" type="radio"
+                value="Individual-sole-trader">
+              <label class="govuk-label govuk-radios__label" for="which-of-these-best-describes-you">
+                I have my user ID but I don’t know my password
+              </label> </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="describe-you-2" name="describe-you" type="radio"
+                value="partnership">
+              <label class="govuk-label govuk-radios__label" for="which-of-these-best-describes-you-2">
+                I have my password but I don’t know my user ID
+              </label> </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="describe-you-3" name="describe-you" type="radio" value="trust">
+              <label class="govuk-label govuk-radios__label" for="which-of-these-best-describes-you-3">
+                I don’t have my user ID and password
+              </label> </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button">
+        Continue
+      </button>
+
+    </div>
+
+  </form>
+
+</div>
+
+{% endblock %}

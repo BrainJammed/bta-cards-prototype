@@ -1,0 +1,115 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+VAT - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+  <h1 class="govuk-heading-l">Your business taxes</h1>
+
+
+
+      <p class="govuk-inset-text govuk-!-margin-top-0">
+          Payments will take 4 to 7 working days to show on this page. Completed return amounts will take 1 to 2 days.</p>
+
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h2 class="govuk-heading-m">VAT</h2>
+
+    <p class="govuk-body-l">Your VAT registration number (VRN) is 999943620.</p>
+
+
+    <div class="govuk-warning-text govuk-!-margin-bottom-8">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        You're not set up to change VAT details online - <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">set up now <span class="govuk-visually-hidden">(opens
+            in a new window or tab)</span></a>.
+      </strong>
+    </div>
+
+    <div class="govuk-!-margin-bottom-4">
+      <h2 class="govuk-heading-m">Your returns</h2>
+      <button type="submit" class="govuk-button">
+        Complete VAT return (opens in HMRC online)
+      </button>
+    </div>
+    <div class="govuk-!-margin-bottom-8">
+      <h2 class="govuk-heading-m">Your payments</h2>
+
+      <p class="govuk-body"> You are £1,439.82 in credit</p>
+
+      <p><a href="javascript:;" class="govuk-link govuk-link--no-visited-state">How we worked this out <span class="govuk-visually-hidden">(opens in a new
+            window or tab)</span></a></p>
+
+      <button type="submit" class="govuk-button" style="background-color: #005ea5;">
+        Make a VAT payment
+      </button>
+
+      <p><a href="javascript:;" class="govuk-link govuk-link--no-visited-state">More VAT details</a></p>
+    </div>
+
+    <div class="govuk-!-margin-bottom-8">
+
+      <h2 class="govuk-heading-m">Get another tax, duty or scheme</h2>
+
+      <button type="submit" class="govuk-button" style="background-color: 	#bfc1c3; color: #0b0c0c;">
+        Find a tax, duty or scheme
+      </button>
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+      <h2 class="govuk-heading-m">Other services</h2>
+      <ul class="govuk-list">
+
+        <li>
+          <a href="javascript:;" data-journey-click="link - click:Your business taxes:Anti-money laundering supervision">Anti-money
+            laundering supervision</a>
+        </li>
+
+        <li>
+          <a href="javascript:;">Employment intermediaries</a>
+        </li>
+
+        <li>
+          <a href="javascript:;">Intrastat Supplementary Declaration
+            <span class="govuk-visually-hidden">(opens in a new window)</span></a>
+        </li>
+        <li>
+          <a href="javascript:;">Notification of Vehicle Arrivals (NOVA)
+            <span class="govuk-visually-hidden"> (opens in HMRC online)</span></a>
+        </li>
+        <li>
+          <a href="javascript:;">VAT on e-Services (VOES)
+            <span class="govuk-visually-hidden">(opens in a new window)</span></a>
+        </li>
+      </ul>
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    </div>
+
+    <div class="govuk-!-margin-bottom-8">
+      <p><a href="javascript:;" class="govuk-link--no-visited-state" style="color: #0b0c0c;">Is there anything wrong with this page?</a></p>
+    </div>
+
+    <!-- ///////////////////////////////// -->
+
+  </div>
+
+  <div class="govuk-grid-column-one-third govuk-!-padding-left-6">
+      <p style="text-align: right; margin-bottom: 0; color: #0b0c0c;">English | <a href="javascript:;" class="govuk-link--no-visited-state" style="color: #005ea5;">Cymraeg</a></p>
+      <div class="govuk-!-margin-bottom-6" style="display: block; border-top-color: #005ea5; border-top-style: solid; border-top-width: 10px; "></div>
+    
+    <h3 class="govuk-heading-s govuk-!-margin-bottom-6">Welcome, test user</h3>
+    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Help with tax</h3>
+
+      <p><a href="javascript:;" class="govuk-link--no-visited-state">Help and contact</a></p>
+
+  </div>
+
+</div>
+{% endblock %}

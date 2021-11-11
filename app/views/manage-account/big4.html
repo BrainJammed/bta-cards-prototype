@@ -1,0 +1,746 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-padding-bottom-2em">
+      Manage account
+    </h1>
+
+    <div class="govuk-inset-text govuk-!-margin-top-0">
+      Any updates to your account details take up to 2 days to appear on this page.
+    </div>
+
+    <!-- only add a heading for a list if there is more than one list -->
+    <h2 class="govuk-heading-l">
+      Self-assessment
+    </h2>
+
+    <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+    <!--   * `app-check-your-answers--short` for short questions -->
+    <!--   * `app-check-your-answers__questions-long` for long questions -->
+    <!--   * none for single group of q&a -->
+    <dl class="app-check-your-answers app-check-your-answers--short">
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Full name
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          Sarah Philips
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change
+          </a>
+        </dd>
+      </div>
+
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Registered address *
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          72 Guild Street<br>
+          London<br>
+          SE23 6FH
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change
+          </a>
+        </dd>
+      </div>
+
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Communications landline
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          0191 1234567
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Main mobile
+        </dt>
+        <dd class="app-check-your-answers__answer">
+        <a href="javascript:;">
+            View
+          </a>
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Email *
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          sarah.phillips@example.com
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Password *
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          ****
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+  </div>
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <!-- only add a heading for a list if there is more than one list -->
+    <h2 class="govuk-heading-l">
+      Corporation Tax
+    </h2>
+
+    <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+    <!--   * `app-check-your-answers--short` for short questions -->
+    <!--   * `app-check-your-answers__questions-long` for long questions -->
+    <!--   * none for single group of q&a -->
+    <dl class="app-check-your-answers app-check-your-answers--short">
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Company name
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          Alpha-Beta Pasta
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change name
+          </a>
+        </dd>
+      </div>
+
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Registered address *
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          72 Guild Street<br>
+          London<br>
+          SE23 6FH
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change Registered address
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Communications name
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          Nazim Rigoletti
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change Communications name
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Communications Address
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          66 Celebration Street<br>
+          Newcastle<br>
+          SE23 6FH
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change Communications address
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Main landline
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          0191 1234567
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change main landline
+          </a>
+        </dd>
+      </div>
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Main mobile
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          07700 900457
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change main mobile
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Communications landline
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          NA
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Add communications landline
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Communications mobile
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          07700 900457
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change communications mobile
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Government Gateway (with dropdown)
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          nazim.rigoletti@example.com
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change email
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Corporation Tax
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          View email
+        </dd>
+        <dd class="app-check-your-answers__change">
+            <a href="javascript:;">
+                View email
+              </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Business tips (with dropdown)
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          NA
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Add email
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Password *
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          ****
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change account password
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+    <dl class="app-check-your-answers app-check-your-answers--short">
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Account users *
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          Sarah Phillips
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change account user
+          </a>
+        </dd>
+    </dl>
+
+  </div>
+
+
+
+  
+  <div class="govuk-grid-column-two-thirds">
+
+    <!-- only add a heading for a list if there is more than one list -->
+    <h2 class="govuk-heading-l">
+      EPAYE *
+    </h2>
+
+    <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+    <!--   * `app-check-your-answers--short` for short questions -->
+    <!--   * `app-check-your-answers__questions-long` for long questions -->
+    <!--   * none for single group of q&a -->
+    <dl class="app-check-your-answers app-check-your-answers--short">
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Company name
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          Alpha-Beta Pasta
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change name
+          </a>
+        </dd>
+      </div>
+
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Registered address *
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          72 Guild Street<br>
+          London<br>
+          SE23 6FH
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change Registered address
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Communications name
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          Nazim Rigoletti
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change Communications name
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Communications Address
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          66 Celebration Street<br>
+          Newcastle<br>
+          SE23 6FH
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change Communications address
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Main landline
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          0191 1234567
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change main landline
+          </a>
+        </dd>
+      </div>
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Main mobile
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          07700 900457
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change main mobile
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Communications landline
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          NA
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Add communications landline
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Communications mobile
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          07700 900457
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change communications mobile
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Government Gateway (with dropdown)
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          nazim.rigoletti@example.com
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change email
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Corporation Tax
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          View email
+        </dd>
+        <dd class="app-check-your-answers__change">
+            <a href="javascript:;">
+                View email
+              </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Business tips (with dropdown)
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          NA
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Add email
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Password *
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          ****
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change account password
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+    <dl class="app-check-your-answers app-check-your-answers--short">
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Account users *
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          Sarah Phillips
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change account user
+          </a>
+        </dd>
+    </dl>
+
+  </div>
+
+
+
+  
+  <div class="govuk-grid-column-two-thirds">
+
+    <!-- only add a heading for a list if there is more than one list -->
+    <h2 class="govuk-heading-l">
+      VAT *
+    </h2>
+
+    <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+    <!--   * `app-check-your-answers--short` for short questions -->
+    <!--   * `app-check-your-answers__questions-long` for long questions -->
+    <!--   * none for single group of q&a -->
+    <dl class="app-check-your-answers app-check-your-answers--short">
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Company name
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          Alpha-Beta Pasta
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change name
+          </a>
+        </dd>
+      </div>
+
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Registered address *
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          72 Guild Street<br>
+          London<br>
+          SE23 6FH
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change Registered address
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Communications name
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          Nazim Rigoletti
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change Communications name
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Communications Address
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          66 Celebration Street<br>
+          Newcastle<br>
+          SE23 6FH
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change Communications address
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Main landline
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          0191 1234567
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change main landline
+          </a>
+        </dd>
+      </div>
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Main mobile
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          07700 900457
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change main mobile
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Communications landline
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          NA
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Add communications landline
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Communications mobile
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          07700 900457
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change communications mobile
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Government Gateway (with dropdown)
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          nazim.rigoletti@example.com
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change email
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Corporation Tax
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          View email
+        </dd>
+        <dd class="app-check-your-answers__change">
+            <a href="javascript:;">
+                View email
+              </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Business tips (with dropdown)
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          NA
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Add email
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Password *
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          ****
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change account password
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+    <dl class="app-check-your-answers app-check-your-answers--short">
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Account users *
+        </dt>
+        <dd class="app-check-your-answers__answer">
+          Sarah Phillips
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Change account user
+          </a>
+        </dd>
+    </dl>
+
+  </div>
+
+
+</div>
+
+
+{% endblock %}

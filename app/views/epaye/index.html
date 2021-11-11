@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact__heading %}
+
+{% block page_title %}
+{{ pageHeading }}
+-
+{{ serviceName }}
+- GOV.UK
+{% endblock %}
+
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+<!-- //////////////////////// -->
+
+<div class="govuk-grid-row ">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+    <h1 class="govuk-heading-l">
+      All your overdue payments
+    </h1>
+
+
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Important</span>
+        Coronavirus (COVID-19): you must continue to submit your FPSs and EPSs as normal. Your PAYE bills are not being
+        deferred.
+      </strong>
+    </div>
+    <div class="govuk-inset-text govuk-!-margin-top-0 ">
+      <p>
+        Wages of all employees, including employees on temporary leave (furloughed) due to coronavirus, must be subject
+        to Income Tax and National Insurance as normal.
+      </p>
+
+      <p>See <a href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" target="_blank"
+          class="govuk-link govuk-link--no-visited-state">coronavirus (COVID-19): business support</a> for more about
+        financial support for businesses and claiming wage costs for furloughed employees.
+      </p>
+
+    </div>
+
+    <p class="govuk-body">You have no overdue payments.</p>
+
+    <h2 class="govuk-heading-m ">
+      Multiple payments
+    </h2>
+    <p class="govuk-body">You can add together overdue monthly PAYE bills and pay them in a single payment - just select
+      the monthly period for the oldest bill you are paying. </p>
+
+    <p class="govuk-body">Do not include any payments that are not monthly PAYE bills, use the payment buttons to pay
+      those charges. </p>
+
+
+    <h2 class="govuk-heading-m">
+      Early payments
+    </h2>
+    <p class="govuk-body">You can also <a class="govuk-body" href="make-a-payment">make a PAYE payment</a> when no
+      upcoming bill is listed in your online account.</p>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-body" href="payments-history" id="upcoming-payments">Payments history</a>
+      </li>
+      <li>
+        <a class="govuk-body" href="annual-statements" id="overdue-payments">See annual statements</a>
+      </li>
+    </ul>
+    {% include 'includes/details-get-help.html' %}
+
+  </div>
+
+
+  <div class="govuk-grid-column-one-third govuk-!-margin-bottom-0">
+    {% include 'epaye/_sidebar.html' %}
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}

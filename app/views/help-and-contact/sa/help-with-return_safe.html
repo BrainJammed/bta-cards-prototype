@@ -1,0 +1,56 @@
+{% extends '../../../layouts/base.html' %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_sa_help_with_return__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include '../../../includes/header_full_width.html' %}
+
+<main id="content" class="grid-row" role="main">
+
+    {{ govPageHeader(pageHeading) }}
+    <div class="column-two-thirds">
+    	<h2 class="heading-large-macro">Who must send a tax return?</h2>
+        <p><a href="javascript:;">Why have I been sent a tax return - video transcript</a></p>
+    	<p>You will usually be sent a tax return if you are registered as self-employed.</p>
+    	<p>You can anonymously <a href="javascript:;">check if you need to fill in a Self Assessment tax return</a>. 
+    		<p>If you are sent a tax return, or if you get an email or letter from HMRC telling you to complete one, you must do it - even if you do not have any tax to pay. If you do not send a tax return back by the deadline you may have to pay a penalty. If you used to send a tax return but do not need to send one for the last tax year, contact HMRC to close your Self Assessment account. You must also tell HMRC if you have stopped being self-employed.</p>
+
+    		<h3 class="heading-medium">Your first Self Assessment tax return</h3>
+    		<p>Self Assessment is a system HM Revenue and Customs (HMRC) uses to collect Income Tax.</p>
+    		<p>Tax is usually deducted automatically from wages, pensions and savings. People and businesses with other income must report it in a tax return.</p>
+    		<p>Self Assessment is not just for self-employed people. Everyone who has to complete a tax return must do so, even if there is nothing to pay. You may be charged a penalty if you do not.</p>
+    		<p>If you need to send one, you fill it in after the end of the tax year (5 April) it applies to.</p>
+    		<p>If you did not send an online return last year, allow extra time (up to 20 working days) as you will need to register first.</p>
+    		<p><a href="javascript:;">Your first Self Assessment tax return - Video transcript</a></p>
+
+            <h2 class="heading-medium">Tailor your tax return</h2>
+            <p>You will tailor your tax return on the first 3 pages. Use this section to tell us about your different types of income, employments and self-employments so that you only see the parts of the tax return that you need to.</p> 
+
+            <p><a href="javascript:;">Tailor your tax return - video transcript</a></p>
+
+    		<h4 class="heading-medium">Your self-employed tax return</h4>
+    		<p>If you started or ceased self-employment during the year, it is important to enter the dates so HMRC can update your records.</p>
+    		<p>If you did not trade for a full year, but if you had and your income would have been over £83,000, you answer “yes”. For example: If your business income over 6 months was £50,000, then for 12 months it would have been £100,000.</p> 
+    		<p><a href="javascript:;">Your self-employed tax return - video transcript</a></p>
+
+            <h5 class="heading-medium">Class 2 National Insurance changes</h5>
+            <p>The way you pay Class 2 National Insurance contributions changed from 6 April 2015. Instead of paying by Direct Debit you pay the full amount for the year through your Self Assessment tax bill.</p>
+
+           <p> <a href="javascript:;">Video goes here</a></p>
+            <a href="javascript:;">Class 2 National Insurance changes: Self Assessment – video transcript</a>
+
+    		<h5 class="heading-medium">Your income from property tax return</h5>
+    		<p>Do not fill in this section if you run a guest house or offer bed and breakfast. That is classed as self-employment and you should fill in that section.</p>
+    		<p>If your property is outside the European Economic Area, fill in the Foreign section. </p>
+    		<p>If your property income was from a partnership, fill in the Partnership section.</p>
+    		<p><a href ="#">Your income from property tax return - video transcript</a></p>
+
+    </div>
+</main>
+
+
+{% endblock %}

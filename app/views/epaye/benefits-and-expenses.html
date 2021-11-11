@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact__heading %}
+
+{% block page_title %}
+{{ pageHeading }}
+-
+{{ serviceName }}
+- GOV.UK
+{% endblock %}
+
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+<!-- //////////////////////// -->
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+    <h1 class="govuk-heading-l">
+      Benefits and expenses (P11D, P11D(b) and P46(car))
+    </h1>
+
+
+    <p class="govuk-body">
+      You must report benefits and expenses unless they are <a
+        href="https://www.gov.uk/employer-reporting-expenses-benefits/dispensations">covered by an exemption</a>, and
+      pay tax and National Insurance on them.
+    </p>
+
+    <h2 class="govuk-heading-m">
+      Report once a year (P11D)
+    </h2>
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        HMRC needs you to send P11Ds online where possible this year.
+      </strong>
+    </div>
+    <p class="govuk-body">
+      If you have only used paper or PDF forms before, you can file online using commercial software, or file directly using HMRC's filing service. This service is free to use and is suitable for businesses with up to 500 employees.
+    </p>
+    <p class="govuk-body">
+      The deadline for returns is 6 July 2020.
+    </p>
+    <p class="govuk-body">
+      For each of your employees you need to submit a <a href="#">P11D</a>
+       if they get expenses or benefits. 
+    </p>
+    <p class="govuk-body">
+      You also need to submit a <a href="#">P11D(b)</a>.
+    </p>
+    <p class="govuk-body">
+      There are some circumstances where you will need to <a href="#">use the paper forms</a>.
+    </p>
+    <p class="govuk-body">
+      If you only pay small or irregular benefits and expenses, you can make a <a href="#">Payment Settlement Agreement (PSA)</a> with HMRC.
+    </p>
+    <p class="govuk-body">
+      If you haven’t yet received a P11D bill and still want to make a payment for Class 1A National Insurance you can <a href="#">make a payment at any time on GOV.UK</a>.
+    </p>
+
+    <h2 class="govuk-heading-m">
+      Regular payments through your payroll
+    </h2>
+    <p class="govuk-body">
+      You can report benefits and expenses and pay tax on them regularly throughout the year through your payroll. You’ll need to use HMRC’s <a href="#">Payroll Benefits in Kind service</a>.
+    </p>
+    <p class="govuk-body">
+      You’ll still need to submit a <a href="#">P11D(b)</a> for your employees by 6 July. But you won’t need to submit P11Ds for individual employees. 
+    </p>
+
+    <h2 class="govuk-heading-m">
+      Specific reports throughout the year
+    </h2>
+    <p class="govuk-body">
+      For employees benefiting from a company car you must submit a <a href="#">form P46(Car)</a> when they start benefiting, when the benefit changes, and again when they stop.  
+    </p>
+
+
+    <div class="govuk-body govuk-!-margin-bottom-8"></div>
+    {% include 'includes/details-get-help.html' %}
+
+  </div>
+
+
+  <div class="govuk-grid-column-one-third govuk-!-margin-bottom-0">
+    {% include 'epaye/_sidebar.html' %}
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}

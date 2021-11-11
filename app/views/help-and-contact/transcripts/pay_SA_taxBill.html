@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_sa_how_to_pay__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+{% block content %}
+
+{% include 'includes/nav-combo-ur2.html' %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">How do I pay my Self Assessment tax bill? - video transcript</h1>
+
+        <p>After completing your online Self Assessment return, you’ll see your tax calculation and how much you’ll pay.</p>
+
+        <p class="govuk-body">There are lots of ways to pay this bill, and 2 deadlines for paying it by.
+          Paying on time means you’ll avoid being charged interest and a late penalty. The deadlines are:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>31 January for your tax bill from the previous year and first payment on account</li>
+          <li>and 31 July for your second payment on account.</li>
+        </ul>
+
+        <p>To help you avoid missing the deadline, you can choose to make your payments earlier. If you prefer to pay regularly throughout the year,
+          use a budget payment plan.</p>
+
+        <p class="govuk-body">For your payment to reach us the same or next day, pay by:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Approving your payment through your online account</li>
+          <li>Online or telephone banking, using faster payments</li>
+          <li>CHAPS</li>
+          <li>or your debit or corporate credit card online</li>
+        </ul>
+
+        <p class="govuk-body">For payment to reach us within 3 days, pay by:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Direct Debit</li>
+          <li>or Bacs</li>
+          <li>alternatively you can send a cheque through the post.</li>
+        </ul>
+
+       <p>After paying, you can view your HMRC online account to check payment has been received. It should show as paid within 7 working days.</p>
+
+       <p>You can find more information about Self Assessment on
+         <a href="https://www.gov.uk/">GOV.UK</a>.
+       </p>
+
+       <details class="govuk-details" data-module="govuk-details" style="padding-top:60px;">
+         <summary class="govuk-details__summary_noarrow" style="display:block;">
+           <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+             Is this page not working properly?
+           </span>
+         </summary>
+         <div class="">
+
+         </div>
+       </details>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}

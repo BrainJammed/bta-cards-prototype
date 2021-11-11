@@ -1,0 +1,225 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+BTA - Account details - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-mtd-itsa.html' %}
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-6">
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+      Account details
+    </h1>
+  </div>
+
+  <div class="govuk-inset-text govuk-grid-column-two-thirds govuk-!-margin-top-0 govuk-!-margin-bottom-8">
+    You need to change your details for each tax separately.<br>
+    Any changes will take up to 2 days to update.
+  </div>
+
+  <!-- <div class="govuk-inset-text govuk-grid-column-two-thirds govuk-!-margin-top-0 govuk-!-margin-bottom-8">
+    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Go paperless for Self Assessment</h3>
+    <p>You can now <class="govuk-body"><a href="" target="_blank" class="govuk-link govuk-link--no-visited-state">get Self Assessment tax letters online</a>.</p>
+    <p>Your tax account gives you secure storage online for your tax letters, or you can download and store selected letters on disk or external drive. You can print your tax letters if you ever need a paper copy.</p>
+  </div> -->
+
+
+  <!-- <div class="govuk-inset-text govuk-grid-column-two-thirds govuk-!-margin-top-0 govuk-!-margin-bottom-8">
+
+    <p>Get Self Assessment tax letters online. <class="govuk-body"><a href="" target="_blank" class="govuk-link govuk-link--no-visited-state">Find out more</a></p>
+  </div> -->
+
+
+
+  <!-- ///////////////////////////// -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-6">
+
+    <!-- <h2 class="govuk-heading-l govuk-!-margin-bottom-4">
+    Account settings
+  </h2> -->
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <!-- ================================= -->
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Government Gateway details</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="Change Government Gateway details">Manage your Government Gateway details</a></dd>
+      </div>
+
+      <!-- ================================= -->
+
+<!--
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Manage email subscriptions<br></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="View or change email for business help and tips">Manage help and support emails from HMRC<span
+              class="govuk-visually-hidden"></span></a></dd>
+      </div>
+ -->
+      <!-- ================================= -->
+
+       <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">Contact preference for Self Assessment and Making Tax Digital for Income Tax<br></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">By post</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter">
+          <a href="https://sps-mvp-prototype.herokuapp.com/sps/work-in-progress/how-toget-tax-letters"
+            class="govuk-body govuk-link govuk-link--no-visited-state"
+            aria-label="View or change email for business help and tips">Get tax letters online
+            <span
+              class="govuk-visually-hidden">
+            </span>
+          </a>
+        </dd>
+      </div>
+
+
+    </dl>
+
+    <!-- ////////////// MTD ITSA: Self Assessment//////////////////// -->
+
+
+    <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-6">
+
+      <h2 class="govuk-heading-l govuk-!-margin-bottom-4 govuk-!-margin-top-6"">Making Tax Digital for Income Tax</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key"></dt>
+          <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+          <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+        </div>
+
+        <br>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">Contact preference for Self Assessment and Making Tax Digital for Income Tax     </dt>
+          <dd class="govuk-summary-list__value govuk-!-width-one-half">By post</dd>
+          <dd class="govuk-summary-list__actions govuk-!-width-one-quarter">
+            <a href="https://sps-mvp-prototype.herokuapp.com/sps/work-in-progress/how-toget-tax-letters" class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Get tax letters online</a>
+          </dd>
+        </div>
+
+      </dl>
+    </div>
+
+
+  <!-- //////////////Self Assessment//////////////////// -->
+
+  <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-margin-bottom-6">
+
+    <h2 class="govuk-heading-l govuk-!-margin-bottom-4">Self Assessment</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-6">
+
+      <!-- ================================= -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <br>
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><h3 class="govuk-heading-m">Contact details</h3></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email"><span class="govuk-visually-hidden"></span></a></dd>
+        </div>
+
+      <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key govuk-!-width-three-quarters"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half govuk-heading-s govuk-!-padding-top-6">Contact
+          details</dd>
+        <dd class="govuk-!-width-one-quarter"></dd>
+      </div> -->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Full name	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Jay Smith</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Address	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Unable to display</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Daytime phone	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Unable to display</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Evening phone	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Not held</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Mobile phone	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Not held</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Fax	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Not held</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Email	</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Not held</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key"></dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="" aria-label="Change Government Gateway email">Add, view or change contact details</a></dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"></dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Contact preference for Self Assessment and Making Tax Digital for Income Tax     </dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">By post</dd>
+        <dd class="govuk-summary-list__actions govuk-!-width-one-quarter">
+          <a href="https://sps-mvp-prototype.herokuapp.com/sps/work-in-progress/how-toget-tax-letters" class="govuk-body govuk-link govuk-link--no-visited-state" aria-label="Change Government Gateway email">Get tax letters online</a></dd>
+      </div>
+
+    </dl>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

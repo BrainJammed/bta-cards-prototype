@@ -1,0 +1,745 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Corporation Tax account - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-l">Your business taxes</h1>
+
+  <p class="govuk-body">
+    1a. Not yet activated - Less than 7 days
+  </p>
+
+
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-4">
+          Corporation Tax Unique Taxpayer Reference 1234567890
+        </p>
+
+        <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-4">
+          We posted an activation code to you. Delivery takes up to 7 days.</p>
+        <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">Use the code to <a href="javascript:;" class="govuk-link--n0-visited-state">activate your Corporation Tax</a>.
+          It can take up to 72 hours to display your details.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    1b. Not yet activated - more than 7 days -- Or when no information available
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-4"">
+          Corporation Tax Unique Taxpayer Reference 1234567890
+        </p>
+
+        <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-4">
+          Your Corporation Tax activation code has expired.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You need to <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">request a new activation code for Corporation Tax</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    1c. Not yet activated - More than 30 days
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-4"">
+          Corporation Tax Unique Taxpayer Reference 1234567890
+        </p>
+
+        <p class="govuk-body govuk-!-margin-top-1 govuk-!-margin-bottom-4">
+          Your Corporation Tax activation code has expired.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You need to <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">request a new activation code for Corporation Tax</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    2a. In credit
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+          Corporation Tax Unique Taxpayer Reference 1234567890
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your returns
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You may have returns to complete.
+        </p>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete Corporation Tax return</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your payments
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          You are <span
+            class="govuk-body govuk-!-font-weight-bold govuk-!-padding-right-1">£12,345.67 </span>
+          in credit.
+        </p>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-right-1">We cannot display your card payment history at the moment. Check again later.
+          </span>
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View your Corporation Tax statement</a>
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a Corporation Tax payment</a>
+        </p>
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1 govuk-!-margin-bottom-2">
+        <p class="govuk-body">
+          <a href="ct-details.html" class="govuk-link govuk-link--no-visited-state">More details about your Corporation Tax</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <p class="govuk-body">
+    2b. In credit, immediately after payment
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+          Corporation Tax Unique Taxpayer Reference 6471604667
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your returns
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You may have returns to complete.
+        </p>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete Corporation Tax return</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your payments
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          You are <span
+            class="govuk-body govuk-!-font-weight-bold govuk-!-padding-right-1">£100.00</span>in credit.
+        </p>
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Your card payments in the last 7 days</h3>
+
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You paid £9,856 on 29 July 2021.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          Your payment reference number is 6471604667A00108A.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          It will take up to 7 days to update your balance after each payment.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">View your Corporation Tax statement</a>
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a Corporation Tax payment</a>
+        </p>
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1 govuk-!-margin-bottom-2">
+        <p class="govuk-body">
+          <a href="ct-details.html" class="govuk-link govuk-link--no-visited-state">More details about your Corporation Tax</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ////////////////////////////// -->
+
+  <p class="govuk-body">
+    2c. In credit, 5 days after muliple payments in last 7 days
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+          Corporation Tax Unique Taxpayer Reference 6471604669
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your returns
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You may have returns to complete.
+        </p>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete Corporation Tax return</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your payments
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          You are <span
+            class="govuk-body govuk-!-font-weight-bold govuk-!-padding-right-1">£200.00</span>in credit.
+        </p>
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Your card payments in the last 7 days</h3>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>You paid £12.34 on 22 July 2021</li>
+          <li>You paid £6 on 23 July 2021</li>
+          <li>You paid £200 on 24 July 2021</li>
+        </ul>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          It will take up to 7 days to update your balance after each payment.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">View your Corporation Tax statement</a>
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a Corporation Tax payment</a>
+        </p>
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1 govuk-!-margin-bottom-2">
+        <p class="govuk-body">
+          <a href="ct-details.html" class="govuk-link govuk-link--no-visited-state">More details about your Corporation Tax</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- ////////////////////////////// -->
+
+  <p class="govuk-body">
+    2d. In credit, no payment history -- OPS call failure
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+          Corporation Tax Unique Taxpayer Reference 6471604669
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your returns
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You may have returns to complete.
+        </p>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete Corporation Tax return</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your balance
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          You are <span
+            class="govuk-body govuk-!-font-weight-bold govuk-!-padding-right-1">£937.00</span>in credit.
+        </p>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-right-1">We cannot display your card payment history at the moment. Check again later.
+          </span>
+        </p>
+
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">View your Corporation Tax statement</a>
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a Corporation Tax payment</a>
+        </p>
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1 govuk-!-margin-bottom-2">
+        <p class="govuk-body">
+          <a href="ct-details.html" class="govuk-link govuk-link--no-visited-state">More details about your Corporation Tax</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- /////////////////////////////////   -->
+
+
+  <p class="govuk-body">
+    3a. In debit
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+          Corporation Tax Unique Taxpayer Reference 5711615847
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your returns
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You may have returns to complete.
+        </p>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete Corporation Tax return</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your payments
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          You owe <span
+            class="govuk-body govuk-!-font-weight-bold">£1,131.40</span>.
+        </p>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-right-1">We cannot display your card payment history at the moment. Check again later.
+          </span>
+        </p>
+
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">View your Corporation Tax statement</a>
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a Corporation Tax payment</a>
+        </p>
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1 govuk-!-margin-bottom-2">
+        <p class="govuk-body">
+          <a href="ct-details.html" class="govuk-link govuk-link--no-visited-state">More details about your Corporation Tax</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    3b. In debit, immediately after payment
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+          Corporation Tax Unique Taxpayer Reference 5711615848
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your returns
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You may have returns to complete.
+        </p>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete Corporation Tax return</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your payments
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          You owe <span
+            class="govuk-body govuk-!-font-weight-bold ">£1,131.40</span>.
+        </p>
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Your card payments in the last 7 days</h3>
+
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You paid £9,856 on 29 July 2021.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          Your payment reference number is 6471604667A00108A.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          It will take up to 7 days to update your balance after each payment.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">View your Corporation Tax statement</a>
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a Corporation Tax payment</a>
+        </p>
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1 govuk-!-margin-bottom-2">
+        <p class="govuk-body">
+          <a href="ct-details.html" class="govuk-link govuk-link--no-visited-state">More details about your Corporation Tax</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    3c. Was in debit, 5 days after payment and the balance has updated
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+          Corporation Tax Unique Taxpayer Reference 6471604670
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your returns
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You may have returns to complete.
+        </p>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete Corporation Tax return</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your payments
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          You have no tax to pay.
+        </p>
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Your card payments in the last 7 days</h3>
+
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You paid £9,856 on 24 July 2021.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          Your payment reference number is 6471604670A00108A.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          It will take up to 7 days to update your balance after each payment.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">View your Corporation Tax statement</a>
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a Corporation Tax payment</a>
+        </p>
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1 govuk-!-margin-bottom-2">
+        <p class="govuk-body">
+          <a href="ct-details.html" class="govuk-link govuk-link--no-visited-state">More details about your Corporation Tax</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    4. No tax to pay
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+          Corporation Tax Unique Taxpayer Reference 6471604968
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your returns
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You may have returns to complete.
+        </p>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete Corporation Tax return</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your payments
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          You have no tax to pay.
+        </p>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-right-1">We cannot display your card payment history at the moment. Check again later.
+          </span>
+        </p>
+
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">View your Corporation Tax statement</a>
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a Corporation Tax payment</a>
+        </p>
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1 govuk-!-margin-bottom-2">
+        <p class="govuk-body">
+          <a href="ct-details.html" class="govuk-link govuk-link--no-visited-state">More details about your Corporation Tax</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    5. No balance to show
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+          Corporation Tax Unique Taxpayer Reference 5597800686
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your returns
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You may have returns to complete.
+        </p>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete Corporation Tax return</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your payments
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          There is no balance information to display.
+        </p>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-right-1">We cannot display your card payment history at the moment. Check again later.
+          </span>
+        </p>
+
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">View your Corporation Tax statement</a>
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a Corporation Tax payment</a>
+        </p>
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1 govuk-!-margin-bottom-2">
+        <p class="govuk-body">
+          <a href="ct-details.html" class="govuk-link govuk-link--no-visited-state">More details about your Corporation Tax</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    6. Cannot display Corporation Tax information
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          We cannot display your Corporation Tax details. You may still be able to <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">use the Corporation Tax online service</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="govuk-body">
+    7. Communication contact details
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-top-1">
+          Corporation Tax Unique Taxpayer Reference 5597800686
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your returns
+        </h3>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You may have returns to complete.
+        </p>
+        <p class="govuk-body">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Complete Corporation Tax return</a>
+        </p>
+      </div>
+
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-4 govuk-!-margin-top-4">
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+          Your payments
+        </h3>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          You owe <span
+            class="govuk-body govuk-!-font-weight-bold ">£43,435.70</span>.
+        </p>
+        <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+          <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-right-1">We cannot display your card payment history at the moment. Check again later.
+          </span>
+        </p>
+
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">View your Corporation Tax statement</a>
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state">Make a Corporation Tax payment</a>
+        </p>
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1 govuk-!-margin-bottom-2">
+        <p class="govuk-body">
+          <a href="ct-details.html" class="govuk-link govuk-link--no-visited-state">More details about your Corporation Tax</a>
+        </p>
+      </div>
+    </div>
+  </div>
+<!--
+  REMOVED per amend to DL-4587
+  <p class="govuk-body">
+    7. BTA shuttered services card
+  </p>
+
+  <div class="govuk-grid-column-full card-container" id="cardAmount">
+    <div class="card-body">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+          Corporation Tax
+        </h2>
+        <p class="govuk-body">
+          Corporation Tax Unique Taxpayer Reference 1234567890
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          Sorry, this service is unavailable.
+        </p>
+        <p class="govuk-body govuk-!-margin-bottom-2">
+          You will be able to use the service later.
+        </p>
+        <p class="govuk-body">
+          You can still <a href="" target="_blank" class="govuk-link govuk-link--no-visited-state">make a payment without signing in (opens in new tab)</a>
+        </p>
+        <p class="govuk-body">
+          Read more about <a href="https://www.gov.uk/government/publications/corporation-tax-service-availability-and-issues/corporation-tax-service-availability-and-issues" target="_blank" class="govuk-link govuk-link--no-visited-state">service availability and issues (opens in new tab)</a>
+        </p>
+      </div>
+    </div>
+  </div>
+ -->
+</div>
+
+{% endblock %}

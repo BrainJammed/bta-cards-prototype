@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Business tax summary - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-2 govuk-!-margin-bottom-8">You have not added a tax <br />to
+          this account</h1>
+
+        <!-- <p class="govuk-body">You must add a tax to your business tax account to manage it online.</p>
+        <p class="govuk-body govuk-!-margin-bottom-6"><a href="#">Add a
+            tax, duty or
+            scheme now</a>.</p> -->
+        <p class="govuk-body govuk-!-margin-bottom-6">When you have added a tax like Self Assessment it will appear
+          below in a card:</p>
+
+
+        <div class="govuk-grid-column-full card-container" id="cardAmount">
+          <div class="card-body">
+
+            <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+              <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+                Self Assessment
+              </h2>
+              <p class="govuk-body">
+                Self Assessment Unique Taxpayer Reference 1234567890
+              </p>
+            </div>
+
+            <div class="govuk-grid-column-full govuk-!-padding-left-0 govuk-!-padding-right-0 govuk-!-padding-bottom-0">
+              <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+                <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                  Your returns
+                </h3>
+                <p class="govuk-body govuk-!-margin-bottom-2">
+                  Tax year 2020 to 2021 is ready to complete and file.
+                </p>
+                <p class="govuk-body govuk-!-margin-bottom-2">
+                  To avoid penalties, you must complete and file the return by 31&nbsp;January&nbsp;2022.</span>
+                </p>
+                <p class="govuk-body govuk-!-margin-bottom-2">
+                  After you file your return, it can take up to 72 hours to update your balance. If it does not update
+                  after this time, <a href="#">contact the Self Assessment helpline</a>.
+                </p>
+                <p class="govuk-body">
+                  <a href="../../sa-subpage/sa-subpage" class="govuk-link govuk-link--no-visited-state">Complete tax
+                    year 2020 to 2021 Self Assessment return</a>
+                </p>
+              </div>
+
+              <div class="govuk-grid-column-one-half govuk-!-padding-bottom-6">
+                <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                  Your balance
+                </h3>
+                <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+                  You have nothing to pay.
+                </p>
+                <p class="govuk-body">
+                  <a href="../../sa-subpage/sa-subpage-old" class="govuk-body govuk-link govuk-link--no-visited-state">Make
+                    a Self Assessment payment</a>
+                </p>
+                <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+                  <a href="#">Set up a payment plan if you cannot pay in full</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="govuk-grid-column-two-thirds govuk-!-margin-top-1">
+              <p class="govuk-body">
+                <a href="../../sa-subpage/sa-subpage-covid" class="govuk-link govuk-link--no-visited-state">More
+                  details about your Self Assessment returns and payments</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p class="govuk-body">You must add a tax to your business tax account to manage it online.</p>
+
+        <button class="govuk-button govuk-!-margin-bottom-8" data-module="govuk-button">
+          Add a tax
+        </button>
+
+        <p class="govuk-body"><a href="#">Help with your business tax account</a></p>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}

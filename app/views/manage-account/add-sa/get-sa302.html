@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+
+
+  <div class="govuk-grid-column-three-quarters">
+  
+  <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+  <h1 class="govuk-fieldset__heading">
+  Get your SA302 calculation
+  </h1>
+  </legend>
+  <p class="govuk-body">We can only show your SA302 calculation if you filed through this website.</p>
+  
+  <p class="govuk-body">If you did not file through this website, you can:</p>
+  <ul class="govuk-list govuk-list--bullet">
+  <li>use the commercial software you filed with</li>
+  <li>check with your agent if they filed for you</li>
+  <li><a href="javascript:;" class="govuk-link">contact Self Assessment helpline</a> if you filed your return by post</li>
+  </ul>
+  
+  
+  </fieldset>
+  </div>
+  
+  <button type="submit" class="govuk-button">
+  Continue to your SA302
+  </button>
+  
+  </div>
+  
+  
+  </div>
+  
+
+
+{% endblock %}

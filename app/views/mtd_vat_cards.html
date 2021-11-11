@@ -1,0 +1,224 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Business tax account - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+  <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+
+
+
+<!--    VAT    -->
+<h2 class="govuk-heading-l govuk-!-margin-bottom-2">Returns</h2>
+
+<a id="0return"></a>
+<p class="govuk-body">Non-MTD user, no returns</p>
+{% set VAT_reg = "999984111" %}
+{% set return = "You have no returns to submit" %}
+{% set payment = "You have nothing to pay" %}
+{% set showDeadlines = true %}
+{% set submitVAT = "Submit VAT Return" %}
+{% include 'includes/vat_card_mtd.html' %}
+
+<a id="1return"></a>
+<p class="govuk-body">Non-MTD user, 1 return</p>
+{% set VAT_reg = "999984112" %}
+{% set return = "Your next submission is due: 7 February 2021" %}
+{% set payment = "You have nothing to pay" %}
+{% set showSubmitReturn = true %}
+{% set showDeadlines = true %}
+{% include 'includes/vat_card_mtd.html' %}
+
+<a id="1returnlate"></a>
+<p class="govuk-body">Non-MTD user, 1 return late, nothing else to submit</p>
+{% set VAT_reg = "999984112" %}
+{% set return = "Your VAT submission is overdue " %}
+{% set payment = "You have nothing to pay" %}
+{% set showSubmitReturn = true %}
+{% set showDeadlines = true %}
+{% include 'includes/vat_card_mtd.html' %}
+
+<a id="2return"></a>
+<p class="govuk-body">Non-MTD user, 2 returns</p>
+{% set VAT_reg = "999984113" %}
+{% set return = "You have 2 returns to submit" %}
+{% set submitVAT = "Submit VAT Return" %}
+{% set payment = "You have nothing to pay" %}
+{% set showDeadlines = false %}
+{% include 'includes/vat_card_mtd.html' %}
+
+<!-- MTD USER  - no option to submit  -->
+
+<p class="govuk-body">MTD user, 1 return to submit - NB no option to submit</p>
+{% set VAT_reg = "999984123" %}
+{% set return = "Your next submission is due: 7 February 2021" %}
+{% set payment = "You have nothing to pay" %}
+{% set showDeadlines = true %}
+{% set showSubmitReturn = false %}
+{% set submitVAT = "Submit VAT Return" %}
+{% include 'includes/vat_card_mtd.html' %}
+
+
+<a id="1returnmtd"></a>
+<p class="govuk-body">MTD user, late return to submit, nothing else to submit</p>
+{% set VAT_reg = "999984124" %}
+{% set return = "Your VAT submission is overdue" %}
+{% set payment = "You have nothing to pay" %}
+{% set showSubmitReturn = false %}
+{% set showDeadlines = true %}
+{% include 'includes/vat_card_mtd.html' %}
+
+<!-- 
+<p class="govuk-body">MTD user, 1 return late, nothing else to submit</p>
+{% set VAT_reg = "999984112" %}
+{% set return = "Your VAT submission is overdue " %}
+{% set payment = "You have nothing to pay" %}
+{% set showSubmitReturn = true %}
+{% set showDeadlines = true %}
+{% include 'includes/vat_card_mtd.html' %}
+ -->
+
+<p class="govuk-body">MTD user, 2 returns</p>
+{% set VAT_reg = "999984126" %}
+{% set return = "You have 2 returns to submit" %}
+{% set submitVAT = "Submit VAT Return" %}
+{% set payment = "You have nothing to pay" %}
+{% set showSubmitReturn = false %}
+{% set showDeadlines = true %}
+{% include 'includes/vat_card_mtd.html' %}
+
+
+<h2 class="govuk-heading-l govuk-!-margin-bottom-2">Payments</h2>
+
+<a id="nonMTD"></a>
+<p class="govuk-body">Non-MTD user, payments owed</p>
+{% set VAT_reg = "999984114" %}
+{% set return = "You have no returns to submit" %}
+{% set showSubmitReturn = false %}
+{% set showDeadlines = true %}
+{% set paymentLink = "https://vatvc-prototype.herokuapp.com/4-4-0/view-vat-payments" %}
+{% set viewPaymentLink = "https://maintain-comms.herokuapp.com/0-8-0/payment-history2020" %}
+{% include 'includes/vat_card_mtd.html' %}
+
+<a id="mtd"></a>
+<p class="govuk-body">MTD user, (no option to submit return)</p>
+{% set VAT_reg = "999984115" %}
+{% set return = "Your next submission is due: 7 February 2021" %}
+{% set showSubmitReturn = false %}
+{% set showDeadlines = true %}
+{% set submitVAT = "Submit VAT Return" %}
+{% set paymentLink = "https://vatvc-prototype.herokuapp.com/4-4-0/view-vat-payments" %}
+{% set viewPaymentLink = "https://maintain-comms.herokuapp.com/0-8-0/payment-history2020" %}
+{% include 'includes/vat_card_mtd.html' %}
+
+<a id="hybrid"></a>
+<p class="govuk-body">Hybrid user - no Payment details are displayed</p>
+{% set VAT_reg = "999984222" %}
+{% set return = "Your next submission is due: 7 February 2021" %}
+{% set submitVAT = "Submit VAT Return" %}
+{% set payment = "" %}
+{% set paymentLink = "https://vatvc-prototype.herokuapp.com/public/images/Checkwhatyouowe.png" %}
+{% set viewPaymentLink = "https://vatvc-prototype.herokuapp.com/public/images/VATAccountInterest.pdf" %}
+{% set showSubmitReturn = false %}
+{% set showDeadlines = true %}
+{% include 'includes/vat_card_mtd.html' %}
+
+
+<h2 class="govuk-heading-l govuk-!-margin-bottom-2">Insolvency</h2>
+
+<a id="insolvency"></a>
+<p class="govuk-body">Insolvent and no longer trading (organisation & sole trader)</p>
+{% set VAT_reg = "999984116" %}
+{% set message = "You cannot view this VAT account because the organisation or business has been declared insolvent." %}
+{% set link = "Read the <a href='https://www.gov.uk/insolvency-and-your-vat' class='govuk-link govuk-link--no-visited-state'>HMRC guidance about VAT and insolvency (opens in new tab)</a> for more information" %}
+{% include 'includes/vat_card_plain.html' %}
+
+
+<h2 class="govuk-heading-l govuk-!-margin-bottom-2">Shutter</h2>
+
+<a id="shutter"></a>
+<p class="govuk-body">Service shuttered</p>
+{% set VAT_reg = "999984118" %}
+{% set message = "Sorry, this service is unavailable.
+<br/>
+You will be able to use the service later.
+<br/>
+You can still <a href='#' class='govuk-link govuk-link--no-visited-state'>make a payment.</a> " %}
+{% set link= "Read more about <a href='#' class='govuk-link govuk-link--no-visited-state'>service availability and issues (opens in new tab).</a>" %}
+{% include 'includes/vat_card_plain.html' %}
+
+
+<h2 class="govuk-heading-l govuk-!-margin-bottom-2">API failures</h2>
+
+<a id="allfail"></a>
+<p class="govuk-body">All 3 API's failed</p>
+{% set VAT_reg = "" %}
+{% set message = "" %}
+{% set link = "We temporarily cannot display your VAT details here. You may still be able to <a href='#' class='govuk-link govuk-link--no-visited-state'>manage your VAT account.</a>" %}
+{% include 'includes/vat_card_plain.html' %}
+<!-- 
+<p class="govuk-body">VRN API fail</p>
+{% set VAT_reg = "" %}
+{% set return = "You have no returns to submit " %}
+{% set showSubmitReturn = false %}
+{% set showDeadlines = true %}
+{% set submitVAT = "Submit VAT Return" %}
+{% set showCheckWhatYouOwe = false %}
+{% set payment = "You have nothing to pay" %}
+{% include 'includes/vat_card_mtd.html' %}
+ -->
+<a id="returnfail"></a>
+<p class="govuk-body">Return API fail</p>
+{% set VAT_reg = "999984119" %}
+{% set return = "We temporarily cannot display your VAT Return details here" %}
+{% set showSubmitReturn = false %}
+{% set showDeadlines = true %}
+{% set submitVAT = "Submit VAT Return" %}
+{% set showCheckWhatYouOwe = false %}
+{% set payment = "You have nothing to pay" %}
+{% include 'includes/vat_card_mtd.html' %}
+
+<a id="paymentsfail"></a>
+<p class="govuk-body">Payments API faill</p>
+{% set VAT_reg = "999984120" %}
+{% set return = "You have no returns to submit " %}
+{% set showSubmitReturn = false %}
+{% set showDeadlines = true %}
+{% set submitVAT = "Submit VAT Return" %}
+{% set showCheckWhatYouOwe = false %}
+{% set payment = "We temporarily cannot display your VAT payment details here" %}
+{% include 'includes/vat_card_mtd.html' %}
+
+<!--    Personal Tax Account    -->
+<a id="pta"></a>
+<div class="govuk-grid-column-full card-container" id="cardAmount">
+  <div class="card-body">
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+        Personal Tax Account
+      </h2>
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body">
+        For your non-business taxes, benefits, National Insurance and State&nbsp;Pension.
+      </p>
+      <p class="govuk-body">
+        <a href="#9" class="govuk-link govuk-link--no-visited-state">Personal Taxes</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+{% endblock %}

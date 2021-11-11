@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">When you can view your submissions</h1>
+    <p>Submissions show up in your balance at different times depending on when you submit them.
+    </p>
+  </div>
+
+  <div class="govuk-grid-column-full">
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">When your submission is made</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Full Payment Submission (FPS) made on time</dd>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Full Payment Submission (FPS) made late</dd>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Employer Payment Summary (EPS) received between
+          20th and 5th</dd>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Employer Payment Summary (EPS) received between 6th
+          and 19th</dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" scope="row">When your balance updates</dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">From the 12th of the next tax month</dd>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">See <a
+            href="https://www.gov.uk/running-payroll/fps-after-payday#viewing-late-fps-reports-in-your-hmrc-online-account">GOV.UK
+            guide on payroll</a></dd>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">From the 12th of the next tax month</dd>
+        <dd class="govuk-summary-list__value govuk-!-width-one-half">Within 1 day</dd>
+      </div>
+    </dl>
+  </div>
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+    <h2 class="govuk-heading-m"> Your payments to HMRC</h2>
+    <p>Payments you made to HMRC can take up to 6 working days to appear in your balance.</p>
+    <h2 class="govuk-heading-m">Check your PAYE submissions</h2>
+    <h2 class="govuk-heading-s">Email confirmations</h2>
+    <p>We send an email to your Government Gateway address each time we receive a Full Payment Submission (FPS) or
+      Employer Payment Summary (EPS).
+    </p>
+    <p>Your Government Gateway email is user@test.com.</p>
+    <p><a href="https://www.qa.tax.service.gov.uk/business-account/manage-account/government-gateway-warning" class="govuk-body govuk-link govuk-link--no-visited-state">Change this
+      address</a></p>
+    </div>
+
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+    <h2 class="govuk-heading-m">Payroll software confirmations</h2>
+    <p>You can also check or view submissions in HMRC's Basic PAYE Tools (BPT) software.</p>
+    <p>To check if HMRC received a submission, select 'View successful submissions' from your employer homepage.
+    </p>
+    <p>To view a specific submission, follow these instructions in the user guide, but select 'View' instead of
+      'Change':
+    </p>
+    <ul class="govuk-list govuk-list-bullet">
+      <li><a
+          href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/510067/BPT_user-guide_v4.pdf#page=25">view
+          an FPS</a> (page 25)</li>
+      <li><a
+          href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/510067/BPT_user-guide_v4.pdf#page=37">view
+          an EPS</a> (page 37)</li>
+    </ul>
+    <p>Contact your software provider if you do not use BPT.
+    </p>
+  </div>
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+    <h2 class="govuk-heading-m">Correct a PAYE submission
+    </h2>
+    <p>You must use your payroll software to correct Full Payment Submissions (FPSs) or Employer Payment Summaries
+      (EPSs). HMRC staff cannot make changes for you.
+    </p>
+  </div>
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+    <h2 class="govuk-heading-m">Submissions for the current tax year
+    </h2>
+    <p>You can make changes to submissions for the current tax year until April 19.
+    </p>
+    <p>
+      Follow the user guide if you use HMRC's Basic PAYE Tools software (BPT):
+
+    </p>
+    <ul class="govuk-list govuk-list-bullet">
+      <li><a
+          href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/510067/BPT_user-guide_v4.pdf#page=25">correct
+          an FPS</a> (page 25)</li>
+      <li><a
+          href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/510067/BPT_user-guide_v4.pdf#page=37">correct
+          an EPS</a> (page 37)</li>
+    </ul>
+    <p>Contact your software provider if you do not use BPT.</p>
+  </div>
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+    <h2 class="govuk-heading-m">Submissions from an earlier tax year</h2>
+    <p>If you spot an error in a submission after the tax year has ended, you need to submit an 'Earlier Year Update' if
+      it is after April 19.
+    </p>
+    <p>You can <a
+        href="https://www.gov.uk/government/publications/basic-paye-tools-earlier-year-update-payroll-user">submit an
+        Earlier Year Update using Basic PAYE Tools</a> if you use BPT to manage your payroll.
+    </p>
+    <p>If you use commercial software to manage your payroll, check with your software provider whether it can process
+      Earlier Year Updates.
+    </p>
+    <p>If your software doesn't offer Earlier Year Updates, you will need to <a
+        href="https://www.gov.uk/government/publications/basic-paye-tools-earlier-year-update-alongside-commercial-software">install
+        BPT to submit an Earlier Year Update</a>.
+    </p>
+
+  </div>
+</div>
+
+</div>
+
+{% endblock %}

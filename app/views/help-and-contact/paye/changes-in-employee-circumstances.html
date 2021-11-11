@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_vat_register_deregister__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+        	<h1 class="govuk-heading-xl">Changes in employee circumstances</h1>
+
+          <h2 class="govuk-heading-m">Get maternity or other parental leave pay in advance</h2>
+
+          <p>You must allow your employees to take
+            <a href="https://www.gov.uk/maternity-paternity-calculator">paid paternal leave</a> if they have children or adopt.
+          </p>
+
+          <p>You can
+            <a href="https://www.gov.uk/recover-statutory-payments">reclaim the payments</a> from HMRC after you've made them.
+          </p>
+
+          <p>You can
+            <a href="https://www.staging.tax.service.gov.uk/digital-forms/form/financial-help-with-statutory-payments/insufficient-enrolments">ask HMRC to refund you before you make the payments</a>.
+          </p>
+
+
+        	<h2 class="govuk-heading-m">Sending employees to work abroad</h2>
+
+          <p>Complete
+            <a href="https://www.staging.tax.service.gov.uk/digital-forms/form/Sending-employees-to-work-abroad/draft/baed18b6-60cc-45f2-9fe9-de6f22a62d3f/continue">form CA3821</a> the first time you send employees.
+          </p>
+
+          <p>And complete
+            <a href="https://www.staging.tax.service.gov.uk/digital-forms/form/european-economic-area-employees/draft/a7219dba-b49c-4010-8611-8c4fd0a538d2/continue#1">form CA3822</a> for each individual employee you send.
+          </p>
+
+
+
+          <h2 class="govuk-heading-m">Get HMRC to pay for an employee tax refund</h2>
+
+          <p>If an employee has paid too much PAYE you may need to refund them.</p>
+          <p>Take the refund out of your next payment to HMRC.</p>
+
+          <p>Or
+            <a href="https://www.staging.tax.service.gov.uk/digital-forms/form/Application-for-funding-a-tax-refund-for-an-employee/insufficient-enrolments">
+              ask HMRC to reimburse you</a> if the refund is bigger than your next payment.
+          </p>
+
+
+
+
+
+
+        </div>
+      </div>
+
+      <details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+        <summary class="govuk-details__summary_noarrow" style="display:block;">
+          <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+            Is this page not working properly?
+          </span>
+        </summary>
+        <div class="">
+
+        </div>
+      </details>
+  </main>
+</div>
+
+
+{% endblock %}

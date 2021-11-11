@@ -1,0 +1,67 @@
+{% extends "layout_OLD.html" %}
+
+{% block page_title %}
+  Business tax account - GOV.UK
+{% endblock %}
+
+
+
+{% block content %}
+<main id="content" class="grid-row" role="main">
+     {% include 'cards/pta/includes/nav.html' %}
+    <div class="column-two-thirds">
+      <div class="form-group">
+    <h1 class="heading-xlarge"><span class="heading-secondary">Alex Fisher</span>Your VAT<span class="form-hint">VAT Registration Number (VRN): 547852365</span></h1>   
+</div>
+            <h2 class="heading-medium">Your returns</h2>
+      
+            <div class="form-group">
+                
+
+                  <p>VAT return due by 17 August 2018.</p>
+                
+
+                <p><a class="button" href="javascript:;">Complete VAT return<span class="visually-hidden"> for the period of </span></a></p>
+
+            </div>
+<div class="form-group">
+<h2 class="heading-medium">Your payments</h2>
+
+     
+          <p>You owe £145.90 - <a href="javascript:;">See breakdown</a></p>
+     
+        <p><a class="button--secondary" href="javascript:;">Make a VAT payment</a></p>
+      
+</div>
+<div class="form-group">
+<h2 class="heading-medium">Submitted returns</h2>
+<p><a href="https://hmrc-businesstax-showcase.herokuapp.com/business-account/sa-portal/vat-returns">View submitted returns</a></p>
+<p><a href="javascript:;">Correct a mistake</a></p>
+</div>
+<div class="form-group">
+    <h2 class="heading-medium">Payments and repayments</h2>
+   <p><a href="https://hmrc-businesstax-showcase.herokuapp.com/business-account/sa-portal/vat-payments">View Payments and repayments</a></p>
+    <p>Repayments are made to the account stated on your<a href="javascript:;"> VAT certificate</a>.<br> 
+         <p> <a href="javascript:;">Change your repayments account</a></p>
+      <div class="form-group">
+        <h2 class="heading-medium">More VAT options</h2>
+<p><a href="javascript:;">Set up a Direct Debit</a></p>
+      <p><a href="javascript:;">Paying by Direct Debit</a></p>
+      <p><a href="javascript:;">Add a VAT service, e.g EC Sales List</a></p>
+  <p><a href="javascript:;">File monthly or change filing months</a></p>
+ <p><a href="javascript:;">Change to annual filing</a></p>
+<p><a href="javascript:;">Get filing reminders</a></p>
+<p><a href="javascript:;">View VAT certificate</a></p>
+
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</main>
+{% endblock %}

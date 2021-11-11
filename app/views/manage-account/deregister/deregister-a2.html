@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+{% include 'includes/nav-combo-ur3.html' %}
+
+
+<div class="govuk-grid-row">
+  <form action="/manage-account/deregister/deregister-a2" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+      {% include "includes/back.html" %}
+      <div class="govuk-form-group">
+
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-4">
+              What do you want to deregister from?
+            </h1>
+          </legend>
+
+          <div class="govuk-radios govuk-!-padding-bottom-4">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="deregister-from-CT" name="deregister-from" type="radio" value="ct">
+              <label class="govuk-label govuk-radios__label" for="deregister-from-1">
+                Corporation Tax
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="deregister-from-paye" name="deregister-from" type="radio" value="paye">
+              <label class="govuk-label govuk-radios__label" for="deregister-from-1">
+                PAYE for employers
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="deregister-from-sa" name="deregister-from" type="radio" value="sa">
+              <label class="govuk-label govuk-radios__label" for="deregister-from-1">
+                Self Assessment
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="deregister-from-vat" name="deregister-from" type="radio" value="vat">
+              <label class="govuk-label govuk-radios__label" for="deregister-from-1">
+                VAT
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="deregister-from-pods" name="deregister-from" type="radio" value="pods">
+              <label class="govuk-label govuk-radios__label" for="deregister-from-1">
+                Manage Pension Schemes
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+
+      </div>
+
+    </div>
+
+</div>
+<button class="govuk-button">Continue</button>
+</form>
+</div>
+{% endblock %}

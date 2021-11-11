@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+  <!-- //////////// COVID-19 BANNER /////////////////// -->
+
+  <div class="govuk-grid-row  govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-padding-top-4 govuk-!-padding-bottom-4 govuk-!-padding-left-6 govuk-!-margin-bottom-6" style="background-color: #000;">
+    <div class="govuk-grid-column-one-half">
+      <p class="govuk-!-margin-bottom-0">
+        <a class="notice-banner__content" href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19" id="recruitment-page-link" data-journey-click="link - click:Your business taxes:Public Announcement" target="_blank" rel="noopener" style="font-weight: 700; color:#fff;">Coronavirus (COVID-19): what you need to do</a>
+      </p>
+    </div>
+    <div class="govuk-grid-column-one-half" style="font-weight: 700; color:#fff; text-align:right;">
+      <a id="dismiss-user-panel" class="govuk-link" style="font-weight: 700; color:#fff; text-align:right;" href="#">Hide message</a>
+    </div>
+  </div>
+
+  {% include 'includes/nav-homepage-a2.html' %}
+
+  <!-- /////////////////////////////// -->
+
+  <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-left-0">
+
+      <!-- //////// COVID-19 WARNING AND CONTACT FORM ///////////////// -->
+      {% include "includes/back.html" %}
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m ">
+          <h1 class="govuk-heading-xl govuk-!-margin-top-0 govuk-!-margin-bottom-0">
+            Get help with your Self&nbsp;Assessment and coronavirus (COVID-19)
+          </h1>
+        </legend>
+
+        <div class="govuk-!-margin-bottom-4">
+          <p>Don't include any personal or financial information. For example, your National Insurance or credit card numbers.</p>
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="Name">
+            Name
+            <span class="govuk-visually-hidden">Name</span>
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="Name" name="Name" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="Email">
+            Email
+            <span class="govuk-visually-hidden">Email</span>
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="Email" name="Email" type="text">
+        </div>
+
+        <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="100" data-threshold="75">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="label-as-page-heading">
+              What were you doing?
+            </label>
+
+            <textarea class="govuk-textarea govuk-js-character-count" id="label-as-page-heading" name="label-as-page-heading" rows="3" aria-describedby="label-as-page-heading-info"></textarea>
+          </div>
+
+          <span id="label-as-page-heading-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 100 characters
+          </span>
+        </div>
+
+        <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200" data-threshold="150">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="label-as-page-heading">
+              What do you need help with?
+            </label>
+
+            <textarea class="govuk-textarea govuk-js-character-count" id="label-as-page-heading" name="label-as-page-heading" rows="5" aria-describedby="label-as-page-heading-info"></textarea>
+          </div>
+
+          <span id="label-as-page-heading-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 200 characters
+          </span>
+
+        </div>
+
+        <button class="govuk-button govuk-!-margin-bottom-0" data-module="govuk-button">
+          Send
+        </button>
+
+      </fieldset>
+
+      <!-- //////////////////////////////////////////////// -->
+
+    </div>
+  </div>
+
+{% endblock %}

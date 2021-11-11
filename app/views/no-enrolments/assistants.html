@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+
+    <span class="govuk-caption-xl govuk-!-margin-bottom-2">View and access your business taxes in one place</span>
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">Business tax summary</h1>
+
+
+
+    <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-6">
+            You do not have access to a tax, duty or scheme
+        </h2>
+    </div>
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <p class="govuk-body">
+            The person who created your account needs to give you access to the taxes, duties and schemes they want you to manage.
+        </p>
+
+    </div>
+    <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-top-4">
+
+</div>
+
+
+    {% endblock %}

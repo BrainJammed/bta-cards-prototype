@@ -1,0 +1,157 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_ct_how_tp_pay_ct_help_page_heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+{% block content %}
+{% include 'includes/a6.html' %}
+
+
+<main id="content" class="govuk-grid-row" role="main">
+
+    <div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl">Your VAT</h1>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          <a href="" class="govuk-link" target="_blank">
+            Set up your VAT so you can change your details online (opens in a new tab)
+          </a>
+        </strong>
+      </div>
+
+      <h2 class="govuk-heading-m">Your returns</h2>
+      <div class="govuk-inset-text">
+        After you complete your return your tax calculation will take up to 2 days.
+      </div>
+
+      <div  style="background-color:#f3f2f1" class="govuk-!-margin-bottom-6">
+        <p class="govuk-body" style="padding:15px 15px 0px 15px">Return for period ending 30 June 2021 ready to complete.</p>
+        <a href="https://www.staging.tax.service.gov.uk/vat/trader/2345678901/account/overview?lang=eng" class="govuk-link" style="margin:0px 15px 20px 15px;display:inline-block;font-size:19px" target="_blank">Complete a VAT return</a>
+      </div>
+
+      <h2 class="govuk-heading-m">Your payments</h2>
+        <p class="govuk-body">You can no longer use a personal credit card. If you pay with a credit card, it must be linked to a business bank account.</p>
+      <div class="govuk-inset-text">
+        Payments will take up to 7 working days to show, depending on how you pay.
+      </div>
+
+      <div  style="background-color:#f3f2f1;margin-bottom:40px;">
+        <p class="govuk-body" style="padding:15px 15px 0px 15px">You are <strong>£5.43</strong> in credit</p>
+        <button class="govuk-button" data-module="govuk-button" style="display:block;margin-left:15px">
+          Make a VAT payment
+        </button>
+        <a href="https://www.staging.tax.service.gov.uk/vat/trader/2345678901/account/overview?lang=eng" class="govuk-link" style="margin:0px 15px 20px 15px;display:inline-block;font-size:19px" target="_blank">How we worked out your payments (opens in new tab)</a>
+      </div>
+
+      <h2 class="govuk-heading-s">Pay your deferred VAT: the new payment scheme</h2>
+
+      <div style="margin-top: 20px;margin-bottom:30px">
+          <p class="govuk-body">If you deferred paying VAT that was due between 20 March 2020 and 30 June 2020, you may be able to join the <a class="govuk-link" id="vat-delayed-link" target="_blank" data-journey-click="link - click:VATaccountSummary:VAT deferral new payment scheme" href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19">VAT deferral new payment scheme (opens in new tab)</a>.</p>
+      </div>
+
+      <h2 class="govuk-heading-m">Submitted returns</h2>
+
+      <p class="govuk-body">
+        <a class="govuk-link" target="_blank" href="https://www.gov.uk/guidance/deferral-of-vat-payments-due-to-coronavirus-covid-19" >VAT deferral new payment scheme (opens in new tab)</a>
+      </p>
+
+      <h2 class="govuk-heading-m">Payments and repayments</h2>
+
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" target="_blank" href="https://www.staging.tax.service.gov.uk/bas-stub/login?client_id=clientId&response_type=code&scope=openid&redirect_uri=https://www.staging.tax.service.gov.uk/bas-gateway/login&nonce=e4623610-fdbf-4030-8eb7-a93887c7be5f&state=613a1de4170000001d9428ad&ui_locales=en-GB&max_age=0&custom1=session-66a416f5-4ece-4c01-8dd2-715ae8088975&acr_values=acr-gg-0">View payments and repayments (opens in new tab)</a>
+      </p>
+      <p class="govuk-body">
+        <a class="govuk-link" target="_blank" href="https://www.staging.tax.service.gov.uk/bas-stub/login?client_id=clientId&response_type=code&scope=openid&redirect_uri=https://www.staging.tax.service.gov.uk/bas-gateway/login&nonce=e4e5a8f9-632b-4525-8adc-15c660bc3f9d&state=613a1df41a00001c70a6fb74&ui_locales=en-GB&max_age=0&custom1=session-54de658d-2ec4-4108-9511-67f2c3168ffb&acr_values=acr-gg-0">Change your repayments account (opens in new tab)</a>
+      </p>
+
+      <h2 class="govuk-heading-m">More VAT options</h2>
+
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" href="https://www.staging.tax.service.gov.uk/auth-login-stub/gg-sign-in?continue=%2Fbusiness-account">Paying by Direct Debit</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" target="_blank" href="https://www.gov.uk/pay-vat">How to pay VAT (opens in new tab)</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" target="_blank" href="https://www.gov.uk/guidance/vat-refunds-for-uk-businesses-buying-from-other-eu-countries">Get a refund of VAT paid in another EU country (opens in new tab)</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" href="https://www.staging.tax.service.gov.uk/business-account/add-tax/vat">Add a VAT service, e.g EC Sales List</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" target="_blank" href="https://www.access.service.gov.uk/login/signin/creds" target="_blank">Get filing reminders (opens in new tab)</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" target="_blank" href="https://www.staging.tax.service.gov.uk/vat/trader/999920245/certificate?lang=eng">View VAT certificate (opens in new tab)</a>
+      </p>
+
+
+
+
+
+
+
+
+
+        <details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+          <summary class="govuk-details__summary_noarrow" style="display:block;">
+            <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+              Is this page not working properly?
+            </span>
+          </summary>
+          <div class="">
+
+          </div>
+        </details>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <hr class="govuk-section-break govuk-section-break--visible blue-top govuk-!-margin-bottom-3" style="border-bottom: 10px solid #1D70B8;">
+      <h2 class="govuk-heading-s" style="margin-bottom:5px">Self Assessment Unique Taxpayer Reference (UTR):</h2>
+        <p class="govuk-body" style="font-size:16px">999920245</p>
+
+      <h2 class="govuk-heading-s" style="margin-bottom:5px">Help</h2>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" href="https://bta-cards-prototype.herokuapp.com/help-and-contact/designC_HAC">Help and contact</a>
+      </p>
+      <p class="govuk-body">
+        <a class="govuk-link" href="https://www.youtube.com/watch?v=Y_lpys4Kksk" target="_blank">Expenses if you're self employed (Video)</a>
+      </p>
+      <p class="govuk-body">
+        <a class="govuk-link" href="https://www.staging.tax.service.gov.uk/self-assessment/ind/1102696864/account?lang=eng" target="_blank">More (opens in new tab)</a>
+      </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" action="personal-account" method="post">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">Link sent to your email address</h1>
+      </div>
+      <br>
+      <p class="govuk-body">We have sent you a confirmation email.</p>
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+
+      <p class="govuk-body">
+        We’ve sent you an email with confirmation details. You need to follow the instructions to complete the sign up.
+      </p>
+
+
+      <br>
+      <p>You can go back to online messages now or at any time in <a href="../../manage-account/ma-homepage-a1">your settings</a>.</p>
+
+
+    </form>
+
+  </div>
+
+</div>
+
+{% endblock %}

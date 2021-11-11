@@ -1,0 +1,52 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-navigation";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+// @import 'patterns/card';
+@import 'patterns/card-2';
+@import 'patterns/nav';
+@import 'patterns/nav-bta-new';
+
+@import 'components/links';
+
+// paye section
+.brand-border--top, .section--blue-top {
+  border-top: 10px solid #005ea5;
+}
+
+.timeout-dialog {
+  background-color: #fff;
+  width: 435px;
+  z-index: 1002;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px;
+  border: 5px solid black;
+}
+
+.card-container {
+  border: 1px solid #bfc1c3;
+  margin: 1em 0 3em 0;
+  padding: 19px 9.5px;
+  width: 100%;
+  background-color: #ffffff;
+}

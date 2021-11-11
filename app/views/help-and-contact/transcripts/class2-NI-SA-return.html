@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_sa_how_to_pay__heading%}
+
+{% block page_title %}
+Business tax account - prototype
+{% endblock %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+{% block content %}
+
+{% include 'includes/nav-combo-ur2.html' %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">Class 2 National Insurance and your Self Assessment tax return - video transcript</h1>
+
+        <p>If you’re self-employed or in a partnership, you pay Class 2 National Insurance to qualify for State Pension and other benefits.
+          Most people pay this in their Self Assessment payment – by 31 January, following the end of the tax year.
+        </p>
+
+        <p>You must pay if your profits are at, or above, the Small Profits Threshold – you can find the current rates on
+          <a href="https://www.gov.uk/">GOV.UK</a>.
+        </p>
+
+        <p>When you’re self-employed, to pay Class 2 National Insurance, you need to register for Self Assessment.
+          You also need to do this when your annual turnover is below a thousand pounds and you want to pay voluntary contributions.
+        </p>
+
+        <p>On your tax return, select self-employed or in a partnership – this is the section where your Class 2 contributions are included.</p>
+
+        <p>Your return shows the amount due, based on the number of weeks in the tax year you were self-employed on your National Insurance records.</p>
+
+        <p>You will tailor your tax return on the first 3 pages. Use this section to tell us about your different types of income, employments and self-employments so that you only see the parts of the tax return that you need to.</p>
+
+        <p class="govuk-body">If the amount shows ‘Not available, check help’:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>you may not be registered correctly for self-employment, so you’ll need to register on <a href="https://www.gov.uk/">GOV.UK</a> or</li>
+          <li>the service may be unavailable. When it’s available select the ‘Recalculate’ button to show the amount due.</li>
+        </ul>
+
+        <p class="govuk-body">If the amount shows zero, this may be because:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>you’re not registered correctly for self-employment</li>
+          <li>you’ve already paid the maximum National Insurance</li>
+          <li>you received certain benefits meaning no Class 2 is due</li>
+          <li>you were abroad and pay Class 2 differently</li>
+        </ul>
+
+       <p>If you’re not sure, contact the National Insurance helpline.</p>
+
+       <p>If you started or stopped self-employment during the year and think the amount is incorrect, select the ‘Update your self-employment
+         details’ link to update your record, then select ‘Recalculate’.</p>
+
+       <p>To make voluntary Class 2 payments, select ‘Yes’, otherwise select ‘No’.</p>
+
+       <p>Your full calculation shows how much tax and National Insurance you owe.</p>
+
+       <p>You can find more information about Self Assessment on
+         <a href="https://www.gov.uk/">GOV.UK</a>.
+       </p>
+
+       <details class="govuk-details" data-module="govuk-details" style="padding-top:60px;">
+         <summary class="govuk-details__summary_noarrow" style="display:block;">
+           <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+             Is this page not working properly?
+           </span>
+         </summary>
+         <div class="">
+
+         </div>
+       </details>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}

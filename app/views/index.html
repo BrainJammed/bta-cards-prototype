@@ -1,0 +1,1137 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Business tax account - prototype
+{% endblock %}
+
+
+<main class="govuk-main-wrapper" id="main-content" role="main">
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-column-full">
+      <h1 class="govuk-heading-xl">Cards prototype</h1>
+
+      <h2 class="govuk-heading-m">1 - Cards design requirements</h2>
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-1">
+                Design Requirements for the Cards
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
+              When designing the cards please follow these requirements
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-1">
+            <p class="govuk-body">all card elements should be the same height</p>
+
+            <h3 class="govuk-heading-m">Each card should include:</h3>
+
+            <h4 class="govuk-heading-s">card-body *required</h4>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>use all available space</li>
+              <li>card title (Options: hyperlink, no hyperlink) *required</li>
+              <li>status (Options: status-low, status-med, status-high)</li>
+              <ul>
+                <li>if status is included it should be displayed directly below the title</li>
+              </ul>
+              <li>detail (Options: detail, detail-large)</li>
+              <li>description</li>
+            </ul>
+
+            <h4 class="govuk-heading-s">card-actions</h4>
+
+            <p class="govuk-body">if included should be the same height</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>hyperlink (Maximum 5)</li>
+            </ul>
+
+            <h3 class="govuk-heading-m">Page layout:</h3>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>display all cards at the same height</li>
+              <li>should fit within a responsive grid layout
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>each card should be a maximum of 1/3 page width</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3 class="govuk-heading-m">The cards should all:</h3>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>have a card-body</li>
+              <li>if card-body includes a hyperlink
+                <ul>
+                  <li>have hover state</li>
+                  <li>when clicked redirects the user to another page</li>
+                </ul>
+              </li>
+              <li>work with JS turned off</li>
+            </ul>
+
+            <h3 class="govuk-heading-m">The cards should be fully accessible:</h3>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>using a screenreader</li>
+              <li>using keyboard only navigation</li>
+              <li>screen magnifiers</li>
+            </ul>
+
+            <h3 class="govuk-heading-m">The cards should work on mobile devices:</h3>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>they should stack to a single govuk-column</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="govuk-heading-m">2 - Specific BTA designs</h2>
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
+        <!-- Section 2 break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                BTA homepage versions
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+              Various different taxes card's.
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/bta-homepage/bta-homepage-pods">PODS</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/bta-homepage/bta-homepage-nps-no-checks">MTD
+                  -- NPS
+                  no checks</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/bta-homepage/bta-homepage-nps-eligible">MTD
+                  -- NPS
+                  eligible</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/bta-homepage/bta-homepage-nps-non-eligible">MTD
+                  --
+                  NPS not eligible</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="mtd_vat_cards">MTD -- VAT cards</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-sa">SA --
+                  homepage card
+                  (user panel)</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="login/government-gateway-a2">A2 -- VAT</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="login/government-gateway-a3">A3 -- CT</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-a4">A4 -- PAYE</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-processing-times-1">A5
+                  -- Processing times 1</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-assistant-role">A6
+                  --
+                  Assistant role
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/agents-sign-in-error">A7 --
+                  Agent
+                  sign in error
+                </a>
+              </li>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-a8">A8 -- Self
+                  Assessment for partnerships
+                </a>
+              </li>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-a9">A9 -- SDIL
+                  card
+                  with DD
+                </a>
+              </li>
+
+              <!-- <li> <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-stocktake-1">STOCKTAKE 1</a> </li> -->
+            </ul>
+          </div>
+        </div>
+        <!-- Section 2 break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                Catalogue of cards by tax
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+              All the card designs based on Tax regime
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+
+            <h1 class="govuk-heading-m">Before aligning staging with prototype</h1>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="cca">CCA (Check, Challenge, Appeal)</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="CT/corporation-tax">Corporation Tax</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="other-taxes">Other taxes</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="PAYE/paye">PAYE for employers</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="payments-returns">Payments and returns</a>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="pta-h1-your-sa">PTA - Your Self Assessment</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="pta-h1-your-taxes">PTA - Your taxes</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="self-assessment">Self Assessment</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="sa-subpage-sections">Self Assessment subpage
+                  sections</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="sdil">SDIL (Soft Drinks Industry Levy)</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="VAT/vat">VAT</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="bta-homepage/bta-homepage-add-a-tax">Add a tax
+                  experiment</a>
+              </li>
+            </ul>
+
+
+            <h1 class="govuk-heading-m">Aligning staging with prototype</h1>
+            <p>started work on 29/08/2021 - Tickets 5400/5373/5372/5235</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="CT/latest-designs/corporation-tax">Corporation Tax</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="SA/latest-designs/self-assessment">Self assessment</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="VAT/latest-designs/vat">VAT</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="PAYE/latest-designs/paye">PAYE for employers</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="PPT/ppt">PPT</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="FES/fes">FES</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="govuk-heading-m">3 - Current work</h2>
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                Tax subpages
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+              Redesign of tax subpages.
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/VAT/vat_subpage">
+                  [6205] VAT subpage (no returns) </a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/VAT/vat_subpage_returns">
+                  [6205] VAT subpage (returns) </a>
+              </li>
+              <br>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/CT/ct_subpage_nothing_to_pay">
+                  [6204] CT subpage (nothing to pay) </a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/CT/ct_subpage_in_credit">
+                  [6204] CT subpage (in credit) </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/CT/ct_subpage_payment">
+                  [6204] CT subpage (payment done)
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/CT/ct_in_debit">
+                  [6204] CT subpage (in debit)
+                </a>
+              </li>
+              <br>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/SA/sa_no_returns">
+                  [6203] SA subpage (no returns)
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/SA/sa_returns_tax_bill">
+                  [6203] SA subpage (returns and Tax bill)
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/SA/sa_late_returns_in_credit">
+                  [6203] SA subpage (late returns and in debit)
+                </a>
+              </li>
+
+
+
+
+
+
+            </ul>
+          </div>
+        </div>
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                Cards
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+              Design iterations for cards.
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/cards/vatPenalties_1">
+                  MTD VAT penalties (6 cases) </a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/cards/SEISS-latest-cards">
+                  SEISS cards </a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                Richer cards
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+              Design iterations for richer cards.
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/richer-cards/vatRicherCard">
+                  MTD VAT richer card </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                BTA Customers leaving BTA
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+              Capture their feedback.
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/leaving-bta-feedback/bta-help-us-improve-option-1">
+                  Design option 1</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/leaving-bta-feedback/bta-help-us-improve-option-2">
+                  Design option 2</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/leaving-bta-feedback/bta-help-us-improve-option-3">
+                  Design option 3</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/leaving-bta-feedback/bta-help-us-improve-option-4">
+                  Design option 4</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/leaving-bta-feedback/bta-help-us-improve-option-5">
+                  Design option 5</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/leaving-bta-feedback/bta-help-us-improve-option-6">
+                  Design option 6</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/leaving-bta-feedback/bta-help-us-improve-option-7">
+                  Design option 7</a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                BTA Customers with no enrolments
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+              Designs prototyped to help first timers into BTA understand what BTA is about and how they can use it.
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+
+            <ul class="govuk-list govuk-list--bullet">
+                <li><a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/help-with-your-bta">
+                    New help page</a>
+                </li>
+            </ul>
+
+            <!-- <p class="govuk-body">Designs ideas <strong>without</strong> ancillary content:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-1">
+                  Version 1</a></li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-2">
+                  Version 2</a></li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-3-1">
+                  Version 3.1</a></li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-3-2">
+                  Version 3.2</a></li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-4">
+                  Version 4</a></li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-5">
+                  Version 5</a></li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-6">
+                  Version 6</a></li>
+            </ul> -->
+
+            <p class="govuk-body">No enrolments experiments:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <!-- <li><a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/homepage-otrs-part-subscription-ancillary-content">
+                  Design with no enrolments for OTRS (production version)</a>
+              </li> -->
+              <br>
+              <li>
+
+                <a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-1-2-ancillary-content">
+                  Experiment 1 Variant 1 (closed)
+                </a>
+              </li>
+              <li>
+
+                <a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-1-1-ancillary-content">
+                  Experiment 1 variant 2 (variant 1)
+                </a>
+              </li>
+              <br>
+
+              <!-- <li><a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-2-1-ancillary-content">
+                  Version 2
+                </a>
+              </li> -->
+
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-3-1-ancillary-content">
+                  Experiment 2 Variant 1 (variant 2)
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-3-2-ancillary-content">
+                  Experiment 2 Variant 2 (variant 3)
+                </a>
+              </li>
+              <br>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-5-ancillary-content">
+                  Experiment 3 Variant 1 (variant 5)
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-4-ancillary-content">
+                  Experiment 3 Variant 2 (variant 4)
+                </a>
+              </li>
+              <br>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/one_question_per_page_design/oneQuestionPerPage_1">
+                  [6195] - Experiment 4
+                </a>
+                <br>Description: This variant takes the first time user through a journey of one question per page design.
+              </li>
+
+
+              <!-- <li><a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/new-ideas/version-6-ancillary-content">
+                  Version 6
+                  </a>
+                </li> -->
+            </ul>
+
+            <p class="govuk-body">Previous work:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="no-enrolments/assistants.html">Assistants</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="no-enrolments/homepage-admin-sa.html">Self
+                  Assessment / All taxes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2">
+                MTD ITSA Journey
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-2">
+              Agent has flagged the customer for an MTD ITSA registration
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-2">
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a class="govuk-link govuk-link--no-visited-state" href="login/government-gateway-mtd-itsa-no-enrolments">No
+                  IRSA or ITSA enrolements</a> but agent has flagged for an MTD ITSA registration
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="login/government-gateway-mtd-itsa">MTD
+                  ITSA - With an IRSA and ITSA enrolement</a> so tile showing
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="login/help_making_tax_digital_for_income_tax">Help with MTD for Income Tax (reveal example)</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="login/help_making_tax_digital_for_income_tax_no_reveal">Help with MTD for Income Tax (no reveal example)</a>
+              </li>
+            </ul>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="https://bta-cards-prototype.herokuapp.com/bta-homepage/bta-homepage-mtd-itsa">Version 1 - BTA card - chosen paperless with SA</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="bta-homepage/bta-homepage-version-2-MTD-ITSA-not-PAPERLESS-with-SA">Version 2 - BTA card - chosen post with SA</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="bta-homepage/bta-homepage-version-3-MTD-ITSA-chose-post-no-SA">Version 3 - BTA card - chosen post - no SA</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="bta-homepage/bta-homepage-version-4-MTD-ITSA-go-PAPERLESS">Version 4 - BTA card - chosen paperless - no SA</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="bta-homepage/bta-homepage-version-5-MTD-ITSA-go-PAPERLESS-emailNotVerified">Version 5 - BTA card - chosen paperless & email not verified - SA</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="bta-homepage/bta-homepage-version-6-MTD-ITSA-go-PAPERLESS-emailNotValid">Version 6 - BTA card - chosen paperless & email not valid - SA</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="bta-homepage/bta-homepage-version-7-MTD-ITSA-go-PAPERLESS-emailNotVerified">Version 7 - BTA card - chosen paperless & email not verified -no SA</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="bta-homepage/bta-homepage-version-8-MTD-ITSA-go-PAPERLESS-emailNotValid">Version 8 - BTA card - chosen paperless & email not valid -no SA</a>
+              </li>
+            </ul>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/account-details/SAverifiedEmailChosePaperless">SA verified email & chose paperless journey</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/account-details/SAchosenPost">SA Chosen post</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/account-details/SAnotVerifiedEmailChosePaperless">SA Not verified  email, chosen paperless</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="manage-account/account-details/SAbounceBackEmail">SA Bounceback email, chosen paperless</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="manage-account/account-details/reoptin">Re-opt in</a>
+              </li>
+              <br>
+            </ul>
+
+
+
+
+            <h3 class="govuk-heading-s">MTD IT - Amend Add a Tax journey to include Income Tax</h3>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/Amend-Add-a-Taxjourney-to-include-IT/hasIRSA/has-IRSA-enrolment">Case A - User has IR-SA enrolment</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/Amend-Add-a-Taxjourney-to-include-IT/hasMTD/has-MTD-enrolment">Case B - User has MTD enrolment</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/Amend-Add-a-Taxjourney-to-include-IT/has_NoMTD_NoIRSA/NoMTD_NoIRSA_A">Case C1 - User has no IRSA & no MTD (no UTR)</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/Amend-Add-a-Taxjourney-to-include-IT/has_NoMTD_NoIRSA/NoMTD_NoIRSA_A">Case C2 - User has no IRSA & no MTD (has UTR + NINO and ITSA)</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/Amend-Add-a-Taxjourney-to-include-IT/has_NoMTD_NoIRSA/NoMTD_NoIRSA_B">Case C3 - User has no IRSA & no MTD (has UTR + no NINO and designatory details error)</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="manage-account/Amend-Add-a-Taxjourney-to-include-IT/hasIRSA_&_MTD/hasIRSA_&_MTD"">Case D - User has IRSA & MTD</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3">
+                MTD ITSA mailbox design
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3">
+              Merging MTD and SA messages in the same area
+            </div>
+          </div>
+
+          <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-3">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/messages/mtd-itsa-mailbox-design">
+                  [6345] - Design for MTD ITSA mailbox
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/messages/mtd-itsa-mailbox-desing-noSA">
+                  [6345] - Design for MTD ITSA mailbox no SA
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+
+
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3">
+                OTRS Fraud Identification
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3">
+              Returning users for OTRS Registration
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-3">
+            <p class="govuk-body">Designs for <strong>Devs</strong>:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/homepage-otrs-part-subscription">
+                  Design with no enrolements
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/bta-homepage/bta-homepage-sa-otrs-part-subscription">MTD
+                  Design with enrolements
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/bta-homepage-otrs-part-subscription-latest">MTD
+                  Latest design with no enrolements (28/07/21) ticket:5809
+                </a>
+              </li>
+            </ul>
+
+            <p class="govuk-body">Previous design ideas for <strong>Designers</strong>:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/no-enrolments/homepage-otrs-part-subscription-all-designs">
+                  Design with no enrolements</a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/bta-homepage/bta-homepage-sa-otrs-part-subscription-all-designs">MTD
+                  Design with enrolements</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3">
+                Accessibility
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3">
+              Managing accessibility tickets
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-3">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/accessibility/5667-Use-of-contrast">
+                  5667 - Address use of contrast
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/accessibility/5663-Missing-heading-in-popup">
+                  5663 - Address missing heading
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/accessibility/5665-Incorrect-link-markup">
+                  5665 - Address incorrect link markup - Page A
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/accessibility/5665-Incorrect-link-markup_b">
+                  5665 - Address incorrect link markup - Page B
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/accessibility/5666-Status-message">
+                  5666 - Address status message
+                </a>
+              </li>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/accessibility/6169-Update-Accessibility-Statement">
+                  6169 - Update Accessibility Statement
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section break -->
+
+
+          <!-- Section break -->
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3">
+                  Help and contact & Manage account page templates
+                </span>
+              </h2>
+              <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3">
+                Design ideas for the help and contact and Manage account pages
+              </div>
+            </div>
+            <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-3">
+              <ul class="govuk-list govuk-list--bullet">
+                <li>
+                  <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/designA_HAC">
+                    Design A
+                  </a>
+                </li>
+
+                <li>
+                  <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/designB_HAC">
+                    Design B
+                  </a>
+                </li>
+                <br>
+                <li>
+                  <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/designC_HAC">
+                    Design C - 06/08 [DL-3029]
+                  </a>
+                </li>
+
+                <br>
+                <li>
+                  <a class="govuk-link govuk-link--no-visited-state" href="../manage-account/agent-accountant/manage-tax-agents-journey">
+                    Manage account- Manage tax Agents - 13/08 [DL-4989]
+                  </a>
+                  <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3">
+                    <strong>Scenario 1</strong> - you have one or more of agent client status, existing relationships, invitation history or pending invitations
+                  </div>
+                </li>
+                <br>
+                <li>
+                  <a class="govuk-link govuk-link--no-visited-state" href="../manage-account/agent-accountant/manage-tax-agents-journey-2">
+                    Manage account- Manage tax Agents - 13/08 [DL-4989]
+                  </a>
+                  <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3">
+                    <strong>Scenario 2</strong> - as scenario 1 but also with agent request outstanding
+                  </div>
+                </li>
+                <br>
+                <li>
+                  <a class="govuk-link govuk-link--no-visited-state" href="../manage-account/agent-accountant/manage-tax-agents-journey-3">
+                    Manage account- Manage tax Agents - 13/08 [DL-4989]
+                  </a>
+                  <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-3">
+                    <strong>Scenario 3</strong> - you have none of agent client status, existing relationships, invitation history or pending invitations or agent request outstanding
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <h2 class="govuk-heading-m">4 - Previous work</h2>
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-3">
+                Help section video transcripts
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-with-summary-sections-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-3">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/transcripts/class2-NI-SA-return">
+                  Class 2 National Insurance and your Self Assessment tax return - video transcript
+                </a>
+              </li>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/transcripts/pay_SA_taxBill">
+                  How do I pay my Self Assessment tax bill?
+                </a>
+              </li>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/transcripts/viewing_SA_tax_returns_calculations">
+                  Viewing your Self Assessment tax return calculations
+                </a>
+              </li>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/transcripts/how_do_I_budget_for_SA">
+                  How do I budget for my Self Assessment tax bill?
+                </a>
+              </li>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/transcripts/what_to_include_in_SA_tax_return">
+                  What expenses can I include in my Self Assessment tax return?
+                </a>
+              </li>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/transcripts/why_tax_return">
+                  Why have I been sent a tax return?
+                </a>
+              </li>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/transcripts/first_SA_tax_return">
+                  My first Self Assessment tax return
+                </a>
+              </li>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/transcripts/tailor_SA_tax_return">
+                  How do I tailor my Self Assessment tax return?
+                </a>
+              </li>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/transcripts/SE_tax_return">
+                  Your self-employed tax return
+                </a>
+              </li>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/transcripts/tax_return_property">
+                  If I have income from property, how do I fill in my tax return?
+                </a>
+              </li>
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/transcripts/record-_keeping">
+                  Basic record keeping for the self-employed - video transcript
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/transcripts/registering_for_SA">
+                  Registering for Self Assessment - video transcript
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/help-and-contact/transcripts/motoring-expenses">
+                  Claiming motoring expenses if you’re self-employed - video transcript
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                PODS
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+              The richer tile won’t be available until the service is developed. It is archived until then.
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/richer-cards/pods-for-adminstrators1">
+                  PODS for administrators - Design 1 </a>
+              </li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="/richer-cards/pods-for-practicioners-1">
+                  PODS for practitioners - Design 1 </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                Archieved UR sessions
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+              Done in April 2021 showing various taxes cards on the BTA homepage.
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a class="govuk-link govuk-link--no-visited-state" href="login/government-gateway-3">Session 1</a></li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="login/government-gateway-31">Session 11</a></li>
+              <li><a class="govuk-link govuk-link--no-visited-state" href="login/government-gateway-32">Session 12</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                COVID-19
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+              COVID-19 messages on homepage cards, subpage and contact forms.
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-covid19-vat">VAT
+                  --
+                  homepage card</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../../vat-subpage/vat-subpage-covid">VAT --
+                  subpage</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-covid19-vat-form">VAT
+                  -- contact form</a>
+              </li>
+              <br>
+
+              {# <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-covid19-b">Homepage
+                  B</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-covid19-c">Homepage
+                  C</a>
+              </li> #}
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-covid19-sa">SA --
+                  homepage card</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="sa-subpage/sa-subpage-covid">SA -- subpage</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-covid19-sa-form">SA
+                  --
+                  contact form</a>
+              </li>
+              <br>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-covid19-epaye">ePAYE
+                  --
+                  homepage card</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../bta-homepage/bta-homepage-covid19-epaye-form">ePAYE
+                  -- contact form</a>
+              </li>
+              <br>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="../help-and-contact/help-and-contact-covid">Help
+                  and
+                  contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                Manage accounts and account details
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+              Examples of accounts
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+            <ul class="govuk-list govuk-list--bullet">
+
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/ma-homepage-a1">A1 -- Manage
+                  Accounts
+                  -- All new</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/ma-homepage-a2">A2 -- New
+                  Manage
+                  Accounts -- All new + Direct Debit</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/ma-combo-1">A3 -- Manage
+                  Accounts --
+                  Combo 1 -- Add/remove tax</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/account-details/account-details-example">Account
+                  details example</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/account-details/account-details-options">Account
+                  details (for devs)</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/account-details/account-details-assistants.html">Account
+                  details -- Assistants only</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="manage-account/account-details/account-details-ur3-insolvency#vat">Account
+                  details -- VAT Insolvency</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                Navigation bar styles
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+              Navigation at the top of the page.
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="bta-homepage/bta-homepage-new-nav">New BTA</a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="bta-homepage/bta-homepage-govuk-1">GOV.UK --
+                  Service</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- Section break -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-4">
+                Subpages
+              </span>
+            </h2>
+            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-4">
+              For VAT NPS and SA.
+            </div>
+          </div>
+          <div id="accordion-with-summary-sections-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-4">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/vat-subpage/vat-subpage-covid-nps-accepted">VAT
+                  subpage NPS accepted </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/vat-subpage/vat-subpage-covid-nps-not-accepted">VAT
+                  subpage NPS NOT accepted </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="/vat-subpage/vat-subpage-covid-nps-others">VAT
+                  subpage NPS others </a>
+              </li>
+              <li>
+                <a class="govuk-link govuk-link--no-visited-state" href="sa-subpage/sa-subpage-new-1">SA subpage 1</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
+</main>

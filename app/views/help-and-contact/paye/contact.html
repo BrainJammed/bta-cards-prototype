@@ -1,0 +1,23 @@
+{% extends '../../../layouts/base.html' %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_paye_contact__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include '../../../includes/header_full_width.html' %}
+
+<main id="content" class="grid-row" role="main">
+
+    {{ govPageHeader(pageHeading) }}
+    <div class="column-two-thirds">
+    	<p>You can <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/employer-enquiries">contact us</a> with questions about PAYE</p>
+    
+
+    </div>
+</main>
+
+
+{% endblock %}

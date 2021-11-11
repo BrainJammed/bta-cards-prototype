@@ -1,0 +1,336 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact__heading %}
+
+{% block page_title %}
+{{ pageHeading }}
+-
+{{ serviceName }}
+- GOV.UK
+{% endblock %}
+
+
+{% block content %}
+{% include 'includes/a6.html' %}
+
+<!-- //////////////////////// -->
+
+<h1 class="govuk-heading-xl">Help and contact</h1>
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+  <h2 class="govuk-heading-m">Business tax account</h2>
+
+  <div class="govuk-grid-column-one-third govuk-!-padding-left-0 govuk-!-padding-bottom-1">
+    <ul class="govuk-list">
+      <li class="" style="padding-bottom:65px">
+        <a class="govuk-link govuk-link--no-visited-state" href="https://bta-cards-prototype.herokuapp.com/no-enrolments/new-ideas/help-with-your-bta">
+          Help with your business tax account
+        </a>
+      </li>
+      <li class="govuk-!-margin-bottom-4">
+        <a class="govuk-link govuk-link--no-visited-state" href="change-phone-number">
+          Changing your phone number and other account details
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+    <ul class="govuk-list">
+      <li class="govuk-!-margin-bottom-4">
+        <a class="govuk-link govuk-link--no-visited-state" href="https://www.youtube.com/watch?v=b2wLXZZddGc" target="_blank">
+          Video - How do I add a tax to my business tax account? (opens in new tab)
+        </a>
+      </li>
+      <li class="govuk-!-margin-bottom-4">
+        <a class="govuk-link govuk-link--no-visited-state" href="https://community.hmrc.gov.uk/customerforums/" target="_blank">
+          HMRC community forums (opens in new tab)
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+    <ul class="govuk-list">
+      <li class="govuk-!-margin-bottom-4">
+        <a class="govuk-link govuk-link--no-visited-state" href="../no-enrolments/new-ideas/transcript">
+          How do I add a tax to my business tax account? - video transcript
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+
+  <!-- ////////////  Covid //////////// -->
+
+
+	<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+
+		<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+		<h2 class="govuk-heading-m govuk-!-margin-bottom-3">Coronavirus (COVID-19) support</h2>
+
+		<div class="govuk-grid-column-one-third govuk-!-padding-left-0 govuk-!-padding-bottom-1">
+			<ul class="govuk-list">
+				<li class="govuk-!-margin-bottom-4">
+					<a class="govuk-link govuk-link--no-visited-state" href="https://www.tax.service.gov.uk/ask-hmrc/virtual-assistant/support-for-coronavirus" target="_blank">
+						Digital assistant for help and support (opens in new tab).
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="govuk-grid-column-one-third  govuk-!-padding-bottom-1">
+			<ul class="govuk-list">
+				<li class="govuk-!-margin-bottom-4">
+					<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/coronavirus-covid-19-helpline" target="_blank">
+						Debt management for tax bills: contact HMRC (opens in new tab)
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="govuk-grid-column-one-third  govuk-!-padding-bottom-1">
+			<ul class="govuk-list">
+				<li class="govuk-!-margin-bottom-4">
+					<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/government/collections/financial-support-for-businesses-during-coronavirus-covid-19#business-support-grant-funds" target="_blank">
+						Financial support for businesses (opens in new tab)
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+  <!-- ////////////  CT  //////////// -->
+
+
+  <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+  	<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+  	<h2 class="govuk-heading-m govuk-!-margin-bottom-3">Corporation Tax</h2>
+
+  	<div class="govuk-grid-column-one-third govuk-!-padding-left-0 govuk-!-padding-bottom-1">
+  		<ul class="govuk-list">
+  			<li class="govuk-!-margin-bottom-4">
+  				<a class="govuk-link govuk-link--no-visited-state" href="ct/register-deregister">Register for Corporation Tax, add Corporation Tax to your account or tell us you are no longer trading</a>
+  			</li>
+  			<li class="govuk-!-margin-bottom-4">
+  				<a class="govuk-link govuk-link--no-visited-state" href="https://www.staging.tax.service.gov.uk/ask-for-copy-of-your-corporation-tax-utr">Ask for a copy of your Corporation Tax UTR</a>
+  			</li>
+  		</ul>
+  	</div>
+  	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+  		<ul class="govuk-list">
+  			<li class="govuk-!-margin-bottom-4">
+  				<a class="govuk-link govuk-link--no-visited-state" href="ct/how-to-pay.html">How to pay your Corporation Tax</a>
+  			</li>
+  		</ul>
+  	</div>
+  	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+  		<ul class="govuk-list">
+  			<li class="govuk-!-margin-bottom-4">
+  				<a class="govuk-link govuk-link--no-visited-state" href="ct/contact-HMRC">Contact HMRC about Corporation Tax</a>
+  			</li>
+  		</ul>
+  	</div>
+  </div>
+
+
+
+    <!-- ////////////  PAYE  //////////// -->
+
+  <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+  	<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+  	<h2 class="govuk-heading-m govuk-!-margin-bottom-3">PAYE for employers</h2>
+  	<div class="govuk-grid-column-one-third govuk-!-padding-left-0 govuk-!-padding-bottom-1 govuk-!-margin-bottom-3">
+  		<ul class="govuk-list">
+  			<li class="" style="padding-bottom:40px">
+  				<a class="govuk-link govuk-link--no-visited-state" href="paye/how-to-get-started-PAYE">Get started with PAYE for employers</a>
+  			</li>
+  			<li class="govuk-!-margin-bottom-4">
+  				<a class="govuk-link govuk-link--no-visited-state" href="paye/view-check-correct">View, check or correct submissions</a>
+  			</li>
+        <li class="govuk-!-margin-bottom-4">
+  				<a class="govuk-link govuk-link--no-visited-state" href="https://community.hmrc.gov.uk/customerforums/payepe" target="_blank">PAYE for employers community forum (opens in new tab)</a>
+  			</li>
+  		</ul>
+  	</div>
+  	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+  		<ul class="govuk-list">
+  			<li class="govuk-!-margin-bottom-4">
+  				<a class="govuk-link govuk-link--no-visited-state" href="paye/refunds">PAYE refunds and Construction Industry Scheme (CIS) refunds</a>
+  			</li>
+        <li class="govuk-!-margin-bottom-4">
+          <a class="govuk-link govuk-link--no-visited-state" href="paye/changes-in-employee-circumstances">Change employee circumstances</a>
+        </li>
+  		</ul>
+  	</div>
+  	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+  		<ul class="govuk-list">
+  			<li class="govuk-!-margin-bottom-4">
+  				<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/employer-enquiries">Contact HMRC about PAYE for Employers</a>
+  			</li>
+        <li class="govuk-!-margin-bottom-4">
+          <a class="govuk-link govuk-link--no-visited-state" href="https://www.staging.tax.service.gov.uk/business-account/epaye/remove">Remove PAYE for employers</a>
+        </li>
+  		</ul>
+  	</div>
+
+  </div>
+
+    <!-- ////////////  MTD IT //////////// -->
+
+    <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">Making Tax Digital for Income Tax</h2>
+
+      <div class="govuk-grid-column-one-third govuk-!-padding-left-0 govuk-!-padding-bottom-1">
+        <ul class="govuk-list">
+          <li class="govuk-!-margin-bottom-4">
+            <a class="govuk-link govuk-link--no-visited-state" href="https://bta-cards-prototype.herokuapp.com/login/help_making_tax_digital_for_income_tax"s>
+              Help with Making Tax Digital for Income Tax
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+
+    <!-- ////////////  SA  //////////// -->
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+
+	<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+	<h2 class="govuk-heading-m">Self Assessment</h2>
+
+	<div class="govuk-grid-column-one-third govuk-!-padding-left-0 govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="sa/register-deregister">Registering or stopping</a>
+			</li>
+
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="sa/evidence-of-income">Get evidence of your income SA(302)</a>
+			</li>
+
+      <li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://community.hmrc.gov.uk/customerforums/sa" target="_blank">Self Assessment community forum (opens in new tab)</a>
+			</li>
+
+		</ul>
+	</div>
+
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://www.staging.tax.service.gov.uk/business-account/help/self-assessment/payment-and-penalties">Payments and penalties</a>
+			</li>
+
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="sa/help-with-return">Help with your Self Assessment tax return</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1 ">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="sa/expenses">Expenses</a>
+			</li>
+
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/self-assessment">Contact HMRC about Self Assessment</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!-- ////////////MTD VAT//////////// -->
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+	<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+	<h2 class="govuk-heading-m govuk-!-margin-bottom-3">Making Tax Digital for VAT</h2>
+	<div class="govuk-grid-column-one-third  govuk-!-padding-left-0 govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/vat-record-keeping/sign-up-for-making-tax-digital-for-vat">Sign up for Making Tax Digital for VAT</a>
+			</li>
+      <li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://community.hmrc.gov.uk/customerforums/mtd" target="_blank">Making Tax Digital for VAT community forum (opens in new tab)</a>
+			</li>
+		</ul>
+	</div>
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/guidance/help-and-support-for-making-tax-digital">Making Tax Digital for VAT webinars</a>
+			</li>
+		</ul>
+	</div>
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1 govuk-!-margin-bottom-3">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://community.hmrc.gov.uk/">Contact HMRC about Making Tax Digital for VAT</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!-- ////////////  VAT  //////////// -->
+
+
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+	<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+	<h2 class="govuk-heading-m govuk-!-margin-bottom-3">VAT</h2>
+	<div class="govuk-grid-column-one-third  govuk-!-padding-left-0 govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="vat/register-deregister">Register or deregister for VAT</a>
+			</li>
+
+			<li class="govuk-!-margin-bottom-4">
+                <a class="govuk-link govuk-link--no-visited-state" href="">Correct errors on your VAT returns</a>
+            </li>
+		</ul>
+	</div>
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="vat/how-to-pay">How to pay VAT and deadlines</a>
+			</li>
+      <li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://community.hmrc.gov.uk/customerforums/vat" target="_blank">VAT community forum (opens in new tab)</a>
+			</li>
+		</ul>
+	</div>
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1 govuk-!-margin-bottom-3">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries">Contact HMRC about VAT</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+  <summary class="govuk-details__summary_noarrow" style="display:block;">
+    <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+      Is this page not working properly?
+    </span>
+  </summary>
+  <div class="">
+
+  </div>
+</details>
+
+
+{% endblock %}

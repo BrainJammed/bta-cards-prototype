@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Business tax summary - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-8 govuk-!-margin-bottom-8">You have not added a tax to this
+          account</h1>
+
+        <p class="govuk-body govuk-!-margin-bottom-6">
+          When you add taxes, duties or schemes to your business tax account, they will appear on this page.
+        </p>
+
+        <button class="govuk-button govuk-!-margin-bottom-6" data-module="govuk-button">
+          Add a tax, duty or scheme now
+        </button>
+
+        <p class="govuk-body">Taxes you can add include:</p>
+        <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-8">
+          <li>Self Assessment</li>
+          <li>VAT</li>
+          <li>Corporation Tax</li>
+          <li>PAYE for employers</li>
+        </ul>
+
+
+
+
+        <!-- <p class="govuk-body"><a href="#">See how adding a tax to your business tax account works</a>.</p> -->
+
+        <!--         <p class="govuk-body">
+          You don’t have to own or run a business to have a business tax
+          account.
+        </p> -->
+
+
+        <h3 class="govuk-heading-s">More help</h3>
+        <p class="govuk-body"><a href="#">WATCH: How do I add a tax to my business tax account? (opens in new tab)</a></p>
+        <p class="govuk-body"><a href="#">How do I add a tax to my business tax account? - video transcript</a></p>
+        <p class="govuk-body"><a href="https://www.gov.uk/guidance/sign-in-to-your-hmrc-business-tax-account#tax_services">Read the full list of taxes duties
+           and schemes you can manage in your business tax account (opens in new tab)</a>
+        </p>
+        <p class="govuk-body"><a href="#">Help with your business tax account</a></p>
+      </div>
+    </div>
+    <!-- {% include 'includes/ancillary-content.html' %} -->
+  </main>
+</div>
+
+{% endblock %}

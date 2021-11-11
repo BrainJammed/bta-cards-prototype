@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <form action="/manage-account/account-access/users-type-a1" method="post" class="form">
+
+  <div class="govuk-grid-column-two-thirds">
+
+      {% include "includes/back.html" %}
+
+    <div class="govuk-form-group">
+
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-4">
+            Choose a type of user
+          </h1>
+        </legend>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="account-user" name="user-type" type="radio" value="users">
+              <label class="govuk-label govuk-radios__label" for="users-a1">
+                Account user
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="accountant" name="user-type" type="radio" value="accountants">
+              <label class="govuk-label govuk-radios__label" for="accountants-a1">
+                Accountant
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="agent" name="user-type" type="radio" value="agents">
+              <label class="govuk-label govuk-radios__label" for="agents-a1">
+                Agent
+              </label>
+            </div>
+          </div>
+      </fieldset>
+
+  </div>
+
+</div>
+
+</div>
+
+<button class="govuk-button">Continue</button>
+</form>
+
+
+{% endblock %}

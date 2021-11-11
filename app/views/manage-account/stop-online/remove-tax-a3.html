@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a3.html' %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+    {% include "includes/back.html" %}
+    <div class="govuk-form-group">
+      <!-- Routes to be added for this form -->
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            Which online service do you need to stop using?
+          </h1>
+        </legend>
+        <div class="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio"
+              value="england">
+            <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+              Self Assessment
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio"
+              value="england">
+            <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+              VAT
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio"
+              value="england">
+            <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+              Corporation Tax
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- <button class="govuk-button" href="manage-account/deregister/deregister-a2">Continue</button>  -->
+<a href="deregister/deregister-a3" role="button" draggable="false" class="govuk-button govuk-button">
+  Continue
+</a>
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/no_other_account" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Add VAT first</h1>
+
+      <p class="govuk-body">You need to manage VAT online before you can add VAT MOSS to your account.</p>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Add VAT to this account
+      </button>
+
+      <p>
+        <a href="#" class="govuk-link">I do not want to add VAT to this account now</a>
+      </p>
+
+
+    </div>
+</div>
+
+
+
+  <details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+    <summary class="govuk-details__summary_noarrow" style="display:block;">
+      <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+        Is this page not working properly?
+      </span>
+    </summary>
+    <div class="">
+
+    </div>
+  </details>
+</form>
+{% endblock %}

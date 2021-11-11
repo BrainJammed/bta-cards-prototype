@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/has-imported-goods" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+      {% include "includes/back.html" %}
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="import-over-85k-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-4">
+              Have you acquired goods worth more than £85,000 from another EU company?
+            </h1>
+          </legend>
+          <span id="import-over-85k-hint" class="govuk-hint govuk-!-padding-bottom-4">
+          You need to register for VAT using form VAT1B if you have acquired goods worth more than £85,000 from other EU member states. 
+          </span>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="import-over-85k-yes" name="import-over-85k" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="import-over-85k-yes">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="import-over-85k-no" name="import-over-85k" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="import-over-85k-no">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button">
+        Continue
+      </button>
+
+    </div>
+
+  </form>
+
+</div>
+
+{% endblock %}

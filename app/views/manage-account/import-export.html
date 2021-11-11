@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row">
+
+    <form action="/manage-account/import-export" method="post" class="form">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-form-group">
+
+      <fieldset class="govuk-fieldset">
+
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-4">
+            What do you want to add?
+          </h1>
+        </legend>
+        <!-- <div class="govuk-inset-text govuk-!-margin-top-0 ">
+          <p>You may need reference numbers relevant to the tax you are adding. To add Self Assessment or Corporation Tax, you need a UTR. To add VAT, you need a VAT registration number. To add PAYE for employers, you need employers PAYE and accounts office references.</p>
+        </div> -->
+        <!-- <span id="changed-name-hint" class="govuk-hint govuk-!-padding-bottom-4">
+          You may need reference numbers relevant to the tax you are adding. To add Self Assessment or Corporation Tax, you need a UTR. To add VAT, you need a VAT registration number. To add PAYE for employers, you need employers PAYE and accounts office references.
+        </span> -->
+        <div class="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Duty" name="tax" type="radio" value="Duty">
+            <label class="govuk-label govuk-radios__label" for="Duty">
+              Duty Deferment Electronic Statements (DDES)
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Excise" name="tax" type="radio" value="Excise">
+            <label class="govuk-label govuk-radios__label" for="Excise">
+              Excise Movement and Control System (EMCS)
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Goods" name="tax" type="radio" value="Goods">
+            <label class="govuk-label govuk-radios__label" for="Goods">
+              Goods Vehicle Movement Service (GVMS)
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Import" name="tax" type="radio" value="Import">
+            <label class="govuk-label govuk-radios__label" for="Import">
+              Import Control System (ICS)
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Intrastat" name="tax" type="radio" value="Intrastat">
+            <label class="govuk-label govuk-radios__label" for="Intrastat">
+              Intrastat Supplementary Declaration
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Computerised" name="tax" type="radio" value="Computerised">
+            <label class="govuk-label govuk-radios__label" for="Computerised">
+              New Computerised Transit System (NCTS)
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Export" name="tax" type="radio" value="Export">
+            <label class="govuk-label govuk-radios__label" for="Export">
+              New Export System (NES)
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Notification" name="tax" type="radio" value="Notification">
+            <label class="govuk-label govuk-radios__label" for="Notification">
+              Notification of Vehicle Arrivals (NOVA)
+            </label>
+          </div>
+          <!-- <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Electronic" name="tax" type="radio" value="Electronic">
+            <label class="govuk-label govuk-radios__label" for="Electronic">
+              Electronic Binding Tariff Information (eBTI)
+            </label>
+          </div> -->
+        </div>
+      </fieldset>
+
+    </div>
+
+  </div>
+
+</div>
+<br>
+<button class="govuk-button">Continue</button>
+
+{% endblock %}

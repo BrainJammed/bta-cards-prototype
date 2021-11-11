@@ -1,0 +1,639 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block beforeContent %}
+   <!-- //////////// COVID-19 BANNER /////////////////// -->
+
+  <div class="govuk-grid-row  govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-padding-top-4 govuk-!-padding-bottom-4 govuk-!-padding-left-6 govuk-!-margin-bottom-6" style="background-color: #000;">
+    <div class="govuk-grid-column-one-half">
+      <p class="govuk-!-margin-bottom-0">
+        <a class="notice-banner__content" href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19" id="recruitment-page-link" data-journey-click="link - click:Your business taxes:Public Announcement" target="_blank" rel="noopener" style="font-weight: 700; color:#fff;">Coronavirus (COVID-19): what you need to do</a>
+      </p>
+    </div>
+    <div class="govuk-grid-column-one-half" style="font-weight: 700; color:#fff; text-align:right;">
+      <a id="dismiss-user-panel" class="govuk-link" style="font-weight: 700; color:#fff; text-align:right;" href="#">Hide message</a>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+
+
+  {% include 'includes/nav-homepage-a2.html' %}
+
+  <!-- /////////////////////////////// -->
+
+  <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-2">Business tax summary</h1>
+    <span class="govuk-caption-xl govuk-!-margin-bottom-8">View and access your business taxes in one place</span>
+
+    <!-- ////////////// ADD A TAX ///////////// -->
+
+    <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <p class="govuk-body">
+        Add a tax to your account to
+        <a href="../../manage-account/add-tax-a2" class="govuk-body govuk-link govuk-link--no-visited-state">get online access to a tax, duty or scheme</a>.
+      </p>
+    </div>
+
+    <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <!-- ////////////////////// PROCESSING TIMES ////////////////////////// -->
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-inset-text govuk-!-margin-top-0">
+        <p>Your balance will update 2 days after you complete your return.
+          <br>Payments take up to 7 working days to be processed.</p>
+      </div>
+    </div>
+
+    <!-- /////////////////////// CARD 1 //////////////////////// -->
+    <!-- /////////////////////// CARD 1 //////////////////////// -->
+    <!-- /////////////////////// CARD 1 //////////////////////// -->
+
+    <!-- /////////////////////// CARDS //////////////////////// -->
+
+    <!-- /////////////////////// CARDS //////////////////////// -->
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <p>EPAYE card - New content for JSS from 30.11.20
+    </div>
+
+      <div class="govuk-grid-column-full card-container govuk-!-margin-bottom-8" id="cardAmount">
+        <div class="card-body">
+          <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-6">
+            <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+              PAYE for employers
+            </h2>
+            <p class="govuk-body govuk-!-margin-bottom-0">
+              Employer PAYE reference 123/AB456
+            </p>
+            <p class="govuk-body">
+              Accounts Office reference 123PX00123456
+            </p>
+
+
+            <!-- <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Coronavirus (COVID-19): You must continue to submit your FPSs and EPSs and pay PAYE bills to HMRC as normal. PAYE bills are not being deferred.
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</li>
+                <li>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</li>
+                <li>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</li>
+                </ul>
+              </strong>
+            </div> -->
+
+            <div class="govuk-inset-text govuk-!-margin-top-0 ">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus schemes for employers</h3>
+              <p>The Coronavirus Job Retention Scheme has closed. The <a href="" target="_blank">Job Support Scheme (opens in new tab)</a> replaces it in December 2020.</p>
+              <p>If you claimed too much money in a previous claim, you should pay it back to HMRC. You can:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                  <!-- <li><a href="javascript:;">online or telephone banking</a> (Faster Payments)</li> -->
+                  <li>deduct the amount you overclaimed from your next claim, if you still need to claim for furloughed employees</li>
+                  <li><a href="https://www.tax.service.gov.uk/coronavirus-job-retention-scheme/tell-us-about-a-repayment" target="_blank">tell us about an overclaim or make a voluntary repayment (opens in new tab)</a> if you do not need to make any more claims</li>
+              </ul>
+
+
+
+              <!-- <p>You can <a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">start a claim in the Coronavirus Job Retention Scheme (CJRS) (opens in new tab)</a>. You may find the <a href="https://www.tax.service.gov.uk/job-retention-scheme-calculator" target="_blank">CJRS calculator (opens in new tab)</a> useful when making your claim for wages for furloughed employees. You can ask questions from this service if you need help.</p> -->
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p>
+              <!-- <p>You can now <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay (SSP) per employee (opens in a new window or tab)</a>. If you employ fewer than 250 employees, you can claim for coronavirus-related SSP.</p> -->
+
+              <!-- <p><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</p> -->
+              <!-- <p>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</p>
+              <p>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</p> -->
+
+
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p> -->
+              <!-- <p>Start using the <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">Coronavirus Statutory Sick Pay Rebate Scheme (opens in new tab)</a> if you need to claim back employees' coronavirus-related Statutory Sick Pay (SSP).</p> -->
+
+              <div class="govuk-warning-text">
+                <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                <strong class="govuk-warning-text__text">
+                  <span class="govuk-warning-text__assistive">Important</span>
+                  You must continue to submit your FPSs and EPSs and pay PAYE bills to HMRC as normal. PAYE bills are not being deferred.
+                </strong>
+              </div>
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p> -->
+              <p>Start using the <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">Coronavirus Statutory Sick Pay Rebate Scheme (opens in new tab)</a> if you need to claim back employees' coronavirus-related Statutory Sick Pay (SSP).</p>
+
+              <!-- <p><a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">Make a claim for wages through the Coronavirus Job Retention Scheme (opens in new tab)</a>. You can claim for employees on full or flexible furlough.</p> -->
+              <!-- <p>You can <a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">start a claim in the Coronavirus Job Retention Scheme (CJRS) (opens in new tab)</a>. You may find the <a href="https://www.tax.service.gov.uk/job-retention-scheme-calculator" target="_blank">CJRS calculator (opens in new tab)</a> useful when making your claim for wages for furloughed employees. You can ask questions from this service if you need help.</p> -->
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p>
+              <!-- <p>You can now <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay (SSP) per employee (opens in a new window or tab)</a>. If you employ fewer than 250 employees, you can claim for coronavirus-related SSP.</p> -->
+
+              <!-- <p><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</p> -->
+              <!-- <p>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</p>
+              <p>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</p> -->
+
+
+            </div>
+
+            <div class="govuk-inset-text govuk-!-margin-bottom-0 govuk-!-margin-top-0">
+              <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">New tax year</h3> -->
+            <p>The last tax year finished on 5 April.
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Find out what you need to do</a>.</p>
+            <!-- <p>Eligibility for Employment Allowance has changed and you must now apply each year.
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Find out if you can claim for Employment Allowance</a>.
+            </p> -->
+          </div>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your upcoming payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You have upcoming payments that total
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,000</span>. HMRC must have this amount by 11.59pm 22&nbsp;June&nbsp;2019.
+            </p>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You have one or more daily penalties.
+            </p>
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">See all upcoming PAYE payments</a>
+            </p>
+          </div>
+          <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6"></div>
+          <div class="govuk-grid-column-two-thirds">
+            <p>After we receive a payment, it takes up to 6 working days to update the amount you owe.</p>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Annual statements and payment record</a>
+            </p>
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View tax codes or notices and set up alerts</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+        <!-- /////////////////////// CARDS //////////////////////// -->
+
+
+    <!-- /////////////////////// CARDS //////////////////////// -->
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <p>EPAYE card - New content for JRS to 30.11.20
+    </div>
+
+      <div class="govuk-grid-column-full card-container govuk-!-margin-bottom-8" id="cardAmount">
+        <div class="card-body">
+          <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-6">
+            <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+              PAYE for employers
+            </h2>
+            <p class="govuk-body govuk-!-margin-bottom-0">
+              Employer PAYE reference 123/AB456
+            </p>
+            <p class="govuk-body">
+              Accounts Office reference 123PX00123456
+            </p>
+
+
+            <!-- <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Coronavirus (COVID-19): You must continue to submit your FPSs and EPSs and pay PAYE bills to HMRC as normal. PAYE bills are not being deferred.
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</li>
+                <li>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</li>
+                <li>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</li>
+                </ul>
+              </strong>
+            </div> -->
+
+            <div class="govuk-inset-text govuk-!-margin-top-0 ">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus schemes for employers</h3>
+              <p><a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">Make a claim for wages through the Coronavirus Job Retention Scheme before 30 November 2020 (opens in new tab)</a>. You can claim for employees on full or flexible furlough, for periods ending on or before 31 October 2020.</p>
+              <p>If you claimed too much money in a previous claim, you should pay it back to HMRC. You can:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                  <!-- <li><a href="javascript:;">online or telephone banking</a> (Faster Payments)</li> -->
+                  <li>deduct the amount you overclaimed from your next claim, if you still need to claim for furloughed employees</li>
+                  <li><a href="https://www.tax.service.gov.uk/coronavirus-job-retention-scheme/tell-us-about-a-repayment" target="_blank">tell us about an overclaim or make a voluntary repayment (opens in new tab)</a> if you do not need to make any more claims</li>
+              </ul>
+
+
+
+              <!-- <p>You can <a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">start a claim in the Coronavirus Job Retention Scheme (CJRS) (opens in new tab)</a>. You may find the <a href="https://www.tax.service.gov.uk/job-retention-scheme-calculator" target="_blank">CJRS calculator (opens in new tab)</a> useful when making your claim for wages for furloughed employees. You can ask questions from this service if you need help.</p> -->
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p>
+              <!-- <p>You can now <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay (SSP) per employee (opens in a new window or tab)</a>. If you employ fewer than 250 employees, you can claim for coronavirus-related SSP.</p> -->
+
+              <!-- <p><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</p> -->
+              <!-- <p>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</p>
+              <p>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</p> -->
+
+
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p> -->
+              <!-- <p>Start using the <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">Coronavirus Statutory Sick Pay Rebate Scheme (opens in new tab)</a> if you need to claim back employees' coronavirus-related Statutory Sick Pay (SSP).</p> -->
+
+              <div class="govuk-warning-text">
+                <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                <strong class="govuk-warning-text__text">
+                  <span class="govuk-warning-text__assistive">Important</span>
+                  You must continue to submit your FPSs and EPSs and pay PAYE bills to HMRC as normal. PAYE bills are not being deferred.
+                </strong>
+              </div>
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p> -->
+              <p>Start using the <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">Coronavirus Statutory Sick Pay Rebate Scheme (opens in new tab)</a> if you need to claim back employees' coronavirus-related Statutory Sick Pay (SSP).</p>
+
+              <!-- <p><a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">Make a claim for wages through the Coronavirus Job Retention Scheme (opens in new tab)</a>. You can claim for employees on full or flexible furlough.</p> -->
+              <!-- <p>You can <a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">start a claim in the Coronavirus Job Retention Scheme (CJRS) (opens in new tab)</a>. You may find the <a href="https://www.tax.service.gov.uk/job-retention-scheme-calculator" target="_blank">CJRS calculator (opens in new tab)</a> useful when making your claim for wages for furloughed employees. You can ask questions from this service if you need help.</p> -->
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p>
+              <!-- <p>You can now <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay (SSP) per employee (opens in a new window or tab)</a>. If you employ fewer than 250 employees, you can claim for coronavirus-related SSP.</p> -->
+
+              <!-- <p><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</p> -->
+              <!-- <p>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</p>
+              <p>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</p> -->
+
+
+            </div>
+
+            <div class="govuk-inset-text govuk-!-margin-bottom-0 govuk-!-margin-top-0">
+              <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">New tax year</h3> -->
+            <p>The last tax year finished on 5 April.
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Find out what you need to do</a>.</p>
+            <!-- <p>Eligibility for Employment Allowance has changed and you must now apply each year.
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Find out if you can claim for Employment Allowance</a>.
+            </p> -->
+          </div>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your upcoming payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You have upcoming payments that total
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,000</span>. HMRC must have this amount by 11.59pm 22&nbsp;June&nbsp;2019.
+            </p>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You have one or more daily penalties.
+            </p>
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">See all upcoming PAYE payments</a>
+            </p>
+          </div>
+          <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6"></div>
+          <div class="govuk-grid-column-two-thirds">
+            <p>After we receive a payment, it takes up to 6 working days to update the amount you owe.</p>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Annual statements and payment record</a>
+            </p>
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View tax codes or notices and set up alerts</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+        <!-- /////////////////////// CARDS //////////////////////// -->
+
+
+
+    <!-- /////////////////////// CARDS //////////////////////// -->
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <p>EPAYE card - B
+    </div>
+
+      <div class="govuk-grid-column-full card-container govuk-!-margin-bottom-8" id="cardAmount">
+        <div class="card-body">
+          <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-6">
+            <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+              PAYE for employers
+            </h2>
+            <p class="govuk-body govuk-!-margin-bottom-0">
+              Employer PAYE reference 123/AB456
+            </p>
+            <p class="govuk-body">
+              Accounts Office reference 123PX00123456
+            </p>
+
+
+            <!-- <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Coronavirus (COVID-19): You must continue to submit your FPSs and EPSs and pay PAYE bills to HMRC as normal. PAYE bills are not being deferred.
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</li>
+                <li>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</li>
+                <li>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</li>
+                </ul>
+              </strong>
+            </div> -->
+
+            <div class="govuk-inset-text govuk-!-margin-top-0 ">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus schemes for employers</h3>
+              <p><a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">Make a claim for wages through the Coronavirus Job Retention Scheme (opens in new tab)</a>. You can claim for employees on full or flexible furlough.</p>
+              <p>If you claimed too much money in a previous claim, you should pay it back to HMRC. You can:</p>
+              <ul class="govuk-list govuk-list--bullet">
+            	    <!-- <li><a href="javascript:;">online or telephone banking</a> (Faster Payments)</li> -->
+                  <li>deduct the amount you overclaimed from your next claim, if you still need to claim for furloughed employees</li>
+            	    <li><a href="https://www.tax.service.gov.uk/coronavirus-job-retention-scheme/tell-us-about-a-repayment" target="_blank">tell us about an overclaim or make a voluntary repayment (opens in new tab)</a> if you do not need to make any more claims</li>
+              </ul>
+
+
+
+              <!-- <p>You can <a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">start a claim in the Coronavirus Job Retention Scheme (CJRS) (opens in new tab)</a>. You may find the <a href="https://www.tax.service.gov.uk/job-retention-scheme-calculator" target="_blank">CJRS calculator (opens in new tab)</a> useful when making your claim for wages for furloughed employees. You can ask questions from this service if you need help.</p> -->
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p>
+              <!-- <p>You can now <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay (SSP) per employee (opens in a new window or tab)</a>. If you employ fewer than 250 employees, you can claim for coronavirus-related SSP.</p> -->
+
+              <!-- <p><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</p> -->
+              <!-- <p>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</p>
+              <p>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</p> -->
+
+
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p> -->
+              <!-- <p>Start using the <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">Coronavirus Statutory Sick Pay Rebate Scheme (opens in new tab)</a> if you need to claim back employees' coronavirus-related Statutory Sick Pay (SSP).</p> -->
+
+              <div class="govuk-warning-text">
+                <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                <strong class="govuk-warning-text__text">
+                  <span class="govuk-warning-text__assistive">Important</span>
+                  You must continue to submit your FPSs and EPSs and pay PAYE bills to HMRC as normal. PAYE bills are not being deferred.
+                </strong>
+              </div>
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p> -->
+              <p>Start using the <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">Coronavirus Statutory Sick Pay Rebate Scheme (opens in new tab)</a> if you need to claim back employees' coronavirus-related Statutory Sick Pay (SSP).</p>
+
+              <!-- <p><a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">Make a claim for wages through the Coronavirus Job Retention Scheme (opens in new tab)</a>. You can claim for employees on full or flexible furlough.</p> -->
+              <!-- <p>You can <a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">start a claim in the Coronavirus Job Retention Scheme (CJRS) (opens in new tab)</a>. You may find the <a href="https://www.tax.service.gov.uk/job-retention-scheme-calculator" target="_blank">CJRS calculator (opens in new tab)</a> useful when making your claim for wages for furloughed employees. You can ask questions from this service if you need help.</p> -->
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p>
+              <!-- <p>You can now <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay (SSP) per employee (opens in a new window or tab)</a>. If you employ fewer than 250 employees, you can claim for coronavirus-related SSP.</p> -->
+
+              <!-- <p><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</p> -->
+              <!-- <p>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</p>
+              <p>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</p> -->
+
+
+            </div>
+
+            <div class="govuk-inset-text govuk-!-margin-bottom-0 govuk-!-margin-top-0">
+              <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">New tax year</h3> -->
+            <p>The last tax year finished on 5 April.
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Find out what you need to do</a>.</p>
+            <!-- <p>Eligibility for Employment Allowance has changed and you must now apply each year.
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Find out if you can claim for Employment Allowance</a>.
+            </p> -->
+          </div>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your upcoming payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You have upcoming payments that total
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,000</span>. HMRC must have this amount by 11.59pm 22&nbsp;June&nbsp;2019.
+            </p>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You have one or more daily penalties.
+            </p>
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">See all upcoming PAYE payments</a>
+            </p>
+          </div>
+          <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6"></div>
+          <div class="govuk-grid-column-two-thirds">
+            <p>After we receive a payment, it takes up to 6 working days to update the amount you owe.</p>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Annual statements and payment record</a>
+            </p>
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View tax codes or notices and set up alerts</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+        <!-- /////////////////////// CARDS //////////////////////// -->
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <p>CJRS card - A
+    </div>
+
+      <div class="govuk-grid-column-full card-container govuk-!-margin-bottom-8" id="cardAmount">
+        <div class="card-body">
+          <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-6">
+            <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+              PAYE for employers
+            </h2>
+            <p class="govuk-body govuk-!-margin-bottom-0">
+              Employer PAYE reference 123/AB456
+            </p>
+            <p class="govuk-body">
+              Accounts Office reference 123PX00123456
+            </p>
+
+
+            <!-- <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                Coronavirus (COVID-19): You must continue to submit your FPSs and EPSs and pay PAYE bills to HMRC as normal. PAYE bills are not being deferred.
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+                <li><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</li>
+                <li>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</li>
+                <li>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</li>
+                </ul>
+              </strong>
+            </div> -->
+
+            <div class="govuk-inset-text govuk-!-margin-top-0 ">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus schemes for employers</h3>
+              <p><a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">Make a claim for wages through the Coronavirus Job Retention Scheme (opens in new tab)</a>. You can claim for employees on full or flexible furlough.</p>
+              <p>If you claimed too much money in a previous claim, you should <a href="http://www.tax.service.gov.uk/coronavirus-job-retention-scheme/tell-us-about-a-repayment" target="_blank">tell us about an overclaim or make a voluntary repayment (opens in new tab)</a>.</p>
+
+
+
+              <!-- <p>You can <a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">start a claim in the Coronavirus Job Retention Scheme (CJRS) (opens in new tab)</a>. You may find the <a href="https://www.tax.service.gov.uk/job-retention-scheme-calculator" target="_blank">CJRS calculator (opens in new tab)</a> useful when making your claim for wages for furloughed employees. You can ask questions from this service if you need help.</p> -->
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p>
+              <!-- <p>You can now <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay (SSP) per employee (opens in a new window or tab)</a>. If you employ fewer than 250 employees, you can claim for coronavirus-related SSP.</p> -->
+
+              <!-- <p><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</p> -->
+              <!-- <p>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</p>
+              <p>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</p> -->
+
+
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p> -->
+              <!-- <p>Start using the <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">Coronavirus Statutory Sick Pay Rebate Scheme (opens in new tab)</a> if you need to claim back employees' coronavirus-related Statutory Sick Pay (SSP).</p> -->
+
+              <div class="govuk-warning-text">
+                <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                <strong class="govuk-warning-text__text">
+                  <span class="govuk-warning-text__assistive">Important</span>
+                  You must continue to submit your FPSs and EPSs and pay PAYE bills to HMRC as normal. PAYE bills are not being deferred.
+                </strong>
+              </div>
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p> -->
+              <p>Start using the <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">Coronavirus Statutory Sick Pay Rebate Scheme (opens in new tab)</a> if you need to claim back employees' coronavirus-related Statutory Sick Pay (SSP).</p>
+
+              <!-- <p><a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">Make a claim for wages through the Coronavirus Job Retention Scheme (opens in new tab)</a>. You can claim for employees on full or flexible furlough.</p> -->
+              <!-- <p>You can <a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">start a claim in the Coronavirus Job Retention Scheme (CJRS) (opens in new tab)</a>. You may find the <a href="https://www.tax.service.gov.uk/job-retention-scheme-calculator" target="_blank">CJRS calculator (opens in new tab)</a> useful when making your claim for wages for furloughed employees. You can ask questions from this service if you need help.</p> -->
+              <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p>
+              <!-- <p>You can now <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay (SSP) per employee (opens in a new window or tab)</a>. If you employ fewer than 250 employees, you can claim for coronavirus-related SSP.</p> -->
+
+              <!-- <p><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</p> -->
+              <!-- <p>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</p>
+              <p>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</p> -->
+
+
+            </div>
+
+            <div class="govuk-inset-text govuk-!-margin-bottom-0 govuk-!-margin-top-0">
+              <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">New tax year</h3> -->
+            <p>The last tax year finished on 5 April.
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Find out what you need to do</a>.</p>
+            <!-- <p>Eligibility for Employment Allowance has changed and you must now apply each year.
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Find out if you can claim for Employment Allowance</a>.
+            </p> -->
+          </div>
+          </div>
+
+          <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+              Your upcoming payments
+            </h3>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You have upcoming payments that total
+              <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,000</span>. HMRC must have this amount by 11.59pm 22&nbsp;June&nbsp;2019.
+            </p>
+            <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+              You have one or more daily penalties.
+            </p>
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">See all upcoming PAYE payments</a>
+            </p>
+          </div>
+          <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6"></div>
+          <div class="govuk-grid-column-two-thirds">
+            <p>After we receive a payment, it takes up to 6 working days to update the amount you owe.</p>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Annual statements and payment record</a>
+            </p>
+            <p class="govuk-body">
+              <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View tax codes or notices and set up alerts</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- ///////////////////////////////// -->
+
+
+
+
+  <!-- ///////////////////////////////// -->
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <p>80% CJRS card till Tuesday 18th August
+    </div>
+
+    <div class="govuk-grid-column-full card-container govuk-!-margin-bottom-8" id="cardAmount">
+
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            PAYE for employers
+          </h2>
+          <p class="govuk-body govuk-!-margin-bottom-0">
+            Employer PAYE reference 123/AB456
+          </p>
+          <p class="govuk-body">
+            Accounts Office reference 123PX00123456
+          </p>
+
+
+          <!-- <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Important</span>
+              Coronavirus (COVID-19): You must continue to submit your FPSs and EPSs and pay PAYE bills to HMRC as normal. PAYE bills are not being deferred.
+              <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-4">
+              <li><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</li>
+              <li>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</li>
+              <li>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</li>
+              </ul>
+            </strong>
+          </div> -->
+
+          <div class="govuk-inset-text govuk-!-margin-top-0 ">
+            <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Coronavirus schemes for employers</h3>
+            <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p> -->
+            <p>Start using the <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">Coronavirus Statutory Sick Pay Rebate Scheme (opens in new tab)</a> if you need to claim back employees' coronavirus-related Statutory Sick Pay (SSP).</p>
+
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Important</span>
+                You must continue to submit your FPSs and EPSs and pay PAYE bills to HMRC as normal. PAYE bills are not being deferred.
+              </strong>
+            </div>
+            <p>You can now <a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">start a claim in the Coronavirus Job Retention Scheme (opens in new tab)</a>. You can claim up to 80% of your usual monthly wage costs if you put employees on temporary leave (furlough).</p>
+            <!-- <p>You can <a href="https://www.gov.uk/guidance/claim-for-wages-through-the-coronavirus-job-retention-scheme" target="_blank">start a claim in the Coronavirus Job Retention Scheme (CJRS) (opens in new tab)</a>. You may find the <a href="https://www.tax.service.gov.uk/job-retention-scheme-calculator" target="_blank">CJRS calculator (opens in new tab)</a> useful when making your claim for wages for furloughed employees. You can ask questions from this service if you need help.</p> -->
+            <!-- <p>Employers with fewer than 250 employees will be able to <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay per employee (opens in a new window or tab)</a>.</p>
+            <!-- <p>You can now <a href="https://www.gov.uk/guidance/claim-back-statutory-sick-pay-paid-to-employees-due-to-coronavirus-covid-19" target="_blank">claim back up to 2 weeks of Statutory Sick Pay (SSP) per employee (opens in a new window or tab)</a>. If you employ fewer than 250 employees, you can claim for coronavirus-related SSP.</p> -->
+
+            <!-- <p><a href="https://www.gov.uk/government/publications/guidance-to-employers-and-businesses-about-covid-19/covid-19-support-for-businesses" target="_blank">COVID-19: support for businesses (opens in new tab)</a> lists the schemes that may help you, including what to do if you cannot pay.</p> -->
+            <!-- <p>You will be able to claim up to 80% of your usual monthly wage costs if you put employees on a leave of absence (furlough). You can claim a maximum of £2,500 a month for each employee, plus the Employer National Insurance contributions, through the <a href="https://www.gov.uk/guidance/claim-for-wage-costs-through-the-coronavirus-job-retention-scheme" target="_blank">Coronavirus Job Retention Scheme (opens in new tab)</a>.</p>
+            <p>Employers with fewer than 250 employees will be able to reclaim up to 2 weeks of Statutory Sick Pay per employee. If you need help with completing your PAYE forms at this time, you can <a href="bta-homepage-covid19-epaye-form">contact HMRC for advice for employers</a>.</p> -->
+
+
+          </div>
+
+          <div class="govuk-inset-text govuk-!-margin-bottom-0 govuk-!-margin-top-0">
+            <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-2">New tax year</h3> -->
+          <p>The last tax year finished on 5 April.
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Find out what you need to do</a>.</p>
+          <!-- <p>Eligibility for Employment Allowance has changed and you must now apply each year.
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Find out if you can claim for Employment Allowance</a>.
+          </p> -->
+        </div>
+        </div>
+
+        <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6">
+          <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+            Your upcoming payments
+          </h3>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You have upcoming payments that total
+            <span class="govuk-body govuk-!-font-weight-bold govuk-!-padding-left-1">£1,000</span>. HMRC must have this amount by 11.59pm 22&nbsp;June&nbsp;2019.
+          </p>
+          <p role="text" class="govuk-body govuk-!-margin-bottom-2">
+            You have one or more daily penalties.
+          </p>
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">See all upcoming PAYE payments</a>
+          </p>
+        </div>
+        <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6"></div>
+        <div class="govuk-grid-column-two-thirds">
+          <p>After we receive a payment, it takes up to 6 working days to update the amount you owe.</p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">Annual statements and payment record</a>
+          </p>
+          <p class="govuk-body">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View tax codes or notices and set up alerts</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}

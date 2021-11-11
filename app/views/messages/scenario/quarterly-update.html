@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+ITSA messages- GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<!-- //////////////////////////////////////// -->
+
+{% include 'includes/nav-homepage-mtd-itsa.html' %}
+
+<!-- ///////////////////////////////////////// -->
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+    <a href="javascript: history.back()" class="govuk-back-link">Back</a>
+    <br /><br /><br />
+
+<!--     <h1 class="govuk-heading-xl">
+      Message detail
+    </h1> -->
+
+    <h1 class="govuk-heading-xl">
+      Send your quarterly update
+    </h1>
+
+    <p class="govuk-hint">This message was sent to you on 10 April 2021</p>
+
+    <br />
+    <p class="govuk-body">You must send us your income and expenses update for your self-employment for quarter 4 ending
+      April 5 2021 for Joe Bloggs Plumbing and Joe Bloggs Plastering.</p>
+
+    <p class="govuk-body">The deadline for sending these to us is 5 April 2021.</p>
+
+    <p class="govuk-body">If you have an agent, you may want to discuss this reminder with them. It is your
+      responsibility to make sure we receive your quarterly updates. </p>
+
+    <p class="govuk-body">You may incur a penalty if your quarterly updates are late.</p>
+
+  </div>
+
+</div>
+{% endblock %}

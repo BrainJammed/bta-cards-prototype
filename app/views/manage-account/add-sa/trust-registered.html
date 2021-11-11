@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/add-sa/trust-registered" method="post" class="form">
+
+    <div class="govuk-grid-column-three-quarters">
+      {% include "includes/back.html" %}
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="trust-registered-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+                Have you registered your trust?
+            </h1>
+          </legend>
+
+          <span id="changed-name-hint" class="govuk-hint">
+            We will have sent you a Unique Taxpayer Reference (UTR) for your trust if you have already registered it.
+            </span>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="trust-registered-1" name="trust-registered" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="trust-registered-1">
+                Yes
+              </label> </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="trust-registered-2" name="trust-registered" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="trust-registered-2">
+                No
+              </label> </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button">
+        Continue
+      </button>
+
+    </div>
+
+  </form>
+
+</div>
+
+{% endblock %}

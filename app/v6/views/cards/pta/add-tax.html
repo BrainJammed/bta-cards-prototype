@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Business tax account - GOV.UK
+{% endblock %}
+
+{% import "../../includes/card-template.html" as card %}
+
+{% block content %}
+
+<main id="content" role="main">
+<div class="form-group">
+<h1 class="heading-large">What do you want to add?</h1>
+</div>
+<div class="form-group">
+  <fieldset>
+
+  
+
+    <div class="multiple-choice">
+      <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
+      <label for="radio-1">Self Assessment, including partnerships and trusts</label>
+    </div>
+    <div class="multiple-choice">
+      <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+      <label for="radio-2">Employers or intermediaries, eg PAYE for employers or CIS</label>
+    </div>
+   
+    <div class="multiple-choice">
+      <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad">
+      <label for="radio-3">Another VAT service, eg EC Sales List</label>
+    </div>
+      <div class="multiple-choice">
+      <input id="radio-4" type="radio" name="radio-group" value="I am a British citizen living abroad">
+      <label for="radio-4">Other taxes or schemes</label>
+    </div>
+
+  </fieldset>
+</div>
+
+<a class="button" href="javascript:;">Continue</a>
+
+
+	</main>
+
+
+{% endblock %}

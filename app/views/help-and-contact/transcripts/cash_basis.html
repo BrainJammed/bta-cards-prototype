@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_sa_how_to_pay__heading%}
+
+{% block page_title %}
+Business tax account - prototype
+{% endblock %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+{% block content %}
+
+{% include 'includes/nav-combo-ur2.html' %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">Cash basis and simplified expenses - video transcript</h1>
+
+        <p>Cash basis and simplified expenses are two income tax schemes that can make life easier for self-employed businesses.</p>
+
+        <p>Instead of using traditional accounting rules, cash basis can be used if you’re a self-employed business or partnership with a total annual business income of £150,000 or less.</p>
+
+        <p>You’ll only be taxed on the money that comes in and goes out of your business during the tax year. This will be easier to calculate and save you time.
+        </p>
+
+        <p>Cash basis doesn’t suit all businesses. It can limit claims to some expenses and losses.</p>
+
+        <p>Simplified expenses can be used by all self-employed businesses and partnerships which don’t have limited companies as partners.</p>
+
+        <p>They’re a way of working out some of your allowable business expenses using flat rates. It’s easier than using your actual business costs, which can be difficult to work out.
+        </p>
+
+        <p class="govuk-body">Flat rates can be used for business costs for</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>some vehicles</li>
+          <li>working from home</li>
+          <li>and living at your business premises</li>
+        </ul>
+
+        <p class="govuk-body">You’ll need to record</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>your vehicle’s business miles</li>
+          <li>the hours you work at home</li>
+          <li>and how many people live at your business premises over the year</li>
+        </ul>
+
+        <p>You can then apply the flat rate to work out your expenses at the end of the tax year.</p>
+
+
+
+        <p>You can find more information about these schemes on
+           <a href="https://www.gov.uk/">GOV.UK</a>.
+        </p>
+
+
+
+
+       <details class="govuk-details" data-module="govuk-details" style="padding-top:60px;">
+         <summary class="govuk-details__summary_noarrow" style="display:block;">
+           <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+             Is this page not working properly?
+           </span>
+         </summary>
+         <div class="">
+
+         </div>
+       </details>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}

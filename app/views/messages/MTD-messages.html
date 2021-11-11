@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Self Assessment - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+  <!-- //////////////////////////////////////// -->
+
+  {% include 'includes/nav-0-messages.html' %}
+
+  <!-- ///////////////////////////////////////// -->
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full">
+      <!-- {% include "includes/back.html" %} -->
+
+      <h1 class="govuk-heading-l govuk-!-margin-bottom-4">Your Income Tax messages</h1>
+
+      <p class="govuk-body">This inbox contains messages about Making Tax Digital for Income Tax.</p>
+      <p class="govuk-body">Self Assessment UTR: 1234567890</p>
+
+      <table class="govuk-table" style="width:60%">
+
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header" style="font-weight:100;width:50%;padding-left:50px">Message</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric" style="font-weight:100;text-align:left;width:30%;padding-left:80px">Date</th>
+          </tr>
+        </thead>
+
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header" style="font-weight:100;text-decoration:underline;border-bottom:none;padding-left:50px">Send your annual update</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric" style="font-weight:100;padding-right:34px;border-bottom:none">15 April 2021</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+{% endblock %}

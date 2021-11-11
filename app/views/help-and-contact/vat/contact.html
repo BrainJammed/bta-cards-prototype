@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_vat_register_deregister__heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">How to pay VAT and deadlines</h1>
+
+
+
+        	<p>You can <a href="javascript:;">make a VAT enquiry online</a> or <a href="javascript:;">call us</a>.</p>
+        	<p>Send long questions or questions with attached paperwork by post to:</p>
+        	<p>HM Revenue and Customs - VAT Written Enquiries Team<br>
+        		Alexander House<br>
+        		21 Victoria Avenue<br>
+        		Southend-On-Sea<br>
+        		SS99 1BD<br>
+        	United Kingdom</p>
+
+        	<p>Online enquiries get faster replies.</p>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Self Assessment - GOV.UK
+{% endblock %}
+
+{% block content %}
+  {% include 'includes/nav-homepage-a2.html' %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      {% include "includes/back.html" %}
+
+      <h1 class="govuk-heading-l">
+
+        Stop sending Self Assessment tax returns
+      </h1>
+      <!-- <p class="govuk-body">You need to send a form to <a href="https://www.tax.service.gov.uk/shortforms/form/CeaseTrading" class="govuk-link govuk-link--no-visited-state">tell HMRC you are stopping self-employment</a>. You cannot send it until 7 days before the date you are going to stop.</p>
+      <p class="govuk-body">If you’re not self-employed, you can still use this form to let HMRC know that you are going to stop sending returns. If you stop sending returns without telling HMRC you may get penalties.</p> -->
+      <!-- <p class="govuk-body">If you want to
+        <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">stop being self-employed</a>, you must tell HMRC.
+      </p> -->
+      <p class="govuk-body">You must <a href="https://www.gov.uk/check-if-you-need-tax-return" class="govuk-link govuk-link--no-visited-state">check if you need to send a Self Assessment tax return (opens in a new window or tab)</a> before you stop sending them, or you may receive a penalty.</p>
+      <p class="govuk-body">You must <a href="https://www.gov.uk/stop-being-self-employed" class="govuk-link govuk-link--no-visited-state">tell HMRC if you are stopping self employment (opens in a new window or tab)</a>.</p>
+    </div>
+
+  </div>
+
+{% endblock %}

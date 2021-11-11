@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-combo-1.html' %}
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/register" method="post" class="form">
+
+    <div class="govuk-grid-column-three-quarters">
+      {% include "includes/back.html" %}
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              You need an Economic Operator Registration and Identification (EORI) number to add this service
+            </h1>
+          </legend>
+          <span id="changed-name-hint" class="govuk-hint govuk-!-padding-bottom-4">
+            When you get this, sign in and add the Goods Vehicle Movement Service (GVMS) to your account.
+          </span>
+          <!-- <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="eori-1" name="eori1" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="eori-1">
+                Yes
+              </label> </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="eori-2" name="eori1" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="eori-2">
+                No
+              </label> </div>
+          </div>
+        </fieldset>
+      </div> -->
+
+      <button type="submit" class="govuk-button">
+        Get an EORI number
+      </button>
+
+    </div>
+
+  </form>
+
+</div>
+
+{% endblock %}

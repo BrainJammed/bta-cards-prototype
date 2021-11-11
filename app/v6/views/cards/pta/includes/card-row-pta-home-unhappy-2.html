@@ -1,0 +1,38 @@
+<div class="flex-container grid-row">
+
+  {{ card.card(
+    cardUrl="taxes-duties-schemes",
+    headingLevel="h3",
+    heading="Your taxes, duties and schemes",
+    linkContent = "View and change the taxes you pay and who can manage them in your business tax account.",
+    links = [
+      { link: "https://hmrc-businesstax-showcase.herokuapp.com/user-delegation/manage-users", title: "Manage account users" },
+            { link: "#", title: "Remove a tax from your account" }
+
+          ])
+  }}
+
+  {{ card.card(
+    cardUrl="your-details",
+    headingLevel="h3",
+    heading="Your details",
+    linkContent = "View and change the details HMRC holds of your company, including contact information and bank details.",
+    links = [
+      { link: "#", title: "Change company details" },
+            { link: "#", title: "Change bank details" }
+    ])
+  }}
+
+  {{ card.card(
+    cardUrl="messages",
+    headingLevel="h3",
+    heading="Messages",
+    linkContent = "HMRC will send you messages regarding the taxes you pay.",
+    links = [
+      { link: "#", title: "View messages" },
+            { link: "#", title: "Change how we notify you about messages" }
+
+    ])
+  }}
+
+  </div>

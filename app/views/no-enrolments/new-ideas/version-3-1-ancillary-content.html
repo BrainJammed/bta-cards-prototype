@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Business tax summary - GOV.UK
+{% endblock %}
+
+{% block content %}
+{% include 'includes/nav-homepage-a2.html' %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-2 govuk-!-margin-bottom-8">You have not added a tax to your
+          business tax account</h1>
+
+        <p class="govuk-body govuk-!-margin-bottom-4">You must add a tax to your business tax account to manage it online. </p>
+
+        <p class="govuk-body govuk-!-margin-bottom-8">You will need information like your Unique Taxpayer Reference
+          (UTR) to <a href="#">add Self Assessment</a>.
+        </p>
+
+        <button class="govuk-button govuk-!-margin-bottom-8" data-module="govuk-button">
+          Add a tax, duty or scheme now
+        </button>
+
+
+        <p class="govuk-body "><a href="#">Help with your business tax account</a></p>
+      </div>
+    </div>
+    <!-- {% include 'includes/ancillary-content.html' %} -->
+  </main>
+</div>
+
+{% endblock %}

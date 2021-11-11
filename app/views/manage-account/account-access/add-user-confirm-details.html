@@ -1,0 +1,41 @@
+{% set serviceName = "" %}
+{% extends "layout.html" %}}
+{% block page_title %}
+  Government gateway
+{% endblock %}
+{% block content %}
+  <main class="govuk-main-wrapper" id="content" role="main">
+
+    <div class="govuk-column-two-thirds">
+
+      <fieldset class="govuk-fieldset">
+
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            Re-enter your sign in <br>details
+          </h1>
+        </legend>
+
+        <p class="govuk-body govuk-!-font-weight-regular">We need you to enter your Government Gateway credentials again for <br>security purposes.</p>
+
+
+
+      <!-- <form action="" method="POST" id="loginForm"> -->
+      <br>
+      <form action="/answer-question" class="form" id="form-country_v1" method="post" name="form-country_v1">
+
+        <div class="govuk-form-group" id="user-id-header">
+          <label class="govuk-label" for="full-name-f1">User ID</label>
+          <input class="govuk-input  govuk-!-width-one-half" id="user-id" name="user-id" required="" type="text">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="full-name-f1">Password</label>
+          <input class="govuk-input  govuk-!-width-one-half" id="password" name="password" required="" type="password">
+        </div>
+        <div class="form-field">
+          <a class="govuk-button" href="add-user-no-accountants" role="button">Continue</a>
+        </div>
+      </fieldset>
+    </form>
+    
+{% endblock %}

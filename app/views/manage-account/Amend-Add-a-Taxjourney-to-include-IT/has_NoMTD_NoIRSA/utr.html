@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-combo-1.html' %}
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/add-sa/do-you-have-utr" method="post" class="form">
+
+    <div class="govuk-grid-column-three-quarters">
+      {% include "includes/back.html" %}
+
+      <div class="govuk-form-group utr">
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Do you have a Self Assessment Unique Taxpayer Reference (UTR)?
+            </h1>
+          </legend>
+          <span id="changed-name-hint" class="govuk-hint govuk-!-padding-bottom-4">
+            You can find this on your tax return, statement of account or any other self-assessment calculations. It is 10 numbers. For example, 1234567890.
+          </span>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="utr1" name="sa-utr" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="sa-utr-1">
+                Yes
+              </label> </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="utr2" name="sa-utr" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="sa-utr-2">
+                No
+              </label> </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button class="govuk-button utrButton" onclick="location.href = '';" type="button">Continue</button>
+
+    </div>
+
+  </form>
+
+</div>
+
+{% endblock %}

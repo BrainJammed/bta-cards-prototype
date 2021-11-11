@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a2.html' %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-padding-bottom-2">
+      Your taxes, duties and schemes
+    </h1>
+
+    <div class="govuk-inset-text">
+      Any changes to your tax account will take up to 2 days to update.
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-column-two-thirds">
+      <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-2 govuk-!-margin-top-2">
+
+    <dl class="app-check-your-answers app-check-your-answers--short">
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Self Assessment
+        </dt>
+        <dd class="app-check-your-answers__answer">
+
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Delete Self Assessment
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          Corporation Tax
+        </dt>
+        <dd class="app-check-your-answers__answer">
+
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Delete Corporation Tax
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          EPAYE
+        </dt>
+        <dd class="app-check-your-answers__answer">
+
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Delete EPAYE
+          </a>
+        </dd>
+      </div>
+
+      <div class="app-check-your-answers__contents">
+        <dt class="app-check-your-answers__question">
+          VAT
+        </dt>
+        <dd class="app-check-your-answers__answer">
+
+        </dd>
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Delete VAT
+          </a>
+        </dd>
+      </div>
+
+    </dl>
+    
+    <dl class="app-check-your-answers app-check-your-answers--short">
+
+      <div class="app-check-your-answers__contents">
+        <dd class="app-check-your-answers__change">
+          <a href="javascript:;">
+            Add a tax, duty or scheme
+          </a>
+        </dd>
+      </div>
+
+    </dl>
+
+  </div>
+
+</div>
+
+
+{% endblock %}

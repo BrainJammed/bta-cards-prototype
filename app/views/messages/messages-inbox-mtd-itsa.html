@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+MTA messages - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<!-- //////////////////////////////////////// -->
+
+
+{% include 'includes/nav-homepage-mtd-itsa.html' %}
+
+<!-- ///////////////////////////////////////// -->
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-full">
+  
+    <a href="/bta-homepage/bta-homepage-mtd-itsa-card-online-or-paper-chosen" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-xl">
+      Messages
+    </h1>
+
+    <h2 class="govuk-heading-s">
+      Inboxes
+    </h2>
+    <hr class="govuk-grid-column-full govuk-section-break govuk-section-break--visible">
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__value govuk-!-width-two-thirds govuk-!-padding-top-4">
+          <a href="messages-itsa" class="govuk-link govuk-link--no-visited-state ">
+            Making Tax Digital for Income Tax messages<span class="govuk-visually-hidden">; 0 unread messages</span></a>
+        </dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-third govuk-!-padding-bottom-4" aria-hidden="true">
+          <span class="govuk-!-font-weight-bold">0</span> unread messages <br />
+        </dd>
+      </div>
+
+      <!--       {% if data['no_enrolment']==='true' %}
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__value govuk-!-width-two-thirds govuk-!-padding-top-4">
+             You need to enrol for a tax to see messages.
+          </dt>
+          <dd class="govuk-summary-list__value govuk-!-width-one-third govuk-!-padding-bottom-4" aria-hidden="true">
+          </dd>
+        </div>
+
+      {% else %}
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__value govuk-!-width-two-thirds govuk-!-padding-top-4">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">
+            Self Assessment messages<span class="govuk-visually-hidden">; 3 unread messages</span></a>
+            <br/>
+              <a href="messages-itsa" class="govuk-link govuk-link--no-visited-state ">
+                Making Tax Digital for Income Tax messages<span class="govuk-visually-hidden">; 4 unread messages</span></a>
+          </dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-third govuk-!-padding-bottom-4" aria-hidden="true">
+          <span class="govuk-!-font-weight-bold">3</span> unread messages <br/>
+          <span class="govuk-!-font-weight-bold">4</span> unread messages
+        
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__value govuk-!-width-two-thirds govuk-!-padding-top-4">
+          <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">
+            VAT messages<span class="govuk-visually-hidden">; You may have unread
+              messages</span> (opens in a new tab)</a>
+        </dt>
+        <dd class="govuk-summary-list__value govuk-!-width-one-third govuk-!-padding-bottom-4" aria-hidden="true">You may have unread messages
+        </dd>
+      </div>
+
+        {% endif %} -->
+    </dl>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Business tax account - GOV.UK
+{% endblock %}
+
+{% import "../../includes/card-template.html" as card %}
+  
+{% block content %}
+
+
+<main id="content" role="main">
+{% include 'cards/pta/includes/nav-homepage.html' %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Business tax account
+       <span class="form-hint2">Alex Fisher</span></h1>
+    </div>
+  </div>
+
+  <h2 class="heading-large">Your taxes</h2>
+
+  {% include "../pta/includes/card-row-agents.html" %}
+
+  <h2 class="heading-large">Your account</h2>
+
+  {% include "../pta/includes/card-row-pta-home-2-agents.html" %}
+
+
+ 
+  <div class="grid-row">
+    <div class="column-full form-group">
+      <a href="/">< Back</a>
+    </div>
+  </div>
+
+</main>
+
+
+{% endblock %}

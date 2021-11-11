@@ -1,0 +1,233 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact__heading %}
+
+{% block page_title %}
+{{ pageHeading }}
+-
+{{ serviceName }}
+- GOV.UK
+{% endblock %}
+
+
+{% block content %}
+{% include 'includes/a5.html' %}
+
+<!-- //////////////////////// -->
+
+
+<h1 class="govuk-heading-xl">Help and contact</h1>
+
+	<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+
+		<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+		<h2 class="govuk-heading-m govuk-!-margin-bottom-3">Coronavirus (COVID-19) support</h2>
+
+		<div class="govuk-grid-column-one-third govuk-!-padding-left-0 govuk-!-padding-bottom-1">
+			<ul class="govuk-list">
+				<li class="govuk-!-margin-bottom-4">
+					<a class="govuk-link govuk-link--no-visited-state" href="https://www.tax.service.gov.uk/ask-hmrc/virtual-assistant/support-for-coronavirus" target="_blank">
+						Digital assistant for help and support (opens in new tab).
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+			<ul class="govuk-list">
+				<li class="govuk-!-margin-bottom-4">
+					<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/coronavirus-covid-19-helpline" href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/coronavirus-covid-19-helpline" target="_blank">
+						Debt management for tax bills: contact HMRC (opens in new tab)
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+			<ul class="govuk-list">
+				<li class="govuk-!-margin-bottom-4">
+					<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/government/collections/financial-support-for-businesses-during-coronavirus-covid-19#business-support-grant-funds" target="_blank">
+						Financial support for businesses (opens in new tab)
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+
+	<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+	<h2 class="govuk-heading-m">Self Assessment</h2>
+
+	<div class="govuk-grid-column-one-third govuk-!-padding-left-0 govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="sa/register-deregister">Registering or stopping</a>
+			</li>
+
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="sa/evidence-of-income">Get evidence of your income</a>
+			</li>
+
+		</ul>
+	</div>
+
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="sa/payment-and-penalties">Payment and penalties</a>
+			</li>
+
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="sa/help-with-return">Help with your Self Assessment tax return</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1 ">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="sa/expenses">Expenses</a>
+			</li>
+
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/self-assessment">Contact HMRC about Self Assessment</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!-- //////////////////////// -->
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+	<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+	<h2 class="govuk-heading-m govuk-!-margin-bottom-3">VAT</h2>
+	<div class="govuk-grid-column-one-third  govuk-!-padding-left-0 govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="vat/register-deregister">Register or deregister for VAT</a>
+			</li>
+
+			<li class="govuk-!-margin-bottom-4">
+                <a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/vat-corrections">Correct errors on your VAT returns</a>
+            </li>
+		</ul>
+	</div>
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="vat/how-to-pay">How to pay VAT and deadlines</a>
+			</li>
+		</ul>
+	</div>
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1 govuk-!-margin-bottom-3">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries">Contact HMRC about VAT</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!-- //////////////////////// -->
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+	<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+	<h2 class="govuk-heading-m govuk-!-margin-bottom-3">Making Tax Digital</h2>
+	<div class="govuk-grid-column-one-third  govuk-!-padding-left-0 govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/guidance/sign-up-for-making-tax-digital-for-vat">Sign up for Making Tax Digital for VAT</a>
+			</li>
+		</ul>
+	</div>
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/guidance/help-and-support-for-making-tax-digital">Making Tax Digital for VAT webinars</a>
+			</li>
+		</ul>
+	</div>
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1 govuk-!-margin-bottom-3">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://online.hmrc.gov.uk/webchatprod/community/forums/show/131.page">Contact HMRC about Making Tax Digital for VAT</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!-- //////////////////////// -->
+
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0 govuk-!-margin-bottom-4">
+	<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+	<h2 class="govuk-heading-m govuk-!-margin-bottom-3">Corporation Tax</h2>
+
+	<div class="govuk-grid-column-one-third govuk-!-padding-left-0 govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="ct/register-deregister">Register for Corporation Tax, add Corporation Tax to your account or tell us you are no longer trading</a>
+			</li>
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://www.staging.tax.service.gov.uk/ask-for-copy-of-your-corporation-tax-utr">Ask for a copy of your Corporation Tax UTR</a>
+			</li>
+		</ul>
+	</div>
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="ct/how-to-pay">How to pay Corporation Tax</a>
+			</li>
+		</ul>
+	</div>
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="ct/contact-HMRC">Contact HMRC about Corporation Tax</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+	<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+	<h2 class="govuk-heading-m govuk-!-margin-bottom-3">PAYE for employers</h2>
+	<div class="govuk-grid-column-one-third govuk-!-padding-left-0 govuk-!-padding-bottom-1 govuk-!-margin-bottom-3">
+		<ul class="govuk-list">
+			<li class="" style="padding-bottom:40px">
+				<a class="govuk-link govuk-link--no-visited-state" href="paye/how-to-get-started-PAYE">Get started with PAYE for employers</a>
+			</li>
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="paye/view-check-correct">View, check or correct submissions</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="paye/refunds">PAYE refunds and Construction Industry Scheme (CIS) refunds</a>
+			</li>
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="paye/changes-in-employee-circumstances">Changes in employee circumstances</a>
+			</li>
+		</ul>
+	</div>
+	<div class="govuk-grid-column-one-third govuk-!-padding-bottom-1">
+		<ul class="govuk-list">
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/employer-enquiries">Contact HMRC about PAYE for Employers</a>
+			</li>
+			<li class="govuk-!-margin-bottom-4">
+				<a class="govuk-link govuk-link--no-visited-state" href="https://www.staging.tax.service.gov.uk/business-account/epaye/remove">Remove PAYE for employers</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+{% endblock %}

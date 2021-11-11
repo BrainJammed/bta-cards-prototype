@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Payments and returns - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+  {% include 'includes/nav-homepage-a1.html' %}
+
+  <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+    <h1 class="govuk-heading-m">Your business taxes</h1>
+
+    <p class="govuk-body">
+      1. No PAYE for employers enrolment
+    </p>
+
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            Payments and returns
+          </h2>
+        </div>
+        <div class="govuk-grid-column-two-thirds">
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Payments will take 4 to 7 working days to show on this page.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Completed returns will take 1 to 2 days to show on this page.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <p class="govuk-body">
+      2. PAYE for employers enrolment only
+    </p>
+
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            Payments and returns
+          </h2>
+        </div>
+        <div class="govuk-grid-column-two-thirds">
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">View processing times for PAYE for employers</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <p class="govuk-body">
+      3. PAYE for employers enrolment and other enrolments
+    </p>
+
+    <div class="govuk-grid-column-full card-container" id="cardAmount">
+      <div class="card-body">
+        <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-0">
+            Payments and returns
+          </h2>
+        </div>
+        <div class="govuk-grid-column-two-thirds">
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Payments will take 4 to 7 working days to show on this page.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            Completed returns will take 1 to 2 days to show on this page.
+          </p>
+          <p class="govuk-body govuk-!-margin-bottom-2">
+            There are different
+            <a href="javascript:;" class="govuk-link govuk-link--no-visited-state">processing times for PAYE for employers</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <p class="govuk-body">
+        4. With icon and bold
+      </p>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" style="border-color:#5789C1;background:#5789C1" aria-hidden="true">i</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Information</span>
+          Payments will take 4 to 7 working days to show on this page. Completed returns will take 1 to 2 days to show on this page.
+        </strong>
+      </div>
+
+      <p class="govuk-body">
+        5. With icon and normal text
+      </p>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" style="border-color:#5789C1;background:#5789C1" aria-hidden="true">i</span>
+        <span class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Information</span>
+          Payments will take 4 to 7 working days to show on this page. Completed returns will take 1 to 2 days to show on this page.
+        </span>
+      </div>
+
+      <p class="govuk-body">
+        6. No icon and bold inset text
+      </p>
+
+      <div class="govuk-inset-text govuk-!-font-weight-bold">
+        Payments will take 4 to 7 working days to show on this page. Completed returns will take 1 to 2 days to show on this page.
+      </div>
+
+      <p class="govuk-body">
+        7. No icon and normal inset text
+      </p>
+
+      <div class="govuk-inset-text">
+        Payments will take 4 to 7 working days to show on this page. Completed returns will take 1 to 2 days to show on this page.
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-homepage-a1.html' %}
+
+<div class="govuk-grid-row">
+
+  <form action="/manage-account/add-sa/which-describes-you-utr-yes" method="post" class="form">
+
+    <div class="govuk-grid-column-two-thirds">
+      {% include "includes/back.html" %}
+
+      <div class="govuk-form-group scenarioC">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Which of these best describes you?
+            </h1>
+          </legend>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="" name="describe-you" type="radio" value="partnership">
+              <label class="govuk-label govuk-radios__label" for="which-of-these-best-describes-you-2">
+                Individual or sole trader
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="partnership" name="describe-you" type="radio" value="partnership">
+              <label class="govuk-label govuk-radios__label" for="which-of-these-best-describes-you-2">
+                Partnership
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="trust" name="describe-you" type="radio" value="trust">
+              <label class="govuk-label govuk-radios__label" for="which-of-these-best-describes-you-3">
+                Trust
+              </label> </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" id="scenarioC" onclick="location.href = 'registeringForSA.html';" type="button">Continue</button>
+
+    </div>
+
+  </form>
+
+</div>
+
+{% endblock %}

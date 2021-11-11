@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% include 'includes/nav-homepage-a1.html' %}
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+      {% include "includes/back.html" %}
+
+    <h1 class="govuk-heading-xl govuk-!-padding-bottom-2">
+      Accountants
+    </h1>
+
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-2">
+
+    <table class="govuk-table">
+
+        <tbody class="govuk-table__body">
+  
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row"></th>
+            <td class="govuk-table__cell govuk-!-padding-bottom-6">
+              <a href="javascript:;">Add new accountant</a><br>
+              <a href="javascript:;">Delete accountant</a><br>
+              <a href="javascript:;">Manage accountant access</a>
+            </td>
+          </tr>
+
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">Self Assessment</th>
+          <td class="govuk-table__cell">Scrooge Accountants Ltd</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" style="border-bottom: 0;" scope="row">Corporation Tax</th>
+          <td class="govuk-table__cell">Scrooge Accountants Ltd</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row"></th>
+          <td class="govuk-table__cell">Pound Foolish Accountancy</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" style="border-bottom: 0;" scope="row">EPAYE</th>
+          <td class="govuk-table__cell">Scrooge Accountants Ltd</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row"></th>
+          <td class="govuk-table__cell">Loadsofmoney Ltd</td>
+        </tr>
+        <tr class="govuk-table__row">
+            <th class="govuk-table__header"" scope="row">VAT</th>
+            <td class="govuk-table__cell">Scrooge Accountants Ltd</td>
+          </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <!-- ///////////////////////////////////////////////////////////////////  -->
+
+</div>
+
+{% endblock %}

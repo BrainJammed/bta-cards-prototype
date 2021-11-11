@@ -1,0 +1,401 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Self Assessment - GOV.UK
+{% endblock %}
+
+{# {% import "includes/card-template.html" as card %} #}
+
+{% block content %}
+
+{% include 'includes/nav-combo-1.html' %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+
+    <!-- {% include "includes/back.html" %} -->
+
+    <h1 class="govuk-heading-xl">
+      Manage account
+    </h1>
+
+  </div>
+
+  <!-- /////////////////////////////////////////// -->
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+
+    <h2 class="govuk-heading-s">Add a tax, duty or scheme to your account</h2>
+
+    <p><a class="govuk-link govuk-body govuk-link--no-visited-state" href="add-tax-a2">
+        Get online access to a tax, duty or scheme </a></p>
+  </div>
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+
+    <h2 class="govuk-heading-s">Remove a tax, duty or scheme from your account</h2>
+
+    <p>
+      <a class="govuk-link govuk-body govuk-link--no-visited-state" href="deregister/deregister-a1.html">
+        Deregister a tax, duty or scheme</a>
+    </p>
+    <p>
+      <a class="govuk-link govuk-body govuk-link--no-visited-state" href="stop-online/remove-tax-a1.html">
+        Stop access to a tax, duty or scheme online</a>
+    </p>
+
+  </div>
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+
+  </div>
+
+  <!-- ///////////////////////////////////////////// -->
+  <!-- //////////////////  OLD  //////////////////// -->
+  <!-- ///////////////////////////////////////////// -->
+
+
+  <!-- /////////// ACCOUNT USERS /////////////////// -->
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+    <details class="govuk-details govuk-!-margin-bottom-0" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Account users
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        You're signed in with a Government Gateway account.
+      </div>
+      <div class="govuk-details__text govuk-!-padding-bottom-0">
+        <dl class="govuk-summary-list govuk-!-margin-bottom-0">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Password</dt>
+            <dd class="govuk-summary-list__actions govuk-!-width-one-half"><a href="account-details-options"
+                class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Reset your password</a></dd>
+          </div>
+        </dl>
+      </div>
+      <div class="govuk-details__text govuk-!-padding-bottom-0">
+          <dl class="govuk-summary-list govuk-!-margin-bottom-0">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">Extra security</dt>
+              <dd class="govuk-summary-list__actions govuk-!-width-one-half">You've set this up</dd>
+            </div>
+          </dl>
+        </div>
+      <div class="govuk-details__text govuk-!-padding-top-0">
+        <a href="account-details-options" class="govuk-body govuk-link govuk-link--no-visited-state"
+          aria-hidden="true">Manage users</a>
+      </div>
+    </details>
+  </div>
+
+  <!-- /////////// ACCOUNTANTS /////////////////// -->
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Accountants
+        </span>
+      </summary>
+      <div class="govuk-inset-text govuk-!-margin-top-0 govuk-!-margin-bottom-0"
+        style='border-left: 5px solid #bfc1c3;'>
+        <div class="govuk-details__text govuk-!-margin-bottom-0">
+          <dl class="govuk-summary-list govuk-!-margin-bottom-0">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">Corporation Tax</dt>
+              <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+                  class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">View or change
+                  accountant</a></dd>
+              <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="account-details-options"
+                  class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true"></a></dd>
+            </div>
+            <!-- <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">PAYE for employers</dt>
+              <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+                  class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Add or change
+                  accountant</a></dd>
+              <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="account-details-options"
+                  class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true"></a></dd>
+            </div> -->
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">Self Assessment</dt>
+              <dd class="govuk-summary-list__value govuk-!-width-one-half"> Lord Roberto Barry Builder</dd>
+              <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+                  class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Change</a></dd>
+            </div>
+            <!-- <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key" scope="row">VAT services</dt>
+              <dd class="govuk-summary-list__value govuk-!-width-one-half"><a href="javascript:;"
+                  class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true">Add or change
+                  accountant</a></dd>
+              <dd class="govuk-summary-list__actions govuk-!-width-one-quarter"><a href="javascript:;"
+                  class="govuk-body govuk-link govuk-link--no-visited-state" aria-hidden="true"></a></dd>
+            </div> -->
+        </div>
+      </div>
+    </details>
+  </div>
+
+  <!-- /////////// ACCOUNT DETAILS /////////////////// -->
+
+
+
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
+    <div>
+      <h2 class="govuk-heading-m">
+        Contact details
+      </h2>
+    </div>
+    <div class="govuk-inset-text govuk-!-margin-top-0 govuk-!-margin-bottom-0" style='border-left: 5px solid black;'>
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          Any updates to your contact details take up to 2 days to appear on this site
+        </strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-0">
+
+    <div class="govuk-tabs" data-module="govuk-tabs">
+      <h2 class="govuk-tabs__title">
+        Contents
+      </h2>
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+          <a class="govuk-tabs__tab" href="#address">
+            Address
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#name">
+            Name
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#phone">
+            Phone
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#email">
+            Email
+          </a>
+        </li>
+      </ul>
+
+      <!-- ============== ADDRESS TAB =================== -->
+
+      <!-- -------------------- PAYE -------------------- -->
+
+
+      <!-- <section class="govuk-tabs__panel" id="address">
+        <ul class="govuk-list">
+          <li>
+            <p class="govuk-body govuk-!-font-weight-bold">PAYE for employers</p>
+            <p class="govuk-body">Business Address</p>
+            <a href="account-details-options" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">View address</a>
+            <a href="account-details-options" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">Change</a>
+          </li>
+          <li>
+            <p class="govuk-body">Communication Address</p>
+            <a href="account-details-options" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">View address</a>
+            <a href="account-details-options" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">Change</a>
+          </li>
+        </ul> -->
+
+
+      <section class="govuk-tabs__panel" id="address">
+
+        <!-- ----------- CORPORATION TAX ----------- -->
+        <ul class="govuk-list">
+          <li>
+            <p class="govuk-body govuk-!-font-weight-bold">Corporation Tax</p>
+            <p class="govuk-body">Registered address</p>
+            <p class="govuk-body">27 Lime Street<br>Anywhere 1<br>Anywhere 2<br>NE1 8XP</p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">Change</a>
+          </li>
+          <li>
+            <p class="govuk-body">Communication Address</p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">View address</a>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email"></a>
+          </li>
+        </ul>
+        <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+        <!-- ----------- SELF ASSESSMENT ----------- -->
+
+        <ul class="govuk-list">
+          <li>
+            <p class="govuk-body govuk-!-font-weight-bold">Self Assessment</p>
+            <p class="govuk-body">Address</p>
+            <p class="govuk-body"></p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">View address</a>
+          </li>
+          <li>
+            <p class="govuk-body">Communication Address</p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">View address</a>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email"></a>
+          </li>
+        </ul>
+
+      </section>
+
+      <!-- ============================================ -->
+      <!-- ============== NAME TAB =================== -->
+      <!-- ============================================ -->
+
+
+      <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="name">
+        <!-- ----------- CORPORATION TAX ----------- -->
+        <ul class="govuk-list">
+          <li>
+            <p class="govuk-body govuk-!-font-weight-bold">Corporation Tax</p>
+            <p class="govuk-body">Company name</p>
+            <p class="govuk-body">Lime Street Studio</p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">Change</a>
+          </li>
+        </ul>
+        <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+        <!-- ----------- SELF ASSESSMENT ----------- -->
+
+        <ul class="govuk-list">
+          <li>
+            <p class="govuk-body govuk-!-font-weight-bold">Self Assessment</p>
+            <p class="govuk-body">Name</p>
+            <p class="govuk-body"></p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">View address</a>
+          </li>
+          <li>
+            <p class="govuk-body">Communication Address</p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">View address</a>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email"></a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- ============== PHONE TAB =================== -->
+      <!-- ============================================ -->
+
+      <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="phone">
+
+        <!-- ----------- CORPORATION TAX ----------- -->
+
+        <ul class="govuk-list">
+          <li>
+            <p class="govuk-body govuk-!-font-weight-bold">Corporation Tax</p>
+            <p class="govuk-body">Main (landline)</p>
+            <p class="govuk-body">-</p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">Add</a>
+            <p class="govuk-body">Main (mobile)</p>
+            <p class="govuk-body">-</p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">Add</a>
+            <p class="govuk-body">Communication (landline)</p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">View landline</a>
+              <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+                aria-label="Change Government Gateway email">Change</a>
+            <p class="govuk-body">Communication (mobile)</p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">View mobile</a>
+              <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+                aria-label="Change Government Gateway email">Change</a>
+          </li>
+        </ul>
+        <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+
+        <!-- ----------- SELF ASSESSMENT ----------- -->
+
+        <ul class="govuk-list">
+          <li>
+            <p class="govuk-body govuk-!-font-weight-bold">Self Assessment</p>
+            <p class="govuk-body">Name</p>
+            <p class="govuk-body"></p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">View address</a>
+          </li>
+          <li>
+            <p class="govuk-body">Communication Address</p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">View address</a>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email"></a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- ============== EMAIL TAB =================== -->
+      <!-- ============================================ -->
+
+      <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="email">
+
+        <!-- ----------- GOVERNMENT GATEWAY ----------- -->
+        <ul class="govuk-list">
+          <li>
+            <p class="govuk-body govuk-!-font-weight-bold">Government Gateway</p>
+            <p class="govuk-body">Where HMRC sends messages when you enrol to manage new taxes online, or change your
+              password.</p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">Add</a>
+          </li>
+        </ul>
+        <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+        <!-- ----------- CORPORATION TAX ----------- -->
+        <ul class="govuk-list">
+          <li>
+            <p class="govuk-body govuk-!-font-weight-bold">Corporation Tax</p>
+            <p class="govuk-body">sent to your Government Gateway</p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">Change</a>
+          </li>
+        </ul>
+        <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-5">
+        <!-- ----------- BUSINESS TIPS ----------- -->
+
+        <ul class="govuk-list">
+          <li>
+            <p class="govuk-body govuk-!-font-weight-bold">Business tips</p>
+            <p class="govuk-body">Tips and guidance for businesses on managing your taxes.</p>
+            <p class="govuk-body"></p>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">View email</a>
+            <a href="javascript:;" class="govuk-body govuk-link govuk-link--no-visited-state"
+              aria-label="Change Government Gateway email">Change</a>
+          </li>
+        </ul>
+
+      </section>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

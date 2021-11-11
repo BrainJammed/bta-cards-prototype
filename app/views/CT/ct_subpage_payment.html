@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+{% set serviceName = messages__common__service_name %}
+{% set pageHeading = messages__help_and_contact_ct_how_tp_pay_ct_help_page_heading%}
+
+{% block page_title %}
+{{ pageHeading }} - {{ serviceName }} - GOV.UK
+{% endblock %}
+{% block content %}
+{% include 'includes/a6.html' %}
+
+
+<main id="content" class="govuk-grid-row" role="main">
+
+    <div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl">Corporation Tax details</h1>
+
+      <h2 class="govuk-heading-m">Your returns</h2>
+      <div class="govuk-inset-text">
+        After you complete your return your tax calculation will take up to 2 days.
+      </div>
+
+      <div class="govuk-!-margin-bottom-6">
+        <a class="govuk-link govuk-!-font-size-19" target="_blank" href="https://www.staging.tax.service.gov.uk/cato"  >Complete Corporation Tax return</a>
+      </div>
+
+      <h2 class="govuk-heading-m">Your payments</h2>
+      <p class="govuk-body">You can no longer use a personal credit card. If you pay with a credit card, it must be linked to a business bank account.</p>
+
+      <div class="govuk-inset-text">
+        Payments will take up to 7 working days to show, depending on how you pay.
+      </div>
+
+      <div  style="background-color:#f3f2f1;margin-bottom:20px;">
+        <p class="govuk-body govuk-!-margin-bottom-0" style="padding:15px 15px 0px 15px">You paid  £9,865 on 8 September 2021.</p>
+        <p class="govuk-body govuk-!-margin-bottom-0" style="padding:15px 15px 0px 15px">Your payment reference number is 6471604667A00108A.</p>
+        <p class="govuk-body govuk-!-margin-bottom-6" style="padding:15px 15px 0px 15px">It will take up to 7 days to update your balance after each payment.</p>
+
+        <button class="govuk-button" data-module="govuk-button" style="margin-left:15px">
+          Make a Corporation Tax payment
+        </button>
+
+      </div>
+
+      <h2 class="govuk-heading-m">More options</h2>
+
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" href="https://www.gov.uk/dormant-company/dormant-for-corporation-tax">Make your company dormant (opens in new tab</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" target="_blank" href="https://www.gov.uk/closing-a-limited-company">Close your company (opens in new tab)</a>
+      </p>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" target="_blank" href="https://www.gov.uk/guidance/get-a-certificate-of-residence">Get a certificate of residence (opens in new tab)</a>
+      </p>
+
+        <details class="govuk-details" data-module="govuk-details" style="padding-top:30px;">
+          <summary class="govuk-details__summary_noarrow" style="display:block;">
+            <span class="govuk-details__summary-text" style="font-size:16px;color:#454a4c">
+              Is this page not working properly?
+            </span>
+          </summary>
+          <div class="">
+
+          </div>
+        </details>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <hr class="govuk-section-break govuk-section-break--visible blue-top govuk-!-margin-bottom-3" style="border-bottom: 10px solid #1D70B8;">
+      <h2 class="govuk-heading-s" style="margin-bottom:5px">Corporation Tax Inique Taxpayer Reference (UTR):</h2>
+        <p class="govuk-body" style="font-size:16px">999920245</p>
+
+
+      <h2 class="govuk-heading-s" style="margin-bottom:5px">Help</h2>
+      <p class="govuk-body" style="margin-bottom:5px">
+        <a class="govuk-link" href="https://bta-cards-prototype.herokuapp.com/help-and-contact/designC_HAC">Help and contact</a>
+      </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+{% endblock %}
